@@ -1,8 +1,8 @@
 *******************************************************************************
-ZeissTIFFReader
+OBFReader
 *******************************************************************************
 
-This page lists supported metadata fields for the Bio-Formats Zeiss AxioVision TIFF format reader.
+This page lists supported metadata fields for the Bio-Formats OBF format reader.
 
 These fields are from the :formats_plone:`OME data model <support/file-formats/schemas>`.
 Bio-Formats standardizes each format's original metadata to and from the OME
@@ -16,7 +16,7 @@ Of the 473 fields documented in the :doc:`metadata summary table </metadata-summ
 Supported fields
 ===============================================================================
 
-These fields are fully supported by the Bio-Formats Zeiss AxioVision TIFF format reader:
+These fields are fully supported by the Bio-Formats OBF format reader:
   * :schema:`Channel : ID <OME-2012-06/ome_xsd.html#Channel_ID>`
   * :schema:`Channel : SamplesPerPixel <OME-2012-06/ome_xsd.html#Channel_SamplesPerPixel>`
   * :schema:`Image : AcquisitionDate <OME-2012-06/ome_xsd.html#Image_AcquisitionDate>`
