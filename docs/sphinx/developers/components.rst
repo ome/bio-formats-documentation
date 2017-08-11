@@ -90,7 +90,9 @@ not be any code here, just build system files.
 
 .. _forks-jai:
 
-`OME JAI (deprecated) <https://github.com/ome/ome-jai>`_:
+:source:`forks/jai (JAI Image I/O Tools) <components/forks/jai>`:
+
+`Ant: jar-jai`
 
 This is a fork of `JAI ImageIO <http://java.net/projects/jai-imageio-core>`_
 which adds support for decoding YCbCr JPEG-2000 data.  This is primarily
@@ -166,7 +168,6 @@ now available as separate build dependencies:
 
 - :ref:`Metakit <metakit>`
 - :ref:`OME Common <ome-common>`
-- :ref:`OME Codecs <ome-codecs>`
 - :ref:`OME MDB Tools (Java) <forks-mdbtools>`
 - :ref:`OME Apache Jakarta POI <forks-poi>`
 - :ref:`JXRlib <jxrlib>`
@@ -193,14 +194,6 @@ In addition to I/O, there are several classes to assist in working with XML
 (:common_javadoc:`DateTools <loci/common/DateTools.html>`), logging configuration
 (:common_javadoc:`DebugTools <loci/common/DebugTools.html>`), and byte arithmetic
 (:common_javadoc:`DataTools <loci/common/DataTools.html>`).
-
-.. _ome-codecs:
-
-`OME Codecs <https://github.com/ome/ome-codecs>`_:
-
-Provides classes for encoding and decoding compressed data for a
-variety of compression formats.  :ref:`ome-common <ome-common>` is a
-required dependency for I/O and service loading.
 
 .. _forks-mdbtools:
 
