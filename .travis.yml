@@ -1,0 +1,16 @@
+language: java
+
+sudo: false
+
+# http://docs.travis-ci.com/user/caching/#Arbitrary-directories
+cache:
+  directories:
+  - $HOME/.m2
+
+jdk:
+  - oraclejdk9
+  - oraclejdk8
+  - openjdk7
+
+matrix:
+  fast_finish: true
