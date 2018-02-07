@@ -228,7 +228,7 @@ html_theme_path = ['themes']
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
-html_logo = 'images/ome.svg'
+html_logo = os.path.abspath(os.path.join(srcdir, 'images/ome.svg'))
 
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
@@ -317,7 +317,7 @@ latex_logo = os.path.join(srcdir, 'images/bio-formats-logo.pdf')
 
 # For "manual" documents, if this is true, then toplevel headings are parts,
 # not chapters.
-latex_use_parts = True
+#latex_use_parts = True
 
 # If true, show page references after internal links.
 #latex_show_pagerefs = False

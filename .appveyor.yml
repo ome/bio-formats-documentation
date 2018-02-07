@@ -1,0 +1,31 @@
+environment:
+  AV_PROJECTS: 'c:\projects'
+  AV_OME_M2: 'c:\projects\m2'
+  AV_OME_SOURCE: 'c:\projects\source'
+
+# Note that only Oracle JDK is provided.
+  matrix:
+    - java: 9
+    - java: 1.8
+    - java: 1.7
+
+cache:
+  - '%AV_OME_M2% -> appveyor.yml'
+  - '%AV_OME_PYTHON% -> appveyor.yml'
+
+os: 'Visual Studio 2015'
+clone_folder: '%AV_OME_SOURCE%'
+clone_depth: 5
+platform: x64
+
+init:
+  - git config --global core.autocrlf input
+  - refreshenv
+  - 'if [%java%] == [1.7] set "JAVA_HOME=C:\Program Files\Java\jdk1.7.0"'
+  - 'if [%java%] == [1.8] set "JAVA_HOME=C:\Program Files\Java\jdk1.8.0"'
+  - 'if [%java%] == [9] set "JAVA_HOME=C:\Program Files\Java\jdk9"'
+  - PATH=%JAVA_HOME%\bin;%PATH%
+  - 'set "MAVEN_OPTS=-Dmaven.repo.local=%AV_OME_M2%"'
+
+build_script:
+  - mvn install
