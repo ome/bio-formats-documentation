@@ -150,31 +150,6 @@
               </arguments>
             </configuration>
           </execution>
-          <execution>
-            <id>sphinx-linkcheck</id>
-            <phase>test</phase>
-            <goals>
-              <goal>exec</goal>
-            </goals>
-            <configuration>
-              <executable>sphinx-build</executable>
-              <arguments>
-                <argument>-D</argument>
-                <argument>release=${project.version}</argument>
-                <argument>-D</argument>
-                <argument>version=${parsedVersion.majorVersion}.${parsedVersion.minorVersion}</argument>
-                <argument>-c</argument>
-                <argument>${sphinx_builddir}</argument>
-                <argument>-d</argument>
-                <argument>${sphinx_builddir}/cache</argument>
-                <argument>-b</argument>
-                <argument>${sphinx.linkchecker}</argument>
-                <argument>-W</argument>
-                <argument>${sphinx_srcdir}</argument>
-                <argument>${sphinx_builddir}/${sphinx.linkchecker}</argument>
-              </arguments>
-            </configuration>
-          </execution>
         </executions>
       </plugin>
       <plugin>
@@ -204,4 +179,51 @@
     <maven>3.0.5</maven>
   </prerequisites>
 
+  <profiles>
+    <profile>
+      <id>sphinx-linkcheck</id>
+      <activation>
+        <property>
+          <name>!skipSphinxTests</name>
+        </property>
+      </activation>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>exec-maven-plugin</artifactId>
+            <version>1.6.0</version>
+            <executions>
+              <execution>
+                <id>sphinx-linkcheck</id>
+                <phase>test</phase>
+                <goals>
+                  <goal>exec</goal>
+                </goals>
+                <configuration>
+                  <executable>sphinx-build</executable>
+                  <arguments>
+                    <argument>-D</argument>
+                    <argument>release=${project.version}</argument>
+                    <argument>-D</argument>
+                    <argument>version=${parsedVersion.majorVersion}.${parsedVersion.minorVersion}</argument>
+                    <argument>-c</argument>
+                    <argument>${sphinx_builddir}</argument>
+                    <argument>-d</argument>
+                    <argument>${sphinx_builddir}/cache</argument>
+                    <argument>-b</argument>
+                    <argument>${sphinx.linkchecker}</argument>
+                    <argument>-W</argument>
+                    <argument>${sphinx_srcdir}</argument>
+                    <argument>${sphinx_builddir}/${sphinx.linkchecker}</argument>
+                  </arguments>
+                  <skip>${skipTests}</skip>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
 </project>
