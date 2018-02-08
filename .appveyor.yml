@@ -35,4 +35,4 @@ build_script:
   - 'if [%AV_OME_CREATE_VENV%] == [true] C:\Python27-x64\python -m virtualenv %AV_OME_PYTHON%'
   - PATH=%AV_OME_PYTHON%;%AV_OME_PYTHON%\scripts;%PATH%
   - 'if [%AV_OME_CREATE_VENV%] == [true] python -m pip install sphinx'
-  - mvn install
+  - mvn install -DskipSphinxTests=true
