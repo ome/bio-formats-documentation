@@ -45,7 +45,7 @@ public class OriginalMetadataAutogen {
 
   // -- Constants --
 
-  private static final String TEMPLATE = "doc/OriginalMetadataSupport.vm";
+  private static final String TEMPLATE = "templates/OriginalMetadataSupport.vm";
 
   // -- Fields --
 

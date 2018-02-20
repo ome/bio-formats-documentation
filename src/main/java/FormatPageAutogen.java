@@ -52,8 +52,8 @@ public class FormatPageAutogen {
 
   // -- Constants --
 
-  private static final String TEMPLATE = "doc/FormatPage.vm";
-  private static final String TABLE_TEMPLATE = "doc/FormatTable.vm";
+  private static final String TEMPLATE = "templates/FormatPage.vm";
+  private static final String TABLE_TEMPLATE = "templates/FormatTable.vm";
 
   // -- Fields --
 
