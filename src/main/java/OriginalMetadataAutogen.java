@@ -69,14 +69,14 @@ public class OriginalMetadataAutogen {
   // -- API Methods --
 
   public void write() throws Exception {
-    File doc = new File("doc");
+    File doc = new File("target/generated-sphinx-sources/");
     if (!doc.exists()) {
       boolean success = doc.mkdir();
       if (!success) {
         throw new IOException("Could not create " + doc.getAbsolutePath());
       }
     }
-    File docMeta = new File(doc, "original_meta");
+    File docMeta = new File(doc, "original_meta/");
     if (!docMeta.exists()) {
       boolean success = docMeta.mkdir();
       if (!success) {
@@ -97,7 +97,7 @@ public class OriginalMetadataAutogen {
       filename = filename.replaceAll("/", "_");
 
       VelocityTools.processTemplate(engine, context, TEMPLATE,
-        "doc/original_meta/" + filename + ".txt");
+        "target/generated-sphinx-sources/original_meta/" + filename + ".txt");
     }
   }
 

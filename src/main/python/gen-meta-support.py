@@ -27,8 +27,8 @@
 
 from os import listdir
 import re
-from os.path import basename, dirname, join, abspath, isfile, expanduser
-import zipfile
+from os.path import basename, dirname, join, abspath, isfile, expanduser, splitext
+import glob
 import sys
 
 HEADER = """# This file documents the metadata support for each file format that
@@ -65,9 +65,7 @@ OMEXML_PATH = join(
 ELEMENT_REGEXP = re.compile("^ome/xml/model/([A-Za-z]+).class$")
 
 
-currentDir = dirname(__file__)
-outputFile = join(currentDir, 'meta-support.txt')
-componentsDir = abspath(join(currentDir, '..', '..'))
+outputFile = 'target/sphinx/meta-support.txt'
 
 
 def is_file(f, ftype=".java"):
@@ -82,11 +80,10 @@ def get_xml_elements():
     # Bio-Formats. This logic introspects the OME-XML JAR from the local
     # Maven repository to create the list of elements
     elements = []
-    with zipfile.ZipFile(OMEXML_PATH, 'r') as zf:
-        for zi in zf.infolist():
-            m = ELEMENT_REGEXP.match(zi.filename)
-            if m:
-                elements.append(m.group(1))
+    classes = glob.glob('target/unpacked/ome-xml/ome/xml/model/*.class')
+    for c in classes:
+             name = splitext(basename(c))[0]
+             elements.append(name)
 
     return elements
 
@@ -95,7 +92,7 @@ def get_readers():
     """List all GPL and BSD readers"""
     readers = []
     for ftype in ['formats-gpl', 'formats-bsd']:
-        formatsDir = join(componentsDir, ftype, 'src', 'loci', 'formats', 'in')
+        formatsDir = join('target/unpacked/source', ftype, 'loci', 'formats', 'in')
         for f in sorted(listdir(formatsDir), key=str.lower):
             if not is_file(join(formatsDir, f), ftype="Reader.java"):
                 continue
@@ -126,7 +123,7 @@ def split_element(s, elements):
 pattern = re.compile('store\.set(\w+)')
 
 # Register Metadatastore setter calls in MetadataTools
-metadatatools = join(componentsDir, 'formats-api', 'src', 'loci', 'formats',
+metadatatools = join('target/unpacked/source', 'formats-api', 'loci', 'formats',
                      'MetadataTools.java')
 commonElements = []
 with open(metadatatools) as f:

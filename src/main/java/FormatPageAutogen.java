@@ -72,11 +72,18 @@ public class FormatPageAutogen {
   // -- API Methods --
 
   public void writeFormatPages() throws Exception {
-    File doc = new File("../../docs/sphinx/formats/");
+    File doc = new File("target/sphinx/");
     if (!doc.exists()) {
       boolean success = doc.mkdir();
       if (!success) {
         throw new IOException("Could not create " + doc.getAbsolutePath());
+      }
+    }
+    File docFormats = new File(doc, "formats/");
+    if (!docFormats.exists()) {
+      boolean success = docFormats.mkdir();
+      if (!success) {
+        throw new IOException("Could not create " + docFormats.getAbsolutePath());
       }
     }
 
@@ -168,12 +175,12 @@ public class FormatPageAutogen {
       }
 
       VelocityTools.processTemplate(engine, context, TEMPLATE,
-        "../../docs/sphinx/" + filename + ".rst");
+        "target/sphinx/" + filename + ".rst");
     }
   }
 
   public void writeFormatTable() throws Exception {
-    File doc = new File("../../docs/sphinx/");
+    File doc = new File("target/sphinx/");
     if (!doc.exists()) {
       boolean success = doc.mkdir();
       if (!success) {
@@ -206,7 +213,7 @@ public class FormatPageAutogen {
     context.put("count", sortedTable.length);
 
     VelocityTools.processTemplate(engine, context, TABLE_TEMPLATE,
-      "../../docs/sphinx/supported-formats.rst");
+      "target/sphinx/supported-formats.rst");
   }
 
   // -- Helper methods --
