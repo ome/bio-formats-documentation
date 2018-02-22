@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env python
 
 ###
 # #%L
@@ -25,11 +25,13 @@
 # #L%
 ###
 
-from os import listdir
+from os import listdir, makedirs
 import re
-from os.path import basename, dirname, join, abspath, isfile, expanduser, splitext
+import errno
+from os.path import basename, dirname, join, abspath, isfile, isdir, expanduser, splitext
 import glob
 import sys
+import argparse
 
 HEADER = """# This file documents the metadata support for each file format that
 # Bio-Formats can handle. Default value for unlisted properties is Missing,
@@ -58,14 +60,13 @@ HEADER = """# This file documents the metadata support for each file format that
 # ImagingEnvironment.Temperature = Partial see ticket #167 for details
 
 """
-OMEXML_VERSION = sys.argv[1]
-OMEXML_PATH = join(
-    expanduser("~"), ".m2", "repository", "org", "openmicroscopy", "ome-xml",
-    OMEXML_VERSION, "ome-xml-%s.jar" % OMEXML_VERSION)
-ELEMENT_REGEXP = re.compile("^ome/xml/model/([A-Za-z]+).class$")
 
+parser = argparse.ArgumentParser()
 
-outputFile = 'target/sphinx/meta-support.txt'
+parser.add_argument("--output-file", help="Output filename")
+parser.add_argument("--ome-xml-classes", help="OME-XML classes")
+parser.add_argument("--sources", help="Unpacked source code")
+args = parser.parse_args()
 
 
 def is_file(f, ftype=".java"):
@@ -76,11 +77,8 @@ def is_file(f, ftype=".java"):
 def get_xml_elements():
     """List all XML elements from the model"""
 
-    # Since Bio-Formats 5.3.0, the ome-xml component is decoupled from
-    # Bio-Formats. This logic introspects the OME-XML JAR from the local
-    # Maven repository to create the list of elements
     elements = []
-    classes = glob.glob('target/unpacked/ome-xml/ome/xml/model/*.class')
+    classes = glob.glob(args.ome_xml_classes + '/ome/xml/model/*.class')
     for c in classes:
              name = splitext(basename(c))[0]
              elements.append(name)
@@ -92,7 +90,7 @@ def get_readers():
     """List all GPL and BSD readers"""
     readers = []
     for ftype in ['formats-gpl', 'formats-bsd']:
-        formatsDir = join('target/unpacked/source', ftype, 'loci', 'formats', 'in')
+        formatsDir = join(args.sources, ftype, 'loci', 'formats', 'in')
         for f in sorted(listdir(formatsDir), key=str.lower):
             if not is_file(join(formatsDir, f), ftype="Reader.java"):
                 continue
@@ -123,7 +121,7 @@ def split_element(s, elements):
 pattern = re.compile('store\.set(\w+)')
 
 # Register Metadatastore setter calls in MetadataTools
-metadatatools = join('target/unpacked/source', 'formats-api', 'loci', 'formats',
+metadatatools = join(args.sources, 'formats-api', 'loci', 'formats',
                      'MetadataTools.java')
 commonElements = []
 with open(metadatatools) as f:
@@ -132,7 +130,14 @@ with open(metadatatools) as f:
 # Read XML elements from the model
 xml_elements = get_xml_elements()
 
-with open(outputFile, 'w') as f:
+try:
+    makedirs(dirname(args.output_file))
+except OSError as exc:  # Python >2.5
+    if exc.errno == errno.EEXIST and isdir(dirname(args.output_file)):
+        pass
+    else:
+        raise
+with open(args.output_file, 'w') as f:
     f.write(HEADER)
 
     for reader in get_readers():

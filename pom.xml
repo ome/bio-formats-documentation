@@ -45,6 +45,14 @@
     <sphinx.linkchecker>linkcheck</sphinx.linkchecker>
     <sphinx.html.theme>default</sphinx.html.theme>
 
+    <autogen.dir>${project.build.directory}/classes</autogen.dir>
+    <autogen.ratings>${autogen.dir}/format-pages-ratings.txt</autogen.ratings>
+    <autogen.meta-support>${autogen.dir}/meta-support.txt</autogen.meta-support>
+    <resource.format-pages>${basedir}/src/main/resources/format-pages.txt</resource.format-pages>
+
+    <omexml.classes>${project.build.directory}/unpacked/ome-xml</omexml.classes>
+    <unpacked.source>${project.build.directory}/unpacked/source</unpacked.source>
+
     <!-- NB: Avoid platform encoding warning when copying resources. -->
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -185,7 +193,7 @@
                   <version>${ome-model.version}</version>
                   <type>jar</type>
                   <overWrite>true</overWrite>
-                  <outputDirectory>target/unpacked/ome-xml</outputDirectory>
+                  <outputDirectory>${omexml.classes}</outputDirectory>
                 </artifactItem>
                 <artifactItem>
                   <groupId>ome</groupId>
@@ -194,7 +202,7 @@
                   <type>jar</type>
                   <classifier>sources</classifier>
                   <overWrite>true</overWrite>
-                  <outputDirectory>target/unpacked/source/formats-api</outputDirectory>
+                  <outputDirectory>${unpacked.source}/formats-api</outputDirectory>
                 </artifactItem>
                 <artifactItem>
                   <groupId>ome</groupId>
@@ -203,7 +211,7 @@
                   <type>jar</type>
                   <classifier>sources</classifier>
                   <overWrite>true</overWrite>
-                  <outputDirectory>target/unpacked/source/formats-bsd</outputDirectory>
+                  <outputDirectory>${unpacked.source}/formats-bsd</outputDirectory>
                 </artifactItem>
                 <artifactItem>
                   <groupId>ome</groupId>
@@ -212,7 +220,7 @@
                   <type>jar</type>
                   <classifier>sources</classifier>
                   <overWrite>true</overWrite>
-                  <outputDirectory>target/unpacked/source/formats-gpl</outputDirectory>
+                  <outputDirectory>${unpacked.source}/formats-gpl</outputDirectory>
                 </artifactItem>
               </artifactItems>
             </configuration>
@@ -237,60 +245,9 @@
         <artifactId>exec-maven-plugin</artifactId>
         <version>1.6.0</version>
         <executions>
-          <!-- Generate the OME model object classes -->
           <execution>
-            <id>gen-metadata-ratings</id>
-            <phase>compile</phase>
-            <goals>
-              <goal>java</goal>
-            </goals>
-            <configuration>
-              <mainClass>MetadataRatings</mainClass>
-              <arguments>
-                <argument>${sphinx_builddir}/format-pages-ratings.txt</argument>
-              </arguments>
-            </configuration>
-          </execution>
-          <execution>
-            <id>gen-format-pages</id>
-            <phase>compile</phase>
-            <goals>
-              <goal>java</goal>
-            </goals>
-            <configuration>
-              <mainClass>FormatPageAutogen</mainClass>
-              <arguments>
-                <argument>${sphinx_builddir}/format-pages-ratings.txt</argument>
-              </arguments>
-            </configuration>
-          </execution>
-          <execution>
-            <id>gen-structure-table</id>
-            <phase>compile</phase>
-            <goals>
-              <goal>java</goal>
-            </goals>
-            <configuration>
-              <mainClass>MakeDatasetStructureTable</mainClass>
-              <arguments>
-                <argument>target/sphinx/formats/dataset-table.rst</argument>
-              </arguments>
-            </configuration>
-          </execution>
-          <execution>
-            <id>gen-original-meta-support</id>
-            <phase>compile</phase>
-            <goals>
-              <goal>java</goal>
-            </goals>
-            <configuration>
-              <mainClass>OriginalMetadataAutogen</mainClass>
-              <arguments>
-                <argument>${sphinx_builddir}/format-pages-ratings.txt</argument>
-              </arguments>
-            </configuration>
-          </execution>
-          <execution>
+            <!-- Input: ome-xml classes, formats sources
+                 Output: meta-support.txt -->
             <id>gen-meta-support</id>
             <phase>compile</phase>
             <goals>
@@ -300,11 +257,96 @@
               <executable>python</executable>
               <arguments>
                 <argument>src/main/python/gen-meta-support.py</argument>
-                <argument>${ome-model.version}</argument>
+                <argument>--output-file=${autogen.meta-support}</argument>
+                <argument>--ome-xml-classes=${omexml.classes}</argument>
+                <argument>--sources=${unpacked.source}</argument>
               </arguments>
             </configuration>
           </execution>
           <execution>
+            <!-- Input: formats jars
+                 Output: dataset-table.rst -->
+            <id>gen-structure-table</id>
+            <phase>compile</phase>
+            <goals>
+              <goal>java</goal>
+            </goals>
+            <configuration>
+              <mainClass>MakeDatasetStructureTable</mainClass>
+              <systemProperties>
+                <systemProperty>
+                  <key>dataset-table</key>
+                  <value>${sphinx_builddir}/formats/dataset-table.rst</value>
+                </systemProperty>
+              </systemProperties>
+            </configuration>
+          </execution>
+          <execution>
+            <!-- Input: format-pages.txt meta-support.txt
+                 Output: ratings.txt -->
+            <id>gen-metadata-ratings</id>
+            <phase>compile</phase>
+            <goals>
+              <goal>java</goal>
+            </goals>
+            <configuration>
+              <mainClass>MetadataRatings</mainClass>
+              <systemProperties>
+                <systemProperty>
+                  <key>autogen.ratings</key>
+                  <value>${autogen.ratings}</value>
+                </systemProperty>
+              </systemProperties>
+            </configuration>
+          </execution>
+          <execution>
+            <!-- Input: ratings.txt
+                 Output: Individual format.rst pages -->
+            <id>gen-format-pages</id>
+            <phase>compile</phase>
+            <goals>
+              <goal>java</goal>
+            </goals>
+            <configuration>
+              <mainClass>FormatPageAutogen</mainClass>
+              <systemProperties>
+                <systemProperty>
+                  <key>sphinx_builddir</key>
+                  <value>${sphinx_builddir}</value>
+                </systemProperty>
+                <systemProperty>
+                  <key>autogen.ratings</key>
+                  <value>${autogen.ratings}</value>
+                </systemProperty>
+              </systemProperties>
+            </configuration>
+          </execution>
+          <execution>
+            <!-- Does not seem functional
+                 Output: nothing -->
+            <id>gen-original-meta-support</id>
+            <phase>compile</phase>
+            <goals>
+              <goal>java</goal>
+            </goals>
+            <configuration>
+              <mainClass>OriginalMetadataAutogen</mainClass>
+              <systemProperties>
+                <systemProperty>
+                  <key>autogen.ratings</key>
+                  <value>${autogen.ratings}</value>
+                </systemProperty>
+                <systemProperty>
+                  <key>sphinx_builddir</key>
+                  <value>${sphinx_builddir}</value>
+                </systemProperty>
+              </systemProperties>
+            </configuration>
+          </execution>
+          <execution>
+            <!-- Actually build the docs.
+                 Input: Combined set of the .rst files generated above
+                 and static sources copied from the sphinx directory -->
             <id>sphinx-html</id>
             <phase>compile</phase>
             <goals>

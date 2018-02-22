@@ -55,15 +55,18 @@ public class FormatPageAutogen {
   private static final String TEMPLATE = "templates/FormatPage.vm";
   private static final String TABLE_TEMPLATE = "templates/FormatTable.vm";
 
+  private static final String OUTPUT_DIR = System.getProperty("sphinx_builddir");
+  private static final String RATINGS = System.getProperty("autogen.ratings");
+
   // -- Fields --
 
   private IniList data;
 
   // -- Constructor --
 
-  public FormatPageAutogen(String dataFile) throws FormatException, IOException
+  public FormatPageAutogen() throws FormatException, IOException
   {
-    String file = DataTools.readFile(dataFile);
+    String file = DataTools.readFile(RATINGS);
     IniParser parser = new IniParser();
     parser.setCommentDelimiter(null);
     data = parser.parseINI(new BufferedReader(new StringReader(file)));
@@ -72,7 +75,7 @@ public class FormatPageAutogen {
   // -- API Methods --
 
   public void writeFormatPages() throws Exception {
-    File doc = new File("target/sphinx/");
+    File doc = new File(OUTPUT_DIR);
     if (!doc.exists()) {
       boolean success = doc.mkdir();
       if (!success) {
@@ -175,12 +178,12 @@ public class FormatPageAutogen {
       }
 
       VelocityTools.processTemplate(engine, context, TEMPLATE,
-        "target/sphinx/" + filename + ".rst");
+        OUTPUT_DIR + "/" + filename + ".rst");
     }
   }
 
   public void writeFormatTable() throws Exception {
-    File doc = new File("target/sphinx/");
+    File doc = new File(OUTPUT_DIR);
     if (!doc.exists()) {
       boolean success = doc.mkdir();
       if (!success) {
@@ -213,7 +216,7 @@ public class FormatPageAutogen {
     context.put("count", sortedTable.length);
 
     VelocityTools.processTemplate(engine, context, TABLE_TEMPLATE,
-      "target/sphinx/supported-formats.rst");
+      OUTPUT_DIR + "/supported-formats.rst");
   }
 
   // -- Helper methods --
@@ -237,7 +240,7 @@ public class FormatPageAutogen {
   // -- Main method --
 
   public static void main(String[] args) throws Exception {
-    FormatPageAutogen autogen = new FormatPageAutogen(args[0]);
+    FormatPageAutogen autogen = new FormatPageAutogen();
     autogen.writeFormatPages();
     autogen.writeFormatTable();
   }

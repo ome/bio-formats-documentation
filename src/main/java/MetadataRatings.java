@@ -25,7 +25,10 @@
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.InputStreamReader;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.util.ArrayList;
@@ -42,6 +45,7 @@ public class MetadataRatings {
 
   private static final String METADATA = "meta-support.txt";
   private static final String FORMATS = "format-pages.txt";
+  private static final String RATINGS_OUTPUT = System.getProperty("autogen.ratings");
   private static final String[] RATINGS =
    {"poor", "fair", "good", "very good", "outstanding"};
 
@@ -49,13 +53,14 @@ public class MetadataRatings {
 
   private IniList metadata;
   private IniList formats;
-  private String outputFile;
+  private File outputFile;
 
   // -- Constructors --
 
   /** Constructs an entity list. */
-  public MetadataRatings(String outputFile) throws IOException {
-    this.outputFile = outputFile;
+  public MetadataRatings() throws IOException {
+    this.outputFile = new File(RATINGS_OUTPUT);
+    this.outputFile.getParentFile().mkdirs();
     IniParser parser = new IniParser();
     metadata = parser.parseINI(METADATA, MetadataRatings.class);
     formats = parser.parseINI(FORMATS, MetadataRatings.class);
@@ -160,7 +165,7 @@ public class MetadataRatings {
   }
 
   public static void main(String[] args) throws IOException {
-    MetadataRatings ratings = new MetadataRatings(args[0]);
+    MetadataRatings ratings = new MetadataRatings();
     ratings.updateRatings();
   }
 

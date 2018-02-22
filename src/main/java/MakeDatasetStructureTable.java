@@ -24,6 +24,7 @@
  */
 
 
+import java.io.File;
 import java.io.IOException;
 import java.io.PrintStream;
 import java.util.Arrays;
@@ -43,15 +44,16 @@ import loci.formats.ImageReader;
  */
 public class MakeDatasetStructureTable {
 
+    private static final String DATASET_TABLE = System.getProperty("dataset-table");
+
   private PrintStream out;
 
   /** Write the table header. */
   private void printHeader() {
     out.println(".. Please don't even think about editing this file directly.");
-    out.println(".. It is generated using the 'gen-structure-table' Ant");
-    out.println(".. target in components/autogen, which uses");
-    out.println(".. loci.formats.tools.MakeDatasetStructureTable, so please");
-    out.println(".. update that instead.");
+    out.println(".. It is generated using the Maven exec:java@gen-structure-table");
+    out.println(".. goal, which uses loci.formats.tools.MakeDatasetStructureTable,");
+    out.println(".. so please update that instead.");
     out.println();
     out.println("Dataset Structure Table");
     out.println("=======================");
@@ -167,13 +169,10 @@ public class MakeDatasetStructureTable {
    * The output file will be the first element in 'args', or stdout if
    * 'args' has length 0.
    */
-  public void setOutputFile(String[] args) throws IOException {
-    if (args.length == 0) {
-      out = System.out;
-    }
-    else {
-      out = new PrintStream(args[0], Constants.ENCODING);
-    }
+  public void setOutputFile(String name) throws IOException {
+    File filename = new File(name);
+    filename.getParentFile().mkdirs();
+    out = new PrintStream(filename, Constants.ENCODING);
   }
 
   /** Close the output file. */
@@ -185,7 +184,7 @@ public class MakeDatasetStructureTable {
 
   public static void main(String[] args) throws IOException {
     MakeDatasetStructureTable table = new MakeDatasetStructureTable();
-    table.setOutputFile(args);
+    table.setOutputFile(DATASET_TABLE);
     table.printTable();
     table.closeFile();
   }
