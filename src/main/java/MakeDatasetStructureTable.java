@@ -44,7 +44,7 @@ import loci.formats.ImageReader;
  */
 public class MakeDatasetStructureTable {
 
-    private static final String DATASET_TABLE = System.getProperty("dataset-table");
+  private static final String DATASET_TABLE = System.getProperty("dataset-table");
 
   private PrintStream out;
 

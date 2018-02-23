@@ -39,6 +39,8 @@
     <ome_source_user>${sphinx.ome_source.user}</ome_source_user>
     <openmicroscopy_source_user>${sphinx.openmicroscopy_source.user}</openmicroscopy_source_user>
 
+    <data-model.version>2016-06</data-model.version>
+
     <sphinx_srcdir>${basedir}/sphinx</sphinx_srcdir>
     <sphinx_builddir>${project.build.directory}/sphinx</sphinx_builddir>
     <sphinx.builder>html</sphinx.builder>
@@ -317,6 +319,32 @@
                 <systemProperty>
                   <key>autogen.ratings</key>
                   <value>${autogen.ratings}</value>
+                </systemProperty>
+              </systemProperties>
+            </configuration>
+          </execution>
+          <execution>
+            <!-- Input: format-pages.txt
+                 Output: metadata/*.rst, metadata-summary.rst -->
+            <id>gen-metadata-summary</id>
+            <phase>compile</phase>
+            <goals>
+              <goal>java</goal>
+            </goals>
+            <configuration>
+              <mainClass>MetaSupportAutogen</mainClass>
+              <systemProperties>
+                <systemProperty>
+                  <key>metadata-summary</key>
+                  <value>${sphinx_builddir}/metadata-summary.rst</value>
+                </systemProperty>
+                <systemProperty>
+                  <key>sphinx_builddir</key>
+                  <value>${sphinx_builddir}</value>
+                </systemProperty>
+                <systemProperty>
+                  <key>data-model.version</key>
+                  <value>${data-model.version}</value>
                 </systemProperty>
               </systemProperties>
             </configuration>
