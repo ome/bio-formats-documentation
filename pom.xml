@@ -322,28 +322,6 @@
             </configuration>
           </execution>
           <execution>
-            <!-- Does not seem functional
-                 Output: nothing -->
-            <id>gen-original-meta-support</id>
-            <phase>compile</phase>
-            <goals>
-              <goal>java</goal>
-            </goals>
-            <configuration>
-              <mainClass>OriginalMetadataAutogen</mainClass>
-              <systemProperties>
-                <systemProperty>
-                  <key>autogen.ratings</key>
-                  <value>${autogen.ratings}</value>
-                </systemProperty>
-                <systemProperty>
-                  <key>sphinx_builddir</key>
-                  <value>${sphinx_builddir}</value>
-                </systemProperty>
-              </systemProperties>
-            </configuration>
-          </execution>
-          <execution>
             <!-- Actually build the docs.
                  Input: Combined set of the .rst files generated above
                  and static sources copied from the sphinx directory -->
