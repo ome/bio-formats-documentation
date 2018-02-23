@@ -10,13 +10,15 @@ data model so that you can work with a particular piece of metadata (e.g.
 physical width of the image in microns) in a format-independent way.
 
 Of the 476 fields documented in the :doc:`metadata summary table </metadata-summary>`:
-  * The file format itself supports 43 of them (9%).
-  * Of those, Bio-Formats fully or partially converts 43 (100%).
+  * The file format itself supports 53 of them (11%).
+  * Of those, Bio-Formats fully or partially converts 53 (100%).
 
 Supported fields
 ===============================================================================
 
 These fields are fully supported by the Bio-Formats PerkinElmer Operetta format reader:
+  * :schema:`Channel : EmissionWavelength <OME-2016-06/ome_xsd.html#Channel_EmissionWavelength>`
+  * :schema:`Channel : ExcitationWavelength <OME-2016-06/ome_xsd.html#Channel_ExcitationWavelength>`
   * :schema:`Channel : ID <OME-2016-06/ome_xsd.html#Channel_ID>`
   * :schema:`Channel : Name <OME-2016-06/ome_xsd.html#Channel_Name>`
   * :schema:`Channel : SamplesPerPixel <OME-2016-06/ome_xsd.html#Channel_SamplesPerPixel>`
@@ -25,7 +27,13 @@ These fields are fully supported by the Bio-Formats PerkinElmer Operetta format 
   * :schema:`Image : AcquisitionDate <OME-2016-06/ome_xsd.html#Image_AcquisitionDate>`
   * :schema:`Image : ExperimenterRef <OME-2016-06/ome_xsd.html#ExperimenterRef_ID>`
   * :schema:`Image : ID <OME-2016-06/ome_xsd.html#Image_ID>`
+  * :schema:`Image : InstrumentRef <OME-2016-06/ome_xsd.html#InstrumentRef_ID>`
   * :schema:`Image : Name <OME-2016-06/ome_xsd.html#Image_Name>`
+  * :schema:`Instrument : ID <OME-2016-06/ome_xsd.html#Instrument_ID>`
+  * :schema:`Objective : ID <OME-2016-06/ome_xsd.html#Objective_ID>`
+  * :schema:`Objective : LensNA <OME-2016-06/ome_xsd.html#Objective_LensNA>`
+  * :schema:`Objective : NominalMagnification <OME-2016-06/ome_xsd.html#Objective_NominalMagnification>`
+  * :schema:`ObjectiveSettings : ID <OME-2016-06/ome_xsd.html#ObjectiveSettings_ID>`
   * :schema:`Pixels : BigEndian <OME-2016-06/ome_xsd.html#Pixels_BigEndian>`
   * :schema:`Pixels : DimensionOrder <OME-2016-06/ome_xsd.html#Pixels_DimensionOrder>`
   * :schema:`Pixels : ID <OME-2016-06/ome_xsd.html#Pixels_ID>`
@@ -39,6 +47,8 @@ These fields are fully supported by the Bio-Formats PerkinElmer Operetta format 
   * :schema:`Pixels : SizeY <OME-2016-06/ome_xsd.html#Pixels_SizeY>`
   * :schema:`Pixels : SizeZ <OME-2016-06/ome_xsd.html#Pixels_SizeZ>`
   * :schema:`Pixels : Type <OME-2016-06/ome_xsd.html#Pixels_Type>`
+  * :schema:`Plane : DeltaT <OME-2016-06/ome_xsd.html#Plane_DeltaT>`
+  * :schema:`Plane : ExposureTime <OME-2016-06/ome_xsd.html#Plane_ExposureTime>`
   * :schema:`Plane : PositionX <OME-2016-06/ome_xsd.html#Plane_PositionX>`
   * :schema:`Plane : PositionY <OME-2016-06/ome_xsd.html#Plane_PositionY>`
   * :schema:`Plane : PositionZ <OME-2016-06/ome_xsd.html#Plane_PositionZ>`
@@ -61,6 +71,6 @@ These fields are fully supported by the Bio-Formats PerkinElmer Operetta format 
   * :schema:`WellSample : ImageRef <OME-2016-06/ome_xsd.html#ImageRef_ID>`
   * :schema:`WellSample : Index <OME-2016-06/ome_xsd.html#WellSample_Index>`
 
-**Total supported: 43**
+**Total supported: 53**
 
-**Total unknown or missing: 433**
+**Total unknown or missing: 423**
