@@ -184,7 +184,8 @@
       <id>sphinx-linkcheck</id>
       <activation>
         <property>
-          <name>!skipSphinxTests</name>
+          <name>skipSphinxTests</name>
+          <value>!true</value>
         </property>
       </activation>
       <build>
