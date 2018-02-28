@@ -364,7 +364,6 @@ texinfo_documents = [
 # -- Options for the linkcheck builder ----------------------------------------
 
 # Timeout value, in seconds, for the linkcheck builder
-linkcheck_timeout = 30
 linkcheck_timeout = int(os.environ.get("SPHINX_LINKCHECK_TIMEOUT", 30))
 linkcheck_workers = int(os.environ.get("SPHINX_LINKCHECK_WORKERS", 5))
 linkcheck_retries = int(os.environ.get("SPHINX_LINKCHECK_RETRIES", 5))
