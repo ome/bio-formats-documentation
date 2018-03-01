@@ -47,7 +47,7 @@ public class MetaSupportAutogen {
 
   private static final String FORMAT_PAGES = "format-pages.txt";
   private static final String METADATA_SUMMARY = System.getProperty("metadata-summary");
-  private static final String MODEL_VERSION = "data-model.version";
+  private static final String MODEL_VERSION = System.getProperty("data-model.version");
   private static final String SPHINX_DIR = System.getProperty("sphinx_builddir");
 
   // -- Main method --
