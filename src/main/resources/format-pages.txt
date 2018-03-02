@@ -1051,6 +1051,23 @@ utilityRating = Fair
 reader = InveonReader
 mif = true
 
+[Ionpath MIBI]
+extensions = .tif, .tiff
+owner = `IonPath <https://www.ionpath.com/>`_
+developer = `IonPath <https://www.ionpath.com/>`_
+versions = 0.1
+bsd = no
+weHave = * a few sample datasets\n
+* a specification document
+weWant = * more sample datasets
+privateSpecification = true
+pixelsRating = Very good
+metadataRating = Very good
+opennessRating = Very good
+presenceRating = Poor
+utilityRating = Fair
+reader = IonpathMIBITiffReader
+
 [IVision]
 pagename = iplab-mac
 extensions = .ipm
@@ -1626,7 +1643,8 @@ bsd = yes
 software = `nrrd (NRRD reference library) <http://teem.sourceforge.net/nrrd/>`_
 samples = `Diffusion tensor MRI datasets <http://www.sci.utah.edu/%7Egk/DTI-data/>`_
 weHave = * an `nrrd specification document <http://teem.sourceforge.net/nrrd/format.html>`_ (v1.9, from 2005 December 24, in HTML) \n
-* a few nrrd datasets
+* a few nrrd datasets \n
+* `public sample images <https://downloads.openmicroscopy.org/images/NRRD/>`__
 pixelsRating = Very good
 metadataRating = Very good
 opennessRating = Outstanding
@@ -1952,6 +1970,20 @@ Commercial applications that support this format include: \n
 \n
 .. seealso:: \n
   `PerkinElmer UltraVIEW system overview (pdf) <http://www.perkinelmer.com/lab-solutions/resources/PDFs/LST/Brochures/BRO_UltraVIEW-VoX-Product-Brochure.pdf>`_
+
+[PerkinElmer Vectra QPTIFF]
+extensions = .tif, .qptiff
+owner = `PerkinElmer <http://www.perkinelmer.com/>`_
+bsd = no
+weHave = * a specification document
+* several datasets
+pixelsRating = Very good
+metadataRating = Outstanding
+opennessRating = Outstanding
+presenceRating = Fair
+utilityRating = Fair
+reader = VectraReader
+notes = Support for this format was added in partnership with PerkinElmer
 
 [Portable Any Map]
 pagename = pgm
