@@ -46,17 +46,13 @@ import org.apache.velocity.app.VelocityEngine;
 public class MetaSupportAutogen {
 
   private static final String FORMAT_PAGES = "format-pages.txt";
+  private static final String METADATA_SUMMARY = System.getProperty("metadata-summary");
+  private static final String MODEL_VERSION = System.getProperty("data-model.version");
+  private static final String SPHINX_DIR = System.getProperty("sphinx_builddir");
 
   // -- Main method --
 
   public static void main(String[] args) throws Exception {
-    if (args.length == 0) {
-      System.out.println("Usage: java MetaSupportAutogen ome-xml-version");
-      System.out.println("    E.g.: java MetaSupportAutogen 2012-06");
-      System.exit(1);
-    }
-    String version = args[0];
-
     // create needed directories
     File doc = new File("doc");
     if (!doc.exists()) {
@@ -78,7 +74,7 @@ public class MetaSupportAutogen {
     VelocityContext context = VelocityTools.createContext();
 
     // parse supported properties list
-    MetaSupportList supportList = new MetaSupportList(version);
+    MetaSupportList supportList = new MetaSupportList(MODEL_VERSION);
     context.put("q", supportList);
 
     // retrieve the table of format page names
@@ -92,8 +88,8 @@ public class MetaSupportAutogen {
     }
 
     // generate master table of metadata properties
-    VelocityTools.processTemplate(ve, context, "doc/meta-summary.vm",
-      "../../docs/sphinx/metadata-summary.rst");
+    VelocityTools.processTemplate(ve, context, "templates/meta-summary.vm",
+      METADATA_SUMMARY);
 
     // generate metadata property support documentation for each handler
     for (String handler : supportList.handlers()) {
@@ -101,8 +97,10 @@ public class MetaSupportAutogen {
 
       String pagename = supportList.getPageName();
       if (pagename != null) {
-        VelocityTools.processTemplate(ve, context, "doc/MetadataSupport.vm",
-          "../../docs/sphinx/" + pagename + ".rst");
+        File file = new File(SPHINX_DIR + "/" + pagename + ".rst");
+        file.getParentFile().mkdirs();
+        VelocityTools.processTemplate(ve, context, "templates/MetadataSupport.vm",
+          SPHINX_DIR + "/" + pagename + ".rst");
       }
     }
   }

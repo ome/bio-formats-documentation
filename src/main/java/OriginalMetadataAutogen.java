@@ -45,7 +45,9 @@ public class OriginalMetadataAutogen {
 
   // -- Constants --
 
-  private static final String TEMPLATE = "doc/OriginalMetadataSupport.vm";
+  private static final String TEMPLATE = "templates/OriginalMetadataSupport.vm";
+  private static final String RATINGS = System.getProperty("autogen.ratings");
+  private static final String OUTPUT_DIR = System.getProperty("sphinx_builddir");
 
   // -- Fields --
 
@@ -55,10 +57,10 @@ public class OriginalMetadataAutogen {
 
   // -- Constructor --
 
-  public OriginalMetadataAutogen(String listFile)
+  public OriginalMetadataAutogen()
     throws FormatException, IOException
   {
-    String[] files = DataTools.readFile(listFile).split("\n");
+    String[] files = DataTools.readFile(RATINGS).split("\n");
     for (int i=0; i<files.length; i++) {
       parseFile(files[i]);
       System.out.println("Parsed file #" + (i + 1) + " of " + files.length +
@@ -69,14 +71,14 @@ public class OriginalMetadataAutogen {
   // -- API Methods --
 
   public void write() throws Exception {
-    File doc = new File("doc");
+    File doc = new File(OUTPUT_DIR);
     if (!doc.exists()) {
       boolean success = doc.mkdir();
       if (!success) {
         throw new IOException("Could not create " + doc.getAbsolutePath());
       }
     }
-    File docMeta = new File(doc, "original_meta");
+    File docMeta = new File(doc, "original_meta/");
     if (!docMeta.exists()) {
       boolean success = docMeta.mkdir();
       if (!success) {
@@ -97,7 +99,7 @@ public class OriginalMetadataAutogen {
       filename = filename.replaceAll("/", "_");
 
       VelocityTools.processTemplate(engine, context, TEMPLATE,
-        "doc/original_meta/" + filename + ".txt");
+        OUTPUT_DIR + "/original_meta/" + filename + ".txt");
     }
   }
 
@@ -143,7 +145,7 @@ public class OriginalMetadataAutogen {
   // -- Main method --
 
   public static void main(String[] args) throws Exception {
-    OriginalMetadataAutogen autogen = new OriginalMetadataAutogen(args[0]);
+    OriginalMetadataAutogen autogen = new OriginalMetadataAutogen();
     autogen.write();
   }
 

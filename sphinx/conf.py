@@ -147,8 +147,8 @@ extlinks = {
     'model_doc' : (docs_root + '/ome-model/' + ome_model_version + '/' + '%s', ''),
     'devs_doc' : (docs_root + '/contributing/%s', ''),
     # Downloads
-    'downloads' : (downloads_root + '/latest/bio-formats5.7/%s', ''),
-    'javadoc' : (downloads_root + '/latest/bio-formats5.7/api/%s', ''),
+    'downloads' : (downloads_root + '/latest/bio-formats5.8/%s', ''),
+    'javadoc' : (downloads_root + '/latest/bio-formats5.8/api/%s', ''),
     'common_javadoc' : ('http://static.javadoc.io/org.openmicroscopy/ome-common/' + ome_common_version + '/' + '%s', ''),
     'xml_javadoc' : ('http://static.javadoc.io/org.openmicroscopy/ome-xml/' + ome_model_version + '/' + '%s', ''),
     'specification_javadoc' : ('http://static.javadoc.io/org.openmicroscopy/ome-specification/' + ome_model_version + '/' + '%s', ''),
@@ -370,5 +370,8 @@ linkcheck_retries = int(os.environ.get("SPHINX_LINKCHECK_RETRIES", 5))
 
 # Regular expressions that match URIs that should not be checked when doing a linkcheck build
 linkcheck_ignore = ['https://imspector.mpibpc.mpg.de',
-    'https://www.olympus-global.com'
+    'https://www.olympus-global.com',
+    'http://www.lavisionbiotec.com/',
+    r'http://mdbtools.cvs.sourceforge.net/.*',
+    'https://nifti.nimh.nih.gov/nifti-1/'
 ]

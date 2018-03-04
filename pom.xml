@@ -5,10 +5,9 @@
     http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.openmicroscopy</groupId>
+  <groupId>ome</groupId>
   <artifactId>bio-formats-documentation</artifactId>
-  <version>5.8.0-SNAPSHOT</version>
-  <packaging>pom</packaging>
+  <version>5.8.1-SNAPSHOT</version>
 
   <name>Bio-Formats documentation</name>
   <description>Bio-Formats Sphinx documentation</description>
@@ -26,7 +25,8 @@
   <properties>
     <ome-common.version>5.3.2</ome-common.version>
     <ome-model.version>5.5.4</ome-model.version>
-
+    <bioformats.version>5.8.1-SNAPSHOT</bioformats.version>
+    <logback.version>1.1.1</logback.version>
 
     <sphinx.bioformats.source.branch>develop</sphinx.bioformats.source.branch>
     <sphinx.ome_source.user>ome</sphinx.ome_source.user>
@@ -39,18 +39,94 @@
     <ome_source_user>${sphinx.ome_source.user}</ome_source_user>
     <openmicroscopy_source_user>${sphinx.openmicroscopy_source.user}</openmicroscopy_source_user>
 
+    <data-model.version>2016-06</data-model.version>
+
     <sphinx_srcdir>${basedir}/sphinx</sphinx_srcdir>
     <sphinx_builddir>${project.build.directory}/sphinx</sphinx_builddir>
     <sphinx.builder>html</sphinx.builder>
     <sphinx.linkchecker>linkcheck</sphinx.linkchecker>
     <sphinx.html.theme>default</sphinx.html.theme>
-</properties>
+
+    <autogen.dir>${project.build.directory}/classes</autogen.dir>
+    <autogen.ratings>${autogen.dir}/format-pages-ratings.txt</autogen.ratings>
+    <autogen.meta-support>${autogen.dir}/meta-support.txt</autogen.meta-support>
+    <resource.format-pages>${basedir}/src/main/resources/format-pages.txt</resource.format-pages>
+
+    <omexml.classes>${project.build.directory}/unpacked/ome-xml</omexml.classes>
+    <unpacked.source>${project.build.directory}/unpacked/source</unpacked.source>
+
+    <!-- NB: Avoid platform encoding warning when copying resources. -->
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+    <!-- NB: Specify formatting of the maven.build.timestamp property. -->
+    <maven.build.timestamp.format>d MMMMM yyyy</maven.build.timestamp.format>
+
+    <!-- NB: Override argLine property for extra maven-surefire-plugin args. -->
+    <argLine/>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.openmicroscopy</groupId>
+      <artifactId>ome-common</artifactId>
+      <version>${ome-common.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.openmicroscopy</groupId>
+      <artifactId>ome-xml</artifactId>
+      <version>${ome-model.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>ome</groupId>
+      <artifactId>formats-api</artifactId>
+      <version>${bioformats.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>formats-bsd</artifactId>
+      <version>${bioformats.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>formats-gpl</artifactId>
+      <version>${bioformats.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.velocity</groupId>
+      <artifactId>velocity</artifactId>
+      <version>1.6.4</version>
+    </dependency>
+
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-core</artifactId>
+      <version>${logback.version}</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+      <version>${logback.version}</version>
+      <scope>runtime</scope>
+    </dependency>
+  </dependencies>
 
   <build>
     <!-- It is nice for "mvn" with no arguments to do something reasonable. -->
     <defaultGoal>install</defaultGoal>
 
     <plugins>
+      <plugin>
+	<groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.7.0</version>
+        <!-- Require the Java 7 platform. -->
+        <configuration>
+          <source>1.7</source>
+          <target>1.7</target>
+        </configuration>
+      </plugin>
       <plugin>
         <artifactId>maven-clean-plugin</artifactId>
         <version>3.0.0</version>
@@ -92,14 +168,63 @@
                 <resource>
                   <directory>${sphinx_srcdir}/</directory>
                   <filtering>false</filtering>
-                  <includes>
-                    <include>_static/**</include>
-                  </includes>
                   <excludes>
-                    <exclude>_static/.*</exclude>
+                    <exclude>conf.py</exclude>
                   </excludes>
                 </resource>
               </resources>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>unpack-ome-xml</id>
+            <phase>generate-resources</phase>
+            <goals>
+              <goal>unpack</goal>
+            </goals>
+            <configuration>
+              <artifactItems>
+                <artifactItem>
+                  <groupId>org.openmicroscopy</groupId>
+                  <artifactId>ome-xml</artifactId>
+                  <version>${ome-model.version}</version>
+                  <type>jar</type>
+                  <overWrite>true</overWrite>
+                  <outputDirectory>${omexml.classes}</outputDirectory>
+                </artifactItem>
+                <artifactItem>
+                  <groupId>ome</groupId>
+                  <artifactId>formats-api</artifactId>
+                  <version>${bioformats.version}</version>
+                  <type>jar</type>
+                  <classifier>sources</classifier>
+                  <overWrite>true</overWrite>
+                  <outputDirectory>${unpacked.source}/formats-api</outputDirectory>
+                </artifactItem>
+                <artifactItem>
+                  <groupId>ome</groupId>
+                  <artifactId>formats-bsd</artifactId>
+                  <version>${bioformats.version}</version>
+                  <type>jar</type>
+                  <classifier>sources</classifier>
+                  <overWrite>true</overWrite>
+                  <outputDirectory>${unpacked.source}/formats-bsd</outputDirectory>
+                </artifactItem>
+                <artifactItem>
+                  <groupId>ome</groupId>
+                  <artifactId>formats-gpl</artifactId>
+                  <version>${bioformats.version}</version>
+                  <type>jar</type>
+                  <classifier>sources</classifier>
+                  <overWrite>true</overWrite>
+                  <outputDirectory>${unpacked.source}/formats-gpl</outputDirectory>
+                </artifactItem>
+              </artifactItems>
             </configuration>
           </execution>
         </executions>
@@ -122,8 +247,112 @@
         <artifactId>exec-maven-plugin</artifactId>
         <version>1.6.0</version>
         <executions>
-          <!-- Generate the OME model object classes -->
           <execution>
+            <!-- Input: ome-xml classes, formats sources
+                 Output: meta-support.txt -->
+            <id>gen-meta-support</id>
+            <phase>compile</phase>
+            <goals>
+              <goal>exec</goal>
+            </goals>
+            <configuration>
+              <executable>python</executable>
+              <arguments>
+                <argument>src/main/python/gen-meta-support.py</argument>
+                <argument>--output-file=${autogen.meta-support}</argument>
+                <argument>--ome-xml-classes=${omexml.classes}</argument>
+                <argument>--sources=${unpacked.source}</argument>
+              </arguments>
+            </configuration>
+          </execution>
+          <execution>
+            <!-- Input: formats jars
+                 Output: dataset-table.rst -->
+            <id>gen-structure-table</id>
+            <phase>compile</phase>
+            <goals>
+              <goal>java</goal>
+            </goals>
+            <configuration>
+              <mainClass>MakeDatasetStructureTable</mainClass>
+              <systemProperties>
+                <systemProperty>
+                  <key>dataset-table</key>
+                  <value>${sphinx_builddir}/formats/dataset-table.rst</value>
+                </systemProperty>
+              </systemProperties>
+            </configuration>
+          </execution>
+          <execution>
+            <!-- Input: format-pages.txt meta-support.txt
+                 Output: ratings.txt -->
+            <id>gen-metadata-ratings</id>
+            <phase>compile</phase>
+            <goals>
+              <goal>java</goal>
+            </goals>
+            <configuration>
+              <mainClass>MetadataRatings</mainClass>
+              <systemProperties>
+                <systemProperty>
+                  <key>autogen.ratings</key>
+                  <value>${autogen.ratings}</value>
+                </systemProperty>
+              </systemProperties>
+            </configuration>
+          </execution>
+          <execution>
+            <!-- Input: ratings.txt
+                 Output: Individual format.rst pages -->
+            <id>gen-format-pages</id>
+            <phase>compile</phase>
+            <goals>
+              <goal>java</goal>
+            </goals>
+            <configuration>
+              <mainClass>FormatPageAutogen</mainClass>
+              <systemProperties>
+                <systemProperty>
+                  <key>sphinx_builddir</key>
+                  <value>${sphinx_builddir}</value>
+                </systemProperty>
+                <systemProperty>
+                  <key>autogen.ratings</key>
+                  <value>${autogen.ratings}</value>
+                </systemProperty>
+              </systemProperties>
+            </configuration>
+          </execution>
+          <execution>
+            <!-- Input: format-pages.txt
+                 Output: metadata/*.rst, metadata-summary.rst -->
+            <id>gen-metadata-summary</id>
+            <phase>compile</phase>
+            <goals>
+              <goal>java</goal>
+            </goals>
+            <configuration>
+              <mainClass>MetaSupportAutogen</mainClass>
+              <systemProperties>
+                <systemProperty>
+                  <key>metadata-summary</key>
+                  <value>${sphinx_builddir}/metadata-summary.rst</value>
+                </systemProperty>
+                <systemProperty>
+                  <key>sphinx_builddir</key>
+                  <value>${sphinx_builddir}</value>
+                </systemProperty>
+                <systemProperty>
+                  <key>data-model.version</key>
+                  <value>${data-model.version}</value>
+                </systemProperty>
+              </systemProperties>
+            </configuration>
+          </execution>
+          <execution>
+            <!-- Actually build the docs.
+                 Input: Combined set of the .rst files generated above
+                 and static sources copied from the sphinx directory -->
             <id>sphinx-html</id>
             <phase>compile</phase>
             <goals>
@@ -133,7 +362,7 @@
               <executable>sphinx-build</executable>
               <arguments>
                 <argument>-D</argument>
-                <argument>release=${project.version}</argument>
+                <argument>release=${bioformats.version}</argument>
                 <argument>-D</argument>
                 <argument>version=${parsedVersion.majorVersion}.${parsedVersion.minorVersion}</argument>
                 <argument>-c</argument>
@@ -145,7 +374,7 @@
                 <argument>-W</argument>
                 <argument>-D</argument>
                 <argument>html_theme=${sphinx.html.theme}</argument>
-                <argument>${sphinx_srcdir}</argument>
+                <argument>${sphinx_builddir}</argument>
                 <argument>${sphinx_builddir}/${sphinx.builder}</argument>
               </arguments>
             </configuration>
@@ -179,12 +408,93 @@
     <maven>3.0.5</maven>
   </prerequisites>
 
+  <organization>
+    <name>Open Microscopy Environment</name>
+    <url>http://www.openmicroscopy.org/</url>
+  </organization>
+
+  <issueManagement>
+    <system>Trac</system>
+    <url>https://trac.openmicroscopy.org/ome</url>
+  </issueManagement>
+
+  <ciManagement>
+    <system>Jenkins</system>
+    <url>https://ci.openmicroscopy.org/</url>
+  </ciManagement>
+
+  <mailingLists>
+    <mailingList>
+      <name>OME-users</name>
+      <subscribe>http://lists.openmicroscopy.org.uk/mailman/listinfo/ome-users/</subscribe>
+      <unsubscribe>http://lists.openmicroscopy.org.uk/mailman/listinfo/ome-users/</unsubscribe>
+      <post>ome-users@lists.openmicroscopy.org.uk</post>
+      <archive>http://lists.openmicroscopy.org.uk/pipermail/ome-users/</archive>
+    </mailingList>
+    <mailingList>
+      <name>OME-devel</name>
+      <subscribe>http://lists.openmicroscopy.org.uk/mailman/listinfo/ome-devel/</subscribe>
+      <unsubscribe>http://lists.openmicroscopy.org.uk/mailman/listinfo/ome-devel/</unsubscribe>
+      <post>ome-devel@lists.openmicroscopy.org.uk</post>
+      <archive>http://lists.openmicroscopy.org.uk/pipermail/ome-devel/</archive>
+    </mailingList>
+  </mailingLists>
+
+  <scm>
+    <connection>scm:git:git://github.com/ome/bio-formats-bundles</connection>
+    <developerConnection>scm:git:git@github.com:ome/bio-formats-bundles</developerConnection>
+    <tag>HEAD</tag>
+    <url>http://github.com/ome/bio-formats-bundles</url>
+  </scm>
+
+  <!-- NB: for parent project -->
+  <repositories>
+    <repository>
+      <id>central</id>
+      <name>Central Repository</name>
+      <url>https://repo.maven.apache.org/maven2</url>
+    </repository>
+    <repository>
+      <id>unidata.releases</id>
+      <url>https://artifacts.unidata.ucar.edu/content/repositories/unidata-releases</url>
+      <snapshots><enabled>false</enabled></snapshots>
+      </repository>
+    <repository>
+      <id>ome</id>
+      <name>OME Artifactory</name>
+      <url>https://artifacts.openmicroscopy.org/artifactory/maven/</url>
+    </repository>
+  </repositories>
+
+  <pluginRepositories>
+    <pluginRepository>
+      <id>central</id>
+      <name>Central Repository</name>
+      <url>https://repo.maven.apache.org/maven2</url>
+      <layout>default</layout>
+    </pluginRepository>
+  </pluginRepositories>
+
+  <distributionManagement>
+    <repository>
+      <id>ome.staging</id>
+      <name>OME Staging Repository</name>
+      <url>https://artifacts.openmicroscopy.org/artifactory/ome.staging</url>
+    </repository>
+    <snapshotRepository>
+      <id>ome.snapshots</id>
+      <name>OME Snapshots Repository</name>
+      <url>https://artifacts.openmicroscopy.org/artifactory/ome.snapshots</url>
+    </snapshotRepository>
+  </distributionManagement>
+
   <profiles>
     <profile>
       <id>sphinx-linkcheck</id>
       <activation>
         <property>
-          <name>!skipSphinxTests</name>
+          <name>skipSphinxTests</name>
+          <value>!true</value>
         </property>
       </activation>
       <build>
@@ -204,7 +514,7 @@
                   <executable>sphinx-build</executable>
                   <arguments>
                     <argument>-D</argument>
-                    <argument>release=${project.version}</argument>
+                    <argument>release=${bioformats.version}</argument>
                     <argument>-D</argument>
                     <argument>version=${parsedVersion.majorVersion}.${parsedVersion.minorVersion}</argument>
                     <argument>-c</argument>
@@ -214,7 +524,7 @@
                     <argument>-b</argument>
                     <argument>${sphinx.linkchecker}</argument>
                     <argument>-W</argument>
-                    <argument>${sphinx_srcdir}</argument>
+                    <argument>${sphinx_builddir}</argument>
                     <argument>${sphinx_builddir}/${sphinx.linkchecker}</argument>
                   </arguments>
                   <skip>${skipTests}</skip>
