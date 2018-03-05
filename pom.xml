@@ -441,10 +441,10 @@
   </mailingLists>
 
   <scm>
-    <connection>scm:git:git://github.com/ome/bio-formats-bundles</connection>
-    <developerConnection>scm:git:git@github.com:ome/bio-formats-bundles</developerConnection>
+    <connection>scm:git:git://github.com/ome/bio-formats-documentation</connection>
+    <developerConnection>scm:git:git@github.com:ome/bio-formats-documentation</developerConnection>
     <tag>HEAD</tag>
-    <url>http://github.com/ome/bio-formats-bundles</url>
+    <url>http://github.com/ome/bio-formats-documentation</url>
   </scm>
 
   <!-- NB: for parent project -->
