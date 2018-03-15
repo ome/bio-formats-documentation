@@ -26,6 +26,7 @@
     <ome-common.version>5.3.2</ome-common.version>
     <ome-model.version>5.5.4</ome-model.version>
     <bioformats.version>5.8.1-SNAPSHOT</bioformats.version>
+    <bio-formats-examples.version>5.8.1-SNAPSHOT</bio-formats-examples.version>
     <logback.version>1.1.1</logback.version>
 
     <sphinx.bioformats.source.branch>develop</sphinx.bioformats.source.branch>
@@ -224,6 +225,16 @@
                   <overWrite>true</overWrite>
                   <outputDirectory>${unpacked.source}/formats-gpl</outputDirectory>
                 </artifactItem>
+                <artifactItem>
+                  <groupId>ome</groupId>
+                  <artifactId>bio-formats-examples</artifactId>
+                  <version>${bio-formats-examples.version}</version>
+                  <type>jar</type>
+                  <classifier>sources</classifier>
+                  <overWrite>true</overWrite>
+                  <outputDirectory>${sphinx_builddir}/developers/examples</outputDirectory>
+                </artifactItem>
+
               </artifactItems>
             </configuration>
           </execution>
