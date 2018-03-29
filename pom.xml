@@ -534,7 +534,6 @@
                     <argument>${sphinx_builddir}/cache</argument>
                     <argument>-b</argument>
                     <argument>${sphinx.linkchecker}</argument>
-                    <argument>-W</argument>
                     <argument>${sphinx_builddir}</argument>
                     <argument>${sphinx_builddir}/${sphinx.linkchecker}</argument>
                   </arguments>
