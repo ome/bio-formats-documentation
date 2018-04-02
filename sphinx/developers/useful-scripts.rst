@@ -27,7 +27,7 @@ to the arguments specified.  Valid arguments are:
   * `clean`: cleans the Maven build directories
   * `maven`: builds all Java components using Maven and runs unit tests
   * `ant`: builds all Java components using Ant and runs unit tests
-  * `all`: equivalent of `clean maven sphinx ant`
+  * `all`: equivalent of `clean maven ant`
 
 update_copyright
 ----------------
