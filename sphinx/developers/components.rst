@@ -171,8 +171,7 @@ Decoupled OME data model components:
 
 `Bio-Formats examples <https://github.com/ome/bio-formats-examples>`_
 
-Usage examples for using Bio-Formats with the Maven or Gradle build
-systems.
+Usage examples for Bio-Formats with Maven and Gradle.
 
 .. _bio-formats-documentation:
 
