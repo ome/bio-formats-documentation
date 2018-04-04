@@ -81,7 +81,7 @@ notes = Known deficiencies: \n
 
 [Amnis FlowSight]
 extensions = .cif
-owner = Amnis (now owned by `Merck <http://www.merckmillipore.com>`_)
+owner = Amnis (now owned by `Merck <https://www.merckmillipore.com>`_)
 bsd = yes
 weHave = * a few sample datasets
 pixelsRating = Good
