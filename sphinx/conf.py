@@ -136,6 +136,7 @@ extlinks = {
     'bfwriter' : (gpl_formats + 'out/' + '%s', ''),
     'bsd-writer' : (bsd_formats + 'out/' + '%s', ''),
     'bf-cpp-lib': (bf_cpp + 'lib/' + '%s', ''),
+    'doc_source' : ('https://github.com/ome/bio-formats-documentation/blob/master' + '/%s', ''),
     # Mailing list/forum links
     'mailinglist' : (lists_root + '/mailman/listinfo/%s', ''),
     'forum' : (oo_root + '/community/%s', ''),
