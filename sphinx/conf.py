@@ -19,6 +19,7 @@ openmicroscopy_source_user = '@openmicroscopy_source_user@'
 ome_source_user = '@ome_source_user@'
 ome_common_version = '@ome_common_version@'
 ome_model_version = '@ome_model_version@'
+ome_model_uri = '@ome_model_uri@'
 
 import sys, os
 sys.path.insert(0, os.path.abspath(os.path.join(srcdir, '_ext')))
@@ -159,6 +160,9 @@ extlinks = {
     'schema' : (oo_root + '/Schemas/Documentation/Generated/%s', ''),
     'examples' : (github_root + 'openmicroscopy/bio-formats-examples/blob/master/%s', ''),
     }
+
+if ome_model_uri != "":
+    extlinks['model_doc'] = (ome_model_uri + '/' + '%s', '')
 
 rst_epilog = """
 .. _Hibernate: http://www.hibernate.org
