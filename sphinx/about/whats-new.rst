@@ -27,7 +27,7 @@ Bug fixes and improvements:
 
 * an error message is now logged by ``ImageReader`` when finding a reader for an empty file
 * added a new protected helper method to ``Memoizer`` to check if a directory is writable
-* improved the rounding of PlanePosition values for data repo configuration testing
+* improved the rounding of ``PlanePosition`` values for data repo configuration testing
 * prevented a null pointer exception when retrieving plane exposure time using Bio-Formats ImageJ 
   macro extensions
 * updated ``MinMaxCalculator`` to account for unflattened multi resolution images
