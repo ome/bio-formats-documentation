@@ -17,7 +17,7 @@ File format fixes and improvements:
 * AVI
    - fixed a bug with padding for RGB images
 * NIfTI
-   - the nDimensions field is now used to read additional dimensions when size is greater than 4
+   - the ``nDimensions`` field is now used to read additional dimensions when size is greater than 4
 * PerkinElmer Opera Flex
    - fixed a bug which resulted in an incorrect field count
 * Zeiss CZI
