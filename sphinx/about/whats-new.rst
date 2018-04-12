@@ -7,13 +7,13 @@ Version history
 File format fixes and improvements:
 
 * JPEG
-   - large images with no restart markers now revert to using DefaultJPEGReader for improved decoding
+   - large images with no restart markers now revert to using ``DefaultJPEGReader`` for improved decoding
 * Micro-Manager
-   - when available PositionName will be parsed and used as the image name
+   - when available ``PositionName`` will be parsed and used as the image name
 * Hamamatsu ndpi
    - updated image names to be more meaningful when resolutions are not flattened
 * InCell 2000/6000
-   - fixed an IllegalArgumentException and improved well and field indexing
+   - fixed an ``IllegalArgumentException`` and improved well and field indexing
 * AVI
    - fixed a bug with padding for RGB images
 * NIfTI
@@ -25,12 +25,12 @@ File format fixes and improvements:
 
 Bug fixes and improvements:
 
-* an error message is now logged by ImageReader when finding a reader for an empty file
-* added a new protected helper method to Memoizer to check if a directory is writable
+* an error message is now logged by ``ImageReader`` when finding a reader for an empty file
+* added a new protected helper method to ``Memoizer`` to check if a directory is writable
 * improved the rounding of PlanePosition values for data repo configuration testing
 * prevented a null pointer exception when retrieving plane exposure time using Bio-Formats ImageJ 
   macro extensions
-* updated MinMaxCalculator to account for unflattened multi resolution images
+* updated ``MinMaxCalculator`` to account for unflattened multi resolution images
 
 Documentation improvements:
 
