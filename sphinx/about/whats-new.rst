@@ -1,6 +1,45 @@
 Version history
 ===============
 
+5.8.2 (2018 April 16)
+---------------------
+
+File format fixes and improvements:
+
+* JPEG
+   - large images with no restart markers now revert to using ``DefaultJPEGReader`` for improved decoding
+* Micro-Manager
+   - when available ``PositionName`` will be parsed and used as the image name
+* Hamamatsu ndpi
+   - updated image names to be more meaningful when resolutions are not flattened
+* InCell 2000/6000
+   - fixed an ``IllegalArgumentException`` and improved well and field indexing
+* AVI
+   - fixed a bug with padding for RGB images
+* NIfTI
+   - the ``nDimensions`` field is now used to read additional dimensions when size is greater than 4
+* PerkinElmer Opera Flex
+   - fixed a bug which resulted in an incorrect field count
+* Zeiss CZI
+   - improved handling of files with no extension
+
+Bug fixes and improvements:
+
+* an error message is now logged by ``ImageReader`` when finding a reader for an empty file
+* added a new protected helper method to ``Memoizer`` to check if a directory is writable
+* improved the rounding of ``PlanePosition`` values for data repo configuration testing
+* prevented a null pointer exception when retrieving plane exposure time using Bio-Formats ImageJ 
+  macro extensions
+* updated ``MinMaxCalculator`` to account for unflattened multi resolution images
+
+Documentation improvements:
+
+* decoupled the Bio-Formats documentation to the new 
+  `ome/bio-formats-documentation GitHub repository <https://github.com/ome/bio-formats-documentation>`_
+* updated :doc:`Adding format/reader documentation </developers/format-documentation>` for the new 
+  decoupled workflow
+* improved link checking in automated builds
+
 5.8.1 (2018 March 22)
 ---------------------
 
