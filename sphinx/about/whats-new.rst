@@ -1,7 +1,7 @@
 Version history
 ===============
 
-5.8.2 (2018 April 16)
+5.8.2 (2018 April 23)
 ---------------------
 
 File format fixes and improvements:
