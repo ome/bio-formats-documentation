@@ -26,7 +26,6 @@ Internal testing components
 These components are used heavily during continuous integration testing,
 but are less relevant for active development work.
 
-- :ref:`autogen <autogen>`
 - :ref:`test-suite <test-suite>`
 
 Forks of existing projects
@@ -37,23 +36,6 @@ Forks of existing projects
 
 All components
 --------------
-
-.. _autogen:
-
-:source:`autogen (Bio-Formats code generator) <components/autogen>`:
-
-`Ant: jar-autogen`
-
-Contains everything needed to automatically generate documentation for
-supported file formats.  :source:`format-pages.txt
-<components/autogen/src/format-pages.txt>` should be updated for each new file
-format reader or writer, but otherwise manual changes should be unnecessary.
-The following Ant targets are used to regenerate the documentation for all
-formats::
-
-  gen-format-pages
-  gen-meta-support
-  gen-original-meta-support
 
 .. _bio-formats-plugins:
 
@@ -171,6 +153,8 @@ External components
 The following have been decoupled from the Bio-Formats code repository and are
 now available as separate build dependencies:
 
+- :ref:`Bio-Formats examples <bio-formats-examples>`
+- :ref:`Bio-Formats documentation <bio-formats-documentation>`
 - :ref:`Metakit <metakit>`
 - :ref:`OME Common <ome-common>`
 - :ref:`OME Codecs <ome-codecs>`
@@ -182,6 +166,18 @@ Decoupled OME data model components:
 
 - :ref:`OME-XML <ome-xml>`
 - :ref:`Specification <specification>`
+
+.. _bio-formats-examples:
+
+`Bio-Formats examples <https://github.com/ome/bio-formats-examples>`_
+
+Usage examples for Bio-Formats with Maven and Gradle.
+
+.. _bio-formats-documentation:
+
+`Bio-Formats documentation <https://github.com/ome/bio-formats-documentation>`_
+
+The Sphinx source repository for this manual.
 
 .. _ome-common:
 
