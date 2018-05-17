@@ -1975,7 +1975,9 @@ Commercial applications that support this format include: \n
 extensions = .tif, .qptiff
 owner = `PerkinElmer <http://www.perkinelmer.com/>`_
 bsd = no
-weHave = * a specification document
+pyramid = yes
+weHave = * a `specification document <http://downloads.openmicroscopy.org/images/Vectra-QPTIFF/perkinelmer/PKI_Image%20Format.docx>`__\n
+* `public sample images <http://downloads.openmicroscopy.org/images/Vectra-QPTIFF/>`__\n
 * several datasets
 pixelsRating = Very good
 metadataRating = Outstanding
