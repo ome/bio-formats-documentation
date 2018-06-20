@@ -18,8 +18,8 @@ structure is of vital importance to the community. You may find LOCI's article
 on `open source software in
 science <http://loci.wisc.edu/software/oss>`_ of interest.
 
-License and copyright
----------------------
+License, copyright, and citation
+--------------------------------
 
 Licensing information for Bio-Formats is described on :oo_root:`the OME licensing page <licensing>`.
 Unless otherwise noted, the current copyright statement is:
@@ -28,6 +28,12 @@ Copyright (C) 2005 - 2018 Open Microscopy Environment:
       - Board of Regents of the University of Wisconsin-Madison
       - Glencoe Software, Inc.
       - University of Dundee
+
+Bio-Formats can be cited in publications as follows:
+
+`Melissa Linkert, Curtis T. Rueden, Chris Allan, Jean-Marie Burel, Will Moore, Andrew Patterson, Brian Loranger, Josh Moore, Carlos Neves, Donald MacDonald, Aleksandra Tarkowska, Caitlin Sticco, Emma Hill, Mike Rossner, Kevin W. Eliceiri, and Jason R. Swedlow (2010) Metadata matters: access to image data in the real world. The Journal of Cell Biology 189(5), 777-782. doi: 10.1083/jcb.201004104 <http://www.ncbi.nlm.nih.gov/pubmed/20513764>`_
+
+Additional citation information can be found on the :oo_root:`main OME citation page <citing-ome>`.
 
 Help
 ----
