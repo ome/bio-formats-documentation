@@ -18,6 +18,17 @@ structure is of vital importance to the community. You may find LOCI's article
 on `open source software in
 science <http://loci.wisc.edu/software/oss>`_ of interest.
 
+License and copyright
+---------------------
+
+Licensing information for Bio-Formats is described on :oo_root:`the OME licensing page <licensing>`.
+Unless otherwise noted, the current copyright statement is:
+
+Copyright (C) 2005 - 2018 Open Microscopy Environment:
+      - Board of Regents of the University of Wisconsin-Madison
+      - Glencoe Software, Inc.
+      - University of Dundee
+
 Help
 ----
 
