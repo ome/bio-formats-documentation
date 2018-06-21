@@ -163,3 +163,12 @@ dimensions, and other basic metadata will be printed to the console.
     Specifies the base directory under which the reader should be cached::
 
       showinf -cache-dir /tmp/cachedir /path/to/file
+
+.. option:: -format FORMAT
+
+    Specifies the reader to be used for opening the specified file. The utility
+    will look for a reader named ``loci.formats.in.<FORMAT>Reader``. If the
+    reader does not exist or no :option:`-format` option is passed, the file
+    will be opened with  ``loci.formats.in.ImageReader``::
+
+      showinf -format APNG test.png
