@@ -31,7 +31,9 @@ Copyright (C) 2005 - 2018 Open Microscopy Environment:
 
 Bio-Formats can be cited in publications as follows:
 
-`Melissa Linkert, Curtis T. Rueden, Chris Allan, Jean-Marie Burel, Will Moore, Andrew Patterson, Brian Loranger, Josh Moore, Carlos Neves, Donald MacDonald, Aleksandra Tarkowska, Caitlin Sticco, Emma Hill, Mike Rossner, Kevin W. Eliceiri, and Jason R. Swedlow (2010) Metadata matters: access to image data in the real world. The Journal of Cell Biology 189(5), 777-782. doi: 10.1083/jcb.201004104 <http://www.ncbi.nlm.nih.gov/pubmed/20513764>`_
+  Melissa Linkert, Curtis T. Rueden, Chris Allan, Jean-Marie Burel, Will Moore, Andrew Patterson, Brian Loranger, Josh Moore, Carlos Neves, Donald MacDonald, Aleksandra Tarkowska, Caitlin Sticco, Emma Hill, Mike Rossner, Kevin W. Eliceiri, and Jason R. Swedlow (2010) Metadata matters: access to image data in the real world. The Journal of Cell Biology 189(5), 777-782. doi: 10.1083/jcb.201004104
+
+`PMID:20513764 <http://www.ncbi.nlm.nih.gov/pubmed/20513764>`_
 
 Additional citation information can be found on the :oo_root:`main OME citation page <citing-ome>`.
 
