@@ -143,6 +143,7 @@ extlinks = {
     'forum' : (oo_root + '/community/%s', ''),
     # Website links. Separating them out so that we can add prefixes and
     # suffixes during testing.
+    'oo_root' : (oo_root + '/%s', ''),
     'community' : (oo_root + '/support/%s', ''),
     'omero' : (oo_root + '/omero/%s', ''),
     # Documentation
