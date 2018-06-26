@@ -86,11 +86,11 @@ A set of environment variables can be passed to all command-line utilities:
         Extra directories to be added to the autodetected command-line
         classpath e.g. for external reader JARs. Default: empty.
 
-    :envvar:`BF_MAX_MEM`
-        Maximum heap size to be allocated to the JVM. Default: 512m.
-
     :envvar:`BF_FLAGS`
         Additional flags to be sent to the JVM. Default: empty.
+
+    :envvar:`BF_MAX_MEM`
+        Maximum heap size to be allocated to the JVM. Default: 512m.
 
     :envvar:`BF_PROFILE`
         Enable profiling - see :ref:`profiling` for more information.
