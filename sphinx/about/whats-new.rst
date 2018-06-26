@@ -686,7 +686,7 @@ File format fixes:
 New features/API:
 
 * added support for JPEG-XR compressed CZI data (funded by a
-  `partnership between Glencoe Software and ZEISS <http://glencoesoftware.com/2016-08-30-glencoe-software-zeiss-partner-open-source-file-reader-whole-slide.html>`_), adding 'ome:jxrlib' as a new dependency
+  `partnership between Glencoe Software and ZEISS <http://glencoesoftware.com/pressreleases/2016-08-30-glencoe-software-zeiss-partner-open-source-file-reader-whole-slide.html>`_), adding 'ome:jxrlib' as a new dependency
   of Bio-Formats
 * improved tile-based image writing
     - added new methods to the ``loci.formats.IFormatWriter`` interface
