@@ -264,6 +264,15 @@ metadata and pass this object directly to ``bfsave``:
   :start-after: bfsave-metadata-start
   :end-before: bfsave-metadata-end
 
+
+The dimension order of the file on disk can be specified in two ways:
+
+- either by passing an OME-XML metadata option as a key/value pair as shown above
+- or as an optional positional argument of ``bfsave``
+
+If a metadata object is passed to ``bfsave``, its dimension order stored
+internally will take precedence.
+
 For more information about the methods to store the metadata, see the
 :xml_javadoc:`MetadataStore <ome/xml/meta/MetadataStore.html>` Javadoc page.
 
