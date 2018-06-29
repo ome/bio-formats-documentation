@@ -75,6 +75,30 @@ information to help you. When run with the ``-version`` argument, :command:`show
 and :command:`bfconvert` will display the version of Bio-Formats that is being used
 (version number, build date, and Git commit reference).
 
+Command-line environment
+------------------------
+
+A set of environment variables can be passed to all command-line utilities:
+
+.. glossary::
+
+    :envvar:`BF_CP`
+        Extra directories to be added to the autodetected command-line
+        classpath e.g. for external reader JARs. Default: empty.
+
+    :envvar:`BF_FLAGS`
+        Additional flags to be sent to the JVM. Default: empty.
+
+    :envvar:`BF_MAX_MEM`
+        Maximum heap size to be allocated to the JVM. Default: 512m.
+
+    :envvar:`BF_PROFILE`
+        Enable profiling - see :ref:`profiling` for more information.
+        Default: off.
+
+    :envvar:`BF_PROFILE_DEPTH`
+        Maximum profiling depth if profiling is activated. Default: 30.
+
 Using the tools directly from source
 ------------------------------------
 
@@ -115,6 +139,8 @@ something like this:
     Bio-Formats+utilities
 
 To avoid this issue, call the tool with the ``-no-upgrade`` parameter.
+
+.. _profiling:
 
 Profiling
 ---------
