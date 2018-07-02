@@ -51,13 +51,14 @@ Bug fixes and improvements:
 * added support to data repo test suite for unconfigured tests
 
 Documentation improvements:
+
 * fixed unstable links flagged by automated link checking
 * begun adding testing for breakages to memo files
 * clarified ordering expectation in ``getUsedFiles`` Javadocs
 * added documentation for dimensionOrder in bfsave with the :doc:`MATLAB toolbox </developers/matlab-dev>`
 * fixed broken links in previous release notes
-* expanded documentation for command-line utilities to cover 
-  undocumented :doc:`options </users/comlinetools/display>` and :doc:`environment variables </users/comlinetools/index>`
+* expanded documentation for command-line utilities to cover undocumented :doc:`options </users/comlinetools/display>` 
+  and :doc:`environment variables </users/comlinetools/index>`
 * added a new license/copyright section to the :doc:`About Bio-Formats </about/index>` page
 * updated the public format page for the Vectra QPTIFF format 
 
