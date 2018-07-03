@@ -1,6 +1,67 @@
 Version history
 ===============
 
+5.9.0 (2018 July 3)
+-------------------
+
+File format fixes and improvements:
+
+* MetaMorph
+   - fixed a ``NullPointerException`` when a stage label is not present
+   - ensured that reported domain is now consistent with the existence of a Plate in OME-XML
+   - fixed Metamorph RGB series channel count (thanks to Jeremy Muhlich)
+* Leica LIF
+   - improved handling of dimension order for non-RGB channels
+* Imspector OBF
+   - added support for FLIM datasets
+* Inveon
+   - updated to attempt to locate renamed data files
+* Volocity
+   - expanded image names to include the stack parent names
+* Olympus OIR
+   - added a fix for slow tag reading and a potential infinite loop
+* TIFF
+   - added support in ``TiffWriter`` for the writing of DEFLATE (zlib) compression
+   - deprecated ``getIFDs()`` in ``TiffParser`` and added ``getMainIFDs()`` and ``getSubIFDs()``
+* Zeiss CZI
+   - fixed an issue with big images when tiling is present but a pyramid is not
+* Nikon NIS-Elements ND2
+   - prevented integer overflow exception when reading a tile from a large image
+* Amersham Biosciences Gel
+   - prevented overflow issue when reading unsigned integer values
+* Cellomics
+   - fixed indexing when the field counts are variable
+* Trestle
+   - updated to ensure consistent ordering of used files
+
+Bug fixes and improvements:
+
+* enabled building and testing with Java 9 and 10
+* added CI testing with Java 10 on AppVeyor and Travis
+* removed Java 7 from Appveyor matrix
+* updated a number of Maven plugins to current versions
+* corrected warnings in Maven configuration in sub-components 
+* added a warning to clarify the behavior when passing metadata with ``dimensionOrder`` in ``bfsave`` as 
+  part of the Bio-Formats MATLAB toolbox (thanks to Jonathan Armond)
+* improved robustness in the detection of patterns as part of the file stitching
+* fixed a bug relating to dimension order in the Bio-Formats plugins Exporter
+* fixed download URLs in Bio-Formats command-line tools
+* updated use of ``static final`` to match Oracle's recommendations and convention
+* disabled upgrade checker when running unit tests
+* added support to data repo test suite for unconfigured tests
+
+Documentation improvements:
+
+* fixed unstable links flagged by automated link checking
+* begun adding testing for breakages to memo files
+* clarified ordering expectation in ``getUsedFiles`` Javadocs
+* added documentation for dimensionOrder in bfsave with the :doc:`MATLAB toolbox </developers/matlab-dev>`
+* fixed broken links in previous release notes
+* expanded documentation for command-line tools to cover undocumented :doc:`options </users/comlinetools/display>` 
+  and :doc:`environment variables </users/comlinetools/index>`
+* added a new license/copyright section to the :doc:`About Bio-Formats </about/index>` page
+* updated the public format page for the Vectra QPTIFF format 
+
 5.8.2 (2018 April 23)
 ---------------------
 
