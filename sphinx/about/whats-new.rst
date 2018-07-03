@@ -7,11 +7,11 @@ Version history
 File format fixes and improvements:
 
 * MetaMorph
-   - fixed a ``NullPointerException`` when a stage label in not present
+   - fixed a ``NullPointerException`` when a stage label is not present
    - ensured that reported domain is now consistent with the existence of a Plate in OME-XML
    - fixed Metamorph RGB series channel count (thanks to Jeremy Muhlich)
 * Leica LIF
-   - improved handling of dimension order for non RGB channels
+   - improved handling of dimension order for non-RGB channels
 * Imspector OBF
    - added support for FLIM datasets
 * Inveon
@@ -41,11 +41,11 @@ Bug fixes and improvements:
 * removed Java 7 from Appveyor matrix
 * updated a number of Maven plugins to current versions
 * corrected warnings in Maven configuration in sub-components 
-* added a warning to clarify the behaviour when passing metadata with ``dimensionOrder`` in ``bfsave`` as 
+* added a warning to clarify the behavior when passing metadata with ``dimensionOrder`` in ``bfsave`` as 
   part of the Bio-Formats MATLAB toolbox (thanks to Jonathan Armond)
 * improved robustness in the detection of patterns as part of the file stitching
 * fixed a bug relating to dimension order in the Bio-Formats plugins Exporter
-* fixed download URLs in Bio-Formats command line tools
+* fixed download URLs in Bio-Formats command-line tools
 * updated use of ``static final`` to match Oracle's recommendations and convention
 * disabled upgrade checker when running unit tests
 * added support to data repo test suite for unconfigured tests
@@ -57,7 +57,7 @@ Documentation improvements:
 * clarified ordering expectation in ``getUsedFiles`` Javadocs
 * added documentation for dimensionOrder in bfsave with the :doc:`MATLAB toolbox </developers/matlab-dev>`
 * fixed broken links in previous release notes
-* expanded documentation for command-line utilities to cover undocumented :doc:`options </users/comlinetools/display>` 
+* expanded documentation for command-line tools to cover undocumented :doc:`options </users/comlinetools/display>` 
   and :doc:`environment variables </users/comlinetools/index>`
 * added a new license/copyright section to the :doc:`About Bio-Formats </about/index>` page
 * updated the public format page for the Vectra QPTIFF format 
