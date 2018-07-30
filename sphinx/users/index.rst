@@ -115,6 +115,7 @@ Visualization and analysis applications
     macnif/index
     micromanager/index
     mipav/index
+    qupath/index
     vaa3d/index
     visbio/index
     xuvtools/index
