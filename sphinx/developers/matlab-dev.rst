@@ -23,9 +23,9 @@ MATLAB can be retrieved using::
 
 	java.lang.Runtime.getRuntime.maxMemory
 
-Default |JVM| settings can be increased by Java Heap Memory Preferences of MATLAB (R2010a onwards)::
-
-  Preferences > General > Java Heap Memory
+Default |JVM| settings can be increased by Java Heap Memory Preferences of MATLAB
+(R2010a onwards) using
+:menuselection:`Preferences --> General --> Java Heap Memory`.
 
 Alternatively this can also be done by creating a :file:`java.opts` file in
 the startup directory and overriding the default memory settings. We recommend
