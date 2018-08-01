@@ -42,7 +42,8 @@ may try to increase the default values of ``-XX:MaxPermSize`` and
 ``-XX:PermSize`` via the :file:`java.opts` file.
 
 .. seealso::
-	`Java Heap Memory Preferences (R2010a onwards)<https://uk.mathworks.com/help/matlab/matlab_external/java-heap-memory-preferences.html>`
+
+	`Java Heap Memory Preferences (R2010a onwards)<https://uk.mathworks.com/help/matlab/matlab_external/java-heap-memory-preferences.html>`_
 
 	`How do I increase the heap space for the Java VM in MATLAB 6.0 (R12)
 	and later versions? <https://uk.mathworks.com/matlabcentral/answers/92813-how-do-i-increase-the-heap-space-for-the-java-vm-in-matlab-6-0-r12-and-later-versions>`_
