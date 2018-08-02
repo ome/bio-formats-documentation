@@ -23,7 +23,11 @@ MATLAB can be retrieved using::
 
 	java.lang.Runtime.getRuntime.maxMemory
 
-Default |JVM| settings can be increased by creating a :file:`java.opts` file in
+Default |JVM| settings can be increased by Java Heap Memory Preferences of MATLAB
+(R2010a onwards) using
+:menuselection:`Preferences --> General --> Java Heap Memory`.
+
+Alternatively this can also be done by creating a :file:`java.opts` file in
 the startup directory and overriding the default memory settings. We recommend
 using ``-Xmx512m`` in your :file:`java.opts` file. Calling::
 
@@ -38,6 +42,8 @@ may try to increase the default values of ``-XX:MaxPermSize`` and
 ``-XX:PermSize`` via the :file:`java.opts` file.
 
 .. seealso::
+
+	`Java Heap Memory Preferences (R2010a onwards) <https://uk.mathworks.com/help/matlab/matlab_external/java-heap-memory-preferences.html>`_
 
 	`How do I increase the heap space for the Java VM in MATLAB 6.0 (R12)
 	and later versions? <https://uk.mathworks.com/matlabcentral/answers/92813-how-do-i-increase-the-heap-space-for-the-java-vm-in-matlab-6-0-r12-and-later-versions>`_
@@ -256,7 +262,7 @@ By default, ``bfsave`` will create a minimal OME-XML metadata object
 containing basic information such as the pixel dimensions, the dimension order
 and the pixel type.
 To customize the OME metadata, it is possible to create a metadata object
-from the input array using :source:`createMinimalOMEXMLMetadata.m <components/formats-gpl/matlab/createMinimalOMEXMLMetadata.m>`, add custom 
+from the input array using :source:`createMinimalOMEXMLMetadata.m <components/formats-gpl/matlab/createMinimalOMEXMLMetadata.m>`, add custom
 metadata and pass this object directly to ``bfsave``:
 
 .. literalinclude:: examples/bftest.m
