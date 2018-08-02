@@ -26,7 +26,7 @@ https://www.intelligent-imaging.com/slidebook.\n
 http://www.openmicroscopy.org/info/slidebook for details.\n
 \n
 .. seealso:: \n
-  `Slidebook software overview <https://www.slidebook.com>`_ \n
+  `Slidebook software overview <https://www.intelligent-imaging.com/slidebook>`_ \n
 \n
 .. _Intelligent Imaging Innovations: http://www.intelligent-imaging.com/
 
