@@ -10,5 +10,5 @@ using `pip`::
   pip install python-bioformats
 
 .. seealso::
-   https://pypi.python.org/pypi/python-bioformats
+   https://pypi.org/pypi/python-bioformats
       Source code of the CellProfiler Python wrapper for Bio-Formats

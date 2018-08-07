@@ -90,7 +90,7 @@ The complete list of current dependencies is as follows:
     * - `Joda time v2.2 <https://github.com/JodaOrg/joda-time>`_
       - joda-time:joda-time:2.2
       - `Apache License v2.0`_
-    * - `JUnit v4.10 <http://junit.org>`_
+    * - `JUnit v4.10 <https://junit.org/junit4/>`_
       - junit:junit:4.10
       - `Common Public License v1.0`_
     * - `Apache Log4j v1.2.17 <http://logging.apache.org/log4j/1.2>`_
