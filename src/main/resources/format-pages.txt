@@ -1071,7 +1071,7 @@ reader = IonpathMIBITiffReader
 [IVision]
 pagename = iplab-mac
 extensions = .ipm
-owner = `BioVision Technologies <http://biovis.com/>`_
+owner = `BioVision Technologies <https://www.biovis.com/>`_
 bsd = no
 weHave = * a few iVision-Mac datasets\n
 * a specification document
@@ -1087,7 +1087,7 @@ notes = iVision-Mac was formerly called IPLab for Macintosh.
 
 [IPLab]
 extensions = .ipl
-owner = was `BD Biosystems <http://www.bdbiosciences.com/>`_, now `BioVision Technologies <http://www.biovis.com/iplab.htm>`_
+owner = was `BD Biosystems <http://www.bdbiosciences.com/>`_, now `BioVision Technologies <https://www.biovis.com/iplab.htm>`_
 developer = Scanalytics
 bsd = no
 software = `IPLab Reader plugin for ImageJ <https://imagej.nih.gov/ij/plugins/iplab-reader.html>`_
@@ -1107,7 +1107,7 @@ notes = Commercial applications that support IPLab include: \n
 * `SVI Huygens <http://svi.nl/>`_ \n
 \n
 .. seealso:: \n
-  `IPLab software review <http://www.biovis.com/iplab.htm>`_
+  `IPLab software review <https://www.biovis.com/iplab.htm>`_
 
 [JEOL]
 extensions = .dat, .img, .par
