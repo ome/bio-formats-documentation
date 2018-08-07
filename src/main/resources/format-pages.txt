@@ -62,7 +62,7 @@ reader = AIMReader
 
 [Alicona 3D]
 extensions = .al3d
-owner = `Alicona Imaging <http://www.alicona.com/>`_
+owner = `Alicona Imaging <https://www.alicona.com/>`_
 bsd = no
 versions = 1.0
 weHave = * an AL3D specification document (v1.0, from 2003, in PDF)\n
@@ -125,7 +125,7 @@ reader = AmiraReader
 
 [Analyze 7.5]
 extensions = .img, .hdr
-developer = `Mayo Foundation Biomedical Imaging Resource <http://www.mayo.edu/research/core-resources/biomedical-imaging-resource-core/overview>`_
+developer = `Mayo Foundation Biomedical Imaging Resource <https://www.mayo.edu/research/core-resources/biomedical-imaging-resource-core/overview>`_
 bsd = no
 weHave = * `an Analyze 7.5 specification document <http://web.archive.org/web/20070927191351/http://www.mayo.edu/bir/PDF/ANALYZE75.pdf>`_ \n
 * several Analyze 7.5 datasets
@@ -171,9 +171,9 @@ reader = SIFReader
 
 [Animated PNG]
 extensions = .png
-developer = `The Animated PNG Project <https://www.animatedpng.com/>`_
+developer = `The Animated PNG Project <https://animatedpngs.com/>`_
 bsd = yes
-software = `Firefox 3+ <https://www.mozilla.com/en-US/firefox>`_ \n
+software = `Firefox 3+ <https://www.mozilla.org/en-US/firefox>`_ \n
 `Opera 9.5+ <http://www.opera.com>`_ \n
 `KSquirrel <http://ksquirrel.sourceforge.net/download.php>`_
 weHave = * `a specification document <http://wiki.mozilla.org/APNG_Specification>`_ \n
@@ -245,8 +245,8 @@ pagename = avi
 extensions = .avi
 developer = `Microsoft <http://www.microsoft.com/>`_
 bsd = yes
-software = `AVI Reader plugin for ImageJ <https://rsb.info.nih.gov/ij/plugins/avi-reader.html>`_ \n
-`AVI Writer plugin for ImageJ <https://rsb.info.nih.gov/ij/plugins/avi.html>`_
+software = `AVI Reader plugin for ImageJ <https://imagej.nih.gov/ij/plugins/avi-reader.html>`_ \n
+`AVI Writer plugin for ImageJ <https://imagej.nih.gov/ij/plugins/avi.html>`_
 weHave = * several AVI datasets
 weWant = * more AVI datasets, including: \n
 \n
@@ -303,9 +303,9 @@ mif = true
 [Becker & Hickl SPC FIFO]
 pagename = becker-hickl-fifo
 extensions = .spc
-owner = `Becker-Hickl <http://www.becker-hickl.de/>`_
+owner = `Becker-Hickl <https://www.becker-hickl.com/>`_
 bsd = no
-weHave = * an `SPC specification document <http://www.becker-hickl.com/handbookphp.htm>`_ \n
+weHave = * an `SPC specification document <https://www.becker-hickl.com/handbookphp.htm>`_ \n
 * `public sample images <http://downloads.openmicroscopy.org/images/SPC-FIFO/>`__
 weWant = * more SPC sample files
 pixelsRating = Poor
@@ -320,11 +320,11 @@ notes = * Only files containing frame, line and pixel clock information \n
 
 [Becker & Hickl SPCImage]
 extensions = .sdt
-owner = `Becker-Hickl <http://www.becker-hickl.de/>`_
+owner = `Becker-Hickl <https://www.becker-hickl.com/>`_
 bsd = no
 weHave = * an SDT specification document (from 2008 April, in PDF) \n
 * an SDT specification document (from 2006 June, in PDF) \n
-* Becker & Hickl's `SPCImage <http://www.becker-hickl.de/software/tcspc/softwaretcspcspecial.htm>`_ software \n
+* Becker & Hickl's `SPCImage <https://www.becker-hickl.com/software/tcspc/softwaretcspcspecial.htm>`_ software \n
 * a large number of SDT datasets \n
 * the ability to produce new datasets
 pixelsRating = Very good
@@ -457,9 +457,9 @@ reader = BurleighReader
 
 [Canon DNG]
 extensions = .cr2, .crw
-developer = `Canon <http://global.canon/en/index.html>`_
+developer = `Canon <https://global.canon/en/index.html>`_
 bsd = no
-software = `IrfanView <http://www.irfanview.com/>`_
+software = `IrfanView <https://www.irfanview.com/>`_
 weHave = * a few example datasets
 weWant = * an official specification document
 pixelsRating = Good
@@ -555,7 +555,7 @@ notes = - The Deltavision format is based on the Medical Research Council (MRC) 
 
 [DICOM]
 extensions = .dcm, .dicom
-developer = `National Electrical Manufacturers Association <http://www.nema.org/>`_
+developer = `National Electrical Manufacturers Association <https://www.nema.org/>`_
 bsd = yes
 software = `OsiriX Medical Imaging Software <http://www.osirix-viewer.com/>`_ \n
 `ezDICOM <http://www.sph.sc.edu/comd/rorden/ezdicom.html>`_ \n
@@ -580,7 +580,7 @@ reasons, please send us the exact error message and be aware that it may take \n
 several attempts to fix the problem blind. \n
 \n
 .. seealso:: \n
-  `DICOM homepage <http://www.dicomstandard.org/>`_
+  `DICOM homepage <https://www.dicomstandard.org/>`_
 
 [ECAT7]
 extensions = .v
@@ -716,7 +716,7 @@ Note that the Gatan Reader does not currently support stacks.
 [GIF (Graphics Interchange Format)]
 pagename = gif
 extensions = .gif
-owner = `Unisys <http://www.unisys.com/>`_
+owner = `Unisys <https://www.unisys.com/>`_
 developer = `CompuServe <http://www.compuserve.com/>`_
 bsd = yes
 software = `Animated GIF Reader plugin for ImageJ <https://imagej.nih.gov/ij/plugins/agr.html>`_ \n
@@ -733,7 +733,7 @@ reader = GIFReader
 
 [Hamamatsu Aquacosmos NAF]
 extensions = .naf
-developer = `Hamamatsu <http://www.hamamatsu.com>`_
+developer = `Hamamatsu <https://www.hamamatsu.com/>`_
 bsd = no
 weHave = * a few NAF files
 weWant = * a specification document \n
@@ -748,7 +748,7 @@ mif = true
 
 [Hamamatsu HIS]
 extensions = .his
-owner = `Hamamatsu <http://www.hamamatsu.com>`_
+owner = `Hamamatsu <https://www.hamamatsu.com/>`_
 bsd = no
 weHave = * Pascal code that can read HIS files (from ImageSXM) \n
 * several HIS files
@@ -764,9 +764,9 @@ mif = true
 
 [Hamamatsu ndpi]
 extensions = .ndpi, .ndpis
-developer = `Hamamatsu <http://www.hamamatsu.com>`_
+developer = `Hamamatsu <https://www.hamamatsu.com/>`_
 bsd = no
-software = `NDP.view2 <http://www.hamamatsu.com/eu/en/community/nanozoomer/product/search/U12388-01/index.html>`_ \n
+software = `NDP.view2 <https://www.hamamatsu.com/eu/en/community/nanozoomer/product/search/U12388-01/index.html>`_ \n
 `OpenSlide <https://openslide.org>`_
 weHave = * many example datasets \n
 * `public sample images <http://downloads.openmicroscopy.org/images/Hamamatsu-NDPI/>`__
@@ -800,7 +800,7 @@ mif = true
 
 [Hitachi S-4800]
 extensions = .txt, .tif, .bmp, .jpg
-developer = `Hitachi <http://www.hitachi-hta.com/sites/default/files/technotes/Hitachi_4800_STEM.pdf>`_
+developer = `Hitachi <https://www.hitachi-hta.com/sites/default/files/technotes/Hitachi_4800_STEM.pdf>`_
 bsd = no
 weHave = * several Hitachi S-4800 datasets
 pixelsRating = Very good
@@ -832,7 +832,7 @@ bsd = yes
 versions = 1.0, 2.0
 software = `Libics (ICS reference library) <http://libics.sourceforge.net/>`_ \n
 `ICS Opener plugin for ImageJ <https://valelab4.ucsf.edu/~nstuurman/IJplugins/Ics_Opener.html>`_ \n
-`IrfanView <http://www.irfanview.com/>`_
+`IrfanView <https://www.irfanview.com/>`_
 weHave = * numerous ICS datasets
 pixelsRating = Outstanding
 metadataRating = Outstanding
@@ -1199,7 +1199,7 @@ mif = true
 [Khoros VIFF (Visualization Image File Format) Bitmap]
 pagename = khoros-viff-bitmap
 extensions = .xv
-owner = `AccuSoft <http://www.accusoft.com/company/>`_
+owner = `AccuSoft <https://www.accusoft.com/company/>`_
 developer = Khoral
 bsd = no
 samples = `VIFF Images <http://netghost.narod.ru/gff/sample/images/viff/index.htm>`_
@@ -1427,7 +1427,7 @@ notes = Commercial applications that support STK include: \n
 
 [MIAS (Maia Scientific)]
 extensions = .tif
-developer = `Maia Scientific <http://www.selectscience.net/supplier/maia-scientific/?compID=6088>`_
+developer = `Maia Scientific <https://www.selectscience.net/supplier/maia-scientific/?compID=6088>`_
 bsd = no
 weHave = * several MIAS datasets
 pixelsRating = Very good
@@ -1756,7 +1756,7 @@ mif = true
 
 [Olympus SIS TIFF]
 extensions = .tiff
-developer = `Olympus <http://www.olympus-sis.com/>`_
+developer = `Olympus <https://www.olympus-sis.com/>`_
 bsd = no
 weHave = * a few example SIS TIFF files
 pixelsRating = Good
