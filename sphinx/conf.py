@@ -159,7 +159,7 @@ extlinks = {
     # Miscellaneous links
     'doi' : ('http://dx.doi.org/%s', ''),
     'schema' : (oo_root + '/Schemas/Documentation/Generated/%s', ''),
-    'examples' : (github_root + 'openmicroscopy/bio-formats-examples/blob/master/%s', ''),
+    'examples' : (github_root + 'ome/bio-formats-examples/blob/master/%s', ''),
     }
 
 if ome_model_uri != "":
