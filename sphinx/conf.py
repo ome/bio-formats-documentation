@@ -387,5 +387,6 @@ linkcheck_ignore = ['https://imspector.mpibpc.mpg.de',
     r'http://www.libpng.org/.*',
     'https://nifti.nimh.nih.gov/nifti-1/',
     r'https://cbia.fi.muni.cz.*',
-    r'https://www.fei.com/.*'
+    r'https://www.fei.com/.*',
+    'https://animatedpngs.com/', # SSL certificate error
 ]
