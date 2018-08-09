@@ -21,6 +21,9 @@ Documentation improvements:
 
 * added QuPath to the list of visualization and analysis applications
 * updated the link to the i3dcore library
+* updated the link to Slidebook
+* improved MATLAB documentation with information on java heap memory preferences (thanks to Kouichi C. Nakamura)
+* corrected a number of permanently redirected URLs in the component and format pages
 
 5.9.0 (2018 July 3)
 -------------------
