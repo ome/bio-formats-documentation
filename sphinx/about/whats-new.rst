@@ -1,6 +1,27 @@
 Version history
 ===============
 
+5.9.1 (2018 August 14)
+----------------------
+
+File format fixes and improvements:
+
+* Olympus OIR
+   - fixed a bug to prevent the incorrect file from being read when multiple datasets are in 
+     the same location
+* LEO
+   - updated parsing of metadata values for image pixel size, working distance, filament, EHT 
+     and date(thanks to David Mankus)
+* Deltavision
+   - reader can now detect up to 12 channels
+* Micro-Manager
+   - added a warning to the logging when an image is acquired with an unsupported version
+
+Documentation improvements:
+
+* added QuPath to the list of visualization and analysis applications
+* updated the link to the i3dcore library
+
 5.9.0 (2018 July 3)
 -------------------
 
