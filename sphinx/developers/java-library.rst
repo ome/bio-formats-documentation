@@ -11,8 +11,8 @@ snippets for inclusion into your Gradle, Maven or Ivy project, which will
 enable the use of this repository.
 
 Examples of getting started with Bio-Formats using Maven or Gradle are given
-in the https://github.com/openmicroscopy/bio-formats-examples repository.
-`OMERO <http://github.com/openmicroscopy/openmicroscopy>`_ uses Ivy to manage
+in the https://github.com/ome/bio-formats-examples repository.
+`OMERO <https://github.com/openmicroscopy/openmicroscopy>`_ uses Ivy to manage
 its Java dependencies including Bio-Formats.
 
 .. note::
@@ -90,7 +90,7 @@ The complete list of current dependencies is as follows:
     * - `Joda time v2.2 <https://github.com/JodaOrg/joda-time>`_
       - joda-time:joda-time:2.2
       - `Apache License v2.0`_
-    * - `JUnit v4.10 <http://junit.org>`_
+    * - `JUnit v4.10 <https://junit.org/junit4/>`_
       - junit:junit:4.10
       - `Common Public License v1.0`_
     * - `Apache Log4j v1.2.17 <http://logging.apache.org/log4j/1.2>`_

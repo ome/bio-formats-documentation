@@ -159,7 +159,7 @@ extlinks = {
     # Miscellaneous links
     'doi' : ('http://dx.doi.org/%s', ''),
     'schema' : (oo_root + '/Schemas/Documentation/Generated/%s', ''),
-    'examples' : (github_root + 'openmicroscopy/bio-formats-examples/blob/master/%s', ''),
+    'examples' : (github_root + 'ome/bio-formats-examples/blob/master/%s', ''),
     }
 
 if ome_model_uri != "":
@@ -387,5 +387,6 @@ linkcheck_ignore = ['https://imspector.mpibpc.mpg.de',
     r'http://www.libpng.org/.*',
     'https://nifti.nimh.nih.gov/nifti-1/',
     r'https://cbia.fi.muni.cz.*',
-    r'https://www.fei.com/.*'
+    r'https://www.fei.com/.*',
+    'https://animatedpngs.com/', # SSL certificate error
 ]

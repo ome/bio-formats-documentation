@@ -39,7 +39,7 @@ All components
 
 .. _bio-formats-plugins:
 
-:source:`bio-formats-plugins (Bio-Formats Plugins for ImageJ) <components/bio-formats-plugins>`:
+:sourcedir:`bio-formats-plugins (Bio-Formats Plugins for ImageJ) <components/bio-formats-plugins>`:
 
 `Ant: jar-bio-formats-plugins`
 
@@ -50,7 +50,7 @@ be in keeping with ImageJ plugin naming conventions.
 
 .. _bio-formats-tools:
 
-:source:`bio-formats-tools (Bio-Formats command line tools) <components/bio-formats-tools>`:
+:sourcedir:`bio-formats-tools (Bio-Formats command line tools) <components/bio-formats-tools>`:
 
 `Ant: jar-bio-formats-tools`
 
@@ -62,7 +62,7 @@ target (which is the Ant equivalent of :ref:`bundles <bundles>`).
 
 .. _bundles:
 
-:source:`bundles (bioformats_package bundle, LOCI Tools bundle) <components/bundles>`:
+:sourcedir:`bundles (bioformats_package bundle, LOCI Tools bundle) <components/bundles>`:
 
 `Ant: tools`
 
@@ -89,7 +89,7 @@ need to remove the conflicting JAR(s) as a workaround.
 
 .. _forks-turbojpeg:
 
-:source:`forks/turbojpeg (libjpeg-turbo Java bindings) <components/forks/turbojpeg>`:
+:sourcedir:`forks/turbojpeg (libjpeg-turbo Java bindings) <components/forks/turbojpeg>`:
 
 `Ant: jar-turbojpeg`
 
@@ -102,7 +102,7 @@ on other components.
 
 .. _formats-api:
 
-:source:`formats-api (Bio-Formats API) <components/formats-api>`:
+:sourcedir:`formats-api (Bio-Formats API) <components/formats-api>`:
 
 `Ant: jar-formats-api`
 
@@ -116,7 +116,7 @@ readers and writers. :ref:`ome-common <ome-common>` and
 
 .. _formats-bsd:
 
-:source:`formats-bsd (BSD Bio-Formats readers and writers) <components/formats-bsd>`:
+:sourcedir:`formats-bsd (BSD Bio-Formats readers and writers) <components/formats-bsd>`:
 
 `Ant: jar-formats-bsd`
 
@@ -125,7 +125,7 @@ specification, e.g. TIFF.  Everything in the component is BSD-licensed.
 
 .. _formats-gpl:
 
-:source:`formats-gpl (Bio-Formats library) <components/formats-gpl>`:
+:sourcedir:`formats-gpl (Bio-Formats library) <components/formats-gpl>`:
 
 `Ant: jar-formats-gpl`
 
@@ -138,7 +138,7 @@ available specification.
 
 .. _test-suite:
 
-:source:`test-suite (Bio-Formats testing framework) <components/test-suite>`:
+:sourcedir:`test-suite (Bio-Formats testing framework) <components/test-suite>`:
 
 `Ant: jar-tests`
 
@@ -229,7 +229,7 @@ allows OLE files to be read from memory.
 `Metakit Java library <https://github.com/ome/ome-metakit/tree/master>`_:
 
 Java implementation of the `Metakit database specification
-<http://equi4.com/metakit/>`_.  This uses classes from
+<https://equi4.com/metakit/>`_.  This uses classes from
 :ref:`ome-common <ome-common>` and is used by
 :ref:`formats-gpl <formats-gpl>`, but is otherwise independent of the main
 Bio-Formats API.
