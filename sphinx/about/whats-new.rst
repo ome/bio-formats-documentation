@@ -7,22 +7,22 @@ Version history
 File format fixes and improvements:
 
 * Olympus OIR
-   - fixed a bug to prevent the incorrect file from being read when multiple datasets are in 
+   - fixed a bug to prevent incorrect files from being read when multiple datasets are in 
      the same location
 * LEO
    - updated parsing of metadata values for image pixel size, working distance, filament, EHT 
-     and date(thanks to David Mankus)
-* Deltavision
+     and date (thanks to David Mankus)
+* DeltaVision
    - reader can now detect up to 12 channels
 * Micro-Manager
-   - added a warning to the logging when an image is acquired with an unsupported version
+   - now logs a warning when an image is acquired with an unsupported version
 
 Documentation improvements:
 
 * added QuPath to the list of visualization and analysis applications
 * updated the link to the i3dcore library
 * updated the link to Slidebook
-* improved MATLAB documentation with information on java heap memory preferences (thanks to Kouichi C. Nakamura)
+* improved MATLAB documentation with information on Java heap memory preferences (thanks to Kouichi C. Nakamura)
 * corrected a number of permanently redirected URLs in the component and format pages
 
 5.9.0 (2018 July 3)
