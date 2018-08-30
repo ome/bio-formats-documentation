@@ -410,7 +410,8 @@ weHave = * an `Imaris (RAW) specification document <http://flash.bitplane.com/wd
 * Bitplane's bfFileReaderImaris3N code (from no later than 2005, in C++) \n
 * several older Imaris (RAW) datasets \n
 * one Imaris 3 (TIFF) dataset \n
-* several Imaris 5.5 (HDF) datasets
+* several Imaris 5.5 (HDF) datasets\n
+* `public sample images <http://downloads.openmicroscopy.org/images/Imaris-IMS/>`__
 weWant = * an Imaris 3 (TIFF) specification document \n
 * more Imaris 3 (TIFF) datasets
 pixelsRating = Very good
@@ -564,7 +565,8 @@ samples = `MRI Chest from FreeVol-3D web site <http://members.tripod.com/%7Eclun
 `Medical Image Samples from Sebastien Barre's Medical Imaging page <http://www.barre.nom.fr/medical/samples/>`_ \n
 `DICOM sample image sets from OsiriX web site <http://www.osirix-viewer.com/resources/dicom-image-library/>`_
 weHave = * `DICOM specification documents <http://dicom.nema.org/dicom/2007/>`_ (PS 3 - 2007, from 2006 December 28, in DOC and PDF) \n
-* numerous DICOM datasets
+* numerous DICOM datasets\n
+* `public sample images <https://downloads.openmicroscopy.org/images/DICOM/>`__
 pixelsRating = Very good
 metadataRating = Very good
 opennessRating = Very good
@@ -1324,7 +1326,8 @@ developer = `Leica Microsystems <https://www.leica-microsystems.com/>`_
 bsd = no
 software = `OpenSlide <https://openslide.org>`_
 versions = 2012-03-10
-weHave = * a few sample datasets
+weHave = * a few sample datasets\n
+* `public sample images <https://downloads.openmicroscopy.org/images/Leica-SCN/>`__
 weWant = * an official specification document \n
 * sample datasets that cannot be opened
 pixelsRating = Good
@@ -1341,7 +1344,8 @@ extensions = .sxm
 owner = `Zeiss <https://www.zeiss.de/corporate/home.html>`_
 bsd = no
 weHave = * Pascal code that can read LEO files (from ImageSXM) \n
-* a few LEO files
+* a few LEO files\n
+* `public sample images <https://downloads.openmicroscopy.org/images/LEO/>`__
 weWant = * an official specification document \n
 * more LEO files
 pixelsRating = Good
@@ -1530,6 +1534,7 @@ developer = `MRC Laboratory of Molecular Biology <https://www2.mrc-lmb.cam.ac.uk
 bsd = no
 samples = `golgi.mrc <http://bio3d.colorado.edu/imod/files/imod_data.tar.gz>`_
 weHave = * an `MRC specification document <http://bio3d.colorado.edu/imod/doc/mrc_format.txt>`_ (in TXT) \n
+* `public sample images <https://downloads.openmicroscopy.org/images/MRC/>`__\n
 * a few MRC datasets
 pixelsRating = Outstanding
 metadataRating = Very good
@@ -1608,7 +1613,8 @@ extensions = .nd2
 developer = `Nikon USA <https://www.nikonusa.com/en/index.page>`_
 bsd = no
 software = `NIS-Elements Viewer from Nikon <http://www.nikoninstruments.com/Products/Software/NIS-Elements-Advanced-Research/NIS-Elements-Viewer>`_
-weHave = * many ND2 datasets
+weHave = * many ND2 datasets\n
+* `public sample images <https://downloads.openmicroscopy.org/images/ND2/>`__
 weWant = * an official specification document
 pixelsRating = Very good
 metadataRating = Fair
@@ -2041,7 +2047,8 @@ developer = `PNG Development Group <http://www.libpng.org/pub/png/pngnews.html>`
 bsd = yes
 software = `PNG Writer plugin for ImageJ <https://imagej.nih.gov/ij/plugins/png-writer.html>`_
 weHave = * a `PNG specification document <http://www.libpng.org/pub/png/spec/iso/>`_ (W3C/ISO/IEC version, from 2003 November 10, in HTML) \n
-* several PNG datasets
+* several PNG datasets\n
+* `public sample images <https://downloads.openmicroscopy.org/images/PNG/>`__
 pixelsRating = Very good
 metadataRating = Very good
 opennessRating = Outstanding
@@ -2280,6 +2287,7 @@ developer = Aldus and Microsoft
 bsd = yes
 samples = `Big TIFF <https://www.awaresystems.be/imaging/tiff/bigtiff.html#samples>`_
 weHave = * a `TIFF specification document <https://www.awaresystems.be/imaging/tiff.html>`_ \n
+* `public sample images <https://downloads.openmicroscopy.org/images/TIFF/>`__\n
 * many TIFF datasets \n
 * a few BigTIFF datasets
 pixelsRating = Very good
@@ -2345,6 +2353,7 @@ extensions = .tif, .sld, .jpg
 bsd = no
 samples = `OpenSlide <http://openslide.cs.cmu.edu/download/openslide-testdata/Trestle/>`_
 weHave = * a few example datasets \n
+* `public sample images <https://downloads.openmicroscopy.org/images/Trestle/>`__\n
 * `developer documentation from the OpenSlide project <https://openslide.org/Trestle%20format/>`_
 pixelsRating = Good
 metadataRating = Good
