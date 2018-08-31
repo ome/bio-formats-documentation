@@ -1340,7 +1340,7 @@ reader = LeicaSCNReader
 mif = true
 
 [LEO]
-extensions = .sxm
+extensions = .sxm, .tif, .tiff
 owner = `Zeiss <https://www.zeiss.de/corporate/home.html>`_
 bsd = no
 weHave = * Pascal code that can read LEO files (from ImageSXM) \n
@@ -1529,7 +1529,7 @@ reader = MolecularImagingReader
 
 [MRC (Medical Research Council)]
 pagename = mrc
-extensions = .mrc
+extensions = .mrc, .st, .ali, .map, .rec, .mrcs
 developer = `MRC Laboratory of Molecular Biology <https://www2.mrc-lmb.cam.ac.uk/>`_
 bsd = no
 samples = `golgi.mrc <http://bio3d.colorado.edu/imod/files/imod_data.tar.gz>`_
