@@ -1,6 +1,39 @@
 Version history
 ===============
 
+5.9.2 (2018 September 03)
+-------------------------
+
+File format fixes and improvements:
+
+* AVI
+   - added support for AVI files acquired with Keyence software
+* Gatan
+   - fixed a bug when reading a file with an empty tag of type 23
+* Deltavision
+   - extended the objective metadata support (thanks to David Pinto)
+* MRC
+   - fixed the reading of MRC files generated with FEI EPU software
+* Zeiss LSM
+   - improved the channel color detection for SIM data
+
+Component changes:
+
+All OME dependencies were upgraded mostly with build changes and documentation
+improvements:
+
+* ome-common was upgraded from 5.3.2 to 5.3.6
+* ome-poi was upgraded from 5.3.1 to 5.3.3
+* ome-mdbtools was upgraded from 5.3.1 to 5.3.3
+* ome-jai was upgraded from 0.1.0 to 0.1.3
+* ome-codecs was upgraded from 0.2.0 to 0.2.2
+* ome-stubs was upgraded from 5.3.0 to 5.3.2
+* ome-model was upgraded from 5.5.4 to 5.6.3
+
+Documentation improvements:
+
+* added links to public sample files for Imaris IMS, DICOM, Leica-SCN, LEO, MRC, PNG, TIFF and Trestle formats
+
 5.9.1 (2018 August 14)
 ----------------------
 
