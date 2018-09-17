@@ -531,6 +531,19 @@ utilityRating = Good
 reader = CellVoyagerReader
 mif = true
 
+[CV7000]
+extensions = .wpi, .tif
+owner = `Yokogawa <http://www.yokogawa.com/>`_
+bsd = no
+weHave = * many example datasets
+pixelsRating = Very good
+metadataRating = Very good
+opennessRating = Good
+presenceRating = Fair
+utilityRating = Fair
+reader = CV7000Reader
+mif = true
+
 [DeltaVision]
 extensions = .dv, .r3d
 owner = `GE Healthcare (formerly Applied Precision) <http://www.gelifesciences.com/webapp/wcs/stores/servlet/catalog/en/GELifeSciences-UK/brands/deltavision/>`_
