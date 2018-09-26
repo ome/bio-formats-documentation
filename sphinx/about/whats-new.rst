@@ -14,9 +14,9 @@ File format fixes and improvements:
 * DICOM
    - improve file grouping and file-to-series mapping for multi-file datasets
 * Image Pro
-   - add support for Image-Pro Plus .ips set
+   - add support for Image Pro Plus .ips set
 * Metamorph
-   - add support for multi dimensional .scan dataset created from
+   - add support for multi-dimensional .scan dataset created from
      Scan Slide (thanks to Jeremy Muhlich)
 * Nikon ND2
    - prevents integer overflow when reading chunkmaps from files larger than
