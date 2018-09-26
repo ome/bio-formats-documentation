@@ -1,6 +1,41 @@
 Version history
 ===============
 
+6.0.0-m1 (2018 September)
+-------------------------
+
+New file formats:
+
+* KLB
+   - added a new reader to support the reading of the Keller Lab Block (KLB) files
+
+File format fixes and improvements:
+
+* DICOM
+   - improve file grouping and file-to-series mapping for multi-file datasets
+* Image Pro
+   - add support for Image Pro Plus .ips set
+* Metamorph
+   - add support for multi-dimensional .scan dataset created from
+     Scan Slide (thanks to Jeremy Muhlich)
+* Nikon ND2
+   - prevents integer overflow when reading chunkmaps from files larger than
+     2GB
+* TIFF
+   - split IFDs into separate series if the dimensions or pixel type mismatch
+   - restrict use case for legacy TIFF JAI reader
+* Zeiss TIFF
+   - added support for AVI files acquired with Keyence software
+
+Plugins and tools improvements:
+
+* update the updater message in the Fiji plugin (thanks to Jan Eglinger)
+
+Documentation improvements:
+
+* extend ``IFormatReader`` Javadocs to reflect the reader guide
+
+
 5.9.2 (2018 September 03)
 -------------------------
 
