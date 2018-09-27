@@ -26,7 +26,7 @@
     <ome-common.version>5.3.6</ome-common.version>
     <ome-model.version>5.6.3</ome-model.version>
     <bioformats.version>6.0.0-m1</bioformats.version>
-    <bio-formats-examples.version>5.9.2</bio-formats-examples.version>
+    <bio-formats-examples.version>6.0.0-m1</bio-formats-examples.version>
     <logback.version>1.1.1</logback.version>
 
     <sphinx.bioformats.source.branch>develop</sphinx.bioformats.source.branch>
