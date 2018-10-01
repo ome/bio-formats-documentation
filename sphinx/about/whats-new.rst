@@ -1,8 +1,24 @@
 Version history
 ===============
 
-6.0.0-m1 (2018 September)
+6.0.0-m2 (2018 September)
 -------------------------
+
+Bio-Formats API changes:
+
+* Sub-resolution reading
+  - added ``MetadataList`` and ``CoreMetadataList`` classes
+  - added a new ``SubResolutionFormatReader`` abstract class for handling
+  - updated all pyramid format readers to use ``SubResolutionFormatReader``
+* Added a new ``IPyramidHandler`` interface with the resolution getters methods
+* Subresolution writing changes
+  - ``IFormatWriter`` now extends``IPyramidHandler`` (breaking)
+  - added ``setResolutions`` and ``getResolutions`` to ``IFormatWriter`` (breaking)
+* Added getter methods to ``MetadataTools`` to retrieve enumeration by value
+OME-TIFF improvements:
+
+* Added ``loci.formats.out.PyramidOMETiffWriter``
+* Added loci.formats.out.PyramidOMETiffWriter
 
 New file formats:
 
@@ -21,6 +37,9 @@ File format fixes and improvements:
 * Nikon ND2
    - prevents integer overflow when reading chunkmaps from files larger than
      2GB
+* OME-TIFF
+   - added support for reading OME-TIFF with pyramidal resolutions
+   - added support for writing OME-TIFF with pyramidal resolutions
 * TIFF
    - split IFDs into separate series if the dimensions or pixel type mismatch
    - restrict use case for legacy TIFF JAI reader
@@ -30,6 +49,15 @@ File format fixes and improvements:
 Plugins and tools improvements:
 
 * update the updater message in the Fiji plugin (thanks to Jan Eglinger)
+* added ``-no-flat`` option to the command-line tools to convert files with
+  subresolutions
+
+Automated test changes:
+
+* Add ``testng.allow-missing`` property allowing to skip unconfigured filesets
+* Add ``testUnflattenedSaneOMEXML`` to compare series count to OME-XML images    count when resolution flattening is disabled
+* Add ``test-equivalent`` target to compare pixel data between two files
+* Improve the configuratoin
 
 Documentation improvements:
 
