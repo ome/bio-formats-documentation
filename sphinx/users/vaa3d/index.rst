@@ -8,5 +8,5 @@ handy, fast, and versatile 3D/4D/5D Image Visualization & Analysis
 System for Bioimages & Surface Objects.
 
 Vaa3D can use Bio-Formats via the `Bio-Formats C++
-bindings <http://www.farsight-toolkit.org/wiki/FARSIGHT_Tutorials/Building_Software/Bio-Formats/Building_C%2B%2B_Bindings>`_
+bindings <http://farsight-toolkit.ee.uh.edu/wiki/FARSIGHT_Tutorials/Building_Software/Bio-Formats/Building_C%2B%2B_Bindings>`_
 to read images.
