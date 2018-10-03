@@ -4,6 +4,10 @@ Version history
 6.0.0-m2 (2018 October)
 -----------------------
 
+This is a developer milestone release intended as a preview before the
+full public release of Bio-Formats 6.0.0. None of the API changes should be
+considered as final at this stage.
+
 Bio-Formats API changes:
 
 * Sub-resolution reading:
