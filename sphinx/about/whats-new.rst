@@ -19,11 +19,11 @@ Bio-Formats API changes:
   - deprecated ``getCoreMetadataList``, ``seriesToCoreIndex``, 
     ``coreIndexToSeries``, ``getCoreIndex`` and ``setCoreIndex`` in
     ``IFormatWriter``
-* Added a new ``IPyramidHandler`` interface with the resolution getters methods
+* Added a new ``IPyramidHandler`` interface with the resolution getter methods
 * Subresolution writing changes:
 
   - ``IFormatWriter`` now extends``IPyramidHandler`` (breaking)
-  - added ``setResolutions`` and ``getResolutions`` methors to
+  - added ``setResolutions`` and ``getResolutions`` methods to
     ``IFormatWriter`` (breaking)
   - added examples of using the sub-resolution writing API
 
@@ -62,7 +62,7 @@ File format fixes and improvements:
 * Zeiss TIFF
    - added support for AVI files acquired with Keyence software
 * Updated all pyramidal format readers to consume ``SubResolutionReader``
-* Updated all readers to consumer ``MetadataTools`` getter to retrieve enumerations
+* Updated all readers to consume ``MetadataTools`` getter to retrieve enumerations
 
 Plugins and tools improvements:
 
@@ -73,7 +73,8 @@ Plugins and tools improvements:
 Automated test changes:
 
 * Add ``testng.allow-missing`` property allowing to skip unconfigured filesets
-* Add ``testUnflattenedSaneOMEXML`` to compare series count to OME-XML images    count when resolution flattening is disabled
+* Add ``testUnflattenedSaneOMEXML`` to compare series count to OME-XML images
+  count when resolution flattening is disabled
 * Add ``test-equivalent`` target to compare pixel data between two files
 * Added support for storing resolution index and resolution count in the
   configuration files used for automated testing
