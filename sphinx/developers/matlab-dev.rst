@@ -7,7 +7,7 @@ This section assumes that you have installed the MATLAB toolbox as instructed
 in the :doc:`MATLAB user information page </users/matlab/index>`. Note the
 minimum supported MATLAB version is R2007b (7.5).
 
-As described in `Using Java Libraries <http://uk.mathworks.com/help/matlab/matlab_external/product-overview.html>`_,
+As described in `Using Java Libraries <http://mathworks.com/help/matlab/matlab_external/product-overview.html>`_,
 every installation of MATLAB includes a |JVM| allowing use of the Java API and
 third-party Java libraries. All the helper functions included in the MATLAB
 toolbox make use of the Bio-Formats Java API. Please refer to the
@@ -26,31 +26,35 @@ MATLAB can be retrieved using::
 Preferences (R2010a+)
 ^^^^^^^^^^^^^^^^^^^^^
 
-Default |JVM| settings can be increased by Java Heap Memory Preferences of MATLAB
-(R2010a onwards) using
-:menuselection:`Preferences --> General --> Java Heap Memory`.
+Default |JVM| settings can be increased by `Java Heap Memory Preferences
+<https://mathworks.com/help/matlab/matlab_external/java-heap-memory-preferences.html>`_
+of MATLAB (R2010a onwards) using
+:menuselection:**`Preferences --> General --> Java Heap Memory`**.
 
-See also the next section about `matlab.prf` for the limitation of this method.
+See also the next section about :file:`matlab.prf` for the limitation of this method.
 
-`matlab.prf`
-^^^^^^^^^^^
+matlab.prf
+^^^^^^^^^^
 
 However, the maximum value allowed in the Preferences GUI can still be too small
-for your purpose. In that case, you can directly edit `matlab.prf` file in the
-folder specified by `prefdir` MATLAB function. Find the parameter `JavaMemHeapMax`
-in the file and increase the number following the capital `I` (in MB) to increase
-Java heap memory size.
+for your purpose. In that case, you can directly edit :file:`matlab.prf` file in the
+folder specified by the ``prefdir`` `MATLAB function <https://mathworks.com/help/matlab/ref/prefdir.html>`_
+. Find the parameter ``JavaMemHeapMax`` in the file and increase the number that
+follows the capital ``I`` (in MB) to increase the Java heap memory size.
 
 ::
 
   JavaMemHeapMax=I8800
 
-`java.opts`
-^^^^^^^^^^^
+java.opts
+^^^^^^^^^
 
 Alternatively, this can also be done by creating a :file:`java.opts` file in
-the startup directory and overriding the default memory settings. We recommend
-using ``-Xmx512m`` in your :file:`java.opts` file. Calling::
+`the startup directory <https://mathworks.com/help/matlab/matlab_env/matlab-startup-folder.html>`_
+ and overriding the default memory settings (see `this page <https://mathworks.com/help/matlab/matlab_env/java-opts-file.html>`_
+for more informaiton). We recommend using ``-Xmx512m`` in your :file:`java.opts`
+file.
+Calling::
 
   bfCheckJavaMemory()
 
