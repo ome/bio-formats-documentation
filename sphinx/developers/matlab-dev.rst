@@ -50,7 +50,7 @@ java.opts
 
 Alternatively, this can also be done by creating a :file:`java.opts` file in
 `the startup directory <https://mathworks.com/help/matlab/matlab_env/matlab-startup-folder.html>`_
- and overriding the default memory settings (see `this page <https://mathworks.com/help/matlab/matlab_env/java-opts-file.html>`_
+and overriding the default memory settings (see `this page <https://mathworks.com/help/matlab/matlab_env/java-opts-file.html>`_
 for more informaiton). We recommend using ``-Xmx512m`` in your :file:`java.opts`
 file.
 Calling::
