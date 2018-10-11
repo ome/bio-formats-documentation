@@ -43,14 +43,14 @@ File format fixes and improvements:
 * Fake
    - added support for multi-resolution test images
 * DICOM
-   - improve file grouping and file-to-series mapping for multi-file datasets
+   - improved file grouping and file-to-series mapping for multi-file datasets
 * Image Pro
-   - add support for Image Pro Plus .ips set
+   - added support for Image Pro Plus .ips set
 * Metamorph
-   - add support for multi-dimensional .scan dataset created from
+   - added support for multi-dimensional .scan dataset created from
      Scan Slide (thanks to Jeremy Muhlich)
 * Nikon ND2
-   - prevents integer overflow when reading chunkmaps from files larger than
+   - prevented integer overflow when reading chunkmaps from files larger than
      2GB
 * OME-TIFF
    - added support for reading OME-TIFF with pyramidal resolutions stored as
@@ -58,31 +58,30 @@ File format fixes and improvements:
    - added support for writing OME-TIFF with pyramidal resolutions
 * TIFF
    - split IFDs into separate series if the dimensions or pixel type mismatch
-   - restrict use case for legacy TIFF JAI reader
+   - restricted use case for legacy TIFF JAI reader
 * Zeiss TIFF
    - added support for AVI files acquired with Keyence software
-* Updated all pyramidal format readers to consume ``SubResolutionReader``
-* Updated all readers to consume ``MetadataTools`` getter to retrieve enumerations
+* updated all pyramidal format readers to consume ``SubResolutionReader``
+* updated all readers to consume ``MetadataTools`` getter to retrieve enumerations
 
 Plugins and tools improvements:
 
-* update the updater message in the Fiji plugin (thanks to Jan Eglinger)
+* updated the updater message in the Fiji plugin (thanks to Jan Eglinger)
 * added ``-no-flat`` option to the command-line tools to convert files with
   subresolutions
 
 Automated test changes:
 
-* Add ``testng.allow-missing`` property allowing to skip unconfigured filesets
-* Add ``testUnflattenedSaneOMEXML`` to compare series count to OME-XML images
+* added ``testng.allow-missing`` property allowing to skip unconfigured filesets
+* added ``testUnflattenedSaneOMEXML`` to compare series count to OME-XML images
   count when resolution flattening is disabled
-* Add ``test-equivalent`` target to compare pixel data between two files
-* Added support for storing resolution index and resolution count in the
+* added ``test-equivalent`` target to compare pixel data between two files
+* added support for storing resolution index and resolution count in the
   configuration files used for automated testing
 
 Documentation improvements:
 
-* extend ``IFormatReader`` Javadocs to reflect the reader guide
-
+* extended ``IFormatReader`` Javadocs to reflect the reader guide
 
 5.9.2 (2018 September 03)
 -------------------------
