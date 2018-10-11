@@ -22,7 +22,7 @@ Bio-Formats API changes:
 * Added a new ``IPyramidHandler`` interface with the resolution getter methods
 * Sub-resolution writing changes:
 
-  - ``IFormatWriter`` now extends``IPyramidHandler`` (breaking)
+  - ``IFormatWriter`` now extends ``IPyramidHandler`` (breaking)
   - added ``setResolutions`` and ``getResolutions`` methods to
     ``IFormatWriter`` (breaking)
   - added examples of using the sub-resolution writing API
