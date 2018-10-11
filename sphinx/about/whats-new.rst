@@ -20,7 +20,7 @@ Bio-Formats API changes:
     ``coreIndexToSeries``, ``getCoreIndex`` and ``setCoreIndex`` in
     ``IFormatWriter``
 * Added a new ``IPyramidHandler`` interface with the resolution getter methods
-* Subresolution writing changes:
+* Sub-resolution writing changes:
 
   - ``IFormatWriter`` now extends``IPyramidHandler`` (breaking)
   - added ``setResolutions`` and ``getResolutions`` methods to
@@ -31,7 +31,7 @@ Bio-Formats API changes:
 
   - added getter methods to ``MetadataTools`` for retrieving OME
     enumerations by value
-  - deprecated OME enumerations getter methods in ``FormatReader``
+  - deprecated OME enumeration getter methods in ``FormatReader``
 
 New file formats:
 
