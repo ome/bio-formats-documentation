@@ -23,28 +23,27 @@ MATLAB can be retrieved using::
 
 	java.lang.Runtime.getRuntime.maxMemory
 
-Preferences (R2010a+)
-^^^^^^^^^^^^^^^^^^^^^
+MATLAB Preferences (R2010a+)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Default |JVM| settings can be increased by `Java Heap Memory Preferences
 <https://mathworks.com/help/matlab/matlab_external/java-heap-memory-preferences.html>`_
 of MATLAB (R2010a onwards) using
 :menuselection:**`Preferences --> General --> Java Heap Memory`**.
 
-See also the next section about :file:`matlab.prf` for the limitation of this method.
-
-matlab.prf
-^^^^^^^^^^
+.. image:: ../images/matlab_memory_pref.png
 
 However, the maximum value allowed in the Preferences GUI can still be too small
-for your purpose. In that case, you can directly edit :file:`matlab.prf` file in the
+for your purpose. In that case, you can directly edit :file:``matlab.prf`` file in the
 folder specified by the ``prefdir`` `MATLAB function <https://mathworks.com/help/matlab/ref/prefdir.html>`_
-. Find the parameter ``JavaMemHeapMax`` in the file and increase the number that
-follows the capital ``I`` (in MB) to increase the Java heap memory size.
+(eg. ``'C:\Users\xxxxxxx\AppData\Roaming\MathWorks\MATLAB\R2018b'``). Find the
+parameter ``JavaMemHeapMax`` in the file and increase the number that follows
+the capital ``I`` (in MB) to increase the maximum Java heap memory size. The
+change will be reflected by the Preferences as above.
 
 ::
 
-  JavaMemHeapMax=I8800
+  JavaMemHeapMax=I25000
 
 java.opts
 ^^^^^^^^^
