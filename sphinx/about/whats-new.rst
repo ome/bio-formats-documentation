@@ -68,7 +68,7 @@ Plugins and tools improvements:
 
 * updated the updater message in the Fiji plugin (thanks to Jan Eglinger)
 * added ``-no-flat`` option to the command-line tools to convert files with
-  subresolutions
+  sub-resolutions
 
 Automated test changes:
 
