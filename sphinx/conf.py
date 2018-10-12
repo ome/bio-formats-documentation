@@ -152,15 +152,27 @@ extlinks = {
     # Downloads
     'downloads' : (downloads_root + '/latest/bio-formats5.8/%s', ''),
     'javadoc' : (downloads_root + '/latest/bio-formats5.8/api/%s', ''),
-    'common_javadoc' : ('http://static.javadoc.io/org.openmicroscopy/ome-common/' + ome_common_version + '/' + '%s', ''),
-    'xml_javadoc' : ('http://static.javadoc.io/org.openmicroscopy/ome-xml/' + ome_model_version + '/' + '%s', ''),
-    'specification_javadoc' : ('http://static.javadoc.io/org.openmicroscopy/ome-specification/' + ome_model_version + '/' + '%s', ''),
 
     # Miscellaneous links
     'doi' : ('http://dx.doi.org/%s', ''),
     'schema' : (oo_root + '/Schemas/Documentation/Generated/%s', ''),
     'examples' : (github_root + 'ome/bio-formats-examples/blob/master/%s', ''),
     }
+
+# Javadoc extlinks hosted on https://javadoc.io
+OME_COMMON_JAVADOC = 'https://javadoc.io/page/org.openmicroscopy/ome-common/'
+if ome_common_version.endswith('SNAPSHOT'):
+    extlinks['common_javadoc'] = (OME_COMMON_JAVADOC + 'latest/%s', '')
+else:
+    extlinks['common_javadoc'] = (
+        OME_COMMON_JAVADOC +  ome_common_version + '/%s', '')
+
+OME_XML_JAVADOC = 'https://javadoc.io/page/org.openmicroscopy/ome-xml/'
+if ome_model_version.endswith('SNAPSHOT'):
+    extlinks['xml_javadoc'] = (OME_XML_JAVADOC + 'latest/%s', '')
+else:
+    extlinks['xml_javadoc'] = (
+        OME_XML_JAVADOC +  ome_model_version + '/%s', '')
 
 if ome_model_uri != "":
     extlinks['model_doc'] = (ome_model_uri + '/' + '%s', '')
