@@ -7,7 +7,7 @@
 
   <groupId>ome</groupId>
   <artifactId>bio-formats-documentation</artifactId>
-  <version>6.0.0-SNAPSHOT</version>
+  <version>6.0.0-m2</version>
 
   <name>Bio-Formats documentation</name>
   <description>Bio-Formats Sphinx documentation</description>
@@ -25,8 +25,8 @@
   <properties>
     <ome-common.version>5.3.6</ome-common.version>
     <ome-model.version>5.6.3</ome-model.version>
-    <bioformats.version>6.0.0-m1</bioformats.version>
-    <bio-formats-examples.version>6.0.0-m1</bio-formats-examples.version>
+    <bioformats.version>6.0.0-m2</bioformats.version>
+    <bio-formats-examples.version>6.0.0-m2</bio-formats-examples.version>
     <logback.version>1.1.1</logback.version>
 
     <sphinx.bioformats.source.branch>develop</sphinx.bioformats.source.branch>
