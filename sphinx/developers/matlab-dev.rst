@@ -29,12 +29,12 @@ MATLAB Preferences (R2010a+)
 Default |JVM| settings can be increased by `Java Heap Memory Preferences
 <https://mathworks.com/help/matlab/matlab_external/java-heap-memory-preferences.html>`_
 of MATLAB (R2010a onwards) using
-:menuselection:**`Preferences --> General --> Java Heap Memory`**.
+:menuselection:`Preferences --> General --> Java Heap Memory`. We recommend to use 512 MB in general, but you don't need to decrease the value if the default value is bigger than 512 MB.
 
-.. image:: ../images/matlab_memory_pref.png
+.. image:: ../images/matlab_memory_pref512MB.png
 
-However, the maximum value allowed in the Preferences GUI can still be too small
-for your purpose. In that case, you can directly edit :file:``matlab.prf`` file in the
+However, the maximum value allowed in the Preferences GUI (typically set to 25% of Physical Memory, whihc you can ask by the ``memory`` MATLAB command) can still be too small
+for your purpose. In that case, you can directly edit :file:`matlab.prf` file in the
 folder specified by the ``prefdir`` `MATLAB function <https://mathworks.com/help/matlab/ref/prefdir.html>`_
 (eg. ``'C:\Users\xxxxxxx\AppData\Roaming\MathWorks\MATLAB\R2018b'``). Find the
 parameter ``JavaMemHeapMax`` in the file and increase the number that follows
@@ -45,13 +45,18 @@ change will be reflected by the Preferences as above.
 
   JavaMemHeapMax=I25000
 
+.. image:: ../images/matlab_memory_pref25GB.png
+
+You'll see a warning message as above.
+
+
 java.opts
 ^^^^^^^^^
 
 Alternatively, this can also be done by creating a :file:`java.opts` file in
 `the startup directory <https://mathworks.com/help/matlab/matlab_env/matlab-startup-folder.html>`_
 and overriding the default memory settings (see `this page <https://mathworks.com/help/matlab/matlab_env/java-opts-file.html>`_
-for more informaiton). We recommend using ``-Xmx512m`` in your :file:`java.opts`
+for more information). We recommend using ``-Xmx512m`` (meaning 512 MB) in your :file:`java.opts`
 file.
 Calling::
 
