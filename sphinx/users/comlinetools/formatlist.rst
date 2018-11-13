@@ -33,3 +33,5 @@ The default behavior is to print a plain-text list of formats::
     Displays the usage information::
 
         formatlist -help
+
+Go back to :doc:`index`.

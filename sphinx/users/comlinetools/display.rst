@@ -78,7 +78,7 @@ dimensions, and other basic metadata will be printed to the console.
 
       showinf -crop 0,0,512,512 /path/to/file
 
-    The parameter to :option:`-crop` is of the format ``x,y,width,height``.  
+    The parameter to :option:`-crop` is of the format ``x,y,width,height``.
     The (x, y) coordinate (0, 0) is the upper-left corner of the image;
     ``x + width`` must be less than or equal to the image width and
     ``y + height`` must be less than or equal to the image height.
@@ -172,3 +172,5 @@ dimensions, and other basic metadata will be printed to the console.
     will be opened with ``loci.formats.in.ImageReader``::
 
       showinf -format APNG test.png
+
+Go back to :doc:`index`.

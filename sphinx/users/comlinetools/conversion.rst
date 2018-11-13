@@ -31,7 +31,7 @@ The output file format is determined by the extension of the output file, e.g.
 
 .. option:: -series SERIES
 
-    All images in the input file are converted by default.  To convert only 
+    All images in the input file are converted by default.  To convert only
     one series::
 
       bfconvert -series 0 /path/to/input output-first-series.tiff
@@ -164,8 +164,10 @@ name pattern, then the other must be included too.  The only exception is if
 .. option:: -padded
 
     This option is used alongside a pattern string when writing an image to multiple files.
-    When set this will enforce zero padding on the filename indexes set in the provided pattern string::      
+    When set this will enforce zero padding on the filename indexes set in the provided pattern string::
 
       bfconvert /path/to/input output_xy%sz%zc%ct%t.ome.tif -padded
-   
+
     .. versionadded:: 5.2.2
+
+Go back to :doc:`index`.

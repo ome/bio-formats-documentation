@@ -49,7 +49,7 @@ Currently available tools include:
 
     xmlvalid
         A command-line XML validation tool, useful for checking an OME-XML
-        document for compliance with the OME-XML schema.
+        document for compliance with the OME-XML schema.  See :doc:`xml-validation` for details.
 
     tiffcomment
         Dumps the comment from the given TIFF file's first IFD entry; useful
