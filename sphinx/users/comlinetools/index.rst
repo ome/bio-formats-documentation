@@ -1,8 +1,22 @@
-Command line tools introduction
-===============================
+Command line tools
+==================
 
-There are several scripts for using Bio-Formats on the command
-line.
+There are several scripts for using Bio-Formats on the command line.
+
+.. toctree::
+    :maxdepth: 1
+    :titlesonly:
+    :hidden:
+
+    display
+    conversion
+    xml-validation
+    edit
+    domainlist
+    formatlist
+    ijview
+    xmlindent
+    mkfake
 
 Installation
 ------------
