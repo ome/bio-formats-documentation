@@ -400,6 +400,8 @@ linkcheck_ignore = ['https://imspector.mpibpc.mpg.de',
     'https://nifti.nimh.nih.gov/nifti-1/',
     r'https://cbia.fi.muni.cz.*',
     r'https://www.fei.com/.*',
+    r'https?://www.ionpath.com/.*',
+    'http://cellularimaging.perkinelmer.com/downloads/',
     'https://animatedpngs.com/', # SSL certificate error
     'https://www.merckmillipore.com', # Read timeout
 ]
