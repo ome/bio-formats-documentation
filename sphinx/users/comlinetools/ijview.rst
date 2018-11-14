@@ -17,5 +17,3 @@ image(s) will be displayed.
 
 If the `BF_DEVEL` environment variable is set, the :code:`ImageJ jar
 <jars/ij.jar>` must be included in the classpath.
-
-Go back to :doc:`index`.

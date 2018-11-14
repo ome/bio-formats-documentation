@@ -169,5 +169,3 @@ name pattern, then the other must be included too.  The only exception is if
       bfconvert /path/to/input output_xy%sz%zc%ct%t.ome.tif -padded
 
     .. versionadded:: 5.2.2
-
-Go back to :doc:`index`.

@@ -172,5 +172,3 @@ dimensions, and other basic metadata will be printed to the console.
     will be opened with ``loci.formats.in.ImageReader``::
 
       showinf -format APNG test.png
-
-Go back to :doc:`index`.

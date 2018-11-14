@@ -21,5 +21,3 @@ contents of CDATA elements:
 ::
 
   xmlindent -valid /path/to/xml
-
-Go back to :doc:`index`.

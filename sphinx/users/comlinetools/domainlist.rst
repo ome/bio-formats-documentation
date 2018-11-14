@@ -23,5 +23,3 @@ defined by:
  * :javadoc:`SEM_DOMAIN <loci/formats/FormatTools.html#SEM_DOMAIN>`
  * :javadoc:`SPM_DOMAIN <loci/formats/FormatTools.html#SPM_DOMAIN>`
  * :javadoc:`UNKNOWN_DOMAIN <loci/formats/FormatTools.html#UNKNOWN_DOMAIN>`
-
-Go back to :doc:`index`.

@@ -74,5 +74,3 @@ or the new XML can be read from a file:
 ::
 
     tiffcomment -set new-comment.xml /path/to/file.ome.tiff
-
-Go back to :doc:`index`.

@@ -75,6 +75,3 @@ screen, for example:
     ::
 
       mkfake -debug debug-screen.fake
-
-
-Go back to :doc:`index`.
