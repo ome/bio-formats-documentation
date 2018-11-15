@@ -25,4 +25,3 @@ To inject replacement XML into a file run:
 ::
 
     tiffcomment -set 'newmetadata.xml' sample.ome.tif
-

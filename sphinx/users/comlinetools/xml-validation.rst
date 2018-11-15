@@ -12,11 +12,25 @@ For example:
 
 ::
 
-    tiffcomment /path/to/file.ome.tiff | xmlvalid -
+    xmlvalid /path/to/file.ome.tiff
+
+and
+
+::
+
+    xmlvalid /path/to/file.xml
+
+will perform validatation for an ome.xml file and xml file, respectively.
+
+Also:
+
+::
+
+    tiffcomment "/path/to/file.ome.tiff" | xmlvalid
 
 will perform the extraction and validation all at once.
 
-Typical successful output is:
+Typical successful output of :command:`xmlvalid` is:
 
 ::
 
@@ -25,7 +39,7 @@ Typical successful output is:
     http://www.openmicroscopy.org/Schemas/OME/2010-06/ome.xsd
     Validating sample.ome
     No validation errors found.
-    [~/Work/bftools]$ 
+    [~/Work/bftools]$
 
 If any errors are found they are reported. When correcting errors it is
 usually best to work from the top of the file as errors higher up can cause
@@ -60,4 +74,3 @@ or the new XML can be read from a file:
 ::
 
     tiffcomment -set new-comment.xml /path/to/file.ome.tiff
-
