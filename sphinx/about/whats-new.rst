@@ -1,6 +1,88 @@
 Version history
 ===============
 
+6.0.0-m2 (2018 October)
+-----------------------
+
+This is a developer milestone release intended as a preview before the
+full public release of Bio-Formats 6.0.0. None of the API changes should be
+considered as final at this stage.
+
+Bio-Formats API changes:
+
+* Sub-resolution reading:
+
+  - added ``MetadataList`` and ``CoreMetadataList`` classes
+  - added a new ``SubResolutionFormatReader`` abstract class for handling
+    pyramidal format readers
+  - updated all pyramid format readers to use ``SubResolutionFormatReader``
+  - deprecated ``getCoreMetadataList``, ``seriesToCoreIndex``, 
+    ``coreIndexToSeries``, ``getCoreIndex`` and ``setCoreIndex`` in
+    ``IFormatWriter``
+* Added a new ``IPyramidHandler`` interface with the resolution getter methods
+* Sub-resolution writing changes:
+
+  - ``IFormatWriter`` now extends ``IPyramidHandler`` (breaking)
+  - added ``setResolutions`` and ``getResolutions`` methods to
+    ``IFormatWriter`` (breaking)
+  - added examples of using the sub-resolution writing API
+
+* Metadata handling:
+
+  - added getter methods to ``MetadataTools`` for retrieving OME
+    enumerations by value
+  - deprecated OME enumeration getter methods in ``FormatReader``
+
+New file formats:
+
+* KLB
+   - added a new reader to support the reading of the Keller Lab Block (KLB) files
+
+File format fixes and improvements:
+
+* Fake
+   - added support for multi-resolution test images
+* DICOM
+   - improved file grouping and file-to-series mapping for multi-file datasets
+* Image Pro
+   - added support for Image Pro Plus .ips set
+* Metamorph
+   - added support for multi-dimensional .scan dataset created from
+     Scan Slide (thanks to Jeremy Muhlich)
+* Nikon ND2
+   - prevented integer overflow when reading chunkmaps from files larger than
+     2GB
+* OME-TIFF
+   - added support for reading OME-TIFF with pyramidal resolutions stored as
+     SubIFDs
+   - added support for writing OME-TIFF with pyramidal resolutions
+* TIFF
+   - split IFDs into separate series if the dimensions or pixel type mismatch
+   - restricted use case for legacy TIFF JAI reader
+* Zeiss TIFF
+   - added support for AVI files acquired with Keyence software
+* updated all pyramidal format readers to consume ``SubResolutionReader``
+* updated all readers to consume ``MetadataTools`` getter to retrieve enumerations
+
+Plugins and tools improvements:
+
+* updated the updater message in the Fiji plugin (thanks to Jan Eglinger)
+* added ``-no-flat`` option to the command-line tools to convert files with
+  sub-resolutions
+
+Automated test changes:
+
+* added ``testng.allow-missing`` property allowing to skip unconfigured filesets
+* added ``testUnflattenedSaneOMEXML`` to compare series count to OME-XML images
+  count when resolution flattening is disabled
+* added ``test-equivalent`` target to compare pixel data between two files
+* added support for storing resolution index and resolution count in the
+  configuration files used for automated testing
+
+Documentation improvements:
+
+* extended ``IFormatReader`` Javadocs to reflect the reader guide
+
 5.9.2 (2018 September 03)
 -------------------------
 
