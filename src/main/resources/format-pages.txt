@@ -1390,7 +1390,7 @@ notes = Bio-Formats only supports uncompressed LIM files. \n
 \n
 Commercial applications that support LIM include: \n
 \n
-* `NIS Elements <http://www.nis-elements.com/>`_
+* `NIS Elements <https://www.nis-elements.com/>`_
 
 [MetaMorph 7.5 TIFF]
 extensions = .tiff
@@ -1612,7 +1612,7 @@ reader = NikonTiffReader
 extensions = .nd2
 developer = `Nikon USA <https://www.nikonusa.com/en/index.page>`_
 bsd = no
-software = `NIS-Elements Viewer from Nikon <http://www.nikoninstruments.com/Products/Software/NIS-Elements-Advanced-Research/NIS-Elements-Viewer>`_
+software = `NIS-Elements Viewer from Nikon <https://www.nikoninstruments.com/Products/Software/NIS-Elements-Advanced-Research/NIS-Elements-Viewer>`_
 weHave = * many ND2 datasets\n
 * `public sample images <https://downloads.openmicroscopy.org/images/ND2/>`__
 weWant = * an official specification document
