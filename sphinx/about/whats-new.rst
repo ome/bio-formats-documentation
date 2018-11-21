@@ -37,7 +37,7 @@ Bio-Formats API changes:
 New file formats:
 
 * KLB
-   - added a new reader for the Keller Lab Block (KLB) files
+   - added a new reader for Keller Lab Block (KLB) files
 * CV7000
    - added a new reader for Yokogawa CV7000 datasets
 
