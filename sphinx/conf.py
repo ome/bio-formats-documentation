@@ -404,4 +404,6 @@ linkcheck_ignore = ['https://imspector.mpibpc.mpg.de',
     'http://cellularimaging.perkinelmer.com/downloads/',
     'https://animatedpngs.com/', # SSL certificate error
     'https://www.merckmillipore.com', # Read timeout
+    r'https://www.nis-elements.com/.*', # Invalid SSL certificate
+    r'https://www.nikoninstruments.com/.*', # Invalid SSL certificate
 ]
