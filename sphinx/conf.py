@@ -123,8 +123,11 @@ oo_root = 'https://www.openmicroscopy.org'
 lists_root = 'http://lists.openmicroscopy.org.uk'
 downloads_root = 'https://downloads.openmicroscopy.org'
 docs_root = 'https://docs.openmicroscopy.org'
+imagesc_root = 'https://forum.image.sc'
 
 extlinks = {
+    # image.sc
+    'imagesc' : (imagesc_root + '/%s', '#'),
     # Trac links
     'ticket' : (trac_root + '/ticket/%s', '#'),
     'milestone' : (trac_root + '/milestone/%s', ''),
@@ -214,7 +217,7 @@ html_theme_options = {
     'codebgcolor': '#eceff1',
     'codetextcolor': '#455a64',
     'bodyfont': 'Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif',
-    'headfont': 'Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif'  
+    'headfont': 'Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif'
 }
 
 # Theme options are theme-specific and customize the look and feel of a theme
