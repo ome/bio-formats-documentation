@@ -31,19 +31,10 @@ The Bio-Formats Command line tools (bftools.zip) provide a complete package
 for carrying out a variety of tasks:
 
 .. toctree::
-    :maxdepth: 1
     :titlesonly:
+    :includehidden:
 
     comlinetools/index
-    comlinetools/display
-    comlinetools/conversion
-    comlinetools/xml-validation
-    comlinetools/edit
-    comlinetools/domainlist
-    comlinetools/formatlist
-    comlinetools/ijview
-    comlinetools/xmlindent
-    comlinetools/mkfake
 
 .. seealso::
    :doc:`/formats/options`
