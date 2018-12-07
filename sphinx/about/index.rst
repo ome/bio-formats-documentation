@@ -53,7 +53,7 @@ Bio-Formats not addressed by referring to the documentation.
 Other places where questions are commonly asked and/or bugs are reported
 include:
 
--  :community:`OME Forums <>`_
+-  :community:`OME Forums <>`
 -  `OME Trac <https://trac.openmicroscopy.org/ome>`_
 -  `ome-devel mailing
    list <http://lists.openmicroscopy.org.uk/pipermail/ome-devel>`_
