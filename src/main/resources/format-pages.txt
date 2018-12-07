@@ -724,7 +724,7 @@ opennessRating = Fair
 presenceRating = Fair
 utilityRating = Fair
 reader = GatanReader
-notes = Commercial applications that support .dm3 files include `Datasqueeze <http://www.datasqueezesoftware.com/>`_. \n
+notes = Applications that support .dm3 files include `Datasqueeze <https://www.sas.upenn.edu/~heiney/html-physics/datasqueeze/>`_. \n
 \n
 Note that the Gatan Reader does not currently support stacks.
 
