@@ -47,7 +47,7 @@ command line tools, refer to the :doc:`users documentation </users/index>`.
 You can also find tips on common issues with specific formats on the
 pages linked from the :doc:`supported formats table </supported-formats>`.
 
-Please :imagesc:`contact us <>` if you have any questions or problems with
+Please :imagesc:`contact us <tags/bio-formats>` if you have any questions or problems with
 Bio-Formats not addressed by referring to the documentation.
 
 Other places where questions are commonly asked and/or bugs are reported
