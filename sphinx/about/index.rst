@@ -47,12 +47,13 @@ command line tools, refer to the :doc:`users documentation </users/index>`.
 You can also find tips on common issues with specific formats on the
 pages linked from the :doc:`supported formats table </supported-formats>`.
 
-Please :community:`contact us <>` if you have any questions or problems with
+Please :imagesc:`contact us <tags/bio-formats>` if you have any questions or problems with
 Bio-Formats not addressed by referring to the documentation.
 
 Other places where questions are commonly asked and/or bugs are reported
 include:
 
+-  :community:`OME Forums <>`
 -  `OME Trac <https://trac.openmicroscopy.org/ome>`_
 -  `ome-devel mailing
    list <http://lists.openmicroscopy.org.uk/pipermail/ome-devel>`_
@@ -60,7 +61,6 @@ include:
 -  `ome-users mailing
    list <http://lists.openmicroscopy.org.uk/pipermail/ome-users>`_
    (searchable using google with 'site:lists.openmicroscopy.org.uk')
--  `ImageJ forum <http://forum.imagej.net>`_ (for ImageJ/Fiji issues)
 -  `ImageJ mailing list <http://imagej.nih.gov/ij/list.html>`_ (and
    `archive <http://imagej.1557.x6.nabble.com/>`_)
 -  `Fiji GitHub Issues <https://github.com/fiji/fiji/issues>`_
