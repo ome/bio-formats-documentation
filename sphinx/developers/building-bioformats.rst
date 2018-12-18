@@ -3,7 +3,7 @@
 Obtaining and building Bio-Formats
 ==================================
 
-.. note:: Bio-Formats requires Java 7 or above
+.. note:: Bio-Formats requires Java 8 or above
 
 .. _source-code:
 
