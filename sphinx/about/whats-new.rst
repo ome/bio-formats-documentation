@@ -10,6 +10,7 @@ considered as final at this stage.
 
 Bio-Formats API changes:
 
+* Java 8 is now the minimum supported version
 * Sub-resolution reading:
 
   - added ``MetadataList`` and ``CoreMetadataList`` classes
