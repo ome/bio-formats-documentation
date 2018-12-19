@@ -151,12 +151,14 @@ Command-line tools improvements
   - added ``-no-flat`` option to the command-line tools to convert files with 
     sub-resolutions
   - added ``-pyramid-scale`` and ``-pyramid-resolutions`` options to
-  -  generate sub-resolutions during conversion
+    generate sub-resolutions during conversion
   - removed ``Plate`` elements when ``-series`` is passed as an option
   - extended usage to describe available formats, extensions and compressions
+
 * ``xmlvalid`` utility
 
-  - added multiple validation methods  to ``loci.formats.tools.XMLValidate.validate`` returning the validation status
+  - added new ``validate`` methods to ``loci.formats.tools.XMLValidate`` returning
+    the validation status
   - added a return code to ``xmlvalid``
 
 
