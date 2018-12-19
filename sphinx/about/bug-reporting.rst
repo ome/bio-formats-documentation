@@ -19,11 +19,11 @@ Common issues to check
 -  If you get an error message similar to::
 
        java.lang.UnsupportedClassVersionError: loci/plugins/LociImporter :
-       Unsupported major.minor version 51.0
+       Unsupported major.minor version 52.0
 
-       This plugin requires Java 1.7 or later.
+       This plugin requires Java 1.8 or later.
 
-   you need to upgrade your system Java version to Java 7 or above, or
+   you need to upgrade your system Java version to Java 8 or above, or
    download a new version of ImageJ/Fiji bundled with Java 8.
 -  If your 12, 14 or 16-bit images look all black when you open them,
    typically the problem is that the pixel values
