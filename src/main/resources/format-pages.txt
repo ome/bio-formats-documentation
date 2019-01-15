@@ -2606,7 +2606,8 @@ indexExtensions = .czi
 extensions = `.czi <https://www.zeiss.com/microscopy/int/products/microscope-software/zen/czi.html>`_
 developer = `Carl Zeiss Microscopy GmbH <https://www.zeiss.com/microscopy/int/home.html>`_
 bsd = no
-software = `Zeiss ZEN <https://www.zeiss.com/microscopy/int/products/microscope-software/zen.html>`_
+software = `Zeiss ZEN <https://www.zeiss.com/microscopy/int/products/microscope-software/zen.html>`_ \n
+`libCZI <https://github.com/zeiss-microscopy/libCZI>`_
 weHave = * many example datasets \n
 * official specification documents
 pixelsRating = Outstanding
