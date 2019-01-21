@@ -13,7 +13,8 @@ For a complete list of supported formats, see the Bio-Formats
 :doc:`supported formats table </supported-formats>`.
 
 For a few working examples of how to use Bio-Formats, see
-:sourcedir:`these Github pages <components/formats-gpl/utils>`.
+:sourcedir:`these Github pages <components/formats-gpl/utils>` and the
+:java_examples:`bio-formats-examples repository <>`.
 
 
 Introduction to Bio-Formats
