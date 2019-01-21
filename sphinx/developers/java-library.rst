@@ -218,7 +218,7 @@ Uses Bio-Formats to extract lens numerical aperture in a format-independent mann
 :source:`PrintROIs <components/formats-gpl/utils/PrintROIs.java>` -
 A simple example of how to retrieve ROI data parsed from a file.
 
-:source:`SubResolutionExample <components/formats-gpl/utils/SubResolutionExample.java>` -
+:java_examples:`SubResolutionExample.java` -
 Demonstration of the sub-resolution API.
 
 Metadata add/edit:
