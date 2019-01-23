@@ -270,7 +270,7 @@ Convert a file containing a single large image to a pyramid OME-TIFF.
 :java_examples:`TiledReaderWriter <TiledReaderWriter.java>` -
 Convert a file to OME-TIFF one tile at a time.
 
-:java_examples:`OverlappedTileWriter <OverlappedTileWriter.java>` -
+:java_examples:`OverlappedTiledWriter <OverlappedTiledWriter.java>` -
 Convert a file to OME-TIFF one tile at a time, when the image size is not a multiple of the tile size.
 
 :java_examples:`SimpleTiledWriter <SimpleTiledWriter.java>` -
