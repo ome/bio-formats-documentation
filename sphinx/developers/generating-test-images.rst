@@ -119,6 +119,21 @@ to create where each region of interest contains a single shape of the input
 type. By convention, all generated regions of interests are not associated to
 any given Z, C or T plane.
 
+Sub-resolutions
+---------------
+
+.. versionadded:: 6.0.0
+
+
+To generate a fake file containing sub-resolutions::
+
+    touch "pyramid1&sizeX=20000&sizeY=10000&resolutions=8.fake"
+    touch "pyramid2&sizeX=20000&sizeY=10000&resolutions=4&resolutionScale=4.fake"
+
+The ``resolutions`` and ``resolutionScale`` specify the number of
+sub-resolutions for with each plane and the downsampling factor between
+consecutive sub-resolutions.
+
 Key-value pairs
 ---------------
 
@@ -267,7 +282,13 @@ with their default values, is shown below.
     - * PositionZUnit_x
       * string defining the units for the corresponding ``PositionZ_x`` [2]_
       * microns
-
+    - * resolutions
+      * number of pyramid levels or sub-resolutions for each series
+      * 1
+    - * resolutionScale
+      * for images with sub-resolutions, scaling factor between consecutive
+        pyramid levels
+      * 2
 
 .. [1] Default value set to 1 if any of the ``screens``, ``plates``,
        ``plateAcqs``, ``plateRows``, ``plateCols`` or ``fields`` values is set
