@@ -145,7 +145,7 @@ To generate a fake file containing sub-resolutions::
     touch "pyramid2&sizeX=20000&sizeY=10000&resolutions=4&resolutionScale=4.fake"
 
 The ``resolutions`` and ``resolutionScale`` specify the number of
-sub-resolutions for with each plane and the downsampling factor between
+sub-resolutions for each plane and the downsampling factor between
 consecutive sub-resolutions.
 
 .. _fake_keyvaluepairs:
