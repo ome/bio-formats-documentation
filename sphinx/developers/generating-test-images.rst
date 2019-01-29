@@ -2,7 +2,18 @@ Generating test images
 ======================
 
 Sometimes it is nice to have a file of a specific size or pixel type for
-testing. To generate an image file (that contains a gradient image):
+testing. Bio-Formats defines an internal format used for generating test images. Test images recognized by Bio-Formats:
+
+- must have an extension of type `.fake`
+- must encode the image metadata using key-value pairs separated by `=` either
+  in the filename or in a companion file
+- may be accompanied by an INI-style companion file. A companion file must use
+  the same basename as the fake file and be suffixed with `.ini`
+
+Filename format
+---------------
+
+To generate an image file (that contains a gradient image):
 
 ::
 
@@ -10,12 +21,15 @@ testing. To generate an image file (that contains a gradient image):
 
 Whatever is before the first ``&`` is the image name; the remaining key-value
 pairs, each preceded with ``&``, set the pixel type and image dimensions. Just
-replace the values with whatever you need for testing.
+replace the values with whatever you need for testing. See
+:ref:`fake_keyvaluepairs` for the full description of available key/value
+pairs.
 
-Additionally, you can put such values in a separate UTF-8 encoded
-:file:`.ini` file:
+Companion file
+--------------
 
-::
+You can put metadata values in a separate UTF-8 encoded :file:`.fake.ini` file
+with the same basename as the fake file::
 
     touch my-special-test-file.fake
     echo "pixelType=uint8" >> my-special-test-file.fake.ini
@@ -118,6 +132,23 @@ For each shape type, the value will specify the number of regions of interest
 to create where each region of interest contains a single shape of the input
 type. By convention, all generated regions of interests are not associated to
 any given Z, C or T plane.
+
+Sub-resolutions
+---------------
+
+.. versionadded:: 6.0.0
+
+
+To generate a fake file containing sub-resolutions::
+
+    touch "pyramid1&sizeX=20000&sizeY=10000&resolutions=8.fake"
+    touch "pyramid2&sizeX=20000&sizeY=10000&resolutions=4&resolutionScale=4.fake"
+
+The ``resolutions`` and ``resolutionScale`` specify the number of
+sub-resolutions for each plane and the downsampling factor between
+consecutive sub-resolutions.
+
+.. _fake_keyvaluepairs:
 
 Key-value pairs
 ---------------
@@ -267,7 +298,13 @@ with their default values, is shown below.
     - * PositionZUnit_x
       * string defining the units for the corresponding ``PositionZ_x`` [2]_
       * microns
-
+    - * resolutions
+      * number of pyramid levels or sub-resolutions for each series
+      * 1
+    - * resolutionScale
+      * for images with sub-resolutions, scaling factor between consecutive
+        pyramid levels
+      * 2
 
 .. [1] Default value set to 1 if any of the ``screens``, ``plates``,
        ``plateAcqs``, ``plateRows``, ``plateCols`` or ``fields`` values is set
