@@ -305,7 +305,7 @@ pagename = becker-hickl-fifo
 extensions = .spc
 owner = `Becker-Hickl <https://www.becker-hickl.com/>`_
 bsd = no
-weHave = * an `SPC specification document <https://www.becker-hickl.com/handbookphp.htm>`_ \n
+weHave = * an `SPC specification document <https://www.becker-hickl.com/literature/handbooks/>`_ \n
 * `public sample images <http://downloads.openmicroscopy.org/images/SPC-FIFO/>`__
 weWant = * more SPC sample files
 pixelsRating = Poor
@@ -324,7 +324,7 @@ owner = `Becker-Hickl <https://www.becker-hickl.com/>`_
 bsd = no
 weHave = * an SDT specification document (from 2008 April, in PDF) \n
 * an SDT specification document (from 2006 June, in PDF) \n
-* Becker & Hickl's `SPCImage <https://www.becker-hickl.com/software/tcspc/softwaretcspcspecial.htm>`_ software \n
+* Becker & Hickl's `SPCImage <https://www.becker-hickl.com/products/spcimage/>`_ software \n
 * a large number of SDT datasets \n
 * the ability to produce new datasets
 pixelsRating = Very good
