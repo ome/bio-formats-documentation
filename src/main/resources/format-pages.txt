@@ -1211,6 +1211,20 @@ utilityRating = Fair
 reader = JPXReader
 mif = true
 
+[Keller Lab Block]
+extensions = .klb
+developer = `Keller Lab (Janelia Research Campus) <https://bitbucket.org/fernandoamat/keller-lab-block-filetype/overview>`_
+bsd = no
+pyramid = yes
+mif = true
+weHave = * a few .klb files
+pixelsRating = Good
+metadataRating = Very good
+opennessRating = Very good
+presenceRating = Good
+utilityRating = Fair
+reader = KLBReader
+
 [Khoros VIFF (Visualization Image File Format) Bitmap]
 pagename = khoros-viff-bitmap
 extensions = .xv
