@@ -36,8 +36,7 @@ as separate series, after all of the pyramids.  Be careful to check the pixel
 type for the extra images, as the type and channel count will often differ
 from that of the pyramid(s).
 
-For an example of how to use the pyramid resolution API, see
-:source:`SubResolutionExample.java <components/formats-gpl/utils/SubResolutionExample.java>`.
+For an example of how to use the pyramid resolution API, see :java_examples:`SubResolutionExample.java`.
 
 Bio-Formats also provides some visibility into how the tiles are stored via the
 :javadoc:`getOptimalTileWidth() <loci/formats/IFormatReader.html#getOptimalTileWidth-->` and

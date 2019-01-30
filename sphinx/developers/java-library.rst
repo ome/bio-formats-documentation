@@ -182,6 +182,9 @@ Reads all files in given directory in parallel, using a separate thread for each
 :doc:`ReadWriteInMemory <in-memory>` -
 Tests the Bio-Formats I/O logic to and from byte arrays in memory.
 
+:java_examples:`OrthogonalReader <OrthogonalReader.java>` -
+Reads image data in XZ and YZ order.
+
 File writing:
 ^^^^^^^^^^^^^
 
@@ -189,8 +192,14 @@ File writing:
 A command line utility demonstrating the minimum amount of metadata needed to
 write a file.
 
+:java_examples:`FileExport <FileExport.java>` -
+Write a file in any supported output format.
+
 :source:`TiledExport <components/formats-gpl/utils/TiledExportExample.java>` -
 Shows how to convert a file one tile at a time, instead of one plane at a time (needed for very large images).
+
+:java_examples:`FileExportSPW <FileExportSPW.java>` -
+Write a file with plate (OME SPW) metadata.
 
 File compression:
 ^^^^^^^^^^^^^^^^^
@@ -203,6 +212,9 @@ Metadata extract/print:
 
 :source:`GetPhysicalMetadata <components/formats-gpl/utils/GetPhysicalMetadata.java>` -
 Uses Bio-Formats to extract some basic standardized (format-independent) metadata.
+
+:java_examples:`ReadPhysicalSize <ReadPhysicalSize.java>` -
+Reads physical size information uses the units API to display in micrometers.
 
 :source:`ImageInfo <components/bio-formats-tools/src/loci/formats/tools/ImageInfo.java>` -
 A more involved command line utility for thoroughly reading an input file,
@@ -218,7 +230,7 @@ Uses Bio-Formats to extract lens numerical aperture in a format-independent mann
 :source:`PrintROIs <components/formats-gpl/utils/PrintROIs.java>` -
 A simple example of how to retrieve ROI data parsed from a file.
 
-:source:`SubResolutionExample <components/formats-gpl/utils/SubResolutionExample.java>` -
+:java_examples:`SubResolutionExample <SubResolutionExample.java>` -
 Demonstration of the sub-resolution API.
 
 Metadata add/edit:
@@ -242,12 +254,27 @@ Image converters:
 :source:`ImageConverter <components/bio-formats-tools/src/loci/formats/tools/ImageConverter.java>` -
 A simple command line tool for converting between formats.
 
+:java_examples:`FileConvert <FileConvert.java>` -
+Converts a file in any supported format to any supported output format.
+
 :source:`ConvertToOmeTiff <components/formats-gpl/utils/ConvertToOmeTiff.java>` -
 Converts the given files to OME-TIFF format.
 
 :source:`WritePreCompressedPlanes <components/formats-gpl/utils/WritePrecompressedPlanes.java>` -
 Writes the pixels from a set of JPEG files to a single TIFF. The pixel data is used as-is, 
 so no decompression or re-compression is performed.
+
+:java_examples:`GeneratePyramidResolutions <GeneratePyramidResolutions.java>` -
+Convert a file containing a single large image to a pyramid OME-TIFF.
+
+:java_examples:`TiledReaderWriter <TiledReaderWriter.java>` -
+Convert a file to OME-TIFF one tile at a time.
+
+:java_examples:`OverlappedTiledWriter <OverlappedTiledWriter.java>` -
+Convert a file to OME-TIFF one tile at a time, when the image size is not a multiple of the tile size.
+
+:java_examples:`SimpleTiledWriter <SimpleTiledWriter.java>` -
+Convert a file to OME-TIFF using automatic tiling.
 
 ImageJ plugins:
 ^^^^^^^^^^^^^^^
