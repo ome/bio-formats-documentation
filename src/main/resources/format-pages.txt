@@ -728,6 +728,18 @@ notes = Applications that support .dm3 files include `Datasqueeze <https://www.s
 \n
 Note that the Gatan Reader does not currently support stacks.
 
+[GE MicroCT]
+extensions = .vff
+developer = `GE <http://gelifesciences.com/>`_
+bsd = no
+weHave = * several `public MicroCT datasets <http://www.sci.utah.edu/~datasets/CTarchive.zip>`_ from the `CIBC Dataset Archive <http://www.sci.utah.edu/cibc-software/cibc-datasets.html>`_
+pixelsRating = Very good
+metadataRating = Fair
+opennessRating = Fair
+presenceRating = Fair
+utilityRating = Fair
+reader = MicroCTReader
+
 [GIF (Graphics Interchange Format)]
 pagename = gif
 extensions = .gif
