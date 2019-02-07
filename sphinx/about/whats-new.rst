@@ -1,170 +1,192 @@
 Version history
 ===============
 
-6.0.0-m4 (2018 December)
-------------------------
-
-This is a developer milestone release intended as a preview before the
-full public release of Bio-Formats 6.0.0. None of the API changes should be
-considered as final at this stage.
+6.0.0 (2019 February)
+---------------------
 
 Bio-Formats API changes:
 
 * Java 8 is now the minimum supported version
 * Sub-resolution reading:
 
-  - added ``MetadataList`` and ``CoreMetadataList`` classes
-  - added a new ``SubResolutionFormatReader`` abstract class for handling
-    pyramidal format readers
-  - updated all pyramid format readers to use ``SubResolutionFormatReader``
-  - deprecated ``getCoreMetadataList``, ``seriesToCoreIndex``, 
-    ``coreIndexToSeries``, ``getCoreIndex`` and ``setCoreIndex`` in
-    ``IFormatWriter``
+   - added ``MetadataList`` and ``CoreMetadataList`` classes
+   - added a new ``SubResolutionFormatReader`` abstract class for handling
+     pyramidal format readers
+   - updated all pyramid format readers to use ``SubResolutionFormatReader``
+   - deprecated ``getCoreMetadataList``, ``seriesToCoreIndex``, 
+     ``coreIndexToSeries``, ``getCoreIndex`` and ``setCoreIndex`` in
+     ``IFormatWriter``
 * Added a new ``IPyramidHandler`` interface with the resolution getter methods
 * Sub-resolution writing changes:
 
-  - ``IFormatWriter`` now extends ``IPyramidHandler`` (breaking)
-  - added ``setResolutions`` and ``getResolutions`` methods to
-    ``IFormatWriter`` (breaking)
-  - added examples of using the sub-resolution writing API
+   - ``IFormatWriter`` now extends ``IPyramidHandler`` (breaking)
+   - added ``setResolutions`` and ``getResolutions`` methods to
+     ``IFormatWriter`` (breaking)
+   - added examples of using the sub-resolution writing API
 * Tiled writing API changes:
 
-  - updated ``IFormatWriter`` to use ``setTileSizeX(0)`` and
-    ``setTileSizeY(0)`` as a way to disable tiling (breaking)
-  - updated ``FormatWriter`` set 0 as the default values of ``getTileSizeX()``
-    and ``getTileSizeY`` (breaking)
+   - updated ``IFormatWriter`` to use ``setTileSizeX(0)`` and
+     ``setTileSizeY(0)`` as a way to disable tiling (breaking)
+   - updated ``FormatWriter`` set 0 as the default values of ``getTileSizeX()``
+     and ``getTileSizeY`` (breaking)
 * ``IFormatWriter.getCompressionTypes`` now returns the types for the selected
   writer only
 * Metadata handling:
 
-  - added getter methods to ``MetadataTools`` for retrieving OME
-    enumerations by value
-  - deprecated OME enumeration getter methods in ``FormatReader``
+   - added getter methods to ``MetadataTools`` for retrieving OME
+     enumerations by value
+   - deprecated OME enumeration getter methods in ``FormatReader``
 * Refactor ``FilePatternReader`` logic in a new ``WrappedReader`` abstract class
 
 New file formats:
 
 * KLB
 
-  - added a new reader for Keller Lab Block (KLB) files
+   - added a new reader for Keller Lab Block (KLB) files
 
 * CV7000
 
-  - added a new reader for Yokogawa CV7000 datasets
+   - added a new reader for Yokogawa CV7000 datasets
 
 * GE MicroCT
 
-  - added a new reader for GE MicroCT datasets
+   - added a new reader for GE MicroCT datasets
 
 File format fixes and improvements:
 
 * Aperio SVS/AFI
 
-  - removed pyramidal resolutions of mismatching pixel types
-  - fixed exposure times, improved image naming of AFI datasets
-  - displayed original metadata keys for each channel of AFI datasets
+   - removed pyramidal resolutions of mismatching pixel types
+   - fixed exposure times, improved image naming of AFI datasets
+   - displayed original metadata keys for each channel of AFI datasets
+   - added support for multiple Z sections
 
 * DICOM
 
-  - improved file grouping and file-to-series mapping for multi-file datasets
+   - improved file grouping and file-to-series mapping for multi-file datasets
 
 * Fake
 
-  - added support for multi-resolution test images
+   - added support for multi-resolution test images
+   - now populating WellSample positions when present using Plane data
 
 * Gatan Digital Micrograph
 
-  - adjusted endianness and record byte count for long values
+   - adjusted endianness and record byte count for long values
+   - allowed ROIs to be stored in DocumentObjectList groups
+   - no longer creating an empty ROI when an unsupported shape type is encountered
 
 * Image Pro
 
-  - added support for Image Pro Plus .ips set
+   - added support for Image Pro Plus .ips set
 
 * GE InCell
 
-  - added support for parsing minimum and maximum pixel values
+   - added support for parsing minimum and maximum pixel values
+
+* Lambert Instruments FLIM
+
+   - fixed an integer overflow error with large files (thanks to Rolf Harkes)
 
 * Leica LIF
 
-  - unified metadata parsing to use ``DataTools.parseDouble``
+   - unified metadata parsing to use ``DataTools.parseDouble``
 
 * Leica SCN
 
-  - improved support for Versa datasets
+   - improved support for Versa datasets
 
 * Micro-Manager
 
-  - improved handling of very large :file:`*_metadata.txt` files
-  - prevented ``NumberFormatException`` for invalid double values
-  - add support for parsing `ChannelColor` from :file:`*_metadata.txt` files
+   - improved handling of very large :file:`*_metadata.txt` files
+   - prevented ``NumberFormatException`` for invalid double values
+   - add support for parsing `ChannelColor` from :file:`*_metadata.txt` files
 
 * Metamorph
 
-  - added support for multi-dimensional .scan dataset created from
-    Scan Slide (thanks to Jeremy Muhlich)
+   - added support for multi-dimensional .scan dataset created from
+     Scan Slide (thanks to Jeremy Muhlich)
+
+* MRC (Medical Research Council)
+
+   - fixed endian detection for old style headers
 
 * Nikon ND2
 
-  - prevented integer overflow when reading chunkmaps from files larger than
-    2GB
+   - prevented integer overflow when reading chunkmaps from files larger than
+     2GB
+   - fixed handling of duplicate and incomplete exposure time lists
+   - fixed chunk map handling when CustomData blocks are between ImageDataSeqs
 
 * OME-TIFF
 
-  - added support for reading OME-TIFF with pyramidal resolutions stored as
-    SubIFDs
-  - added support for writing OME-TIFF with pyramidal resolutions
-  - added support for companion OME-TIFF filesets where TIFF does not link
-    back to the metadata file
+   - added support for reading OME-TIFF with pyramidal resolutions stored as
+     SubIFDs
+   - added support for writing OME-TIFF with pyramidal resolutions
+   - added support for companion OME-TIFF filesets where TIFF does not link
+     back to the metadata file
+   - improved handling of missing planes in TiffData
 
 * PerkinElmer Operetta
 
-  - improved support to handle datasets generated by the Harmony software
+   - improved support to handle datasets generated by the Harmony software
 
 * TIFF
 
-  - split IFDs into separate series if the dimensions or pixel type mismatch
-  - restricted use case for legacy TIFF JAI reader
+   - split IFDs into separate series if the dimensions or pixel type mismatch
+   - restricted use case for legacy TIFF JAI reader
+   - fixed a bug with FillOrder which resulted in 0 pixel values
+
+* Zeiss CZI
+
+   - reduced duplicate original metadata when reading a pyramid file
 
 * Zeiss TIFF
 
-  - added support for AVI files acquired with Keyence software
+   - added support for AVI files acquired with Keyence software
 
 * Zeiss ZVI
 
-  - reuse stream for sequential calls to ``openBytes`` on the same plane
+   - reuse stream for sequential calls to ``openBytes`` on the same plane
 
 * updated all pyramidal format readers to consume ``SubResolutionReader``
 * updated all readers to consume ``MetadataTools`` getter to retrieve enumerations
 * reviewed all readers and plugins to close open instances of
   ``RandomAccessInputStream``
+* fixed some deprecation warnings in a number of readers
+* all channel metadata is now copied by ``ChannelSeparator`` instead of just names
 
-ImageJ plugin improvements
+ImageJ plugin improvements:
 
 * updated the updater message in the Fiji plugin (thanks to Jan Eglinger)
 * disabled LUT writing for any plane that has a default grayscale lookup table
 * added macro option to always skip LUT writing
 
-Command-line tools improvements
+MATLAB toolbox improvements:
+
+* improved performance of bfGetPlane by removing an unnecessary data copy (thanks to Cris Luengo)
+
+Command-line tools improvements:
 
 * ``bfconvert`` utility
 
-  - added ``-no-flat`` option to the command-line tools to convert files with 
-    sub-resolutions
-  - added ``-pyramid-scale`` and ``-pyramid-resolutions`` options to
-    generate sub-resolutions during conversion
-  - removed ``Plate`` elements when ``-series`` is passed as an option
-  - extended usage to describe available formats, extensions and compressions
+   - added ``-no-flat`` option to the command-line tools to convert files with 
+     sub-resolutions
+   - added ``-pyramid-scale`` and ``-pyramid-resolutions`` options to
+     generate sub-resolutions during conversion
+   - removed ``Plate`` elements when ``-series`` is passed as an option
+   - extended usage to describe available formats, extensions and compressions
 
 * ``xmlvalid`` utility
 
-  - added new ``validate`` methods to ``loci.formats.tools.XMLValidate`` returning
-    the validation status
-  - added a return code to ``xmlvalid``
+   - added new ``validate`` methods to ``loci.formats.tools.XMLValidate`` returning
+     the validation status
+   - added a return code to ``xmlvalid``
 
 
 Component changes:
 
-* `ome-common` was upgraded to 6.0.0-m2
+* `ome-common` was upgraded to 6.0.0
 * `ome-codecs` was upgraded to 0.2.3
 
 Automated test changes:
@@ -175,6 +197,7 @@ Automated test changes:
 * added ``test-equivalent`` target to compare pixel data between two files
 * added support for storing resolution index and resolution count in the
   configuration files used for automated testing
+* tests now fail when a configured file throws UnknownFormatException
 
 Documentation improvements:
 
