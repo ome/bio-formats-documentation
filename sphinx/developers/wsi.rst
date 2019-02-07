@@ -26,8 +26,8 @@ After ``setUnflattenedResolutions(true)``, each series represents an entire imag
 just a single resolution.  Calling ``setSeries(...)`` then skips over
 all other resolutions in the same pyramid, to either the next pyramid (if
 multiple pyramids are stored), or the thumbnail or barcode image (if present).
-To access the smaller resoultions in the pyramid, use the :javadoc:`getResolutionCount() <loci/formats/IFormatReader.html#getResolutionCount-->`
-and :javadoc:`setResolution(int) <loci/formats/IFormatReader.html#setResolution-int->` methods.
+To access the smaller resolutions in the pyramid, use the :javadoc:`getResolutionCount() <loci/formats/IPyramidHandler.html#getResolutionCount-->`
+and :javadoc:`setResolution(int) <loci/formats/IPyramidHandler.html#setResolution-int->` methods.
 
 Most formats only store one pyramid per fileset, but some (e.g. :doc:`/formats/cellsens-vsi`)
 allow multiple pyramids.  Almost all formats allow a thumbnail, slide
