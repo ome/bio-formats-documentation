@@ -109,7 +109,7 @@ File format fixes and improvements:
 
 * MRC (Medical Research Council)
 
-   - fixed endian detection for old style headers
+   - fixed endian detection for old-style headers
 
 * Nikon ND2
 
@@ -154,7 +154,7 @@ File format fixes and improvements:
 * reviewed all readers and plugins to close open instances of
   ``RandomAccessInputStream``
 * fixed some deprecation warnings in a number of readers
-* all channel metadata is now copied by ``ChannelSeparator`` instead of just names
+* for RGB images using ``ChannelSeparator`` all channel metadata is now copied instead of just names
 
 ImageJ plugin improvements:
 
@@ -188,6 +188,7 @@ Component changes:
 
 * `ome-common` was upgraded to 6.0.0
 * `ome-codecs` was upgraded to 0.2.3
+* `ome-model` was upgraded to 6.0.0
 
 Automated test changes:
 
