@@ -49,6 +49,20 @@ of memory allocated is not a factor in being able to load the whole image, as
 no more than 2GB of pixel data can be stored in a single byte array and most
 full resolution images will exceed this limit.
 
+.. _ome-tiff-pyramid:
+
+Pyramids in OME-TIFF
+====================
+
+Bio-Formats 6.0.0 and later can read and write image pyramids in the :model_doc:`OME-TIFF format <ome-tiff/specification.html>`.
+Reading OME-TIFF pyramids uses the same API as described above.  Writing OME-TIFF pyramids requires the resolution dimensions
+to be specified in an ``IPyramidStore`` object.  :java_examples:`GeneratePyramidResolutions <GeneratePyramidResolutions.java>`
+shows a simple example of how to do this.
+
+The :source:`bfconvert command line tool <components/bio-formats-tools/src/loci/formats/tools/ImageConverter.java>` will also
+automatically write pyramids if the input file has at least one pyramid, the output format is OME-TIFF,
+and the ``-noflat`` option is specified.
+
 .. _omero-pyramid:
 
 Internal OMERO pyramid format v1.0.0
