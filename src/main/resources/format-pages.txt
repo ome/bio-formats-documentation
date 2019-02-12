@@ -94,7 +94,7 @@ mif = true
 
 [Amersham Biosciences Gel]
 extensions = .gel
-owner = `GE Healthcare Life Sciences <http://www.gelifesciences.com/>`_
+owner = `GE Healthcare Life Sciences <https://www.gelifesciences.com/>`_
 developer = Molecular Dynamics
 bsd = no
 weHave = * a GEL specification document (Revision 2, from 2001 Mar 15, in PDF) \n
@@ -546,7 +546,7 @@ mif = true
 
 [DeltaVision]
 extensions = .dv, .r3d
-owner = `GE Healthcare (formerly Applied Precision) <http://www.gelifesciences.com/webapp/wcs/stores/servlet/catalog/en/GELifeSciences-UK/brands/deltavision/>`_
+owner = `GE Healthcare (formerly Applied Precision) <https://www.gelifesciences.com/webapp/wcs/stores/servlet/catalog/en/GELifeSciences-UK/brands/deltavision/>`_
 bsd = no
 software = `DeltaVision Opener plugin for ImageJ <https://imagej.nih.gov/ij/plugins/track/delta.html>`_
 weHave = * a DV specification document (v2.10 or newer, in HTML) \n
@@ -727,6 +727,18 @@ reader = GatanReader
 notes = Applications that support .dm3 files include `Datasqueeze <https://www.sas.upenn.edu/~heiney/html-physics/datasqueeze/>`_. \n
 \n
 Note that the Gatan Reader does not currently support stacks.
+
+[GE MicroCT]
+extensions = .vff
+developer = `GE <https://gelifesciences.com/>`_
+bsd = no
+weHave = * several `public MicroCT datasets <http://www.sci.utah.edu/~datasets/CTarchive.zip>`_ from the `CIBC Dataset Archive <http://www.sci.utah.edu/cibc-software/cibc-datasets.html>`_
+pixelsRating = Very good
+metadataRating = Fair
+opennessRating = Fair
+presenceRating = Fair
+utilityRating = Fair
+reader = MicroCTReader
 
 [GIF (Graphics Interchange Format)]
 pagename = gif
@@ -1015,7 +1027,7 @@ mif = true
 [InCell 1000/2000]
 pagename = incell-1000
 extensions = .xdce, .tif
-developer = `GE <http://gelifesciences.com/>`_
+developer = `GE <https://gelifesciences.com/>`_
 bsd = no
 weHave = * a few InCell 1000 datasets\n
 * `public InCell 2000 sample images <http://downloads.openmicroscopy.org/images/HCS/INCELL2000/>`_
@@ -1031,7 +1043,7 @@ mif = true
 
 [InCell 3000]
 extensions = .frm
-developer = `GE <http://gelifesciences.com/>`_
+developer = `GE <https://gelifesciences.com/>`_
 bsd = no
 weHave = * a few example datasets \n
 * `public sample images <http://downloads.openmicroscopy.org/images/InCell3000/>`__
