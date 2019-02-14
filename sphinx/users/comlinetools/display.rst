@@ -19,6 +19,13 @@ All of the images in the first 'series' (or 5 dimensional stack) will be
 opened and displayed in a simple image viewer.  The number of series, image
 dimensions, and other basic metadata will be printed to the console.
 
+.. option:: -noflat
+
+    Do not flatten the series i.e. use the sub-resolution API for images
+    with pyramidal levels::
+
+      showinf -noflat /path/to/file
+
 .. option:: -series SERIES
 
     Displays a different series, for example the second one:

@@ -29,6 +29,15 @@ The output file format is determined by the extension of the output file, e.g.
 
     .. versionadded:: 5.4.0
 
+.. option:: -noflat
+
+    Do not flatten the series i.e. use the sub-resolution API for images
+    with pyramidal levels::
+
+      bfconvert -noflat /path/to/input output-first-series.tiff
+
+    .. versionadded:: 6.0.0
+
 .. option:: -series SERIES
 
     All images in the input file are converted by default.  To convert only
