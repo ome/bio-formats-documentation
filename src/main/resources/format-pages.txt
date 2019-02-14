@@ -1845,6 +1845,7 @@ utilityRating = Outstanding
 reader = OMETiffReader
 writer = OMETiffWriter
 mif = true
+pyramid = yes
 options = true
 notes = Bio-Formats can save image stacks as OME-TIFF. \n
 \n
