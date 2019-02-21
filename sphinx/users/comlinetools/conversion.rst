@@ -180,3 +180,19 @@ name pattern, then the other must be included too.  The only exception is if
       bfconvert /path/to/input output_xy%sz%zc%ct%t.ome.tif -padded
 
     .. versionadded:: 5.2.2
+
+.. option:: -pyramid-resolutions RESOLUTIONS
+.. option:: -pyramid-scale SCALE
+
+    When using :option:`-noflat` by default, each series of the converted file
+    will contain the same number of resolutions as in the input file. The
+    :option:`-pyramid-resolutions` option allows to set the number of
+    expected resolutions in the output file for each series. If the target
+    number of resolutions is greater than the actual number of sub-resolutions
+    present in the input file, additional pyramidal levels will be calculated
+    using the downsampling factor specified by the :option:`-pyramid-scale`
+    option::
+
+      bfconvert -noflat -pyramid-resolutions 4 -pyramid-scale 2 /path/to/input out.ome.tiff
+
+    .. versionadded:: 6.0.0
