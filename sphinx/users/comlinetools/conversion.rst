@@ -32,9 +32,11 @@ The output file format is determined by the extension of the output file, e.g.
 .. option:: -noflat
 
     Do not flatten the series i.e. use the sub-resolution API for images
-    with pyramidal levels::
+    with pyramidal levels. This option is mandatory to generate an output
+    image with pyramidal levels. As of Bio-Formats 6.0.0, only the OME-TIFF
+    writer properly supports this option::
 
-      bfconvert -noflat /path/to/input output-first-series.tiff
+      bfconvert -noflat /path/to/input output-first-series.ome.tiff
 
     .. versionadded:: 6.0.0
 
