@@ -6,9 +6,19 @@ language and interactive environment that facilitates rapid development
 of algorithms for performing computationally intensive tasks.
 
 Calling Bio-Formats from MATLAB is fairly straightforward, since MATLAB
-has built-in interoperability with Java. We have created a :sourcedir:`set
-of scripts <components/formats-gpl/matlab>` for reading image files. Note
-the minimum supported MATLAB version is R2007b (7.5).
+has built-in interoperability with Java. We have created a
+:sourcedir:`toolbox <components/formats-gpl/matlab>` for reading and writing
+image files. Note the minimum recommended MATLAB version is R2017b.
+
+.. note::
+
+   It is possible to run Bio-Formats 6 on earlier MATLAB versions using a
+   the JVM the the Java 7 version shipped with MATLAB (Java 7).
+   Please refer to the support threads explaining how to change the JVM
+   software version used by MATLAB on
+   `Mac OS <https://uk.mathworks.com/matlabcentral/answers/103056-how-do-i-change-the-java-virtual-machine-jvm-that-matlab-is-using-on-macos>`__,
+   `Linux <https://uk.mathworks.com/matlabcentral/answers/130360-how-do-i-change-the-java-virtual-machine-jvm-that-matlab-is-using-for-linux>`__
+   or `Windows <https://uk.mathworks.com/matlabcentral/answers/130359-how-do-i-change-the-java-virtual-machine-jvm-that-matlab-is-using-on-windows>`__.
 
 Installation
 ------------
@@ -17,10 +27,6 @@ Download the MATLAB toolbox from the Bio-Formats
 `downloads page <https://www.openmicroscopy.org/bio-formats/downloads/>`_.
 Unzip :file:`bfmatlab.zip` and add the unzipped :file:`bfmatlab` folder to
 your MATLAB path.
-
-.. note:: As of Bio-Formats 5.0.0, this zip now contains the bundled jar
-    and you no longer need to download :file:`loci_tools.jar` or the new
-    :file:`bioformats_package.jar` separately.
 
 Usage
 -----

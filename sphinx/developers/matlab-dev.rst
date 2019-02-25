@@ -5,7 +5,7 @@ Using Bio-Formats in MATLAB
 
 This section assumes that you have installed the MATLAB toolbox as instructed
 in the :doc:`MATLAB user information page </users/matlab/index>`. Note the
-minimum supported MATLAB version is R2007b (7.5).
+minimum recommended MATLAB version is R2017b.
 
 As described in `Using Java Libraries <http://mathworks.com/help/matlab/matlab_external/product-overview.html>`_,
 every installation of MATLAB includes a |JVM| allowing use of the Java API and
