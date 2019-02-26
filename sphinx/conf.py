@@ -419,4 +419,5 @@ linkcheck_ignore = ['https://imspector.mpibpc.mpg.de',
     'https://www.merckmillipore.com', # Read timeout
     r'https://www.nis-elements.com/.*', # Invalid SSL certificate
     r'https://www.nikoninstruments.com/.*', # Invalid SSL certificate
+    r'http://farsight-toolkit.ee.uh.edu/.*',
 ]
