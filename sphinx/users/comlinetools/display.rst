@@ -21,8 +21,7 @@ dimensions, and other basic metadata will be printed to the console.
 
 .. option:: -noflat
 
-    Do not flatten the series i.e. use the sub-resolution API for images
-    with pyramidal levels::
+    Do not flatten resolutions into individual series::
 
       showinf -noflat /path/to/file
 
