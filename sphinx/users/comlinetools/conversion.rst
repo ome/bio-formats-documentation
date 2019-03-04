@@ -29,6 +29,17 @@ The output file format is determined by the extension of the output file, e.g.
 
     .. versionadded:: 5.4.0
 
+.. option:: -noflat
+
+    Do not flatten resolutions into individual series. This option is mandatory
+    to read images with pyramidal levels using the sub-resolution API and
+    generate an output image with sub-resolutions. As of Bio-Formats 6.0.0,
+    only the OME-TIFF output format properly supports this option::
+
+      bfconvert -noflat /path/to/input output-first-series.ome.tiff
+
+    .. versionadded:: 6.0.0
+
 .. option:: -series SERIES
 
     All images in the input file are converted by default.  To convert only
@@ -169,3 +180,19 @@ name pattern, then the other must be included too.  The only exception is if
       bfconvert /path/to/input output_xy%sz%zc%ct%t.ome.tif -padded
 
     .. versionadded:: 5.2.2
+
+.. option:: -pyramid-resolutions RESOLUTIONS
+.. option:: -pyramid-scale SCALE
+
+    When using :option:`-noflat` by default, each series of the converted file
+    will contain the same number of resolutions as in the input file. The
+    :option:`-pyramid-resolutions` option allows to set the number of
+    expected resolutions in the output file for each series. If the target
+    number of resolutions is greater than the actual number of sub-resolutions
+    present in the input file, additional pyramidal levels will be calculated
+    using the downsampling factor specified by the :option:`-pyramid-scale`
+    option::
+
+      bfconvert -noflat -pyramid-resolutions 4 -pyramid-scale 2 /path/to/input out.ome.tiff
+
+    .. versionadded:: 6.0.0

@@ -61,7 +61,7 @@ shows a simple example of how to do this.
 
 The :source:`bfconvert command line tool <components/bio-formats-tools/src/loci/formats/tools/ImageConverter.java>` will also
 automatically write pyramids if the input file has at least one pyramid, the output format is OME-TIFF,
-and the ``-noflat`` option is specified.
+and the :option:`bfconvert -noflat` option is specified.
 
 .. _omero-pyramid:
 
