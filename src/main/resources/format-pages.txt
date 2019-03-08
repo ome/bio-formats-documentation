@@ -732,7 +732,7 @@ Note that the Gatan Reader does not currently support stacks.
 extensions = .vff
 developer = `GE <https://gelifesciences.com/>`_
 bsd = no
-weHave = * several `public MicroCT datasets <http://www.sci.utah.edu/~datasets/CTarchive.zip>`_ from the `CIBC Dataset Archive <http://www.sci.utah.edu/cibc-software/cibc-datasets.html>`_
+weHave = * several public MicroCT datasets from the `CIBC Dataset Archive <http://www.sci.utah.edu/cibc-software/cibc-datasets.html>`_
 pixelsRating = Very good
 metadataRating = Fair
 opennessRating = Fair
