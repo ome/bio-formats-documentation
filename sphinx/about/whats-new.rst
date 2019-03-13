@@ -1,6 +1,37 @@
 Version history
 ===============
 
+6.0.1 (2019 March)
+------------------
+
+File format fixes and improvements:
+
+* cellSens VSI
+   - improved tag parsing resulting in fixes for missing or incorrect metadata
+
+* Hamamatsu ndpi
+   - improved handling of variants where a constituent NDPI has no wavelength
+
+* LaVision Imspector
+   - fixed a potential NullPointerException when 'xyz-Table Z Resolution' is false
+
+* NRRD (Nearly Raw Raster Data)
+   - added support for raw GZIP-compressed data files
+
+* Olympus OIR
+   - fix to ensure file path is normalized which fixes detection on Windows
+
+* TIFF
+   - improved handling of direct tile copying to prevent invalid images
+   - improved handling of tiles in scenarios of an invalid offset or byte count of 0
+
+Documentation improvements:
+   - added documentation for -noflat option to the showinf and bfconvert users pages
+   - updated recommended minimal MATLAB version to R2017b
+   - documented support for MATLAB versions prior to R2017b
+   - links to MicroCT public datasets now point to the public archive rather than directly 
+     to the zip file
+
 6.0.0 (2019 February)
 ---------------------
 
