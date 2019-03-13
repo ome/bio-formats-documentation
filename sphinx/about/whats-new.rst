@@ -19,7 +19,7 @@ File format fixes and improvements:
    - added support for raw GZIP-compressed data files
 
 * Olympus OIR
-   - fix to ensure file path is normalised which fixes detection on Windows
+   - fix to ensure file path is normalized which fixes detection on Windows
 
 * TIFF
    - improved handling of direct tile copying to prevent invalid images
@@ -28,7 +28,7 @@ File format fixes and improvements:
 Documentation improvements:
    - added documentation for -noflat option to the showinf and bfconvert users pages
    - updated recommended minimal MATLAB version to R2017b
-   - documented support for in MATLAB versions prior to R2017b
+   - documented support for MATLAB versions prior to R2017b
    - links to MicroCT public datasets now point to the public archive rather than directly 
      to the zip file
 
