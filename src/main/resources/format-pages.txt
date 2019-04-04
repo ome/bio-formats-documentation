@@ -2225,7 +2225,7 @@ reader = SBIGReader
 
 [Seiko]
 extensions = .xqd, .xqf
-owner = `Seiko <http://www.seiko.co.jp/en>`_
+owner = `Seiko <https://www.seiko.co.jp/en>`_
 bsd = no
 weHave = * Pascal code that can read Seiko files (from ImageSXM) \n
 * a few Seiko files
