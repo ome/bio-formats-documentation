@@ -178,8 +178,18 @@ else:
 
 # Bio-Formats downloads
 if bf_version.endswith('SNAPSHOT'):
-    minor_version = ".".join(bf_version.split(".")[:2])
-    bf_downloads_root = downloads_root + '/latest/bio-formats%s/' % minor_version
+    v = bf_version.split(".")
+    if v[2] == "0-SNAPSHOT":
+        if v[1] == "0":
+            # x.0.0-SNAPHOT should point at /latest/bio-formats/
+            suffix = ""
+        else:
+            # x.y.0-SNAPHOT should point at /latest/bio-formatsx/
+            suffix = v[0]
+    else:
+        # x.y.z-SNAPHOT should point at /latest/bio-formatsx.y/
+        suffix = ".".join(v[:2])
+    bf_downloads_root = downloads_root + '/latest/bio-formats%s/' % suffix
 else:
     bf_downloads_root = downloads_root + '/bio-formats/%s/' % bf_version
 
