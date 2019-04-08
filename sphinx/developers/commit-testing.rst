@@ -14,7 +14,7 @@ After checking out source code and building all the JAR files (see
   $ cd components/test-suite
   $ ant -Dtestng.directory=$DATA/metamorph -Dtestng.configDirectory=$CONFIG/metamorph test-automated
 
-where ``$DATA`` is the path to the full data repository and ``$COMNFIG`` is the path to the configuration repository.
+where ``$DATA`` is the path to the full data repository and ``$CONFIG`` is the path to the configuration repository.
 
 
 Multiple options can be passed to the :program:`ant` ``test-automated`` target 
