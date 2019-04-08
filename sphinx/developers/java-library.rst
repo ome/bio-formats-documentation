@@ -66,8 +66,8 @@ The complete list of current dependencies is as follows:
     * - `MinLog v1.2 <https://github.com/EsotericSoftware/minlog>`_
       - com.esotericsoftware.minlog:minlog:1.2
       - `BSD License`_
-    * - `Guava v17.0 <https://github.com/google/guava>`_
-      - com.google.guava:guava:17.0
+    * - `Guava v27.1 <https://github.com/google/guava>`_
+      - com.google.guava:guava:27.1-jre
       - `Apache License v2.0`_
     * - `JGoodies Common v1.7.0 <http://www.jgoodies.com/downloads/libraries/>`_
       - com.jgoodies:jgoodies-common:1.7.0
