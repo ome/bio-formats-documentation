@@ -12,9 +12,9 @@ After checking out source code and building all the JAR files (see
 :doc:`building-bioformats`), switch to the :file:`test-suite` component and run the tests using the :program:`ant` ``test-automated`` target::
 
   $ cd components/test-suite
-  $ ant -Dtestng.directory=$DATA/metamorph test-automated
+  $ ant -Dtestng.directory=$DATA/metamorph -Dtestng.configDirectory=$CONFIG/metamorph test-automated
 
-where ``$DATA`` is the path to the full data repository.
+where ``$DATA`` is the path to the full data repository and ``$CONFIG`` is the path to the configuration repository.
 
 
 Multiple options can be passed to the :program:`ant` ``test-automated`` target 
@@ -24,22 +24,19 @@ are described below.
 testng.directory
   Mandatory option. Specifies the root of the data directory to be tested::
 
-    $ ant -Dtestng.directory=$DATA/metamorph test-automated
+    $ ant -Dtestng.directory=$DATA/metamorph -Dtestng.configDirectory=$CONFIG/metamorph test-automated
 
   On Windows, the arguments to the test command must be quoted::
 
-    > ant "-Dtestng.directory=$DATA\metamorph" test-automated
+    > ant "-Dtestng.directory=$DATA\metamorph" "-Dtestng.configDirectory=$CONFIG\metamorph" test-automated
 
 testng.configDirectory
-  Specifies the root of the directory containing the configuration files. This
-  directory must have the same hierarchy as the one specified by
+  Mandatory option. Specifies the root of the directory containing the configuration files.
+  This directory must have the same hierarchy as the one specified by
   ``testng.directory`` and contain :file:`.bioformats` configuration
   files::
 
     $ ant -Dtestng.directory=/path/to/data -Dtestng.configDirectory=/path/to/config test-automated
-
-  If no configuration directory is passed, the assumption is that it is the 
-  same as the data directory.
 
 testng.configSuffix
   Specifies an optional suffix for the configuration files::
