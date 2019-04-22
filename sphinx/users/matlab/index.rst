@@ -15,7 +15,7 @@ image files. Note the minimum recommended MATLAB version is R2017b.
    It is possible to run Bio-Formats 6 on earlier MATLAB versions using a
    JVM version 8 or greater although using a different JVM than the one shipped
    with MATLAB can affect other functionalities. Please refer to the
-   `MATLAB Answers <https://uk.mathworks.com/matlabcentral/answers/index>`__
+   `MATLAB Answers <https://mathworks.com/matlabcentral/answers/index>`__
    for more information.
 
 Installation
