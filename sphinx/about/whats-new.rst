@@ -2,7 +2,7 @@ Version history
 ===============
 
 6.1.0 (2019 May)
----------------------
+----------------
 
 New file formats:
 
@@ -33,26 +33,26 @@ File format fixes and improvements:
    - improved the reading of EXIF data
 
 * Lambert Instruments FLIM
-   - added support for packed UNINT12 datatype (thanks to Johan Herz)
+   - added support for packed UINT12 datatype (thanks to Johan Herz)
 
 * LEO
    - fixed a bug with the parsing of physical sizes
    - improved support for additional global metadata fields
 
 * Olympus OIR
-   - fixed a bug which would show empty pixels when more than 1000 timpanist
+   - fixed a bug which would show empty pixels when more than 1000 timepoints
 
 Automated test changes:
 
-* added additional tests forHCS/SPW dataset to ensure Plate, PlateAcquisition, Well, 
-  WellSample, and WellSample position values are configured were present
+* added additional tests for HCS/SPW datasets to ensure Plate, PlateAcquisition, Well, 
+  WellSample, and WellSample position values are configured where present
 * added a new `file-leak-detector` test to flag potential memory leaks
 
 Bio-Formats API changes:
 
 * ``ImageConverter`` as used in ``bfconvert`` command line tool is now public
 * made ``ImageReader`` more defensive against exceptions thrown when determining reader type
-* fixed an issue when performing a non-sequential write for multi resolution TIFF files
+* fixed an issue when performing a non-sequential write for multi-resolution TIFF files
 
 Component changes:
 
