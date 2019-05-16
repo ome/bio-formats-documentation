@@ -48,8 +48,8 @@ The complete list of current dependencies is as follows:
     * - `Logback Core v1.1.1 <http://logback.qos.ch>`_
       - ch.qos.logback:logback-core:1.1.1
       - `Eclipse Public License v1.0`_
-    * - `JHDF5 v14.12.0 <https://wiki-bsse.ethz.ch/display/JHDF5>`_
-      - ch.systems.cisd:jhdf5:14.12.0
+    * - `JHDF5 v14.12.6 <https://wiki-bsse.ethz.ch/display/JHDF5>`_
+      - cisd:jhdf5:14.12.6
       - `Apache License v2.0`_
     * - `XMP Library for Java v5.1.2 <https://www.adobe.com/devnet/xmp.html>`_
       - com.adobe.xmp:xmpcore:5.1.2
@@ -57,8 +57,8 @@ The complete list of current dependencies is as follows:
     * - `JCommander v1.27 <http://jcommander.org/>`_
       - com.beust:jcommander:1.27
       - `Apache License v2.0`_
-    * - `metadata-extractor v2.6.2 <https://github.com/drewnoakes/metadata-extractor>`_
-      - com.drewnoakes:metadata-extractor:2.6.2
+    * - `metadata-extractor v2.11.0 <https://github.com/drewnoakes/metadata-extractor>`_
+      - com.drewnoakes:metadata-extractor:2.11.0
       - `Apache License v2.0`_
     * - `Kryo v2.24.0 <https://github.com/EsotericSoftware/kryo>`_
       - com.esotericsoftware.kryo:kryo:2.24.0
@@ -84,8 +84,8 @@ The complete list of current dependencies is as follows:
     * - `Commons Logging v1.1.1 <http://commons.apache.org/logging/>`_
       - commons-logging:commons-logging:1.1.1
       - `Apache License v2.0`_
-    * - `NetCDF-Java Library v4.3.22 <https://www.unidata.ucar.edu/software/thredds/current/netcdf-java/documentation.htm>`_
-      - edu.ucar:netcdf:4.3.22
+    * - `NetCDF-Java Library v4.6.13 <https://www.unidata.ucar.edu/software/thredds/current/netcdf-java/documentation.htm>`_
+      - edu.ucar:netcdf:4.6.13
       - `MIT-Style License`_
     * - `Joda time v2.2 <https://github.com/JodaOrg/joda-time>`_
       - joda-time:joda-time:2.2
@@ -114,8 +114,8 @@ The complete list of current dependencies is as follows:
     * - `Objenesis v2.1 <http://objenesis.org>`_
       - org.objenesis:objenesis:2.1
       - `Apache License v2.0`_
-    * - `Perf4J v0.9.13 <https://github.com/perf4j/perf4j>`_
-      - org.perf4j:perf4j:0.9.13
+    * - `Perf4J v0.9.16 <https://github.com/perf4j/perf4j>`_
+      - org.perf4j:perf4j:0.9.16
       - `Apache License v2.0`_
     * - `Native Library Loader v2.1.4 <https://github.com/scijava/native-lib-loader>`_
       - org.scijava:native-lib-loader:2.1.4
