@@ -336,6 +336,21 @@ privateSpecification = true
 reader = SDTReader
 mif = true
 
+[Big Data Viewer]
+extensions = .xml, .h5
+owner = `Tobias Pietzsch <https://imagej.net/BigDataViewer/>`_
+bsd = no
+weHave = * a BDV specification document \n
+* a number of sample BDV datasets
+pixelsRating = Good
+metadataRating = Good
+opennessRating = Very Good
+presenceRating = Good
+utilityRating = Good
+pyramid = yes
+reader = BDVReader
+mif = true
+
 [Bio-Rad Gel]
 extensions = .1sc
 owner = `Bio-Rad <http://www.bio-rad.com>`_
