@@ -14,6 +14,9 @@ File format fixes and improvements:
 * Applied Precision CellWorX
    - improved handling of thumbnail files
 
+* DeltaVision
+   - updated handling of `rcpnl` files to treat each file as a single timepoint
+
 * FakeReader
    - removed `header` key from original metadata
 
@@ -56,7 +59,7 @@ Bio-Formats API changes:
 
 Component changes:
 
-* `ome-common` was upgraded to 6.0.2
+* `ome-common` was upgraded to 6.0.3
 * `perf4j` was upgraded to 0.9.16
 * removed `Guava` dependency which will be pulled transitively from the 
   upstream `ome-common` dependency
