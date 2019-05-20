@@ -1,6 +1,73 @@
 Version history
 ===============
 
+6.1.0 (2019 May)
+----------------
+
+New file formats:
+
+* BDV
+   - added a new reader for Big Data Viewer files
+
+File format fixes and improvements:
+
+* Applied Precision CellWorX
+   - improved handling of thumbnail files
+
+* DeltaVision
+   - updated handling of `rcpnl` files to treat each file as a single timepoint
+
+* FakeReader
+   - removed `header` key from original metadata
+
+* Hamamatsu VMS
+   - removed `header` key from original metadata
+
+* Hitachi S-4800
+   - removed `header` key from original metadata
+
+* ICS (Image Cytometry Standard)
+   - fixed an issue reading .ics/.ids files written by SVI Huygens (thanks to Jan Eglinger)
+
+* Imaris IMS
+   - fixed issues with newer files which had been failing due to older `netcdf` version
+
+* JPEG
+   - improved the reading of EXIF data
+
+* Lambert Instruments FLIM
+   - added support for packed UINT12 datatype (thanks to Johan Herz)
+
+* LEO
+   - fixed a bug with the parsing of physical sizes
+   - improved support for additional global metadata fields
+
+* Olympus OIR
+   - fixed a bug which would show empty pixels when more than 1000 timepoints
+
+Automated test changes:
+
+* added additional tests for HCS/SPW datasets to ensure Plate, PlateAcquisition, Well, 
+  WellSample, and WellSample position values are configured where present
+* added a new `file-leak-detector` test to flag potential memory leaks
+
+Bio-Formats API changes:
+
+* ``ImageConverter`` as used in ``bfconvert`` command line tool is now public
+* made ``ImageReader`` more defensive against exceptions thrown when determining reader type
+* fixed an issue when performing a non-sequential write for multi-resolution TIFF files
+
+Component changes:
+
+* `ome-common` was upgraded to 6.0.3
+* `perf4j` was upgraded to 0.9.16
+* removed `Guava` dependency which will be pulled transitively from the 
+  upstream `ome-common` dependency
+* `jhdf5` was upgraded to 14.12.6
+* `metadata-extractor` was upgraded to 2.11.0
+* `xercesImpl` version 2.8.1 was added as it is no longer a dependency of `metadata-extractor`
+* `netcdf` was upgraded to 4.6.13
+
 6.0.1 (2019 March)
 ------------------
 
