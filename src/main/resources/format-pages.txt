@@ -338,7 +338,7 @@ mif = true
 
 [Big Data Viewer]
 extensions = .xml, .h5
-owner = `Tobias Pietzsch <https://imagej.net/BigDataViewer/>`_
+owner = `Tobias Pietzsch <https://imagej.net/BigDataViewer>`_
 bsd = no
 weHave = * a BDV specification document \n
 * a number of sample BDV datasets
