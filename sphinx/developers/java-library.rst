@@ -126,7 +126,7 @@ The complete list of current dependencies is as follows:
     * - `SLF4J LOG4J-12 Binding v1.7.6 <https://www.slf4j.org>`_
       - org.slf4j:slf4j-log4j12:1.7.6
       - `MIT License`_
-    * - `TestNG v6.8 <http://testng.org/doc/>`_
+    * - `TestNG v6.8 <https://testng.org/doc/>`_
       - org.testng:testng:6.8
       - `Apache License v2.0`_
     * - `SnakeYAML v1.6 <https://bitbucket.org/asomov/snakeyaml>`_
