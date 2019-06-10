@@ -12,6 +12,9 @@ File format fixes and improvements:
 * Gatan Digital Micrograph (DM3/DM4)
    - now parsing the `Montage` tag to determine if tiles are present
 
+* Leica LAS AF LIF (Leica Image File Format)
+   - added fix to correctly read scale from polygon regions of interest (thanks to Sean Warren)
+
 * PerkinElmer Columbus 
    - improved handling of truncated TIFF files to return blank planes
 
