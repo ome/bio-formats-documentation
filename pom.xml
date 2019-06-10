@@ -7,7 +7,7 @@
 
   <groupId>ome</groupId>
   <artifactId>bio-formats-documentation</artifactId>
-  <version>6.1.1</version>
+  <version>6.1.2-SNAPSHOT</version>
 
   <name>Bio-Formats documentation</name>
   <description>Bio-Formats Sphinx documentation</description>
