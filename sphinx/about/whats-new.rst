@@ -1,6 +1,41 @@
 Version history
 ===============
 
+6.1.1 (2019 June)
+-----------------
+
+File format fixes and improvements:
+
+* DeltaVision
+   - added new lens definitions associated with `rcpnl` files
+
+* Gatan Digital Micrograph (DM3/DM4)
+   - now parsing the `Montage` tag to determine if tiles are present
+
+* Leica LAS AF LIF (Leica Image File Format)
+   - added fix to correctly read scale from polygon regions of interest (thanks to Sean Warren)
+
+* PerkinElmer Columbus 
+   - improved handling of truncated TIFF files to return blank planes
+
+* PerkinElmer Opera Flex
+   - plate barcodes are now used to improve grouping and handling of truncated files
+
+* TIFF (Tagged Image File Format)
+   - improved parsing times for images stored as uncompressed contiguous strips
+
+* Zeiss CZI
+   - improved plane position metadata for many CZI datasets
+
+Automated test changes:
+
+* format reader tests have been updated to handle PerkinElmer Columbus 
+  datasets with flex files
+
+Documentation improvements:
+
+* added help for missing options in ``bfconvert`` command line tool
+
 6.1.0 (2019 May)
 ----------------
 
