@@ -8,9 +8,7 @@ cache:
   - $HOME/.m2
 
 jdk:
-  - oraclejdk11
   - openjdk11
-  - oraclejdk8
   - openjdk8
 
 matrix:
