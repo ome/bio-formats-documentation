@@ -196,3 +196,30 @@ name pattern, then the other must be included too.  The only exception is if
       bfconvert -noflat -pyramid-resolutions 4 -pyramid-scale 2 /path/to/input out.ome.tiff
 
     .. versionadded:: 6.0.0
+
+.. option:: -cache
+
+    This option will cache the initialized reader under the same directory as 
+    the input file after initialization::
+
+      bfconvert -cache /path/to/input output.ome.tiff
+
+    .. versionadded:: 6.2.0
+
+.. option:: -cache-dir DIRECTORY
+
+    This option is to be used in conjunction with :option:`-bigtiff`. When used 
+    it specifies the directory to store the cached initialized reader. If unspecified, 
+    the cached reader will be stored under the same folder as the image file::
+
+      bfconvert -cache-dir /path/to/store/cached/reader /path/to/input output.ome.tiff
+
+    .. versionadded:: 6.2.0
+
+.. option:: -no-sas
+
+    When used this option will not preserve the OME-XML StructuredAnnotation elements::
+
+      bfconvert -no-sas /path/to/input output.ome.tiff
+
+    .. versionadded:: 6.2.0
