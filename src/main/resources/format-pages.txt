@@ -2673,7 +2673,7 @@ pagename = zeiss-lsm
 extensions = .lsm, .mdb
 owner = `ZEISS International <https://www.zeiss.com/corporate/int/home.html>`_
 bsd = no
-software = `Zeiss LSM Image Browser <https://www.zeiss.com/corporate/int/downloads/lsm-5-series.html>`_ \n
+software = `Zeiss LSM Image Browser <https://www.zeiss.com/microscopy/int/downloads/>`_ \n
 `LSM Toolbox plugin for ImageJ <http://imagejdocu.tudor.lu/Members/ppirrotte/lsmtoolbox>`_ \n
 `LSM Reader plugin for ImageJ <https://imagej.nih.gov/ij/plugins/lsm-reader.html>`_ \n
 `DIMIN <http://www.dimin.net/>`_
