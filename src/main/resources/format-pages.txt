@@ -382,7 +382,7 @@ notes = * `Bio-Rad Gel Format (1sc) specification <http://biorad1sc-doc.readthed
 
 [Bio-Rad PIC]
 extensions = .pic, .raw, .xml
-owner = `Carl Zeiss, Inc. <https://www.zeiss.com/corporate/int/home.html>`_
+owner = `ZEISS International <https://www.zeiss.com/corporate/int/home.html>`_
 developer = Bio-Rad
 bsd = no
 software = `Bio-Rad PIC reader plugin for ImageJ <https://imagej.nih.gov/ij/plugins/biorad.html>`_
@@ -1395,7 +1395,7 @@ mif = true
 
 [LEO]
 extensions = .sxm, .tif, .tiff
-owner = `Zeiss <https://www.zeiss.de/corporate/home.html>`_
+owner = `ZEISS International <https://www.zeiss.com/corporate/int/home.html>`_
 bsd = no
 weHave = * Pascal code that can read LEO files (from ImageSXM) \n
 * a few LEO files\n
@@ -2584,8 +2584,8 @@ writer = WlzWriter
 
 [Zeiss Axio CSM]
 extensions = .lms
-owner = `Carl Zeiss Microscopy GmbH <https://www.zeiss.com/microscopy/int/home.html>`_
-developer = `Carl Zeiss Microscopy GmbH <https://www.zeiss.com/microscopy/int/home.html>`_
+owner = `ZEISS International <https://www.zeiss.com/corporate/int/home.html>`_
+developer = `ZEISS International <https://www.zeiss.com/corporate/int/home.html>`_
 bsd = no
 weHave = * one example dataset
 pixelsRating = Good
@@ -2600,8 +2600,8 @@ the only one which saves files in the .lms format. \n
 
 [Zeiss AxioVision TIFF]
 extensions = .xml, .tif
-owner = `Carl Zeiss Microscopy GmbH <https://www.zeiss.com/microscopy/int/home.html>`_
-developer = `Carl Zeiss Microscopy GmbH <https://www.zeiss.com/microscopy/int/home.html>`_
+owner = `ZEISS International <https://www.zeiss.com/corporate/int/home.html>`_
+developer = `ZEISS International <https://www.zeiss.com/corporate/int/home.html>`_
 bsd = no
 software = `Zeiss ZEN Lite <https://www.zeiss.com/microscopy/int/products/microscope-software/zen-lite.html>`_
 weHave = * many example datasets
@@ -2617,7 +2617,7 @@ mif = true
 [Zeiss AxioVision ZVI (Zeiss Vision Image)]
 pagename = zeiss-axiovision-zvi
 extensions = .zvi
-owner = `Carl Zeiss Microscopy GmbH <https://www.zeiss.com/microscopy/int/home.html>`_
+owner = `ZEISS International <https://www.zeiss.com/corporate/int/home.html>`_
 developer = `Carl Zeiss Microscopy GmbH (AxioVision) <https://www.zeiss.com/microscopy/int/products/microscope-software/axiovision.html>`_
 bsd = no
 versions = 1.0, 2.0
@@ -2646,7 +2646,7 @@ Commercial applications that support ZVI include `Bitplane Imaris <http://www.bi
 [Zeiss CZI]
 indexExtensions = .czi
 extensions = `.czi <https://www.zeiss.com/microscopy/int/products/microscope-software/zen/czi.html>`_
-developer = `Carl Zeiss Microscopy GmbH <https://www.zeiss.com/microscopy/int/home.html>`_
+developer = `ZEISS International <https://www.zeiss.com/corporate/int/home.html>`_
 bsd = no
 software = `Zeiss ZEN <https://www.zeiss.com/microscopy/int/products/microscope-software/zen.html>`_ \n
 `libCZI <https://github.com/zeiss-microscopy/libCZI>`_
@@ -2671,9 +2671,9 @@ notes = JPEG-XR compressed CZI files are supported on the following 64-bit platf
 [Zeiss LSM (Laser Scanning Microscope) 510/710]
 pagename = zeiss-lsm
 extensions = .lsm, .mdb
-owner = `Carl Zeiss Microscopy GmbH <https://www.zeiss.com/microscopy/int/home.html>`_
+owner = `ZEISS International <https://www.zeiss.com/corporate/int/home.html>`_
 bsd = no
-software = `Zeiss LSM Image Browser <https://www.zeiss.com/microscopy/int/downloads/lsm-5-series.html>`_ \n
+software = `Zeiss LSM Image Browser <https://www.zeiss.com/corporate/int/downloads/lsm-5-series.html>`_ \n
 `LSM Toolbox plugin for ImageJ <http://imagejdocu.tudor.lu/Members/ppirrotte/lsmtoolbox>`_ \n
 `LSM Reader plugin for ImageJ <https://imagej.nih.gov/ij/plugins/lsm-reader.html>`_ \n
 `DIMIN <http://www.dimin.net/>`_
