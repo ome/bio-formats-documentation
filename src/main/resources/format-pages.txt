@@ -1537,7 +1537,7 @@ reader = MINCReader
 extensions = .mrw
 developer = `Minolta <https://www.konicaminolta.com/uk-en/index.html>`_
 bsd = no
-software = `dcraw <http://www.cybercom.net/%7Edcoffin/dcraw/>`_
+software = `dcraw <https://en.wikipedia.org/wiki/Dcraw>`_
 weHave = * several .mrw files
 pixelsRating = Very good
 metadataRating = Fair
@@ -1925,7 +1925,7 @@ opennessRating = Fair
 presenceRating = Poor
 utilityRating = Fair
 reader = PCXReader
-notes = Commercial applications that support PCX include `Zeiss LSM Image Browser <https://www.zeiss.com/microscopy/int/downloads/lsm-5-series.html>`_.
+notes = Commercial applications that support PCX include `Zeiss LSM Image Browser <https://www.zeiss.com/microscopy/int/downloads/>`_.
 
 [PCORAW]
 extensions = .pcoraw, .rec
@@ -2673,7 +2673,7 @@ pagename = zeiss-lsm
 extensions = .lsm, .mdb
 owner = `ZEISS International <https://www.zeiss.com/corporate/int/home.html>`_
 bsd = no
-software = `Zeiss LSM Image Browser <https://www.zeiss.com/corporate/int/downloads/lsm-5-series.html>`_ \n
+software = `Zeiss LSM Image Browser <https://www.zeiss.com/microscopy/int/downloads/>`_ \n
 `LSM Toolbox plugin for ImageJ <http://imagejdocu.tudor.lu/Members/ppirrotte/lsmtoolbox>`_ \n
 `LSM Reader plugin for ImageJ <https://imagej.nih.gov/ij/plugins/lsm-reader.html>`_ \n
 `DIMIN <http://www.dimin.net/>`_
