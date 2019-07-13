@@ -2500,7 +2500,6 @@ metadataRating = Good
 opennessRating = Fair
 presenceRating = Fair
 utilityRating = Good
-privateSpecification = true
 pyramid = yes
 reader = VentanaReader
 
