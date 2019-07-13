@@ -1,6 +1,53 @@
 Version history
 ===============
 
+6.2.0 (2019 July)
+-----------------
+
+New file formats:
+
+* Mikroscan TIFF
+   - added a new reader for Mikroscan TIFF files (thanks to Jim Crowe)
+
+* Ventana BIF
+   - added a new reader for Ventana BIF files 
+
+File format fixes and improvements:
+
+* Cellomics
+   - fixed indexing for plates with a single well or missing fields
+
+* DeltaVision
+   - added support for the reading of the new panel count field 
+     (provided through a collaboration between GE Healthcare and Glencoe Software Inc.)
+
+* Hamamatsu NDPI
+   - improved handling of files with no restart markers
+
+* PerkinElmer Operetta
+   - images with smaller XY dimensions than all other TIFF files in dataset will now be padded
+
+* TIFF
+   - updated functionality for overwriting IFD values to ensure that previous value 
+     is completely overwritten and no orphaned tags are left
+
+* Zeiss CZI
+   - expanded support for auto-stitching of tiles
+
+Bug fixes and improvements:
+
+* added ``-cache``, ``-cache-dir`` and ``-no-sas`` options to ``bfconvert`` tool
+
+* deprecated broken TRUNK and DAILY builds from upgrade checker
+
+* disabled Oracle JDK from Travis CI checks
+
+Documentation improvements:
+
+* fixed broken link for discontinued Dcraw software
+
+* updated links for Zeiss formats
+
 6.1.1 (2019 June)
 -----------------
 
