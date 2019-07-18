@@ -208,7 +208,7 @@ name pattern, then the other must be included too.  The only exception is if
 
 .. option:: -cache-dir DIRECTORY
 
-    This option is to be used in conjunction with :option:`-bigtiff`. When used 
+    This option is to be used in conjunction with :option:`-cache`. When used 
     it specifies the directory to store the cached initialized reader. If unspecified, 
     the cached reader will be stored under the same folder as the image file::
 
