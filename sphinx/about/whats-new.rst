@@ -7,10 +7,11 @@ Version history
 New file formats:
 
 * Mikroscan TIFF
-   - added a new reader for Mikroscan TIFF files (thanks to Jim Crowe)
+   - a new reader for Mikroscan TIFF files has been contributed with thanks to 
+     Jim Crowe, Mikroscan Technologies, Inc.
 
 * Ventana BIF
-   - added a new reader for Ventana BIF files 
+   - added a new reader for Ventana BIF files which has been commissioned via Glencoe Software
 
 File format fixes and improvements:
 
@@ -20,9 +21,6 @@ File format fixes and improvements:
 * DeltaVision
    - added support for the reading of the new panel count field 
      (provided through a collaboration between GE Healthcare and Glencoe Software Inc.)
-
-* Hamamatsu NDPI
-   - improved handling of files with no restart markers
 
 * PerkinElmer Operetta
    - images with smaller XY dimensions than all other TIFF files in dataset will now be padded
