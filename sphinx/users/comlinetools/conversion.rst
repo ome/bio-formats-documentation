@@ -218,7 +218,7 @@ name pattern, then the other must be included too.  The only exception is if
 
 .. option:: -no-sas
 
-    When used this option will not preserve the OME-XML StructuredAnnotation elements::
+    Do not preserve the OME-XML StructuredAnnotation elements::
 
       bfconvert -no-sas /path/to/input output.ome.tiff
 
