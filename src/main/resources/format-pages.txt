@@ -1520,6 +1520,20 @@ notes = - Bio-Formats will recognize a :file:`*metadata.txt` file as part of a\n
   fileset and therefore the extended Micro-Manager metadata will be skipped.\n
 - See :doc:`/users/micromanager/index` for more information.
 
+[Mikroscan TIFF]
+extensions = .tif, .tiff
+owner = `Mikroscan <https://www.mikroscan.com/>`_
+bsd = no
+weHave = * some Mikroscan datasets
+pixelsRating = Good
+metadataRating = Good
+opennessRating = Good
+presenceRating = Fair
+utilityRating = Fair
+privateSpecification = true
+pyramid = yes
+reader = MikroscanTiffReader
+
 [MINC MRI]
 extensions = .mnc
 developer = `McGill University <http://www.bic.mni.mcgill.ca/ServicesSoftware/MINC>`_
@@ -2475,6 +2489,19 @@ opennessRating = Very Good
 presenceRating = Fair
 utilityRating = Good
 reader = VeecoReader
+
+[Ventana BIF]
+extensions = .bif
+owner = `Roche Digital Diagnostics <https://diagnostics.roche.com/global/en/home.html/>`_
+bsd = no
+weHave = * some Ventana datasets
+pixelsRating = Good
+metadataRating = Good
+opennessRating = Fair
+presenceRating = Fair
+utilityRating = Good
+pyramid = yes
+reader = VentanaReader
 
 [VG SAM]
 extensions = .dti

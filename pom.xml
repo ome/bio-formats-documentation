@@ -25,11 +25,11 @@
   <properties>
     <ome-common.version>6.0.3</ome-common.version>
     <ome-model.version>6.0.1</ome-model.version>
-    <bioformats.version>6.1.1</bioformats.version>
+    <bioformats.version>6.2.0</bioformats.version>
     <formats-gpl.version>${bioformats.version}</formats-gpl.version>
     <formats-bsd.version>${bioformats.version}</formats-bsd.version>
     <formats-api.version>${bioformats.version}</formats-api.version>
-    <bio-formats-examples.version>6.1.1</bio-formats-examples.version>
+    <bio-formats-examples.version>6.2.0</bio-formats-examples.version>
     <logback.version>1.1.1</logback.version>
 
     <sphinx.bioformats.source.branch>develop</sphinx.bioformats.source.branch>
