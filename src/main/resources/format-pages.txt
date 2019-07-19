@@ -2492,7 +2492,7 @@ reader = VeecoReader
 
 [Ventana BIF]
 extensions = .bif
-owner = `Roche Digital Diagnostics <https://diagnostics.roche.com/global/en/home.html/>`_
+owner = `Roche Digital Diagnostics <https://diagnostics.roche.com/global/en/home.html>`_
 bsd = no
 weHave = * some Ventana datasets
 pixelsRating = Good
