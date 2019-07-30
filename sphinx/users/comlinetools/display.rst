@@ -99,7 +99,7 @@ dimensions, and other basic metadata will be printed to the console.
 
       showinf -no-upgrade /path/to/file
 
-.. option:: -no-valid
+.. option:: -novalid
 
     Similarly, if OME-XML is displayed then it will automatically be validated.
     On slow or missing internet connections, this can take some time, and so
@@ -109,7 +109,7 @@ dimensions, and other basic metadata will be printed to the console.
 
       showinf -novalid /path/to/file
 
-.. option:: -no-core
+.. option:: -nocore
 
     Most output can be suppressed:
 
