@@ -1049,7 +1049,7 @@ extensions = .xdce, .tif
 developer = `GE <https://gelifesciences.com/>`_
 bsd = no
 weHave = * a few InCell 1000 datasets\n
-* `public InCell 2000 sample images <http://downloads.openmicroscopy.org/images/HCS/INCELL2000/>`_
+* `public InCell 2000 sample images <http://downloads.openmicroscopy.org/images/InCell2000/>`_
 weWant = * an InCell 1000 specification document \n
 * more InCell 1000 datasets
 pixelsRating = Very good
@@ -2017,7 +2017,7 @@ extensions = .tiff, .xml
 developer = `PerkinElmer <http://www.perkinelmer.com/>`_
 bsd = no
 weHave = * a few sample datasets\n
-* `public sample images <http://downloads.openmicroscopy.org/images/HCS/Operetta/>`__
+* `public sample images <http://downloads.openmicroscopy.org/images/PerkinElmer-Operetta/>`__
 weWant = * an official specification document \n
 * more sample datasets
 pixelsRating = Very good
