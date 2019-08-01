@@ -114,7 +114,7 @@ extensions = .am, .amiramesh, .grey, .hx, .labels
 developer = `Visage Imaging <http://www.vsg3d.com/>`_
 bsd = no
 weHave = * a few Amira Mesh datasets \n
-* `public sample images <http://downloads.openmicroscopy.org/images/AmiraMesh/>`__
+* `public sample images <https://downloads.openmicroscopy.org/images/AmiraMesh/>`__
 weWant = * more Amira Mesh datasets
 pixelsRating = Very good
 metadataRating = Fair
@@ -210,7 +210,7 @@ bsd = no
 software = `OpenSlide <https://openslide.org>`_
 versions = 8.0, 8.2, 9.0
 weHave = * many SVS datasets\n
-* `public sample images <http://downloads.openmicroscopy.org/images/SVS/>`__\n
+* `public sample images <https://downloads.openmicroscopy.org/images/SVS/>`__\n
 * an SVS specification document \n
 * the ability to generate additional SVS datasets
 pixelsRating = Very good
@@ -230,7 +230,7 @@ extensions = .htd, .pnl
 developer = `Applied Precision <http://www.api.com>`_
 bsd = no
 weHave = * a few CellWorX datasets\n
-* `public sample datasets <http://downloads.openmicroscopy.org/images/CellWorX/>`__
+* `public sample datasets <https://downloads.openmicroscopy.org/images/CellWorX/>`__
 weWant = * a CellWorX specification document \n
 * more CellWorX datasets
 pixelsRating = Very good
@@ -307,7 +307,7 @@ extensions = .spc
 owner = `Becker-Hickl <https://www.becker-hickl.com/>`_
 bsd = no
 weHave = * an `SPC specification document <https://www.becker-hickl.com/literature/handbooks/>`_ \n
-* `public sample images <http://downloads.openmicroscopy.org/images/SPC-FIFO/>`__
+* `public sample images <https://downloads.openmicroscopy.org/images/SPC-FIFO/>`__
 weWant = * more SPC sample files
 pixelsRating = Poor
 metadataRating = Poor
@@ -342,7 +342,7 @@ extensions = .xml, .h5
 owner = `Tobias Pietzsch <https://imagej.net/BigDataViewer>`_
 bsd = no
 weHave = * a BDV specification document\n
-* `public sample images <http://downloads.openmicroscopy.org/images/BDV/>`__
+* `public sample images <https://downloads.openmicroscopy.org/images/BDV/>`__
 pixelsRating = Good
 metadataRating = Good
 opennessRating = Very Good
@@ -427,7 +427,7 @@ weHave = * an `Imaris (RAW) specification document <http://flash.bitplane.com/wd
 * several older Imaris (RAW) datasets \n
 * one Imaris 3 (TIFF) dataset \n
 * several Imaris 5.5 (HDF) datasets\n
-* `public sample images <http://downloads.openmicroscopy.org/images/Imaris-IMS/>`__
+* `public sample images <https://downloads.openmicroscopy.org/images/Imaris-IMS/>`__
 weWant = * an Imaris 3 (TIFF) specification document \n
 * more Imaris 3 (TIFF) datasets
 pixelsRating = Very good
@@ -491,7 +491,7 @@ extensions = .ch5
 developer = `CellH5 <http://cellh5.org/>`_
 bsd = no
 software = `CellH5 <http://cellh5.org/>`_
-weHave = * `public sample images <http://downloads.openmicroscopy.org/images/CellH5/>`__
+weHave = * `public sample images <https://downloads.openmicroscopy.org/images/CellH5/>`__
 pixelsRating = Very good
 metadataRating = Outstanding
 opennessRating = Outstanding
@@ -506,7 +506,7 @@ extensions = .c01, .dib
 developer = `Thermo Fisher Scientific <http://www.thermofisher.com/>`_
 bsd = no
 weHave = * a few Cellomics .c01 datasets\n
-* `public sample images <http://downloads.openmicroscopy.org/images/Cellomics/>`__
+* `public sample images <https://downloads.openmicroscopy.org/images/Cellomics/>`__
 weWant = * a Cellomics .c01 specification document \n
 * more Cellomics .c01 datasets
 pixelsRating = Very good
@@ -567,7 +567,7 @@ bsd = no
 software = `DeltaVision Opener plugin for ImageJ <https://imagej.nih.gov/ij/plugins/track/delta.html>`_
 weHave = * a DV specification document (v2.10 or newer, in HTML) \n
 * numerous DV datasets\n
-* `public sample images <http://downloads.openmicroscopy.org/images/DV/>`__
+* `public sample images <https://downloads.openmicroscopy.org/images/DV/>`__
 pixelsRating = Outstanding
 metadataRating = Very good
 opennessRating = Good
@@ -618,7 +618,7 @@ extensions = .v
 developer = `Siemens <https://www.siemens.com/global/en/home.html>`_
 bsd = no
 weHave = * a few ECAT7 files \n
-* `public sample images <http://downloads.openmicroscopy.org/images/ECAT7/>`__
+* `public sample images <https://downloads.openmicroscopy.org/images/ECAT7/>`__
 weWant = * an ECAT7 specification document \n
 * more ECAT7 files
 pixelsRating = Good
@@ -651,7 +651,7 @@ extensions = .flex, .mea, .res
 developer = `Evotec Technologies, now PerkinElmer <http://www.perkinelmer.com/>`_
 bsd = no
 weHave = * many Flex datasets\n
-* `public sample images <http://downloads.openmicroscopy.org/images/Flex/>`__
+* `public sample images <https://downloads.openmicroscopy.org/images/Flex/>`__
 weWant = * a freely redistributable LuraWave LWF decoder
 pixelsRating = Outstanding
 metadataRating = Outstanding
@@ -734,7 +734,7 @@ software = `DM3 Reader plugin for ImageJ <https://imagej.nih.gov/ij/plugins/DM3_
 `EMAN <http://blake.bcm.edu/emanwiki/EMAN2>`_
 weHave = * Gatan's ImageReader2003 code (from 2003, in C++) \n
 * numerous DM3 datasets\n
-* `public sample images <http://downloads.openmicroscopy.org/images/Gatan/>`__
+* `public sample images <https://downloads.openmicroscopy.org/images/Gatan/>`__
 weWant = * a DM3 specification document
 pixelsRating = Very good
 metadataRating = Good
@@ -814,7 +814,7 @@ bsd = no
 software = `NDP.view2 <https://www.hamamatsu.com/eu/en/community/nanozoomer/product/search/U12388-01/index.html>`_ \n
 `OpenSlide <https://openslide.org>`_
 weHave = * many example datasets \n
-* `public sample images <http://downloads.openmicroscopy.org/images/Hamamatsu-NDPI/>`__
+* `public sample images <https://downloads.openmicroscopy.org/images/Hamamatsu-NDPI/>`__
 weWant = * an official specification document
 pixelsRating = Fair
 metadataRating = Fair
@@ -831,7 +831,7 @@ developer = `Hamamatsu <http://www.hamamatsu.com>`_
 bsd = no
 software = `OpenSlide <https://openslide.org>`_
 weHave = * a few example datasets \n
-* `public sample images <http://downloads.openmicroscopy.org/images/Hamamatsu-VMS/>`__ \n
+* `public sample images <https://downloads.openmicroscopy.org/images/Hamamatsu-VMS/>`__ \n
 * `developer documentation from the OpenSlide project <https://openslide.org/Hamamatsu%20format/>`_
 weWant = * an official specification document \n
 * more example datasets
@@ -879,7 +879,7 @@ software = `Libics (ICS reference library) <http://libics.sourceforge.net/>`_ \n
 `ICS Opener plugin for ImageJ <https://valelab4.ucsf.edu/~nstuurman/IJplugins/Ics_Opener.html>`_ \n
 `IrfanView <https://www.irfanview.com/>`_
 weHave = * numerous ICS datasets\n
-* `public sample images <http://downloads.openmicroscopy.org/images/ICS/>`__
+* `public sample images <https://downloads.openmicroscopy.org/images/ICS/>`__
 pixelsRating = Outstanding
 metadataRating = Outstanding
 opennessRating = Outstanding
@@ -1049,7 +1049,7 @@ extensions = .xdce, .tif
 developer = `GE <https://gelifesciences.com/>`_
 bsd = no
 weHave = * a few InCell 1000 datasets\n
-* `public InCell 2000 sample images <http://downloads.openmicroscopy.org/images/InCell2000/>`_
+* `public InCell 2000 sample images <https://downloads.openmicroscopy.org/images/InCell2000/>`_
 weWant = * an InCell 1000 specification document \n
 * more InCell 1000 datasets
 pixelsRating = Very good
@@ -1065,7 +1065,7 @@ extensions = .frm
 developer = `GE <https://gelifesciences.com/>`_
 bsd = no
 weHave = * a few example datasets \n
-* `public sample images <http://downloads.openmicroscopy.org/images/InCell3000/>`__
+* `public sample images <https://downloads.openmicroscopy.org/images/InCell3000/>`__
 weWant = * an official specification document
 pixelsRating = Good
 metadataRating = Fair
@@ -1311,7 +1311,7 @@ weHave = * a LIF/XLLF/XLEF/LOF specification document (version 3.2, from no late
 * a LIF specification document (version 2, from no later than 2007 July 26, in PDF) \n
 * a LIF specification document (version 1, from no later than 2006 April 3, in PDF) \n
 * numerous LIF datasets \n
-* `public sample images <http://downloads.openmicroscopy.org/images/Leica-LIF/>`__
+* `public sample images <https://downloads.openmicroscopy.org/images/Leica-LIF/>`__
 pixelsRating = Outstanding
 metadataRating = Outstanding
 opennessRating = Very good
@@ -1507,7 +1507,7 @@ bsd = yes
 versions = Up to 1.4.22
 software = `Micro-Manager <https://micro-manager.org/>`_
 weHave = * many Micro-manager datasets\n
-* `public sample images <http://downloads.openmicroscopy.org/images/Micro-Manager/>`__
+* `public sample images <https://downloads.openmicroscopy.org/images/Micro-Manager/>`__
 pixelsRating = Outstanding
 metadataRating = Outstanding
 opennessRating = Outstanding
@@ -1647,7 +1647,7 @@ bsd = no
 samples = `Official test data <https://nifti.nimh.nih.gov/nifti-1/data/>`_
 weHave = * `NIfTI specification documents <https://nifti.nimh.nih.gov/nifti-1/>`_\n
 * several NIfTI datasets \n
-* `public sample images <http://downloads.openmicroscopy.org/images/NIfTI/>`__
+* `public sample images <https://downloads.openmicroscopy.org/images/NIfTI/>`__
 pixelsRating = Very good
 metadataRating = Very good
 opennessRating = Very good
@@ -1808,7 +1808,7 @@ owner = `Olympus <https://www.olympus-global.com>`_
 bsd = no
 software = `Olympus Viewer Plugin for ImageJ <http://imagej.net/OlympusImageJPlugin>`_
 weHave = * several OIR datasets \n
-* `public sample images <http://downloads.openmicroscopy.org/images/Olympus-OIR>`_
+* `public sample images <https://downloads.openmicroscopy.org/images/Olympus-OIR>`_
 pixelsRating = Very good
 metadataRating = Good
 opennessRating = Fair
@@ -1868,7 +1868,7 @@ bsd = yes
 versions = 2003FC, 2007-06, 2008-02, 2008-09, 2009-09, 2010-04, 2010-06, 2011-06, 2012-06, 2013-06, 2015-01, 2016-06
 weHave = * an :model_doc:`OME-TIFF specification document <ome-tiff/specification.html>`\n
 * many OME-TIFF datasets\n
-* `public sample images <http://downloads.openmicroscopy.org/images/OME-TIFF/>`__\n
+* `public sample images <https://downloads.openmicroscopy.org/images/OME-TIFF/>`__\n
 * the ability to produce additional datasets
 pixelsRating = Outstanding
 metadataRating = Outstanding
@@ -1898,7 +1898,7 @@ bsd = yes
 versions = 2003FC, 2007-06, 2008-02, 2008-09, 2009-09, 2010-04, 2010-06, 2011-06, 2012-06, 2013-06, 2015-01, 2016-06
 weHave = * `OME-XML specification documents <http://www.openmicroscopy.org/Schemas/>`_\n
 * many OME-XML datasets\n
-* `public sample images <http://downloads.openmicroscopy.org/images/OME-XML/>`__\n
+* `public sample images <https://downloads.openmicroscopy.org/images/OME-XML/>`__\n
 * the ability to produce more datasets
 pixelsRating = Outstanding
 metadataRating = Outstanding
@@ -1975,7 +1975,7 @@ extensions = .xml, .csv, .tif
 owner = `PerkinElmer <http://www.perkinelmer.com/>`_
 bsd = no
 weHave = * a few example datasets\n
-* `public sample images <http://downloads.openmicroscopy.org/images/PerkinElmer-Columbus/>`__
+* `public sample images <https://downloads.openmicroscopy.org/images/PerkinElmer-Columbus/>`__
 weWant = * an official specification document
 pixelsRating = Good
 metadataRating = Good
@@ -2017,7 +2017,7 @@ extensions = .tiff, .xml
 developer = `PerkinElmer <http://www.perkinelmer.com/>`_
 bsd = no
 weHave = * a few sample datasets\n
-* `public sample images <http://downloads.openmicroscopy.org/images/PerkinElmer-Operetta/>`__
+* `public sample images <https://downloads.openmicroscopy.org/images/PerkinElmer-Operetta/>`__
 weWant = * an official specification document \n
 * more sample datasets
 pixelsRating = Very good
@@ -2056,8 +2056,8 @@ extensions = .tif, .qptiff
 owner = `PerkinElmer <http://www.perkinelmer.com/>`_
 bsd = no
 pyramid = yes
-weHave = * a `specification document <http://downloads.openmicroscopy.org/images/Vectra-QPTIFF/perkinelmer/PKI_Image%20Format.docx>`__\n
-* `public sample images <http://downloads.openmicroscopy.org/images/Vectra-QPTIFF/>`__\n
+weHave = * a `specification document <https://downloads.openmicroscopy.org/images/Vectra-QPTIFF/perkinelmer/PKI_Image%20Format.docx>`__\n
+* `public sample images <https://downloads.openmicroscopy.org/images/Vectra-QPTIFF/>`__\n
 * several datasets
 pixelsRating = Very good
 metadataRating = Outstanding
