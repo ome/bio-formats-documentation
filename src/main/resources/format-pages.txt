@@ -590,7 +590,7 @@ software = `OsiriX Medical Imaging Software <http://www.osirix-viewer.com/>`_ \n
 `ezDICOM <http://www.sph.sc.edu/comd/rorden/ezdicom.html>`_ \n
 `Wikipedia's list of freeware health software <https://en.wikipedia.org/wiki/List_of_freeware_health_software>`_
 samples = `MRI Chest from FreeVol-3D web site <http://members.tripod.com/%7Eclunis_immensus/free3d/hk-40.zip>`_ \n
-`Medical Image Samples from Sebastien Barre's Medical Imaging page <http://www.barre.nom.fr/medical/samples/>`_ \n
+`Medical Image Samples from Sebastien Barre's Medical Imaging page <https://barre.dev/medical/samples>`_ \n
 `DICOM sample image sets from OsiriX web site <http://www.osirix-viewer.com/resources/dicom-image-library/>`_
 weHave = * `DICOM specification documents <http://dicom.nema.org/dicom/2007/>`_ (PS 3 - 2007, from 2006 December 28, in DOC and PDF) \n
 * numerous DICOM datasets\n
