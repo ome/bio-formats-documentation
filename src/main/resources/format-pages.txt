@@ -2701,7 +2701,7 @@ extensions = .lsm, .mdb
 owner = `ZEISS International <https://www.zeiss.com/corporate/int/home.html>`_
 bsd = no
 software = `Zeiss LSM Image Browser <https://www.zeiss.com/microscopy/int/downloads/>`_ \n
-`LSM Toolbox plugin for ImageJ <http://imagejdocu.tudor.lu/Members/ppirrotte/lsmtoolbox>`_ \n
+`LSM Toolbox plugin for ImageJ <https://imagej.net/LSM_Toolbox>`_ \n
 `LSM Reader plugin for ImageJ <https://imagej.nih.gov/ij/plugins/lsm-reader.html>`_ \n
 `DIMIN <http://www.dimin.net/>`_
 weHave = * LSM specification v3.2, from 2003 March 12, in PDF \n
