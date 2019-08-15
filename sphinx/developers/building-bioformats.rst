@@ -108,6 +108,15 @@ Alternatively, run the Eclipse Maven target with :command:`mvn
 eclipse:eclipse` to create the Eclipse project files, then use
 :menuselection:`File --> Import --> Existing Maven Projects`.
 
+IntelliJ IDEA
+^^^^^^^^^^^^^
+
+IntelliJ IDEA can build Bio-Formats using either Maven or Ant.  Go to
+:menuselection:`File --> Open...` and browse to the top-level folder
+of your Bio-Formats working copy.  Select
+:menuselection:`Build --> Build Project` or select the `Maven` tab on
+the right of the screen.
+
 Command line
 ^^^^^^^^^^^^
 
