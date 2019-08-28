@@ -1,6 +1,64 @@
 Version history
 ===============
 
+6.2.1 (2019 August)
+-------------------
+
+File format fixes and improvements:
+
+* Applied Precision CellWorX
+   - corrected plane positions for series index > 0 rather than reusing positions from the first series
+
+* DeltaVision
+   - added objective info for new Applied Precision 100X/1.4 lensID
+   - updated so that date from dv file will override log file date to avoid locale dependent dates
+
+* Leica LAS AF LIF (Leica Image File Format)
+   - fixed units and indexing for tile-based plane positions
+
+* TIFF
+   - fixed a potential exception in MinimalTiffReader when the TIFF is stored using very 
+     large tile/strips dimensions
+
+* Zeiss CZI
+   - fixed a bug to prevent an index out of bounds exception when populating positions
+
+Bug fixes and improvements:
+
+* `bfconvert` has been updated so that when the dimensions of a sub-resolution are smaller than the 
+  requested tile size then default to the size of the sub resolution
+
+* fixed a bug in the execution of `bfsave` in the GNU Octave environment
+
+Codec updates:
+
+* `ome-codecs` was upgraded to 0.2.5
+
+* JPEG codec updated to reduce decompression time for 8-bit RGB images
+
+* Huffman codec updated to allow the decoding tree to go all the way down to the 16-bit depth required 
+  by the standard (thanks to Aaron Avery)
+
+* Lossless JPEG codec updated to provide better compliance with the LJPEG standard (thanks to Aaron Avery)
+
+Documentation improvements:
+
+* added instructions for building Bio-Formats with IntelliJ IDEA
+* corrected command line tools documentation for the novalid and noncore options
+* updated broken links to Barre's Medical Imaging Samples
+* updated the imagej.net link for Zeiss LSM toolbox plugin
+* added links to public sample files for `Big Data Viewer <https://downloads.openmicroscopy.org/images/BDV/>`_
+* added links to public sample files for `CellWorX <https://downloads.openmicroscopy.org/images/CellWorX/>`_
+* added links to public sample files for `CellH5 <https://downloads.openmicroscopy.org/images/CellH5/>`_
+* added links to public sample files for `PerkinElmer Opera Flex <https://downloads.openmicroscopy.org/images/Flex/>`_
+* added links to public sample files for `Gatan DM3 <https://downloads.openmicroscopy.org/images/Gatan/>`_
+* added links to public sample files for `Image Cytometry Standard <https://downloads.openmicroscopy.org/images/ICS/>`_
+* added links to public sample files for `Keller Lab Block <https://downloads.openmicroscopy.org/images/KLB/>`_
+* added links to public sample files for `PerkinElmer Columbus <https://downloads.openmicroscopy.org/images/PerkinElmer-Columbus/>`_
+* added links to public sample files for `Ventana BIF <https://downloads.openmicroscopy.org/images/Ventana/>`_
+* added links to public sample files for `Zeiss-CZI <https://downloads.openmicroscopy.org/images/Zeiss-CZI/>`_
+
+
 6.2.0 (2019 July)
 -----------------
 
