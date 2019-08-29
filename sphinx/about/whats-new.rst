@@ -11,7 +11,7 @@ File format fixes and improvements:
 
 * DeltaVision
    - added objective info for new Applied Precision 100X/1.4 lensID
-   - updated so that date from dv file will override log file date to avoid locale dependent dates
+   - updated so that date from dv file will override log file date to avoid locale-dependent dates
 
 * Leica LAS AF LIF (Leica Image File Format)
    - fixed units and indexing for tile-based plane positions
