@@ -44,7 +44,7 @@ Codec updates:
 Documentation improvements:
 
 * added instructions for building Bio-Formats with IntelliJ IDEA
-* corrected command line tools documentation for the novalid and noncore options
+* corrected command-line tools documentation for the novalid and noncore options
 * updated broken links to Barre's Medical Imaging Samples
 * updated the imagej.net link for Zeiss LSM toolbox plugin
 * added links to public sample files for the following formats: 
