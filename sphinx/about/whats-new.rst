@@ -26,7 +26,7 @@ File format fixes and improvements:
 Bug fixes and improvements:
 
 * `bfconvert` has been updated so that when the dimensions of a sub-resolution are smaller than the 
-  requested tile size then default to the size of the sub resolution
+  requested tile size then they default to the size of the sub-resolution
 
 * fixed a bug in the execution of `bfsave` in the GNU Octave environment
 
