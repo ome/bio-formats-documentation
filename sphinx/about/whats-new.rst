@@ -21,7 +21,7 @@ File format fixes and improvements:
      large tile/strips dimensions
 
 * Zeiss CZI
-   - fixed a bug to prevent an index out of bounds exception when populating positions
+   - fixed a potential index out of bounds exception when populating positions
 
 Bug fixes and improvements:
 
@@ -47,16 +47,17 @@ Documentation improvements:
 * corrected command line tools documentation for the novalid and noncore options
 * updated broken links to Barre's Medical Imaging Samples
 * updated the imagej.net link for Zeiss LSM toolbox plugin
-* added links to public sample files for `Big Data Viewer <https://downloads.openmicroscopy.org/images/BDV/>`_
-* added links to public sample files for `CellWorX <https://downloads.openmicroscopy.org/images/CellWorX/>`_
-* added links to public sample files for `CellH5 <https://downloads.openmicroscopy.org/images/CellH5/>`_
-* added links to public sample files for `PerkinElmer Opera Flex <https://downloads.openmicroscopy.org/images/Flex/>`_
-* added links to public sample files for `Gatan DM3 <https://downloads.openmicroscopy.org/images/Gatan/>`_
-* added links to public sample files for `Image Cytometry Standard <https://downloads.openmicroscopy.org/images/ICS/>`_
-* added links to public sample files for `Keller Lab Block <https://downloads.openmicroscopy.org/images/KLB/>`_
-* added links to public sample files for `PerkinElmer Columbus <https://downloads.openmicroscopy.org/images/PerkinElmer-Columbus/>`_
-* added links to public sample files for `Ventana BIF <https://downloads.openmicroscopy.org/images/Ventana/>`_
-* added links to public sample files for `Zeiss-CZI <https://downloads.openmicroscopy.org/images/Zeiss-CZI/>`_
+* added links to public sample files for the following formats: 
+   - `Big Data Viewer <https://downloads.openmicroscopy.org/images/BDV/>`_
+   - `CellWorX <https://downloads.openmicroscopy.org/images/CellWorX/>`_
+   - `CellH5 <https://downloads.openmicroscopy.org/images/CellH5/>`_
+   - `PerkinElmer Opera Flex <https://downloads.openmicroscopy.org/images/Flex/>`_
+   - `Gatan DM3 <https://downloads.openmicroscopy.org/images/Gatan/>`_
+   - `Image Cytometry Standard <https://downloads.openmicroscopy.org/images/ICS/>`_
+   - `Keller Lab Block <https://downloads.openmicroscopy.org/images/KLB/>`_
+   - `PerkinElmer Columbus <https://downloads.openmicroscopy.org/images/PerkinElmer-Columbus/>`_
+   - `Ventana BIF <https://downloads.openmicroscopy.org/images/Ventana/>`_
+   - `Zeiss-CZI <https://downloads.openmicroscopy.org/images/Zeiss-CZI/>`_
 
 
 6.2.0 (2019 July)
