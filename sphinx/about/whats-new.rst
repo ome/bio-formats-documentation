@@ -18,7 +18,7 @@ File format fixes and improvements:
 
 * TIFF
    - fixed a potential exception in MinimalTiffReader when the TIFF is stored using very 
-     large tile/strips dimensions
+     large tile/strip dimensions
 
 * Zeiss CZI
    - fixed a potential index out of bounds exception when populating positions
