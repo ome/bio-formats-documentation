@@ -25,6 +25,7 @@
 # #L%
 ###
 
+from __future__ import print_function
 from os import listdir, makedirs
 import re
 import errno
@@ -143,7 +144,7 @@ with open(args.output_file, 'w') as f:
     for reader in get_readers():
         # Open the reader for parsing
         readername = basename(reader).rstrip('.java')
-        print "Parsing %s" % readername
+        print("Parsing %s" % readername)
         f.write("[%s]\n" % readername)
         text = open(reader).read()
 
