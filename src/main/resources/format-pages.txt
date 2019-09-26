@@ -1171,7 +1171,7 @@ utilityRating = Fair
 reader = JEOLReader
 
 [JPEG 2000]
-extensions = .jp2
+extensions = .jp2, .j2k, .jpf
 developer = `Independent JPEG Group <http://www.ijg.org/>`_
 bsd = yes
 software = `JJ2000 (JPEG 2000 library for Java) <https://code.google.com/archive/p/jj2000/>`_
