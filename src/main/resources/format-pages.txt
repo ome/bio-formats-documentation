@@ -1004,7 +1004,7 @@ extensions = .raw
 owner = `PerkinElmer <http://www.perkinelmer.com/>`_
 developer = `Improvision <https://www.perkinelmer.com/lab-products-and-services/resources/cellular-imaging-software-downloads.html>`_
 bsd = no
-weHave = * an `Openlab Raw specification document (from 2004 November 09, in HTML) \n
+weHave = * an Openlab Raw specification document (from 2004 November 09, in HTML) \n
 * a few Openlab Raw datasets
 pixelsRating = Outstanding
 metadataRating = Very good
