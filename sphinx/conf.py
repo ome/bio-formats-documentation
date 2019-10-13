@@ -432,5 +432,6 @@ linkcheck_ignore = ['https://imspector.mpibpc.mpg.de',
     r'https://www.nis-elements.com/.*', # Invalid SSL certificate
     r'https://www.nikoninstruments.com/.*', # Invalid SSL certificate
     r'http://farsight-toolkit.ee.uh.edu/.*',
-    r'https://testng.org/*' # Invalid SSL certificate
+    r'https://testng.org/*', # Invalid SSL certificate
+    r'http://www.bio-rad.com/*' # 503 Server Error with Sphinx v1.8.5
 ]
