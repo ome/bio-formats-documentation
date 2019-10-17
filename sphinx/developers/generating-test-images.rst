@@ -306,7 +306,7 @@ with their default values, is shown below.
         pyramid levels
       * 2
     - * sleepOpenBytes
-      * umber of milliseconds to sleep for when openBytes is called 
+      * number of milliseconds to sleep for when openBytes is called 
       * 0
     - * sleepInitFile
       * number of milliseconds to sleep for when initFile is called 
