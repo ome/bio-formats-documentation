@@ -1,6 +1,68 @@
 Version history
 ===============
 
+6.3.0 (2019 October)
+--------------------
+
+File format fixes and improvements:
+
+* Big Data Viewer
+   - added support for parsing of physical sizes
+
+* DeltaVision
+   - added a new RCPNL reader which is a variant and split out of the DeltaVision format
+
+* Hamamatsu NDPI
+   - fixed population of the nominal magnification from the SourceLens TIFF tag
+
+* ICS (Image Cytometry Standard)
+   - fixed a bug when using tiles to read files from SVI-Huygens
+
+* Imspector OBF
+   - fixed an `IndexOutOfBoundsException` exception when using `DummyMetadata` (thanks to Nils Gladitz)
+
+* JPEG 2000
+   - added support for sub-resolutions
+
+* Leica LIF
+   - updated to parse attachments to determine if XY positions should be flipped or swapped
+
+* MetaMorph
+   - improved file name construction and plate detection logic
+
+* Nikon ND2
+   - updated to use floating point for 32 bit values
+
+* OME-TIFF
+   - reduced memory usage when reading files and memo file size for cached files
+
+* PerkinElmer Operetta
+   - improved handling of empty fields to prevent series from having X or Y set to 0
+
+API updates:
+
+* added `overwriteIFDValue` signature that takes an IFD offset to `TiffSaver`
+* added a new `getRequiredDirectories` method to `FormatTools`
+* new `FakeReader` keys added for `sleepOpenBytes` and `sleepInitFile`
+
+Build updates:
+
+* updated deployment mechanism for SNAPSHOT and Release to use Travis CI
+* increased the strictness of AcquisitionDate checks in `FormatReaderTest`
+* improved test coverage of companion file datasets
+
+Component updates:
+
+* `ome-common` was upgraded to 6.0.4
+* updated `DateTools` to attempt to parse invalid dates with `Locale.US` 
+* `DateTools` documentation updated to clarify expected units for timestamp passed to convertDate
+
+Documentation improvements:
+* added documentation for sleep options when generating test images
+* fixed broken external links in documentation
+* corrected suffixes used for JPEG 2000
+
+
 6.2.1 (2019 August)
 -------------------
 
