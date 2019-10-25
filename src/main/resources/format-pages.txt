@@ -561,7 +561,7 @@ reader = CV7000Reader
 mif = true
 
 [DeltaVision]
-extensions = .dv, .r3d
+extensions = .dv, .r3d, .rcpnl
 owner = `GE Healthcare (formerly Applied Precision) <https://www.gelifesciences.com/webapp/wcs/stores/servlet/catalog/en/GELifeSciences-UK/brands/deltavision/>`_
 bsd = no
 software = `DeltaVision Opener plugin for ImageJ <https://imagej.nih.gov/ij/plugins/track/delta.html>`_
@@ -573,7 +573,7 @@ metadataRating = Very good
 opennessRating = Good
 presenceRating = Good
 utilityRating = Good
-reader = DeltavisionReader
+reader = DeltavisionReader, RCPNLReader
 mif = true
 privateSpecification = true
 notes = - The Deltavision format is based on the Medical Research Council (MRC) file format. \n
@@ -582,6 +582,7 @@ notes = - The Deltavision format is based on the Medical Research Council (MRC) 
   * `Bitplane Imaris <http://www.bitplane.com/>`_ \n
   * `SVI Huygens <http://svi.nl/>`_ \n
   * `Image-Pro Plus <http://www.mediacy.com/>`_ \n
+- RCPNL is a variant of the DeltaVision format and requires a separate reader. \n
 
 [DICOM]
 extensions = .dcm, .dicom
