@@ -58,6 +58,7 @@ Component updates:
 * `DateTools` documentation updated to clarify expected units for timestamp passed to convertDate
 
 Documentation improvements:
+
 * added documentation for sleep options when generating test images
 * fixed broken external links in documentation
 * corrected suffixes used for JPEG 2000
