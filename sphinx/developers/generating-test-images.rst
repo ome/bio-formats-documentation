@@ -305,6 +305,12 @@ with their default values, is shown below.
       * for images with sub-resolutions, scaling factor between consecutive
         pyramid levels
       * 2
+    - * sleepOpenBytes
+      * number of milliseconds to sleep for when openBytes is called 
+      * 0
+    - * sleepInitFile
+      * number of milliseconds to sleep for when initFile is called 
+      * 0
 
 .. [1] Default value set to 1 if any of the ``screens``, ``plates``,
        ``plateAcqs``, ``plateRows``, ``plateCols`` or ``fields`` values is set
