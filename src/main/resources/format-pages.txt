@@ -582,7 +582,7 @@ notes = - The Deltavision format is based on the Medical Research Council (MRC) 
   * `Bitplane Imaris <http://www.bitplane.com/>`_ \n
   * `SVI Huygens <http://svi.nl/>`_ \n
   * `Image-Pro Plus <http://www.mediacy.com/>`_ \n
-- RCPNL is a variant of the Deltavision format and requires a separate reader. \n
+- RCPNL is a variant of the DeltaVision format and requires a separate reader. \n
 
 [DICOM]
 extensions = .dcm, .dicom
