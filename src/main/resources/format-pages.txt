@@ -2539,7 +2539,7 @@ mif = true
 
 [Volocity Library Clipping]
 extensions = .acff
-developer = `PerkinElmer <https://www.perkinelmer.com/lab-products-and-services/resources/cellular-imaging-software-downloads.html>`_
+developer = `PerkinElmer <https://www.perkinelmer.com/>`_
 bsd = no
 weHave = * several Volocity library clipping datasets
 weWant = * any datasets that do not open correctly \n
