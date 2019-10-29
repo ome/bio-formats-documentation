@@ -649,7 +649,7 @@ notes = * Bio-Formats can save individual planes as EPS. \n
 
 [Evotec/PerkinElmer Opera Flex]
 extensions = .flex, .mea, .res
-developer = `Evotec Technologies, now PerkinElmer <http://www.perkinelmer.com/>`_
+developer = Evotec Technologies, now `PerkinElmer <https://www.perkinelmer.com/>`_
 bsd = no
 weHave = * many Flex datasets\n
 * `public sample images <https://downloads.openmicroscopy.org/images/Flex/>`__
@@ -983,8 +983,8 @@ reader = IMODReader
 
 [Improvision Openlab LIFF]
 extensions = .liff
-owner = `PerkinElmer <http://www.perkinelmer.com/>`_
-developer = `Improvision <https://www.perkinelmer.com/lab-products-and-services/resources/software-downloads.html>`_
+owner = `PerkinElmer <https://www.perkinelmer.com/>`_
+developer = Improvision, now `PerkinElmer <https://www.perkinelmer.com/>`_
 bsd = no
 versions = 2.0, 5.0
 weHave = * an Openlab specification document (from 2000 February 8, in DOC) \n
@@ -1002,8 +1002,8 @@ mif = true
 
 [Improvision Openlab Raw]
 extensions = .raw
-owner = `PerkinElmer <http://www.perkinelmer.com/>`_
-developer = `Improvision <https://www.perkinelmer.com/lab-products-and-services/resources/software-downloads.html>`_
+owner = `PerkinElmer <https://www.perkinelmer.com/>`_
+developer = Improvision, now `PerkinElmer <https://www.perkinelmer.com/>`_
 bsd = no
 weHave = * an Openlab Raw specification document (from 2004 November 09, in HTML) \n
 * a few Openlab Raw datasets
@@ -1016,8 +1016,8 @@ reader = OpenlabRawReader
 
 [Improvision TIFF]
 extensions = .tif
-owner = `PerkinElmer <http://www.perkinelmer.com/>`_
-developer = `Improvision <https://www.perkinelmer.com/lab-products-and-services/resources/software-downloads.html>`_
+owner = `PerkinElmer <https://www.perkinelmer.com/>`_
+developer = Improvision, now `PerkinElmer <https://www.perkinelmer.com/>`_
 bsd = no
 weHave = * an Improvision TIFF specification document \n
 * a few Improvision TIFF datasets
@@ -1973,7 +1973,7 @@ reader = PQBinReader
 
 [PerkinElmer Columbus]
 extensions = .xml, .csv, .tif
-owner = `PerkinElmer <http://www.perkinelmer.com/>`_
+owner = `PerkinElmer <https://www.perkinelmer.com/>`_
 bsd = no
 weHave = * a few example datasets\n
 * `public sample images <https://downloads.openmicroscopy.org/images/PerkinElmer-Columbus/>`__
@@ -1988,7 +1988,7 @@ mif = true
 
 [Perkin Elmer Densitometer]
 extensions = .pds
-developer = `Perkin Elmer <http://www.perkinelmer.com>`_
+developer = `Perkin Elmer <https://www.perkinelmer.com>`_
 bsd = no
 weHave = * a few PDS datasets
 weWant = * an official specification document \n
@@ -2002,7 +2002,7 @@ reader = PDSReader
 
 [PerkinElmer Nuance]
 extensions = .im3
-developer = `PerkinElmer <http://www.perkinelmer.com/>`_
+developer = `PerkinElmer <https://www.perkinelmer.com/>`_
 bsd = yes
 weHave = * a few sample datasets
 pixelsRating = Good
@@ -2015,7 +2015,7 @@ mif = true
 
 [PerkinElmer Operetta]
 extensions = .tiff, .xml
-developer = `PerkinElmer <http://www.perkinelmer.com/>`_
+developer = `PerkinElmer <https://www.perkinelmer.com/>`_
 bsd = no
 weHave = * a few sample datasets\n
 * `public sample images <https://downloads.openmicroscopy.org/images/PerkinElmer-Operetta/>`__
@@ -2032,7 +2032,7 @@ mif = true
 [PerkinElmer UltraVIEW]
 indexExtensions = .tif, .2, .3, .4
 extensions = .tif, .2, .3, .4, etc.
-owner = `PerkinElmer <http://www.perkinelmer.com/>`_
+owner = `PerkinElmer <https://www.perkinelmer.com/>`_
 bsd = no
 weHave = * several UltraVIEW datasets
 pixelsRating = Very good
@@ -2050,11 +2050,11 @@ Commercial applications that support this format include: \n
 * `Image-Pro Plus <http://www.mediacy.com/>`_ \n
 \n
 .. seealso:: \n
-  `PerkinElmer UltraVIEW system overview (pdf) <http://www.perkinelmer.com/lab-solutions/resources/PDFs/LST/Brochures/BRO_UltraVIEW-VoX-Product-Brochure.pdf>`_
+  `PerkinElmer UltraVIEW system overview (pdf) <https://www.perkinelmer.com/lab-solutions/resources/PDFs/LST/Brochures/BRO_UltraVIEW-VoX-Product-Brochure.pdf>`_
 
 [PerkinElmer Vectra QPTIFF]
 extensions = .tif, .qptiff
-owner = `PerkinElmer <http://www.perkinelmer.com/>`_
+owner = `PerkinElmer <https://www.perkinelmer.com/>`_
 bsd = no
 pyramid = yes
 weHave = * a `specification document <https://downloads.openmicroscopy.org/images/Vectra-QPTIFF/perkinelmer/PKI_Image%20Format.docx>`__\n
@@ -2554,7 +2554,7 @@ notes = RGB .acff files are not yet supported.  See :ticket:`6413`.
 
 [Volocity]
 extensions = .mvd2
-developer = `PerkinElmer <https://www.perkinelmer.com/lab-products-and-services/resources/cellular-imaging-software-downloads.html>`_
+developer = `PerkinElmer <https://www.perkinelmer.com>`_
 bsd = no
 samples = `PerkinElmer Downloads <http://cellularimaging.perkinelmer.com/downloads/>`_
 weHave = * many example Volocity datasets
