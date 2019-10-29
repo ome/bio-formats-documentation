@@ -48,7 +48,7 @@ reader = PSDReader
 
 [AIM]
 extensions = .aim
-developer = `SCANCO Medical AG <http://www.scanco.ch>`_
+developer = `SCANCO Medical AG <http://www.scanco.ch/>`_
 bsd = no
 weHave = * one .aim file
 weWant = * an .aim specification document \n
