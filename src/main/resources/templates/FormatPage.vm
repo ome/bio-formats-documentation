@@ -68,7 +68,9 @@ We currently have:
 $item
 #end
 
+#if ($weWant)
 We would like to have:
+#end
 
 #foreach ($item in $weWant)
 $item
