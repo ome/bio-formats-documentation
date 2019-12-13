@@ -1,6 +1,36 @@
 Version history
 ===============
 
+6.3.1 (2019 December)
+---------------------
+
+File format fixes and improvements:
+
+* ICS (Image Cytometry Standard)
+   - prevented a potential error when writing ICS files with physical units which could not be converted
+
+* Imspector OBF
+   - fixed a bug with incorrect dimensions being parsed for some Imspector OBF files
+
+* Leica LAS AF LIF (Leica Image File Format)
+   - fixed a NullPointerException in some variants of the LIF file format
+
+* TIFF
+   - improved the performance of tiled writing
+
+* Zeiss CZI
+   - fixed issued with tile stitching and position size
+
+Bio-Formats tools improvements:
+
+* fixed a potential NullPointerException in SpringUtilities for Bio-Formats plugins (thanks to July Chen)
+* updated URL for fetching ImageJ upgrades in ``ijview``
+* fixed the XY coordinates for cropped images in ``bfconvert``
+* fixed a bug when using a cropped multi series file in ``bfconvert`` (thanks to Matthieu Moisse)
+* fixed issues in ``bfconvert`` when writing separate tiles with additional options
+* added documentation of tile output patterns to utility help in ``bfconvert``
+
+
 6.3.0 (2019 October)
 --------------------
 
