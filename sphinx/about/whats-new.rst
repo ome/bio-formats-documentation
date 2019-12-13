@@ -19,14 +19,14 @@ File format fixes and improvements:
    - improved the performance of tiled writing
 
 * Zeiss CZI
-   - fixed issued with tile stitching and position size
+   - fixed issues with tile stitching and position size
 
 Bio-Formats tools improvements:
 
 * fixed a potential NullPointerException in SpringUtilities for Bio-Formats plugins (thanks to July Chen)
 * updated URL for fetching ImageJ upgrades in ``ijview``
 * fixed the XY coordinates for cropped images in ``bfconvert``
-* fixed a bug when using a cropped multi series file in ``bfconvert`` (thanks to Matthieu Moisse)
+* fixed a bug when using a cropped multi-series file in ``bfconvert`` (thanks to Matthieu Moisse)
 * fixed issues in ``bfconvert`` when writing separate tiles with additional options
 * added documentation of tile output patterns to utility help in ``bfconvert``
 
