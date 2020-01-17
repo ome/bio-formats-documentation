@@ -103,7 +103,6 @@ Visualization and analysis applications
     graphic-con/index
     icy/index
     iqm/index
-    macnif/index
     micromanager/index
     mipav/index
     qupath/index
