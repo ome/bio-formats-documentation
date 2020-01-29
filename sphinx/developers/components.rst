@@ -93,7 +93,7 @@ need to remove the conflicting JAR(s) as a workaround.
 
 `Ant: jar-turbojpeg`
 
-This is a fork of `libjpeg-turbo <http://libjpeg-turbo.virtualgl.org/>`_.
+This is a fork of `libjpeg-turbo <https://libjpeg-turbo.org>`_.
 There are not any real code changes, but having this as a separate component
 allows us to package the libjpeg-turbo Java API together with all of the
 required binaries into a single .jar file using `native-lib-loader
