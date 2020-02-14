@@ -175,7 +175,7 @@ name pattern, then the other must be included too.  The only exception is if
 .. option:: -nobigtiff
 
     This option disables the automatic switching to BigTiff based upon the number of pixel bytes 
-    (TIFF files larger than 4 GB)::
+    (TIFF files larger than 4GB)::
 
       bfconvert -nobigtiff /path/to/input output.ome.tiff
 
