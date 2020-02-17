@@ -172,6 +172,21 @@ name pattern, then the other must be included too.  The only exception is if
 
         bfconvert /path/to/input output.ome.btf
 
+.. option:: -nobigtiff
+
+    This option disables the automatic switching to BigTiff based upon the number of pixel bytes 
+    (TIFF files larger than 4GB)::
+
+      bfconvert -nobigtiff /path/to/input output.ome.tiff
+
+    .. versionadded:: 6.4.0
+
+    Using the :option:`-nobigtiff` will disable writing BigTiff when the output format is less than 4GB. 
+    It will not be able to write standard Tiff files greater than 4GB. An example of when it might be 
+    used would be when converting using a compression codec that reduces the size of the output file, e.g.:: 
+
+        bfconvert -nobigtiff -compression LZW /path/to/input output.ome.btf
+
 .. option:: -padded
 
     This option is used alongside a pattern string when writing an image to multiple files.
