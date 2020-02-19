@@ -40,7 +40,7 @@ Bio-Formats tools improvements:
   number of pixel bytes (TIFF files larger than 4GB). This may be useful when converting using a compression 
   codec so that the output file size is less than 4GB
 * fixed a bug in ``xmlvalid`` tool to properly handle lowercasing of file names
-* added new bfGetPlaneAtZCT function to the MATLAB toolbox to retrieve a particular plane at a ZCT coordinate 
+* added new bfGetPlaneAtZCT function to MATLAB toolbox to retrieve a particular plane at a ZCT coordinate 
   (thanks to Mark Kittisopikul)
 * added a new bfTestInRange helper function to MATLAB toolbox with improved performance and error handling 
   (thanks to Mark Kittisopikul)
