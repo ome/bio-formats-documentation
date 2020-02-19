@@ -53,7 +53,7 @@ Bio-Formats API updates:
 * added a documentation note to use one IFD instance per plane with ``saveBytes`` in ``TiffWriter``
 * FormatWriter will now create output file's parent directory if needed
 * FakeReader now allows for DeltaT to be set in INI file
-* FakeReader now handles ini files in plates created by mkfake
+* FakeReader now handles INI files in plates created by ``mkfake``
 * fixed a number of deprecation warnings in various readers
 
 6.3.1 (2019 December)
