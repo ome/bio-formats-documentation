@@ -45,7 +45,7 @@ Bio-Formats tools improvements:
   (thanks to Mark Kittisopikul)
 * added a new bfTestInRange helper function to MATLAB toolbox with improved performance and error handling 
   (thanks to Mark Kittisopikul)
-* fixed a bug when using ``bfconvert`` on multi series files with only a single timepjoint, channel or Z slice selected
+* fixed a bug when using ``bfconvert`` on multi series files with only a single timepoint, channel or Z slice selected
 
 Bio-Formats API updates:
 
