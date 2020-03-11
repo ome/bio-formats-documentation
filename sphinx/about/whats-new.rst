@@ -1,8 +1,8 @@
 Version history
 ===============
 
-6.4.0 (2020 February)
----------------------
+6.4.0 (2020 March)
+------------------
 
 File format fixes and improvements:
 
@@ -25,6 +25,7 @@ File format fixes and improvements:
 
 * TIFF
    - values for XPosition and YPosition in original metadata will now be more accurately stored as doubles
+   - implemented a fix to prevent integer overflow when reading from a large tile greater than 2 GB
 
 * Ventana BIF
    - improved handling of physical sizes for pre-stitched TIFFs
@@ -44,10 +45,13 @@ Bio-Formats tools improvements:
   (thanks to Mark Kittisopikul)
 * added a new bfTestInRange helper function to MATLAB toolbox with improved performance and error handling 
   (thanks to Mark Kittisopikul)
+* fixed a bug when using ``bfconvert`` on multi series files with only a single timepjoint, channel or Z slice selected
 
 Bio-Formats API updates:
 
 * version of ``jxrlib`` has been updated to 0.2.2
+* version of ``ome-codecs`` has been updated to 0.3.0 which includes performance upgrades for 
+  LZW compression (thanks to Alexander Popiel)
 * moved JPEG-XR codec and service from ``formats-gpl`` to ``formats-bsd`` component
 * TiffParser and TiffSaver have now been updated to implement Closeable
 * added a documentation note to use one IFD instance per plane with ``saveBytes`` in ``TiffWriter``
