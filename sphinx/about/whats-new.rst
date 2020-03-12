@@ -16,6 +16,7 @@ File format fixes and improvements:
    - added support for JPEG-XR compression
    - added full support for files larger than 4 GB
    - improved support for a number of additional metadata tags
+   - the Hamamatsu NDPI reader improvements are provided via work from Glencoe Software Inc.
 
 * InCell
    - inverted Y coordinate in plane/field positions to correct stitching of tiles
