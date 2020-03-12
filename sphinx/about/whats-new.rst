@@ -1,6 +1,66 @@
 Version history
 ===============
 
+6.4.0 (2020 March)
+------------------
+
+File format fixes and improvements:
+
+* Applied Precision CellWorX
+   - added support for multiple Z sections
+
+* DeltaVision
+   - added and updated objective metadata based on values from softWoRx 7.2.0 (thanks to David Pinto)
+
+* Hamamatsu NDPI
+   - added support for JPEG-XR compression
+   - added full support for files larger than 4 GB
+   - improved support for a number of additional metadata tags
+   - the Hamamatsu NDPI reader improvements are provided via work from Glencoe Software Inc.
+
+* InCell
+   - inverted Y coordinate in plane/field positions to correct stitching of tiles
+
+* PerkinElmer Vectra QPTIFF
+   - plane position values will now be populated on OME-XML
+
+* TIFF
+   - values for XPosition and YPosition in original metadata will now be more accurately stored as doubles
+   - implemented a fix to prevent integer overflow when reading from a large tile greater than 2 GB
+
+* Ventana BIF
+   - improved handling of physical sizes for pre-stitched TIFFs
+
+* Zeiss CZI
+   - added a fix for uncompressed pixels incorrectly flagged as JPEG-XR
+   - fixed a bug so that line-scans are now read correctly (thanks to Stephan Wagner-Conrad)
+   - improved parsing of detector metadata
+
+Bio-Formats tools improvements:
+
+* added a new ``nobigtiff`` option to ``bfconvert`` to disable automatic switching to BigTiff based upon the 
+  number of pixel bytes (TIFF files larger than 4GB). This may be useful when converting using a compression 
+  codec so that the output file size is less than 4GB
+* fixed a bug in ``xmlvalid`` tool to properly handle lowercasing of file names
+* added new bfGetPlaneAtZCT function to MATLAB toolbox to retrieve a particular plane at a ZCT coordinate 
+  (thanks to Mark Kittisopikul)
+* added a new bfTestInRange helper function to MATLAB toolbox with improved performance and error handling 
+  (thanks to Mark Kittisopikul)
+* fixed a bug when using ``bfconvert`` on multi-series files with only a single timepoint, channel or Z slice selected
+
+Bio-Formats API updates:
+
+* version of ``jxrlib`` has been updated to 0.2.2
+* version of ``ome-codecs`` has been updated to 0.3.0 which includes performance upgrades for 
+  LZW compression (thanks to Alexander Popiel)
+* moved JPEG-XR codec and service from ``formats-gpl`` to ``formats-bsd`` component
+* TiffParser and TiffSaver have now been updated to implement Closeable
+* added a documentation note to use one IFD instance per plane with ``saveBytes`` in ``TiffWriter``
+* FormatWriter will now create output file's parent directory if needed
+* FakeReader now allows for DeltaT to be set in INI file
+* FakeReader now handles INI files in plates created by ``mkfake``
+* fixed a number of deprecation warnings in various readers
+
 6.3.1 (2019 December)
 ---------------------
 
