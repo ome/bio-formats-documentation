@@ -816,9 +816,8 @@ software = `NDP.view2 <https://www.hamamatsu.com/eu/en/community/nanozoomer/prod
 `OpenSlide <https://openslide.org>`_
 weHave = * many example datasets \n
 * `public sample images <https://downloads.openmicroscopy.org/images/Hamamatsu-NDPI/>`__
-weWant = * an official specification document
-pixelsRating = Fair
-metadataRating = Fair
+pixelsRating = Very Good
+metadataRating = Very Good
 opennessRating = Good
 presenceRating = Fair
 utilityRating = Fair
