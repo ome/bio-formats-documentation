@@ -10,13 +10,13 @@ The primary goal of Bio-Formats is to facilitate the exchange of
 microscopy data between different software packages and
 organizations. It achieves this by converting proprietary
 microscopy data into an open standard called the `OME data
-model <http://genomebiology.com/2005/6/5/R47>`_, particularly into the
+model <https://genomebiology.com/2005/6/5/R47>`_, particularly into the
 :model_doc:`OME-TIFF <ome-tiff>` file format.
 
 We believe the standardization of microscopy metadata to a common
 structure is of vital importance to the community. You may find LOCI's article
 on `open source software in
-science <http://loci.wisc.edu/software/oss>`_ of interest.
+science <https://loci.wisc.edu/software/oss>`_ of interest.
 
 License, copyright, and citation
 --------------------------------
@@ -33,7 +33,7 @@ Bio-Formats can be cited in publications as follows:
 
   Melissa Linkert, Curtis T. Rueden, Chris Allan, Jean-Marie Burel, Will Moore, Andrew Patterson, Brian Loranger, Josh Moore, Carlos Neves, Donald MacDonald, Aleksandra Tarkowska, Caitlin Sticco, Emma Hill, Mike Rossner, Kevin W. Eliceiri, and Jason R. Swedlow (2010) Metadata matters: access to image data in the real world. The Journal of Cell Biology 189(5), 777-782. doi: 10.1083/jcb.201004104
 
-`PMID:20513764 <http://www.ncbi.nlm.nih.gov/pubmed/20513764>`_
+`PMID:20513764 <https://www.ncbi.nlm.nih.gov/pubmed/20513764>`_
 
 Additional citation information can be found on the :oo_root:`main OME citation page <citing-ome>`.
 
@@ -56,16 +56,16 @@ include:
 -  :community:`OME Forums <>`
 -  `OME Trac <https://trac.openmicroscopy.org/ome>`_
 -  `ome-devel mailing
-   list <http://lists.openmicroscopy.org.uk/pipermail/ome-devel>`_
+   list <https://lists.openmicroscopy.org.uk/pipermail/ome-devel>`_
    (searchable using google with 'site:lists.openmicroscopy.org.uk')
 -  `ome-users mailing
-   list <http://lists.openmicroscopy.org.uk/pipermail/ome-users>`_
+   list <https://lists.openmicroscopy.org.uk/pipermail/ome-users>`_
    (searchable using google with 'site:lists.openmicroscopy.org.uk')
 -  `ImageJ mailing list <http://imagej.nih.gov/ij/list.html>`_ (and
    `archive <http://imagej.1557.x6.nabble.com/>`_)
 -  `Fiji GitHub Issues <https://github.com/fiji/fiji/issues>`_
 -  `Confocal microscopy mailing
-   list <http://lists.umn.edu/cgi-bin/wa?A0=confocalmicroscopy>`_
+   list <https://lists.umn.edu/cgi-bin/wa?A0=confocalmicroscopy>`_
 
 Bio-Formats versions
 --------------------
@@ -138,13 +138,13 @@ compiled one time into platform-independent byte code, which can be deployed
 as is to all supported platforms. And despite this enormous flexibility, Java
 manages to provide time performance nearly equal to C++, often better in the
 case of I/O operations (see further discussion on the
-`comparative speed of Java on the LOCI site <http://loci.wisc.edu/faq/isnt-java-too-slow>`_).
+`comparative speed of Java on the LOCI site <https://loci.wisc.edu/faq/isnt-java-too-slow>`_).
 
 There are also historical reasons associated with the fact that the project
 grew out of work on the
 `VisAD Java component library <http://visad.ssec.wisc.edu>`_. You can read
 more about the origins of Bio-Formats on the
-`LOCI Bio-Formats homepage <http://loci.wisc.edu/software/bio-formats>`_.
+`LOCI Bio-Formats homepage <https://loci.wisc.edu/software/bio-formats>`_.
 
 Bio-Formats metadata processing
 -------------------------------
@@ -159,7 +159,7 @@ available today.
 Every file format has a distinct set of metadata, stored differently.
 Bio-Formats processes and converts each format's metadata structures
 into a standard form called the `OME data
-model <http://genomebiology.com/2005/6/5/R47>`_, according to the
+model <https://genomebiology.com/2005/6/5/R47>`_, according to the
 :model_doc:`OME-XML <ome-xml>` specification. We have defined an open exchange
 format called :model_doc:`OME-TIFF <ome-tiff>` that stores its metadata as
 OME-XML. Any software package that supports OME-TIFF is also compatible with
