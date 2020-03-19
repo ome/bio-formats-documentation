@@ -2566,7 +2566,7 @@ presenceRating = Poor
 utilityRating = Fair
 reader = VolocityReader
 mif = true
-notes = .mvd2 files are `Metakit database files <https://equi4.com/metakit/>`_.
+notes = .mvd2 files are `Metakit database files <https://wiki.tcl-lang.org/page/Metakit/>`_.
 
 [WA-TOP]
 extensions = .wat
