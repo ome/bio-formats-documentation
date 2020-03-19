@@ -109,7 +109,7 @@ pygments_style = 'sphinx'
 #modindex_common_prefix = []
 
 github_root = 'https://github.com/'
-bf_github_root = github_root + openmicroscopy_source_user + '/bioformats/'
+bf_github_root = github_root + ome_source_user + '/bioformats/'
 bf_github_tree = bf_github_root + 'tree/' + bioformats_source_branch + '/'
 bf_github_blob = bf_github_root + 'blob/' + bioformats_source_branch + '/'
 gpl_formats = bf_github_blob + 'components/formats-gpl/src/loci/formats/'

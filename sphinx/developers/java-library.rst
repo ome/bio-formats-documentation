@@ -12,7 +12,7 @@ enable the use of this repository.
 
 Examples of getting started with Bio-Formats using Maven or Gradle are given
 in the https://github.com/ome/bio-formats-examples repository.
-`OMERO <https://github.com/openmicroscopy/openmicroscopy>`_ uses Ivy to manage
+`OMERO <https://github.com/ome/openmicroscopy>`_ uses Ivy to manage
 its Java dependencies including Bio-Formats.
 
 .. note::

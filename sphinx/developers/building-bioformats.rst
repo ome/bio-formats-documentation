@@ -20,8 +20,7 @@ This may be accessed using the repository path::
 
 More information about Git and client downloads are available from the
 `Git project website <https://git-scm.com/>`_.  You can also browse the
-`Bio-Formats source on GitHub
-<https://github.com/openmicroscopy/bioformats>`_
+`Bio-Formats source on GitHub <https://github.com/ome/bioformats>`_
 
 .. note::
 
