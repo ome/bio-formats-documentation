@@ -1,11 +1,13 @@
+---
 language: java
-
-sudo: false
-
-# http://docs.travis-ci.com/user/caching/#Arbitrary-directories
 cache:
   directories:
   - $HOME/.m2
+
+addons:
+  apt:
+    packages:
+      - python3-pip
 
 jdk:
   - openjdk11
@@ -15,7 +17,7 @@ matrix:
   fast_finish: true
 
 before_install:
-  - pip install --user -r requirements.txt
+  - pip3 install --user -r requirements.txt
 
 script:
   - mvn install -DskipSphinxTests=true
