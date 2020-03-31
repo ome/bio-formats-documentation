@@ -873,7 +873,7 @@ Bug fixes and improvements:
 
 Documentation improvements:
 
-* added a `support <https://github.com/openmicroscopy/bioformats/blob/develop/SUPPORT.md>`_ 
+* added a `support <https://github.com/ome/bioformats/blob/develop/SUPPORT.md>`_ 
   page to the Bio-Formats project
 * updated reference URLs for the Aperio ImageScope and Micro-Manager
 * documented issues with conflicts in the :ref:`JAI ImageIO component <forks-jai>`
@@ -1667,7 +1667,7 @@ Top-level Bio-Formats API changes:
 * the Formats API has also been updated to add a new validate property to
   ``MetadataOptions`` and support for ``MetadataOptions`` has been moved to
   FormatHandler level to allow it to be used by both Readers and Writers
-* initial work on `Reader discoverability <https://github.com/openmicroscopy/design/issues/42>`_
+* initial work on `Reader discoverability <https://github.com/ome/design/issues/42>`_
   extended the ClassList API to allow the :file:`readers.txt` configuration
   file to be annotated using key/value pairs to mark optional Readers and
   specify additional per-Reader options
