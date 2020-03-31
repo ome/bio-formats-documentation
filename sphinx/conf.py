@@ -437,5 +437,5 @@ linkcheck_ignore = ['https://imspector.mpibpc.mpg.de',
     r'https://www.mayo.edu/.*',
     r'https://libjpeg-turbo.org',
     r'https://www.biovis.com/.*', # SSLV3_ALERT_HANDSHAKE_FAILURE
-    r'https://www.github.com/ome/.*', # 429 too many requests for url
+    r'https://github.com/ome/.*', # 429 too many requests for url
 ]
