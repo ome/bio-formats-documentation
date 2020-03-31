@@ -229,7 +229,7 @@ allows OLE files to be read from memory.
 `Metakit Java library <https://github.com/ome/ome-metakit/tree/master>`_:
 
 Java implementation of the `Metakit database specification
-<https://equi4.com/metakit/>`_.  This uses classes from
+<https://wiki.tcl-lang.org/page/Metakit/>`_.  This uses classes from
 :ref:`ome-common <ome-common>` and is used by
 :ref:`formats-gpl <formats-gpl>`, but is otherwise independent of the main
 Bio-Formats API.

@@ -1,7 +1,1 @@
-# Python requirements
-# ===================
-#
-#     pip install -r requirements.txt
-#
-Genshi==0.7
 Sphinx

@@ -109,7 +109,7 @@ pygments_style = 'sphinx'
 #modindex_common_prefix = []
 
 github_root = 'https://github.com/'
-bf_github_root = github_root + openmicroscopy_source_user + '/bioformats/'
+bf_github_root = github_root + ome_source_user + '/bioformats/'
 bf_github_tree = bf_github_root + 'tree/' + bioformats_source_branch + '/'
 bf_github_blob = bf_github_root + 'blob/' + bioformats_source_branch + '/'
 gpl_formats = bf_github_blob + 'components/formats-gpl/src/loci/formats/'
@@ -435,5 +435,7 @@ linkcheck_ignore = ['https://imspector.mpibpc.mpg.de',
     r'https://testng.org/*', # Invalid SSL certificate
     r'http://www.bio-rad.com/*', # 503 Server Error with Sphinx v1.8.5  
     r'https://www.mayo.edu/.*',
-    r'https://libjpeg-turbo.org'
+    r'https://libjpeg-turbo.org',
+    r'https://www.biovis.com/.*', # SSLV3_ALERT_HANDSHAKE_FAILURE
+    r'https://github.com/ome/.*', # 429 too many requests for url
 ]

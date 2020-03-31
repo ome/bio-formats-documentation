@@ -2168,7 +2168,7 @@ mif = true
 
 [Quesant]
 extensions = .afm
-owner = `KLA-Tencor Corporation <https://www.kla-tencor.com/products/surface-profilers>`_
+owner = `KLA-Tencor Corporation <https://www.kla-tencor.com/>`_
 developer = Quesant Instrument Corporation
 bsd = no
 weHave = * Pascal code that can read Quesant files (from ImageSXM) \n
@@ -2566,7 +2566,7 @@ presenceRating = Poor
 utilityRating = Fair
 reader = VolocityReader
 mif = true
-notes = .mvd2 files are `Metakit database files <https://equi4.com/metakit/>`_.
+notes = .mvd2 files are `Metakit database files <https://wiki.tcl-lang.org/page/Metakit/>`_.
 
 [WA-TOP]
 extensions = .wat
