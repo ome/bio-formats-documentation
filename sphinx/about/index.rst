@@ -122,7 +122,7 @@ For format reader fixes and additions, the policy should read as follows:
 - The patch version Z MUST be incremented if only backwards-compatible format
   bug fixes are introduced.
 
-See `this GitHub issue <https://github.com/openmicroscopy/design/issues/55>`_
+See `this GitHub issue <https://github.com/ome/design/issues/55>`_
 for further details.
 
 Why Java?
