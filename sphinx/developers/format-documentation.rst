@@ -18,9 +18,7 @@ page for all supported formats using Velocity_.
 
 The :file:`format-pages.txt` is an INI file where each section corresponds to
 a particular format given by the section header. Multiple key/values should be
-defined for each section:
-
-.. glossary::
+defined for each section::
 
   pagename
     The name of the output reStructuredText file. If unspecified, the section
