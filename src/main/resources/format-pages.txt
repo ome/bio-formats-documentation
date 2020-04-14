@@ -1487,6 +1487,21 @@ notes = Commercial applications that support STK include: \n
 .. seealso:: \n
   `Metamorph imaging system overview <https://www.moleculardevices.com/systems/metamorph-research-imaging/metamorph-microscopy-automation-and-image-analysis-software>`_
 
+[MetaXpress]
+extensions = .htd, .tif, .tiff
+owner = `Molecular Devices <https://www.moleculardevices.com/>`_
+bsd = no
+weHave = * several MetaXpress datasets\n
+* `public sample datasets <https://downloads.openmicroscopy.org/images/CellWorX/>`__
+weWant = * a MetaXpress specification document
+pixelsRating = Very good
+metadataRating = Very good
+opennessRating = Good
+presenceRating = Fair
+utilityRating = Fair
+reader = CellWorxReader
+mif = true
+
 [MIAS (Maia Scientific)]
 extensions = .tif
 developer = `Maia Scientific <https://www.selectscience.net/supplier/maia-scientific/?compID=6088>`_
