@@ -84,7 +84,7 @@ The complete list of current dependencies is as follows:
     * - `Commons Logging v1.1.1 <http://commons.apache.org/logging/>`_
       - commons-logging:commons-logging:1.1.1
       - `Apache License v2.0`_
-    * - `NetCDF-Java Library v4.6.13 <https://www.unidata.ucar.edu/software/thredds/current/netcdf-java/documentation.htm>`_
+    * - `NetCDF-Java Library v4.6.13 <https://www.unidata.ucar.edu/software/netcdf-java/v4.6/documentation.htm>`_
       - edu.ucar:netcdf:4.6.13
       - `MIT-Style License`_
     * - `Joda time v2.2 <https://github.com/JodaOrg/joda-time>`_
