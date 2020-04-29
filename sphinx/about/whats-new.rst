@@ -1,6 +1,54 @@
 Version history
 ===============
 
+6.5.0 (2020 April)
+------------------
+
+File format fixes and improvements:
+
+* Big Data Viewer
+   - improved performance of tiled reading
+
+* DeltaVision
+   - implemented additional sanity check to header to ensure correct panel count
+
+* DICOM
+   - improved performance of initialization of multi-file datasets. Files spread across multiple 
+     directories are now handled by a DICOMDIR file that groups the dataset
+
+* Imspector OBF
+   - added support for OBF Version 6 stacks (thanks to Nils Gladitz)
+   - added support for OBF Version 4 stack flush points (thanks to Nils Gladitz)
+
+* MetaMorph
+   - ensured dimension metadata read from tags and/or .nd file rather than allowing the underlying 
+     TIFF reader to treat each IFD as a series
+
+* MetaXpress 
+   - added support for single site HCS variant
+
+* Zeiss CZI
+   - fixed the position count when only one position is present and the starting index is greater than 0
+
+* Various Readers
+   - reviewed and updated readers to prevent potential cases of integer overflow
+
+OME-Model updates:
+
+* version of ``OME-Model`` has been updated to 6.1.0
+* added support for Python 3.8 and make code-generation Python 3 only (thanks to Roger Leigh)
+* added getters and setters for OME@Creator attribute for ome.xml metadata interfaces and implementations 
+  (thanks to Nils Gladitz)
+* removed unmaintained C++ OME-XML implementation (thanks to Roger Leigh)
+* updated code-generation for building on Python 3.6, 3.7 (thanks to Roger Leigh)
+* uncapped the Sphinx version for OME-Model documentation
+
+Documentation improvements:
+
+* fixed a number of broken links within the documentation
+* added a new format page for MetaXpress
+* added a reference to public OBF sample images in the format page
+
 6.4.0 (2020 March)
 ------------------
 
