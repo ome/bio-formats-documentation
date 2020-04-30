@@ -1033,7 +1033,8 @@ extensions = .obf, .msr
 owner = `MPI-BPC <http://www.mpibpc.mpg.de/de>`_
 developer = `Department of NanoBiophotonics, MPI-BPC <https://imspector.mpibpc.mpg.de>`_
 bsd = yes
-weHave = * a few .msr datasets \n
+weHave = * a few OBF datasets \n
+* `public OBF sample images <https://downloads.openmicroscopy.org/images/OBF/>`_ \n
 * `a specification document <https://imspectordocs.readthedocs.io/en/latest/fileformat.html>`_
 pixelsRating = Very good
 metadataRating = Very good
