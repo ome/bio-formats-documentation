@@ -418,7 +418,7 @@ reader = BioRadSCNReader
 
 [Bitplane Imaris]
 extensions = .ims
-owner = `Bitplane <https://imaris.oxinst.com/>`_
+owner = `Oxford Instruments <https://imaris.oxinst.com/>`_ (formerly Bitplane)
 bsd = no
 versions = 2.7, 3.0, 5.5
 weHave = * an Imaris (RAW) specification document (from no later than 1997 November 11, in HTML) \n
