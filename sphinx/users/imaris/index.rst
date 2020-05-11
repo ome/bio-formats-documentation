@@ -9,7 +9,7 @@ provides a complete set of features for working with three- and
 four-dimensional multi-channel images of any size, from a few megabytes
 to multiple gigabytes in size.
 
-As of `version
+As of version
 7.2,
 Imaris integrates with :doc:`/users/fiji/index`, which includes
 Bio-Formats. See `this
