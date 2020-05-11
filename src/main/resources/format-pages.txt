@@ -422,7 +422,7 @@ owner = `Bitplane <https://imaris.oxinst.com/>`_
 bsd = no
 versions = 2.7, 3.0, 5.5
 weHave = * an `Imaris (RAW) specification document (from no later than 1997 November 11, in HTML) \n
-* an `Imaris 5.5 (HDF) specification document \n
+* an Imaris 5.5 (HDF) specification document \n
 * Bitplane's bfFileReaderImaris3N code (from no later than 2005, in C++) \n
 * several older Imaris (RAW) datasets \n
 * one Imaris 3 (TIFF) dataset \n
@@ -2731,4 +2731,3 @@ Commercial applications that support this format include: \n
 * `Bitplane Imaris <http://www.bitplane.com/>`_ \n
 * `Amira <https://www.fei.com/software/amira-avizo/>`_ \n
 * `Image-Pro Plus <http://www.mediacy.com/>`_
-
