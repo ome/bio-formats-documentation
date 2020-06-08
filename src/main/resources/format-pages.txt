@@ -227,7 +227,7 @@ notes = .. seealso:: \n
 
 [Applied Precision CellWorX]
 extensions = .htd, .pnl
-developer = `Applied Precision <http://www.api.com>`_
+developer = Applied Precision, Inc.
 bsd = no
 weHave = * a few CellWorX datasets\n
 * `public sample datasets <https://downloads.openmicroscopy.org/images/CellWorX/>`__
