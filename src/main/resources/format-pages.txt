@@ -94,7 +94,7 @@ mif = true
 
 [Amersham Biosciences Gel]
 extensions = .gel
-owner = `GE Healthcare Life Sciences <https://www.gelifesciences.com/>`_
+owner = `Cytiva <https://www.cytivalifesciences.com/en/us/shop/protein-analysis/molecular-imaging-for-proteins/imaging-systems>`_
 developer = Molecular Dynamics
 bsd = no
 weHave = * a GEL specification document (Revision 2, from 2001 Mar 15, in PDF) \n
