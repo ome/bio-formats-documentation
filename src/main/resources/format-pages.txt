@@ -562,7 +562,7 @@ mif = true
 
 [DeltaVision]
 extensions = .dv, .r3d, .rcpnl
-owner = `Cytiva (formerly GE Healthcare, Applied Precision) <https://www.cytivalifesciences.com/en/us/solutions/cellular-analysis/products-and-technology/microscopy>`_
+owner = `Cytiva <https://www.cytivalifesciences.com/en/us/solutions/cellular-analysis/products-and-technology/microscopy>`_ (formerly GE Healthcare, Applied Precision)
 bsd = no
 software = `DeltaVision Opener plugin for ImageJ <https://imagej.nih.gov/ij/plugins/track/delta.html>`_
 weHave = * a DV specification document (v2.10 or newer, in HTML) \n
