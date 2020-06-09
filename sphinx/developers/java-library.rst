@@ -29,7 +29,7 @@ You can :downloads:`download formats-gpl.jar <artifacts/formats-gpl.jar>` to
 use it as a library. Just add :file:`formats-gpl.jar` to your CLASSPATH or
 build path. You will also need :file:`ome-common.jar` for common I/O functions,
 :file:`ome-xml.jar` for metadata standardization, and
-`SLF4J <https://www.slf4j.org/>`_ for :doc:`logging`.
+`SLF4J <http://www.slf4j.org/>`_ for :doc:`logging`.
 
 Dependencies
 ^^^^^^^^^^^^
@@ -120,10 +120,10 @@ The complete list of current dependencies is as follows:
     * - `Native Library Loader v2.1.4 <https://github.com/scijava/native-lib-loader>`_
       - org.scijava:native-lib-loader:2.1.4
       - `BSD License`_
-    * - `SLF4J API v1.7.4 <https://www.slf4j.org>`_
+    * - `SLF4J API v1.7.4 <http://www.slf4j.org>`_
       - org.slf4j:slf4j-api:1.7.6
       - `MIT License`_
-    * - `SLF4J LOG4J-12 Binding v1.7.6 <https://www.slf4j.org>`_
+    * - `SLF4J LOG4J-12 Binding v1.7.6 <http://www.slf4j.org>`_
       - org.slf4j:slf4j-log4j12:1.7.6
       - `MIT License`_
     * - `TestNG v6.8 <https://testng.org/doc/>`_
