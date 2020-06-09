@@ -94,7 +94,7 @@ mif = true
 
 [Amersham Biosciences Gel]
 extensions = .gel
-owner = `GE Healthcare Life Sciences <https://www.gelifesciences.com/>`_
+owner = `Cytiva <https://www.cytivalifesciences.com/en/us/shop/protein-analysis/molecular-imaging-for-proteins/imaging-systems>`_
 developer = Molecular Dynamics
 bsd = no
 weHave = * a GEL specification document (Revision 2, from 2001 Mar 15, in PDF) \n
@@ -227,7 +227,7 @@ notes = .. seealso:: \n
 
 [Applied Precision CellWorX]
 extensions = .htd, .pnl
-developer = `Applied Precision <http://www.api.com>`_
+developer = Applied Precision, Inc.
 bsd = no
 weHave = * a few CellWorX datasets\n
 * `public sample datasets <https://downloads.openmicroscopy.org/images/CellWorX/>`__
@@ -562,7 +562,7 @@ mif = true
 
 [DeltaVision]
 extensions = .dv, .r3d, .rcpnl
-owner = `GE Healthcare (formerly Applied Precision) <https://www.gelifesciences.com/webapp/wcs/stores/servlet/catalog/en/GELifeSciences-UK/brands/deltavision/>`_
+owner = `Cytiva <https://www.cytivalifesciences.com/en/us/solutions/cellular-analysis/products-and-technology/microscopy>`_ (formerly GE Healthcare, Applied Precision)
 bsd = no
 software = `DeltaVision Opener plugin for ImageJ <https://imagej.nih.gov/ij/plugins/track/delta.html>`_
 weHave = * a DV specification document (v2.10 or newer, in HTML) \n
@@ -749,7 +749,7 @@ Note that the Gatan Reader does not currently support stacks.
 
 [GE MicroCT]
 extensions = .vff
-developer = `GE <https://www.gelifesciences.com/>`_
+developer = GE Healthcare
 bsd = no
 weHave = * several public MicroCT datasets from the `CIBC Dataset Archive <http://www.sci.utah.edu/cibc-software/cibc-datasets.html>`_
 pixelsRating = Very good
@@ -1047,7 +1047,8 @@ mif = true
 [InCell 1000/2000]
 pagename = incell-1000
 extensions = .xdce, .tif
-developer = `GE <https://www.gelifesciences.com/>`_
+developer = GE Healthcare
+owner = `Cytiva <https://www.cytivalifesciences.com/en/us/solutions/cellular-analysis/products-and-technology/high-content-analysis>`_
 bsd = no
 weHave = * a few InCell 1000 datasets\n
 * `public InCell 2000 sample images <https://downloads.openmicroscopy.org/images/InCell2000/>`_
@@ -1063,7 +1064,8 @@ mif = true
 
 [InCell 3000]
 extensions = .frm
-developer = `GE <https://www.gelifesciences.com/>`_
+developer = GE Healthcare
+owner = `Cytiva <https://www.cytivalifesciences.com/en/us/solutions/cellular-analysis/products-and-technology/high-content-analysis>`_
 bsd = no
 weHave = * a few example datasets \n
 * `public sample images <https://downloads.openmicroscopy.org/images/InCell3000/>`__
