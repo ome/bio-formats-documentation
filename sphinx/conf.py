@@ -417,6 +417,7 @@ linkcheck_retries = int(os.environ.get("SPHINX_LINKCHECK_RETRIES", 5))
 # Regular expressions that match URIs that should not be checked when doing a linkcheck build
 linkcheck_ignore = ['https://imspector.mpibpc.mpg.de',
     'https://www.olympus-global.com',
+    'https://www.olympus-lifescience.com/en/',
     'http://www.lavisionbiotec.com/',
     r'.*[.]sourceforge.net',
     r'http://www.libpng.org/.*',
