@@ -1900,10 +1900,7 @@ pyramid = yes
 options = true
 notes = Bio-Formats can save image stacks as OME-TIFF. \n
 \n
-Commercial applications that support OME-TIFF include: \n
-\n
-* `Bitplane Imaris <http://www.bitplane.com/>`_ \n
-* `SVI Huygens <http://svi.nl/>`_ \n
+Commercial applications that support OME-TIFF are listed on our `commercial partners page <https://www.openmicroscopy.org/commercial-partners/#partnerships>`__\n
 \n
 .. seealso:: \n
   :model_doc:`OME-TIFF technical overview <ome-tiff/index.html>`
