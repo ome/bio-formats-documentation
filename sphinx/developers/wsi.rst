@@ -19,10 +19,10 @@ each pyramid is stored as a separate series, and can be accessed by calling
 :javadoc:`setSeries <loci/formats/IFormatReader.html#setSeries-int->` prior to retrieving pixel data.
 
 There are additional API methods that can be used to make pyramids easier to work with.  These can be enabled by calling
-:javadoc:`setFlattenedResolutions(true) <loci/formats/IFormatReader.html#setFlattenedResolutions-boolean->`
+:javadoc:`setFlattenedResolutions(false) <loci/formats/IFormatReader.html#setFlattenedResolutions-boolean->`
 prior to :javadoc:`setId <loci/formats/IFormatHandler.html#setId-java.lang.String->`.
 
-After ``setUnflattenedResolutions(true)``, each series represents an entire image pyramid and not
+After ``setFlattenedResolutions(false)``, each series represents an entire image pyramid and not
 just a single resolution.  Calling ``setSeries(...)`` then skips over
 all other resolutions in the same pyramid, to either the next pyramid (if
 multiple pyramids are stored), or the thumbnail or barcode image (if present).
