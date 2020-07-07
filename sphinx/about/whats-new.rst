@@ -1,6 +1,51 @@
 Version history
 ===============
 
+6.5.1 (2020 July)
+-----------------
+
+File format fixes and improvements:
+
+* Aperio SVS / Aperio AFI
+   - fixed a Null Pointer Eexception when exposure time is not defined
+
+* Big Data Viewer
+   - corrected series indexes for non flat multi resolution images
+
+* Cellomics
+   - physical sizes are now set for all series rather than just the first
+
+* Imspector OBF
+   - file format version and stack version are now recorded as part of global metadata
+
+* MetaMorph
+   - improved wavelength parsing using Metamorph XML or original metadata
+
+* Mikroscan TIFF
+   - stricter format recognition now used to prevent erroneous use of the reader
+
+* Ventana BIF
+   - added support for LEFT overlap direction (thanks to Joan Gibert)
+
+* Zeiss CZI
+   - fixed a bug to ensure Channel Illumination Type is not overridden by display settings
+
+Documentation improvements:
+
+* added link from OME-TIFF page to commercial partners page
+* updated links for Biplane to now use Oxford Instruments
+* fixed a number of broken hyperlinks in documentation
+
+Component updates:
+
+* `jxrlib` was upgraded to 0.2.4
+
+Bio-Formats improvements:
+
+* fixed a bug in `bfconvert` for multi-series files with varying image sizes
+* no longer logging OMERO IDs passed to FormatReader and ImageReader
+
+
 6.5.0 (2020 April)
 ------------------
 
