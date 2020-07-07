@@ -43,7 +43,7 @@ Component updates:
 Bio-Formats improvements:
 
 * fixed a bug in `bfconvert` for multi-series files with varying image sizes
-* no longer logging OMERO IDs passed to FormatReader and ImageReader
+* removed the logging OMERO IDs passed to FormatReader and ImageReader
 
 
 6.5.0 (2020 April)
