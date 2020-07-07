@@ -10,7 +10,7 @@ File format fixes and improvements:
    - fixed a Null Pointer Exception when exposure time is not defined
 
 * Big Data Viewer
-   - corrected series indexes for non flat multi resolution images
+   - corrected series indexes for non flattened multi resolution images
 
 * Cellomics
    - physical sizes are now set for all series rather than just the first
