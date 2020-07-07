@@ -7,7 +7,7 @@ Version history
 File format fixes and improvements:
 
 * Aperio SVS / Aperio AFI
-   - fixed a Null Pointer Eexception when exposure time is not defined
+   - fixed a Null Pointer Exception when exposure time is not defined
 
 * Big Data Viewer
    - corrected series indexes for non flat multi resolution images
