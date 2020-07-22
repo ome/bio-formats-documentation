@@ -15,8 +15,7 @@ the entries in the supported formats table).
 **We are always looking for examples of files to help us provide better
 support for different formats.** If you would like to help, you can upload
 files using our `QA system uploader <http://qa.openmicroscopy.org.uk/qa/upload/>`_.
-If you have any questions, or would prefer not to use QA, please email the
-:mailinglist:`ome-users mailing list <ome-users>`.
+If you have any questions, or would prefer not to use QA, please contact us via the `Image.sc forum <https://forum.image.sc/tags/bio-formats>`_.
 If your format is already supported, please refer to the 'we would like to
 have' section on the individual page for that format, to see if your dataset
 would be useful to us.
