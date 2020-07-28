@@ -4,7 +4,7 @@ In-memory reading and writing in Bio-Formats
 Bio-Formats readers and writers are traditionally used to handle image files 
 from disk. However it is also possible to achieve reading and writing of files from 
 in-memory sources. This is handled by mapping the in-memory data to a file location using :common_javadoc:`Location.mapFile() 
-<loci/common/Location.html#mapFile(java.lang.String-loci.common.IRandomAccess)>`.
+<loci/common/Location.html#mapFile(java.lang.String,loci.common.IRandomAccess)>`.
 
 ::
 
