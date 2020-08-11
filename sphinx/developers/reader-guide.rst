@@ -144,8 +144,8 @@ Thus, a stub for ``initFile(String)`` might look like this:
 
 
 For more details, see
-:common_javadoc:`loci.common.Location.mapId(java.lang.String, java.lang.String) <loci/common/Location.html#mapId(java.lang.String,java.lang.String)>`
-and :common_javadoc:`loci.common.Location.getMappedId(java.lang.String) <loci/common/Location.html#getMappedId(java.lang.String)>`.
+:common_javadoc:`loci.common.Location.mapId(java.lang.String, java.lang.String) <loci/common/Location.html#mapId-java.lang.String-java.lang.String->`
+and :common_javadoc:`loci.common.Location.getMappedId(java.lang.String) <loci/common/Location.html#getMappedId-java.lang.String->`.
 
 Variables to populate
 ---------------------
