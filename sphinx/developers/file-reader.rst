@@ -85,7 +85,7 @@ from the OME-XML Metadata. These fields can be accessed in a similar way to the 
 An example of such values would be the physical size of dimensions X, Y and Z. The accessor methods 
 for these properties return a :xml_javadoc:`Length <ome/units/quantity/Length.html>` object which 
 contains both the value and unit of the dimension. These lengths can also be converted to other units using 
-:xml_javadoc:`value(ome.units.unit.Unit) <ome/units/quantity/Length.html#value(ome.units.unit.Unit)>`
+:xml_javadoc:`value(ome.units.unit.Unit) <ome/units/quantity/Length.html#value-ome.units.unit.Unit->`
 An example of reading and converting these physical sizes values can be found in 
 :download:`ReadPhysicalSize.java <examples/ReadPhysicalSize.java>`
 
