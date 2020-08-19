@@ -438,4 +438,6 @@ linkcheck_ignore = ['https://imspector.mpibpc.mpg.de',
     r'https://libjpeg-turbo.org',
     r'https://www.biovis.com/.*', # SSLV3_ALERT_HANDSHAKE_FAILURE
     r'https://github.com/ome/.*', # 429 too many requests for url
+    # Too many redirects - see https://github.com/sphinx-doc/sphinx/pull/8131
+    r'https://www.cytivalifesciences.com/en/us/.*',
 ]
