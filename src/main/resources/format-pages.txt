@@ -94,7 +94,7 @@ mif = true
 
 [Amersham Biosciences Gel]
 extensions = .gel
-owner = `Cytiva <https://www.cytivalifesciences.com/>`_
+owner = `Cytiva <https://www.cytivalifesciences.com/en/us/shop/protein-analysis/molecular-imaging-for-proteins/imaging-systems>`_
 developer = Molecular Dynamics
 bsd = no
 weHave = * a GEL specification document (Revision 2, from 2001 Mar 15, in PDF) \n
@@ -562,7 +562,7 @@ mif = true
 
 [DeltaVision]
 extensions = .dv, .r3d, .rcpnl
-owner = `Cytiva <https://www.cytivalifesciences.com/>`_ (formerly GE Healthcare, Applied Precision)
+owner = `Cytiva <https://www.cytivalifesciences.com/en/us/solutions/cellular-analysis/products-and-technology/microscopy>`_ (formerly GE Healthcare, Applied Precision)
 bsd = no
 software = `DeltaVision Opener plugin for ImageJ <https://imagej.nih.gov/ij/plugins/track/delta.html>`_
 weHave = * a DV specification document (v2.10 or newer, in HTML) \n
@@ -1048,7 +1048,7 @@ mif = true
 pagename = incell-1000
 extensions = .xdce, .tif
 developer = GE Healthcare
-owner = `Cytiva <https://www.cytivalifesciences.com/>`_
+owner = `Cytiva <https://www.cytivalifesciences.com/en/us/solutions/cellular-analysis/products-and-technology/high-content-analysis>`_
 bsd = no
 weHave = * a few InCell 1000 datasets\n
 * `public InCell 2000 sample images <https://downloads.openmicroscopy.org/images/InCell2000/>`_
@@ -1065,7 +1065,7 @@ mif = true
 [InCell 3000]
 extensions = .frm
 developer = GE Healthcare
-owner = `Cytiva <https://www.cytivalifesciences.com/>`_
+owner = `Cytiva <https://www.cytivalifesciences.com/en/us/solutions/cellular-analysis/products-and-technology/high-content-analysis>`_
 bsd = no
 weHave = * a few example datasets \n
 * `public sample images <https://downloads.openmicroscopy.org/images/InCell3000/>`__
