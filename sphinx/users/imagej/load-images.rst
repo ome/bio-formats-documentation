@@ -76,10 +76,9 @@ Group files with similar names
 One of the most important features of Bio-Formats is to combine multiple
 files from a data set into one coherent, multi-dimensional image.
 
-To demonstrate how to use the **Group files with similar
-names** feature, you can use the `dub <http://loci.wisc.edu/sample-data/dub>`_
-data set available under LOCI’s `Sample
-Data <http://loci.wisc.edu/software/sample-data>`_ page. You will
+To demonstrate how to use the **Group files with similar names**
+feature, you can use the *dub* data set available under LOCI’s
+`Sample Data <https://scif.io/images/>`_ page. You will
 notice that it is a large dataset: each of the 85 files shows the
 specimen at 33 optical sections along the z-plane at a specific time.
 
