@@ -23,7 +23,6 @@ The Bio-Formats Importer plugin can display image stacks in several
 ways:
 
 -  In a standard ImageJ window (including as a hyperstack)
--  Using the `LOCI Data Browser <http://loci.wisc.edu/software/data-browser>`_ plugin (included)
 -  With Joachim Walter's
    `Image5D <http://imagej.net/Image5D>`_ plugin
    (if installed)
