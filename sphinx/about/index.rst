@@ -14,9 +14,9 @@ model <http://genomebiology.com/2005/6/5/R47>`_, particularly into the
 :model_doc:`OME-TIFF <ome-tiff>` file format.
 
 We believe the standardization of microscopy metadata to a common
-structure is of vital importance to the community. You may find LOCI's article
-on `open source software in
-science <https://loci.wisc.edu/software/oss>`_ of interest.
+structure is of vital importance to the community. You may find LOCI's
+article on `open source software in science
+<https://uw-loci.github.io/oss>`_ of interest.
 
 License, copyright, and citation
 --------------------------------
@@ -137,14 +137,14 @@ and C++ for many of its components (e.g., NumPy and SciPy), Java code is
 compiled one time into platform-independent byte code, which can be deployed
 as is to all supported platforms. And despite this enormous flexibility, Java
 manages to provide time performance nearly equal to C++, often better in the
-case of I/O operations (see further discussion on the
-`comparative speed of Java on the LOCI site <https://loci.wisc.edu/faq/isnt-java-too-slow>`_).
+case of I/O operations (see further discussion on the `comparative speed
+of Java on the LOCI site <https://uw-loci.github.io/why-java>`_).
 
 There are also historical reasons associated with the fact that the project
 grew out of work on the
 `VisAD Java component library <http://visad.ssec.wisc.edu>`_. You can read
 more about the origins of Bio-Formats on the
-`LOCI Bio-Formats homepage <https://loci.wisc.edu/software/bio-formats>`_.
+`LOCI Bio-Formats homepage <https://eliceirilab.org/software/bio-formats/>`_.
 
 Bio-Formats metadata processing
 -------------------------------

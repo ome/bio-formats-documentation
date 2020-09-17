@@ -11,7 +11,6 @@ warning like this:
 This means the allotted memory is less than what Bio-Formats needs to
 load all the images. If you have a very large data set, you may have to:
 
--  View your stack with Data Browser
 -  Crop the view area
 -  Open only a subset of images
 -  Use Virtual Stack
@@ -24,28 +23,6 @@ memory. This is because compressed images like JPEG need to be
 decompressed into memory before being displayed and require more memory
 than their file size suggests. If you are having this issue, try
 utilizing one of the memory management tools below.
-
-
-View your stack with Data Browser
----------------------------------
-
-**Data Browser** is another part of Bio-Formats that enables users to
-view large 3, 4, or 5-D datasets by caching a subset of all the images
-available. This enables users to view a stack that is bigger than the
-computer’s memory.
-
-You can select Data Browser as an option for **View stack with,** the
-leftmost, uppermost option in the **Bio-Formats Import Options** screen.
-
-.. image:: /images/DataBrowser.jpg
-   :align: center
-   :alt: Data Browser
-
-Note that when you use Data Browser, other features like cropping and
-specifying range are not available. You can, however, adjust the size
-of the image cache in the Data Browser after you open the files. You
-can read more about it on LOCI’s
-`Data Browser page <http://loci.wisc.edu/software/data-browser>`_.
 
 Cropping the view area
 ----------------------
@@ -69,8 +46,8 @@ Use Virtual Stack
 -----------------
 
 **Virtual Stack** conserves memory by not loading specific images until
-necessary. Note that unlike Data Browser, Virtual Stack does not contain
-a buffer and may produce choppy animations.
+necessary. Virtual Stack does not contain a buffer and may produce
+choppy animations.
 
 Increasing ImageJ/Fiji’s memory
 -------------------------------
@@ -85,7 +62,7 @@ ImageJ/Fiji by selecting **Memory & Threads** under the **Edit** menu.
 Generally, allocating more than 75% of the computer’s total memory will
 cause ImageJ/Fiji to become slow and unstable.
 
-**Please note** that unlike the other three features, ImageJ/Fiji itself
+**Please note** that, unlike the other two features, ImageJ/Fiji itself
 provides this feature and not Bio-Formats. You can find out more about
 this feature by looking at ImageJ’s
 `documentation <https://imagej.nih.gov/ij/docs/menus/edit.html#options>`_.
