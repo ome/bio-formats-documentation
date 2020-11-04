@@ -435,6 +435,9 @@ linkcheck_ignore = ['https://imspector.mpibpc.mpg.de',
     r'https://testng.org/*', # Invalid SSL certificate
     r'http://www.bio-rad.com/*', # 503 Server Error with Sphinx v1.8.5  
     r'https://www.mayo.edu/.*',
+    r'https://imagej.net/.*',  # Temporary due to security exploit
+    r'http://imagej.net/.*',  # Temporary due to security exploit
+    r'https://valelab.ucsf.edu/.*',  # Temporary due to invalid certificate
     r'https://libjpeg-turbo.org',
     r'https://www.biovis.com/.*', # SSLV3_ALERT_HANDSHAKE_FAILURE
     r'https://github.com/ome/.*', # 429 too many requests for url
