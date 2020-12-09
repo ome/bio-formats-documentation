@@ -2357,6 +2357,19 @@ presenceRating = Good
 utilityRating = Poor
 reader = TargaReader
 
+[Tecan Spark Cyto Workspace]
+extensions = .db, .tif
+owner = `Tecan Trading <https://www.tecan.com/>`_
+bsd = no
+weHave = * a few Tecan Spark Cyto workspaces
+pixelsRating = Very good
+metadataRating = Very good
+opennessRating = Good
+presenceRating = Fair
+utilityRating = Good
+reader = TecanReader
+mif = true
+
 [Text]
 extensions = .txt
 bsd = yes
