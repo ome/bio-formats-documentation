@@ -1,0 +1,29 @@
+# Builds the Sphinx documentation in the specified folder.
+# Default values are docs/ for the directory where the Sphinx
+# documentation is located and true to run linkcheck
+# To pass a new folder, set directory_path to the folder path
+# Pass the arguments you wish to run, default command is make clean html linkcheck
+
+---
+name: sphinx
+
+on: 
+  push:
+  pull_request:
+  schedule:
+    - cron: '0 0 * * 0'
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        java: [1.8, 11]
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+      - name: Sphinx install
+        run: pip install --upgrade sphinx
+      - name: Build doc
+        run: mvn install -DskipSphinxTests=true
