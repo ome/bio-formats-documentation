@@ -1,6 +1,89 @@
 Version history
 ===============
 
+6.6.0 (2020 December)
+---------------------
+
+File format fixes and improvements:
+
+* Applied Precision CellWorX
+   - support for CellWorX and MetaXpress has now been split into separate readers
+
+* BD Pathway
+   - plate row and column dimensions now being populated
+
+* Bitmap
+   - fixed offset calculation for files larger than 2 GB
+
+* Cellomics
+   - channel data now being parsed from companion .mdb file
+   - corrected Plate/Well/Image mappings for sparse plates
+   - plate size now calculated using the maximum row/column index
+   - plate row and column dimensions now being populated
+
+* Gatan Digital Micrograph DM4
+   - fixed support for montages with single Z dimensions
+
+* MetaMorph Stack
+   - corrected laser indexes for multi series datasets
+
+* MIAS (Maia Scientific)
+   - plate row and column dimensions now being populated
+
+* Nikon NIS-Elements ND2
+   - fixed a null pointer exception when parsing metadata key value pairs
+
+* Olympus ScanR
+   - added functionality to handle missing wells through a new option ``scanr.skip_missing_wells``.
+     By default the option is set to true and missing wells are skipped
+
+* Olympus SIS TIFF
+   - corrected parsing of pixel size values (thanks to Stephan Wagner-Conrad)
+   - removed trailing null byte from imageName and channelName
+   - improved formatting of the image reader
+
+* PerkinElmer Opera Flex
+   - plate row and column dimensions now being populated
+
+* PerkinElmer Operetta
+   - updated metadata files logic to skip plate folders
+
+* PNG (Portable Network Graphics)
+   - fixed an issue which resulted in a hanging call to `openBytes`
+
+* Zeiss CZI
+   - scene number is now correctly padded and indexes begin at 1
+
+* Zeiss LSM
+   - improved handling of cached plane variables
+
+Documentation improvements:
+
+* references to image index in the API documentation have been updated to plane index
+* updated various links to follow the LOCI site migration
+* fixed broken Javadoc links
+* removed outdated references to mailing lists
+
+Component updates:
+
+* `ome-model` was upgraded to 6.2.2
+* `ome-common` was upgraded to 6.0.6
+* Memoizer version has been incremented meaning previous memo files are invalidated and 
+  will be regenerated
+* Kyro dependency updated to 4.0.2
+
+Bio-Formats improvements:
+
+* removed automatic file stitching from format reader tests
+* improved stringency of ChannelName and ImageName testing
+* improved reader detection for image conversion testing
+* reviewed all instances of whitelist/blacklist
+* introduced support for GitHub Actions
+* improved handling of DynamicMetadataOptions on Windows
+* introduced the ability to set metadata options using a `.bfoptions` file
+* test-suite updated to handle new `.bfoptions` file
+
+
 6.5.1 (2020 July)
 -----------------
 
