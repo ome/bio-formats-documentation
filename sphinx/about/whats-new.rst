@@ -6,7 +6,7 @@ Version history
 
 File format fixes and improvements:
 
-* Applied Precision CellWorX
+* Applied Precision CellWorX / MetaXpress
    - support for CellWorX and MetaXpress has now been split into separate readers
 
 * BD Pathway
