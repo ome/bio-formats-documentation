@@ -70,7 +70,7 @@ Component updates:
 * `ome-common` was upgraded to 6.0.6
 * Memoizer version has been incremented meaning previous memo files are invalidated and 
   will be regenerated
-* Kyro dependency updated to 4.0.2
+* `kryo` dependency updated to 4.0.2
 
 Bio-Formats improvements:
 
