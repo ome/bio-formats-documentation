@@ -65,6 +65,7 @@ File format fixes and improvements:
 
 Documentation improvements:
 
+* added new `OME-TIFF plate companion sample files <https://downloads.openmicroscopy.org/images/OME-TIFF/2016-06/plate-companion/>`_
 * references to image index in the API documentation have been updated to plane index
 * updated various links to follow the LOCI site migration
 * fixed broken Javadoc links
