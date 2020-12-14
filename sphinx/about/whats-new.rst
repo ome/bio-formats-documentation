@@ -77,6 +77,7 @@ Component updates:
 * Memoizer version has been incremented meaning previous memo files are invalidated and 
   will be regenerated
 * `kryo` dependency updated to 4.0.2
+* Added new `sqlite-jdbc` version 3.28.0 dependency for the Tecan Spark Cyto Workspace format
 
 Bio-Formats improvements:
 
