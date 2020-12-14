@@ -4,6 +4,12 @@ Version history
 6.6.0 (2020 December)
 ---------------------
 
+New file formats:
+
+* Tecan Spark Cyto Workspace
+   - Added a new reader for Tecan Spark Cyto workspace files, provided through a collaboration 
+     between Tecan Trading and Glencoe Software
+
 File format fixes and improvements:
 
 * Applied Precision CellWorX / MetaXpress
