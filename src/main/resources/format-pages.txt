@@ -2369,6 +2369,7 @@ presenceRating = Fair
 utilityRating = Good
 reader = TecanReader
 mif = true
+notes = Fiji users will need to enable the "Tissue Analyzer" update site and install "sqlite-jdbc.jar"
 
 [Text]
 extensions = .txt
