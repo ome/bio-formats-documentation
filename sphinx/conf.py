@@ -440,4 +440,5 @@ linkcheck_ignore = ['https://imspector.mpibpc.mpg.de',
     r'https://github.com/ome/.*', # 429 too many requests for url
     # Too many redirects - see https://github.com/sphinx-doc/sphinx/pull/8131
     r'https://www.cytivalifesciences.com/en/us/.*',
+    r'https://spider.wadsworth.org/.*',
 ]
