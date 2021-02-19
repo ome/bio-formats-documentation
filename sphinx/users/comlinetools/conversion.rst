@@ -126,6 +126,12 @@ indices begin at 0.  Note that if ``%x`` or ``%y`` is included in the file
 name pattern, then the other must be included too.  The only exception is if
 ``%m`` was also included in the pattern.
 
+Note for Windows Users: The command interpreter for batch files needs the ``%``
+characters to be doubled in order to process the sequencing variables
+correctly. So in Windows, the above example would read::
+
+  bfconvert /path/to/input output_series_%%s_Z%%z_C%%c_T%%t.tif
+
 .. option:: -compression COMPRESSION
 
     By default, all images will be written uncompressed.  Supported compression
