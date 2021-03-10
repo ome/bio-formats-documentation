@@ -41,12 +41,7 @@ from datetime import datetime
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.)
-extensions = ['sphinx.ext.extlinks', 'edit_on_github']
-
-## Configuration for the edit_on_github extension
-edit_on_github_project = 'ome/bio-formats-documentation'
-edit_on_github_branch = 'master'
-edit_on_github_prefix = 'sphinx'
+extensions = ['sphinx.ext.extlinks']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = [os.path.join(srcdir, '_templates')]
