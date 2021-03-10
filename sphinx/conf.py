@@ -321,32 +321,16 @@ htmlhelp_basename = 'Bio-Formatsdoc'
 
 # -- Options for LaTeX output --------------------------------------------------
 
-latex_elements = {
-    'classoptions': ',oneside',
-    'pointsize': '10pt',
-    'inputenc': '%% Unused',
-    'utf8extra': '%% Unused',
-    'fontenc' : '%% Unused',
-    'fontpkg': '%% Unused',
-    'babel': '',
-    'printindex': '''\\phantomsection
-\\addcontentsline{toc}{part}{\indexname}
-\\printindex''',
-    'preamble': '''
-\input{preamble.tex}
-''',
-}
-
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
-target = project + '.tex'
-latex_documents = [
-  (master_doc, target, title, author, 'manual'),
-]
+#target = project + '.tex'
+#latex_documents = [
+#  (master_doc, target, title, author, 'manual'),
+#]
 
 # The name of an image file (relative to this directory) to place at the top of
 # the title page.
-latex_logo = 'images/bio-formats-logo.pdf'
+#latex_logo = 'images/bio-formats-logo.pdf'
 
 # For "manual" documents, if this is true, then toplevel headings are parts,
 # not chapters.
@@ -356,7 +340,7 @@ latex_logo = 'images/bio-formats-logo.pdf'
 #latex_show_pagerefs = False
 
 # If true, show URL addresses after external links.
-latex_show_urls = 'footnote'
+#latex_show_urls = 'footnote'
 
 # Documents to append as an appendix to all manuals.
 #latex_appendices = []
