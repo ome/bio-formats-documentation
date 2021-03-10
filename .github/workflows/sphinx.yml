@@ -28,7 +28,7 @@ jobs:
       - name: Build doc
         run: mvn install -DskipSphinxTests=true
       - name: Commit changes
-        if: startsWith(matrix.os, 'ubuntu') && startsWith(matrix.java, '8') && contains(github.ref, 'master')
+        if: startsWith(matrix.os, 'ubuntu') && startsWith(matrix.java, '8') && contains(github.ref, 'rtd')
         run: |
           rm -rf sphinx
           rm -rf target/sphinx/cache
@@ -39,24 +39,3 @@ jobs:
           git config --local user.name "GitHub Action"
           git add sphinx
           git commit -m "Generate doc pages" || echo "No changes to commit"
-  release:
-    if: startsWith(github.ref, 'refs/tags')
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-python@v2
-      - name: Sphinx install
-        run: pip install --upgrade sphinx
-      - name: Set up Repository
-        uses: actions/setup-java@v1
-        with:
-          java-version: 1.8
-          server-id: ome.staging
-          server-username: MAVEN_USERNAME
-          server-password: MAVEN_PASSWORD
-      - name: Release doc
-        run: mvn -DskipTests=true deploy
-        env:
-          MAVEN_USERNAME: ${{ secrets.CI_DEPLOY_USER }}
-          MAVEN_PASSWORD: ${{ secrets.CI_DEPLOY_PASS }}
