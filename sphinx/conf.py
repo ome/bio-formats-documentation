@@ -12,8 +12,6 @@
 # serve to show the default.
 
 # Substitutions from external build system.
-srcdir = '@sphinx_srcdir@'
-builddir = '@sphinx_builddir@'
 bioformats_source_branch = '@bioformats_source_branch@'
 openmicroscopy_source_user = '@openmicroscopy_source_user@'
 ome_source_user = '@ome_source_user@'
@@ -22,8 +20,7 @@ ome_model_version = '@ome_model_version@'
 ome_model_uri = '@ome_model_uri@'
 bf_version = '@bioformats.version@'
 
-import sys, os
-sys.path.insert(0, os.path.abspath(os.path.join(srcdir, '_ext')))
+import os
 import re
 import subprocess
 from datetime import datetime
@@ -44,7 +41,7 @@ from datetime import datetime
 extensions = ['sphinx.ext.extlinks']
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = [os.path.join(srcdir, '_templates')]
+templates_path = ['_templates']
 
 # The suffix of source filenames.
 source_suffix = '.rst'
@@ -264,7 +261,7 @@ html_theme_path = ['themes']
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
-html_logo = os.path.abspath(os.path.join(srcdir, 'images/ome.svg'))
+html_logo = os.path.abspath('images/ome.svg')
 
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
@@ -285,8 +282,8 @@ html_last_updated_fmt = '%b %d, %Y'
 #html_use_smartypants = True
 
 # Custom sidebar templates, maps document names to template names.
-html_sidebars = { '**' : ['globalbftoc.html', 'pagetoc.html',
-'relations.html', 'searchbox.html', 'sourcelink.html'] }
+#html_sidebars = { '**' : ['globalbftoc.html', 'pagetoc.html',
+#'relations.html', 'searchbox.html', 'sourcelink.html'] }
 
 # Additional templates that should be rendered to pages, maps page names to
 # template names.
@@ -349,7 +346,7 @@ latex_documents = [
 
 # The name of an image file (relative to this directory) to place at the top of
 # the title page.
-latex_logo = os.path.join(srcdir, 'images/bio-formats-logo.pdf')
+latex_logo = 'images/bio-formats-logo.pdf'
 
 # For "manual" documents, if this is true, then toplevel headings are parts,
 # not chapters.
