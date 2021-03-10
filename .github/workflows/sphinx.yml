@@ -17,7 +17,7 @@ jobs:
   build:
     strategy:
       matrix:
-        java: [1.8, 11]
+        java: [8, 11]
         os: [ubuntu-latest, windows-latest]
     runs-on: ${{ matrix.os }}
     steps:
@@ -27,6 +27,18 @@ jobs:
         run: pip install --upgrade sphinx
       - name: Build doc
         run: mvn install -DskipSphinxTests=true
+      - name: Commit changes
+        if: startsWith(matrix.os, 'ubuntu') && startsWith(matrix.java, '8') && contains(github.ref, 'master')
+        run: |
+          rm -rf sphinx
+          rm -rf target/sphinx/cache
+          rm -rf target/sphinx/html
+          rm -rf target/sphinx/developers/examples/META-INF
+          mv target/sphinx .
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add sphinx
+          git commit -m "Generate doc pages" || echo "No changes to commit"
   release:
     if: startsWith(github.ref, 'refs/tags')
     needs: build
