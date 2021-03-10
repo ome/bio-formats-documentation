@@ -1,0 +1,46 @@
+.. index:: CV7000
+.. index:: .wpi, .tif
+
+CV7000
+===============================================================================
+
+Extensions: .wpi, .tif
+
+
+Owner: `Yokogawa <http://www.yokogawa.com/>`_
+
+**Support**
+
+
+BSD-licensed: |no|
+
+Export: |no|
+
+Officially Supported Versions: 
+
+Reader: CV7000Reader (:bfreader:`Source Code <CV7000Reader.java>`, :doc:`Supported Metadata Fields </metadata/CV7000Reader>`)
+
+
+
+
+We currently have:
+
+* many example datasets
+
+
+
+**Ratings**
+
+
+Pixels: |Very good|
+
+Metadata: |Very good|
+
+Openness: |Good|
+
+Presence: |Fair|
+
+Utility: |Fair|
+
+
+

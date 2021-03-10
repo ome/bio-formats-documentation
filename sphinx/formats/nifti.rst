@@ -1,0 +1,51 @@
+.. index:: NIfTI
+.. index:: .img, .hdr, .nii, .nii.gz
+
+NIfTI
+===============================================================================
+
+Extensions: .img, .hdr, .nii, .nii.gz
+
+Developer: `National Institutes of Health <https://www.nih.gov/>`_
+
+
+**Support**
+
+
+BSD-licensed: |no|
+
+Export: |no|
+
+Officially Supported Versions: 
+
+Reader: NiftiReader (:bfreader:`Source Code <NiftiReader.java>`, :doc:`Supported Metadata Fields </metadata/NiftiReader>`)
+
+
+
+Sample Datasets:
+
+- `Official test data <https://nifti.nimh.nih.gov/nifti-1/data/>`_
+
+We currently have:
+
+* `NIfTI specification documents <https://nifti.nimh.nih.gov/nifti-1/>`_
+* several NIfTI datasets 
+* `public sample images <https://downloads.openmicroscopy.org/images/NIfTI/>`__
+
+
+
+**Ratings**
+
+
+Pixels: |Very good|
+
+Metadata: |Very good|
+
+Openness: |Very good|
+
+Presence: |Good|
+
+Utility: |Fair|
+
+
+
