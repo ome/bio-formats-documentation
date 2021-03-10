@@ -38,7 +38,7 @@ from datetime import datetime
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.)
-extensions = ['sphinx.ext.extlinks', 'sphinx_markdown_tables']
+extensions = ['sphinx.ext.extlinks', 'sphinx_markdown_tables', 'sphinx_rtd_theme']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -219,30 +219,13 @@ rst_epilog = """
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'default'
-html_theme_options = {
-    'rightsidebar': 'false',
-    'stickysidebar': 'false',
-    'footerbgcolor': '#cfd8dc',
-    'footertextcolor': '#455a64',
-    'sidebarbgcolor': '#cfd8dc',
-    'sidebartextcolor': '#263238',
-    'sidebarlinkcolor': '#455a64',
-    'relbarbgcolor': '#263238',
-    'relbartextcolor': '#ffffff',
-    'relbarlinkcolor': '#ffffff',
-    'bgcolor': '#ffffff',
-    'textcolor': '#37474f',
-    'linkcolor': '#1d8dcd',
-    'visitedlinkcolor': '#1d8dcd',
-    'headbgcolor': '#eceff1',
-    'headtextcolor': '#263238',
-    'headlinkcolor': '#009688',
-    'codebgcolor': '#eceff1',
-    'codetextcolor': '#455a64',
-    'bodyfont': 'Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif',
-    'headfont': 'Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif'
-}
+html_theme = 'sphinx_rtd_theme'
+
+html_context = {
+    'css_files': [
+        '_static/theme_override.css',  # overrides for wide tables in RTD theme
+        ],
+    }
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -271,7 +254,7 @@ html_logo = os.path.abspath('images/ome.svg')
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = []
+html_static_path = ['_static']
 
 # If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
 # using the given strftime format.
