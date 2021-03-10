@@ -9,7 +9,7 @@ You can sort this table by clicking on any of the headings.
 .. list-table::
    :class: sortable
    :header-rows: 1
-   :widths: 30, 20, 8, 8, 8, 8, 8, 8, 2, 5, 3
+   :widths: 30, 20, 8, 8, 8, 8, 8, 8, 8, 8, 10
 
    *
      - Format
@@ -20,9 +20,9 @@ You can sort this table by clicking on any of the headings.
      - |header-presence|
      - |header-utility|
      - |header-export|
-     - BSD
-     - Multiple Images
-     - Pyramid
+     - |header-bsd|
+     - |header-multipleimages|
+     - |header-pyramid|
 
    * - :doc:`formats/3i-slidebook`
      - .sld
@@ -1829,18 +1829,6 @@ Bio-Formats currently supports **158** formats
         typically referred to as an image pyramid.
 
 
-.. |header-pixels| image:: images/header-pixels.png
-
-.. |header-metadata| image:: images/header-metadata.png
-
-.. |header-openness| image:: images/header-openness.png
-
-.. |header-presence| image:: images/header-presence.png
-
-.. |header-utility| image:: images/header-utility.png
-
-.. |header-export| image:: images/header-export.png
-
 .. toctree::
     :maxdepth: 1
     :glob:
@@ -2004,4 +1992,24 @@ Bio-Formats currently supports **158** formats
     formats/zeiss-axiovision-zvi
     formats/zeiss-czi
     formats/zeiss-lsm
+
+
+.. |header-pixels| image:: images/header-pixels.png
+
+.. |header-metadata| image:: images/header-metadata.png
+
+.. |header-openness| image:: images/header-openness.png
+
+.. |header-presence| image:: images/header-presence.png
+
+.. |header-utility| image:: images/header-utility.png
+
+.. |header-export| image:: images/header-export.png
+
+.. |header-bsd| image:: images/header-bsd.png
+
+.. |header-multipleimages| image:: images/header-multipleimages.png
+
+.. |header-pyramid| image:: images/header-pyramid.png
+
 
