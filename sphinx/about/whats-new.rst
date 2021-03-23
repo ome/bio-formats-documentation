@@ -33,7 +33,7 @@ File format fixes and improvements:
 Documentation improvements:
 
 * updated `bfconvert` documentation for using pattern string on Windows 
- (thanks to Nathanael Reveal)
+  (thanks to Nathanael Reveal)
 * added a Fiji usage note to the Tecan Spark Cyto Workspace format page
 * added references to the public Imaris formats specification page
 
