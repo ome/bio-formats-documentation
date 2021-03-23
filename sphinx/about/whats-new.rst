@@ -1,6 +1,47 @@
 Version history
 ===============
 
+6.6.1 (2021 March)
+------------------
+
+File format fixes and improvements:
+
+* CV7000
+   - fixed the channel-wise ordering of planes. The implementation changes to channel mapping 
+     will require existing memo files to be regenerated for CV7000 datasets
+
+* Hamamatsu NDPIS
+   - transmittance values will now be used to pick valid channels if no wavelength present
+
+* Leica SCN
+   - updated position units from reference frame to nm
+   - original metadata now populated correctly for all series 
+
+* MetaMorph Stack
+   - support added for parsing `NDInfoFile Version` to determined correct file suffix
+   - improved detection of companion binary files
+
+* MetaXpress
+   - improved detection of thumbnail paths
+
+* Nikon NIS-Elements ND2
+   - made performance improvements to reduce memory usage when reading large datasets
+
+* Olympus OIR
+   - fixed a bug which resulted in blank planes when XML blocks end with CRLF
+
+Documentation improvements:
+
+* updated `bfconvert` documentation for using pattern string on Windows 
+  (thanks to Nathanael Reveal)
+* added a Fiji usage note to the Tecan Spark Cyto Workspace format page
+* added references to the public Imaris IMS format specification page
+
+Bio-Formats improvements:
+
+* added support for `ChannelName` in Fake series tables
+
+
 6.6.0 (2020 December)
 ---------------------
 
