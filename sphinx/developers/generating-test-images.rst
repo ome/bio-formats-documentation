@@ -265,6 +265,9 @@ with their default values, is shown below.
     - * physicalSizeZ
       * real depth of the pixels, supports units defaulting to microns
       *
+    - * ChannelName_x
+      * the channel name for channel x
+      *
     - * color
       * the default color for all channels
       * null
