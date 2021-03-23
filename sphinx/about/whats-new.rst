@@ -18,7 +18,7 @@ File format fixes and improvements:
    - original metadata now populated correctly for all series 
 
 * MetaMorph Stack
-   - support added for parsing NDInfoFile Version to determined correct file suffix
+   - support added for parsing `NDInfoFile Version` to determined correct file suffix
    - improved detection of companion binary files
 
 * MetaXpress
