@@ -8,7 +8,7 @@ File format fixes and improvements:
 
 * CV7000
    - fixed the channel-wise ordering of planes. The implementation changes to channel mapping 
-     will require existing memo files to be regenerated for CV7000 data that has multiple actions
+     will require existing memo files to be regenerated for CV7000 datasets
 
 * Hamamatsu NDPIS
    - transmittance values will now be used to pick valid channels if no wavelength present
