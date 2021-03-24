@@ -28,6 +28,12 @@ import re
 import subprocess
 from datetime import datetime
 
+# Build with maven
+os.system('mvn install -DskipSphinxTests=true -f ../pom.xml')
+os.system('cp ../target/sphinx/formats/*.rst ./formats')
+os.system('cp ../target/sphinx/*.rst .')
+os.system('cp -R ../target/sphinx/metadata .')
+
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -41,7 +47,7 @@ from datetime import datetime
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.)
-extensions = ['sphinx.ext.extlinks', 'edit_on_github']
+extensions = ['sphinx.ext.extlinks']
 
 ## Configuration for the edit_on_github extension
 edit_on_github_project = 'ome/bio-formats-documentation'
@@ -228,29 +234,6 @@ rst_epilog = """
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 html_theme = 'default'
-html_theme_options = {
-    'rightsidebar': 'false',
-    'stickysidebar': 'false',
-    'footerbgcolor': '#cfd8dc',
-    'footertextcolor': '#455a64',
-    'sidebarbgcolor': '#cfd8dc',
-    'sidebartextcolor': '#263238',
-    'sidebarlinkcolor': '#455a64',
-    'relbarbgcolor': '#263238',
-    'relbartextcolor': '#ffffff',
-    'relbarlinkcolor': '#ffffff',
-    'bgcolor': '#ffffff',
-    'textcolor': '#37474f',
-    'linkcolor': '#1d8dcd',
-    'visitedlinkcolor': '#1d8dcd',
-    'headbgcolor': '#eceff1',
-    'headtextcolor': '#263238',
-    'headlinkcolor': '#009688',
-    'codebgcolor': '#eceff1',
-    'codetextcolor': '#455a64',
-    'bodyfont': 'Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif',
-    'headfont': 'Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif'
-}
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -269,7 +252,7 @@ html_theme_path = ['themes']
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
-html_logo = os.path.abspath(os.path.join(srcdir, 'images/ome.svg'))
+#html_logo = os.path.abspath(os.path.join(srcdir, 'images/ome.svg'))
 
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
@@ -290,8 +273,8 @@ html_last_updated_fmt = '%b %d, %Y'
 #html_use_smartypants = True
 
 # Custom sidebar templates, maps document names to template names.
-html_sidebars = { '**' : ['globalbftoc.html', 'pagetoc.html',
-'relations.html', 'searchbox.html', 'sourcelink.html'] }
+#html_sidebars = { '**' : ['globalbftoc.html', 'pagetoc.html',
+#'relations.html', 'searchbox.html', 'sourcelink.html'] }
 
 # Additional templates that should be rendered to pages, maps page names to
 # template names.
@@ -325,52 +308,6 @@ html_sidebars = { '**' : ['globalbftoc.html', 'pagetoc.html',
 
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'Bio-Formatsdoc'
-
-
-# -- Options for LaTeX output --------------------------------------------------
-
-latex_elements = {
-    'classoptions': ',oneside',
-    'pointsize': '10pt',
-    'inputenc': '%% Unused',
-    'utf8extra': '%% Unused',
-    'fontenc' : '%% Unused',
-    'fontpkg': '%% Unused',
-    'babel': '',
-    'printindex': '''\\phantomsection
-\\addcontentsline{toc}{part}{\indexname}
-\\printindex''',
-    'preamble': '''
-\input{preamble.tex}
-''',
-}
-
-# Grouping the document tree into LaTeX files. List of tuples
-# (source start file, target name, title, author, documentclass [howto/manual]).
-target = project + '.tex'
-latex_documents = [
-  (master_doc, target, title, author, 'manual'),
-]
-
-# The name of an image file (relative to this directory) to place at the top of
-# the title page.
-latex_logo = os.path.join(srcdir, 'images/bio-formats-logo.pdf')
-
-# For "manual" documents, if this is true, then toplevel headings are parts,
-# not chapters.
-#latex_use_parts = True
-
-# If true, show page references after internal links.
-#latex_show_pagerefs = False
-
-# If true, show URL addresses after external links.
-latex_show_urls = 'footnote'
-
-# Documents to append as an appendix to all manuals.
-#latex_appendices = []
-
-# If false, no module index is generated.
-#latex_domain_indices = True
 
 
 # -- Options for manual page output --------------------------------------------
