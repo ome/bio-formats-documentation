@@ -18,6 +18,6 @@ Upgrading
 
 It should be possible to use a `newer version of Bio-Formats <https://www.openmicroscopy.org/bio-formats/downloads/>`_ 
 by overwriting the old **bio-formats.jar** and optional libraries within
-the VisBio distribution. For Mac OS X, you'll have to control click the
+the VisBio distribution. For Mac OS X, you will have to control click the
 VisBio program icon, choose "Show Package Contents" and navigate into
 Contents/Resources/Java to find the JAR files.
