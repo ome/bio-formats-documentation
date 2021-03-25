@@ -36,7 +36,7 @@ def getValue(value):
 
 
 if os.environ.get('READTHEDOCS') == 'True':
-    os.system('mvn install -DskipSphinxTests=true -f ../pom.xml')
+    os.system('mvn compile -f ../pom.xml')
     os.system('cp ../target/sphinx/formats/*.rst ./formats')
     os.system('cp ../target/sphinx/*.rst .')
     os.system('cp -R ../target/sphinx/metadata .')
