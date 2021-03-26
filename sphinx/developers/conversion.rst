@@ -7,8 +7,8 @@ using Bio-Formats version 4.2 and later.
 Working example code is provided in
 :download:`FileConvert.java <examples/FileConvert.java>` - code from that
 class is referenced here in part. You will need to have
-**bioformats_package.jar** in your Java CLASSPATH in order to compile
-FileConvert.java.
+:file:`bioformats_package.jar` in your Java :envvar:`CLASSPATH` in order to compile
+:file:`FileConvert.java`.
 
 The first thing that must happen is we must create the object that stores
 OME-XML metadata.  This is done as follows:

@@ -8,8 +8,8 @@ version 4.2 and later.
 
 Working example code is provided in
 :download:`FileExport.java <examples/FileExport.java>` - code from that class
-is referenced here in part. You will need to have bioformats_package.jar in
-your Java CLASSPATH in order to compile FileExport.java.
+is referenced here in part. You will need to have :file:`bioformats_package.jar` in
+your Java :envvar:`CLASSPATH` in order to compile :file:`FileExport.java`.
 
 The first thing that must happen is we must create the object that stores
 OME-XML metadata.  This is done as follows:
@@ -24,7 +24,7 @@ The 'omexml' object can now be used in our code to store OME-XML metadata, and
 by the file format writer to retrieve OME-XML metadata.
 
 Now that we have somewhere to put metadata, we need to populate as much
-metadata as we can.  The minimum amount of metadata required is:
+metadata as we can. The minimum amount of metadata required is:
 
 - endianness of the pixel data
 - the order in which dimensions are stored

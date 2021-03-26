@@ -87,7 +87,7 @@ for these properties return a :xml_javadoc:`Length <ome/units/quantity/Length.ht
 contains both the value and unit of the dimension. These lengths can also be converted to other units using 
 :xml_javadoc:`value(ome.units.unit.Unit) <ome/units/quantity/Length.html#value-ome.units.unit.Unit->`
 An example of reading and converting these physical sizes values can be found in 
-:download:`ReadPhysicalSize.java <examples/ReadPhysicalSize.java>`
+:download:`ReadPhysicalSize.java <examples/ReadPhysicalSize.java>`.
 
 Format-specific metadata refers to any other data specified in the file - this
 includes acquisition and hardware parameters, among other things. This data

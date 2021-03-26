@@ -63,7 +63,7 @@ you may simply read and write your image files as normal.
 Full working example code is provided in    
    :download:`SimpleTiledWriter.java <examples/SimpleTiledWriter.java>` - code from that class is
    referenced here in part. You will need to have :file:`bioformats_package.jar` in your 
-   Java CLASSPATH in order to compile :file:`SimpleTiledWriter.java`.
+   Java :envvar:`CLASSPATH` in order to compile :file:`SimpleTiledWriter.java`.
 
 Reading and writing using tiling
 --------------------------------
@@ -96,7 +96,7 @@ Now each tile can be read and written individually.
 Full working example code is provided in
    :download:`TiledReaderWriter.java <examples/TiledReaderWriter.java>` - code from that class is
    referenced here in part. You will need to have :file:`bioformats_package.jar` in your 
-   Java CLASSPATH in order to compile :file:`TiledReaderWriter.java`.
+   Java :envvar:`CLASSPATH` in order to compile :file:`TiledReaderWriter.java`.
 
 Tiles which overlap image size
 ------------------------------
@@ -118,4 +118,4 @@ for that tile is modified to reflect the partial tile.
 Full working example code is provided in
    :download:`OverlappedTiledWriter.java <examples/OverlappedTiledWriter.java>` - code from that class is
    referenced here in part. You will need to have :file:`bioformats_package.jar` in your 
-   Java CLASSPATH in order to compile :file:`OverlappedTiledWriter.java`.
+   Java :envvar:`CLASSPATH` in order to compile :file:`OverlappedTiledWriter.java`.

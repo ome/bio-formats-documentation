@@ -26,7 +26,7 @@ Bio-Formats as a Java library
 
 Alternatively Bio-Formats can be used by including its component jar files.
 You can :downloads:`download formats-gpl.jar <artifacts/formats-gpl.jar>` to
-use it as a library. Just add :file:`formats-gpl.jar` to your CLASSPATH or
+use it as a library. Just add :file:`formats-gpl.jar` to your :envvar:`CLASSPATH` or
 build path. You will also need :file:`ome-common.jar` for common I/O functions,
 :file:`ome-xml.jar` for metadata standardization, and
 `SLF4J <http://www.slf4j.org/>`_ for :doc:`logging`.

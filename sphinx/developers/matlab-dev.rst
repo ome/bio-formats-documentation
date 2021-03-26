@@ -47,7 +47,7 @@ change will be reflected by the Preferences as above.
 
 .. image:: ../images/matlab_memory_pref25GB.png
 
-You'll see a warning message as above.
+You will see a warning message as above.
 
 
 java.opts
