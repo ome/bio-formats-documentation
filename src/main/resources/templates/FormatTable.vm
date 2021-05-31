@@ -8,20 +8,20 @@ You can sort this table by clicking on any of the headings.
 .. list-table::
    :class: sortable
    :header-rows: 1
-   :widths: 30, 20, 2, 2, 2, 2, 2, 2, 2, 5, 3
+   :widths: 30, 20, 8, 8, 8, 8, 8, 8, 8, 8, 10
 
    *
      - Format
      - Extensions
-     - .. image:: images/header-pixels.png
-     - .. image:: images/header-metadata.png
-     - .. image:: images/header-openness.png
-     - .. image:: images/header-presence.png
-     - .. image:: images/header-utility.png
-     - .. image:: images/header-export.png
-     - BSD
-     - Multiple Images
-     - Pyramid
+     - |header-pixels|
+     - |header-metadata|
+     - |header-openness|
+     - |header-presence|
+     - |header-utility|
+     - |header-export|
+     - |header-bsd|
+     - |header-multipleimages|
+     - |header-pyramid|
 
 #foreach ($format in $formats)
 #set ($pagename = $format.get("pagename"))
@@ -128,6 +128,17 @@ Bio-Formats currently supports **$count** formats
     Pyramid
         This indicates whether the format can store a single image at multiple resolutions,
         typically referred to as an image pyramid.
+
+
+.. |header-pixels| image:: images/header-pixels.png
+.. |header-metadata| image:: images/header-metadata.png
+.. |header-openness| image:: images/header-openness.png
+.. |header-presence| image:: images/header-presence.png
+.. |header-utility| image:: images/header-utility.png
+.. |header-export| image:: images/header-export.png
+.. |header-bsd| image:: images/header-bsd.png
+.. |header-multipleimages| image:: images/header-multipleimages.png
+.. |header-pyramid| image:: images/header-pyramid.png
 
 .. toctree::
     :maxdepth: 1
