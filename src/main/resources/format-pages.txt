@@ -383,7 +383,7 @@ notes = * `Bio-Rad Gel Format (1sc) specification <http://biorad1sc-doc.readthed
 
 [Bio-Rad PIC]
 extensions = .pic, .raw, .xml
-owner = `ZEISS International <https://www.zeiss.com/corporate/int/home.html>`_
+owner = `ZEISS International <https://portal.zeiss.com/download-center/softwares/mic/>`_
 developer = Bio-Rad
 bsd = no
 software = `Bio-Rad PIC reader plugin for ImageJ <https://imagej.nih.gov/ij/plugins/biorad.html>`_
@@ -2737,7 +2737,7 @@ pagename = zeiss-lsm
 extensions = .lsm, .mdb
 owner = `ZEISS International <https://www.zeiss.com/corporate/int/home.html>`_
 bsd = no
-software = `Zeiss LSM Image Browser <https://www.zeiss.com/microscopy/int/downloads/>`_ \n
+software = `Zeiss LSM Image Browser <https://portal.zeiss.com/download-center/softwares/mic/>`_ \n
 `LSM Toolbox plugin for ImageJ <https://imagej.net/LSM_Toolbox>`_ \n
 `LSM Reader plugin for ImageJ <https://imagej.nih.gov/ij/plugins/lsm-reader.html>`_ \n
 `DIMIN <http://www.dimin.net/>`_
