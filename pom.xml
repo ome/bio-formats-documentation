@@ -30,7 +30,7 @@
     <formats-bsd.version>${bioformats.version}</formats-bsd.version>
     <formats-api.version>${bioformats.version}</formats-api.version>
     <bio-formats-examples.version>6.6.1</bio-formats-examples.version>
-    <logback.version>1.1.1</logback.version>
+    <logback.version>1.2.0</logback.version>
 
     <sphinx.bioformats.source.branch>develop</sphinx.bioformats.source.branch>
     <sphinx.ome_source.user>ome</sphinx.ome_source.user>
