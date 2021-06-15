@@ -18,6 +18,10 @@ Reader options
      - ``cellsens.fail_on_missing_ets``
      - false
      - Throw an exception if an expected associated .ets file is missing
+   * - :doc:`gatan-digital-micrograph`
+     - ``gatan.split_montage``
+     - true
+     - Split montage image tiles across multiple planes
    * - :doc:`leica-lif`
      - ``leicalif.old_physical_size``
      - false
@@ -26,6 +30,14 @@ Reader options
      - ``nativend2.chunkmap``
      - true
      - Use chunkmap table to read image offsets
+   * - :doc:`olympus-scanr`
+     - ``scanr.skip_missing_wells``
+     - true
+     - Ignore missing wells
+   * - :doc:`ventana-bif`
+     - ``ventana.split_tiles``
+     - false
+     - Report each tile as a separate series
    * - :doc:`zeiss-czi`
      - ``zeissczi.attachments``
      - true
