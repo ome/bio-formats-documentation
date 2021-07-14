@@ -340,7 +340,7 @@ mif = true
 [Big Data Viewer]
 extensions = .xml, .h5
 owner = `Tobias Pietzsch <https://imagej.net/BigDataViewer>`_
-bsd = no
+bsd = yes
 weHave = * a BDV specification document\n
 * `public sample images <https://downloads.openmicroscopy.org/images/BDV/>`__
 pixelsRating = Good
@@ -490,7 +490,7 @@ reader = DNGReader
 [CellH5]
 extensions = .ch5
 developer = `CellH5 <http://cellh5.org/>`_
-bsd = no
+bsd = yes
 software = `CellH5 <http://cellh5.org/>`_
 weHave = * `public sample images <https://downloads.openmicroscopy.org/images/CellH5/>`__
 pixelsRating = Very good
@@ -1249,7 +1249,7 @@ mif = true
 [Keller Lab Block]
 extensions = .klb
 developer = `Keller Lab (Janelia Research Campus) <https://bitbucket.org/fernandoamat/keller-lab-block-filetype/overview>`_
-bsd = no
+bsd = yes
 pyramid = yes
 mif = true
 weHave = * `public sample images <https://downloads.openmicroscopy.org/images/KLB/>`__
