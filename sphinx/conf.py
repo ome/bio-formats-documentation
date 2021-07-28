@@ -443,5 +443,5 @@ linkcheck_ignore = ['https://imspector.mpibpc.mpg.de',
     r'https://spider.wadsworth.org/.*',
     r'https://wiki-bsse.ethz.ch/display.*',
     r'https://valelab4.ucsf.edu/.*', # Invalid SSL certificate
-    r'https://www.perkinelmer.com/', # 500 server error
+    r'https://www.perkinelmer.com', # 500 server error
 ]
