@@ -57,4 +57,4 @@ the metadata from the Bio-Formats side:
 :menuselection:`Tools --> Options...` and then select "Create metadata.txt
 file with Image Stack Files" in the text box.
 
-.. seealso:: `Micro-Manager User's Guide - Files on Disk <https://micro-manager.org/wiki/Micro-Manager_User%27s_Guide#Files_on_Disk>`_
+.. seealso:: `Micro-Manager User's Guide - Files on Disk <https://micro-manager.org/Micro-Manager_User's_Guide#files-on-disk>`_
