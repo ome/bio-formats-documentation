@@ -61,8 +61,7 @@ include:
 -  `ome-users mailing
    list <https://lists.openmicroscopy.org.uk/pipermail/ome-users>`_
    (searchable using google with 'site:lists.openmicroscopy.org.uk')
--  `ImageJ mailing list <http://imagej.nih.gov/ij/list.html>`_ (and
-   `archive <http://imagej.1557.x6.nabble.com/>`_)
+-  `ImageJ mailing list <https://imagej.nih.gov/ij/list.html>`_
 -  `Fiji GitHub Issues <https://github.com/fiji/fiji/issues>`_
 -  `Confocal microscopy mailing
    list <https://lists.umn.edu/cgi-bin/wa?A0=confocalmicroscopy>`_
