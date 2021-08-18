@@ -1,6 +1,81 @@
 Version history
 ===============
 
+6.7.0 (2021 August)
+-------------------
+
+File format fixes and improvements:
+
+* cellSens VSI
+   - corrected offset checking to prevent seeking beyond EOF
+
+* Deltavision
+   - fixed a bug which resulted in an IndexOutOfBoundsException
+
+* Hamamatsu ndpis
+   - added support for channel names from NDP Shading Data
+
+* Nikon NIS-Elements ND2
+   - improved parsing of timestamp values (thanks to Ilya Parmon)
+   - improved parsing of channel names and colors
+
+* Olympus FluoView FV1000
+   - fixed a bug with the handling of filter indexes
+
+* OME-TIFF
+   - resolution annotations now removed when resolutions are flattened
+   - fixed handling of filesets with BinaryOnly across multiple folders
+
+* PerkinElmer Operetta
+   - channel colors now populated using emission wavelength
+
+* TIFF
+   - added support for Deflate compressed tiles/strips with lsb2msb order
+   - prioritised units from TIFF tag over those from ImageJ comment
+
+* Zeiss CZI
+   - plates will now be correctly detected
+   - added a new reader option ``zeissczi.relative_positions`` which when set to true 
+     will change the PositionX and PositionY values stored in OME-XML to the pixel 
+     position instead of the absolute physical stage position
+   - added a new reader option ``zeissczi.trim_dimensions`` which when set to true will 
+     use the pixel block metadata to trim XY dimensions to match those reported in ZEN
+
+Bio-Formats improvements:
+ 
+ * the pattern reader now supports populating channel names from pattern tokens
+ * the channel filler will correctly reset bits per pixel if a lookup table is applied
+ * existing reader options are now registered in getAvailableOptions command
+ * improved performance of OME-XML validation (thanks to Nils  Gladitz)
+ * added unit tests for the upgrade of custom attributes in OME-XML transforms
+
+Documentation improvements:
+ * updated link to a 2005 publication about the OME data model
+ * bumped low level components `logback-core` and `logback-classic` to 1.2.0
+ * updated the licensing for BDV, KLB and CellH5 readers to BSD
+ * added documentation for additional reader options
+ * fixed a number of broken links
+
+Relicensing:
+
+ * The below have been relicensed under the more permissive BSD-2 clause:
+   - Big Data Viewer reader
+   - Keller Lab Block reader
+   - CellH5 reader
+   - JHDF service
+   - Bio-Formats GNU Octave package
+   - Bio-Formats MATLAB functions
+
+Component updates:
+
+* `ome-model` was upgraded to 6.2.3
+* `ome-common` was upgraded to 6.0.7
+* `ome-poi` was upgraded to 5.3.4
+* `ome-codecs` was upgraded to 0.3.1
+* `ome-metakit` was upgraded to 5.3.3
+* `logback` was upgraded to 1.2.0
+
+
 6.6.1 (2021 March)
 ------------------
 
