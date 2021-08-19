@@ -7,9 +7,9 @@ Being an array programming language, it is naturally suited for image
 processing and handling of N dimensional datasets.
 Octave is distributed under the terms of the GNU General Public License.
 
-The Octave language is Matlab compatible so that programs are easily
+The Octave language is MATLAB compatible so that programs are easily
 portable.
-Indeed, the Octave bioformats package is exactly the same as Matlab's,
+Indeed, the Octave bioformats package is exactly the same as MATLAB's,
 the only difference being the installation steps.
 
 Requirements
@@ -41,7 +41,7 @@ Installation
 Usage
 -----
 
-Usage instructions are the same as Matlab.  The only difference is that
+Usage instructions are the same as MATLAB.  The only difference is that
 you need to explicitly load the package.  This is done by running at the
 Octave prompt::
 
@@ -51,4 +51,4 @@ Upgrading
 ---------
 
 To use a newer version of Bio-Formats, repeat the install instructions.
-Do not follow the Matlab instructions.
+Do not follow the MATLAB instructions.
