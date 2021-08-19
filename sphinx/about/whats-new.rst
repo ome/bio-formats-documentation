@@ -43,28 +43,28 @@ File format fixes and improvements:
 
 Bio-Formats improvements:
  
- * the pattern reader now supports populating channel names from pattern tokens
- * the channel filler will correctly reset bits per pixel if a lookup table is applied
- * existing reader options are now registered in getAvailableOptions command
- * improved performance of OME-XML validation (thanks to Nils  Gladitz)
- * added unit tests for the upgrade of custom attributes in OME-XML transforms
+* the pattern reader now supports populating channel names from pattern tokens
+* the channel filler will correctly reset bits per pixel if a lookup table is applied
+* existing reader options are now registered in getAvailableOptions command
+* improved performance of OME-XML validation (thanks to Nils Gladitz)
+* added unit tests for the upgrade of custom attributes in OME-XML transforms
 
 Documentation improvements:
- * updated link to a 2005 publication about the OME data model
- * bumped low level components `logback-core` and `logback-classic` to 1.2.0
- * updated the licensing for BDV, KLB and CellH5 readers to BSD
- * added documentation for additional reader options
- * fixed a number of broken links
 
-Relicensing:
+* updated link to a 2005 publication about the OME data model
+* bumped low level components `logback-core` and `logback-classic` to 1.2.0
+* updated the licensing for BDV, KLB and CellH5 readers to BSD
+* added documentation for additional reader options
+* fixed a number of broken links
 
- * The below have been relicensed under the more permissive BSD-2 clause:
-   - Big Data Viewer reader
-   - Keller Lab Block reader
-   - CellH5 reader
-   - JHDF service
-   - Bio-Formats GNU Octave package
-   - Bio-Formats MATLAB functions
+The below have been relicensed under the more permissive BSD-2 clause:
+
+* Big Data Viewer reader
+* Keller Lab Block reader
+* CellH5 reader
+* JHDF service
+* Bio-Formats GNU Octave package
+* Bio-Formats MATLAB functions
 
 Component updates:
 
