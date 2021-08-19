@@ -46,6 +46,14 @@ Reader options
      - ``zeissczi.autostitch``
      - true
      - Automatically stitch tiled images
+   * - :doc:`zeiss-czi`
+     - ``zeissczi.trim_dimensions``
+     - false
+     - trim XY dimensions to match those in ZEN
+   * - :doc:`zeiss-czi`
+     - ``zeissczi.relative_positions``
+     - false
+     - use pixel position instead of the physical stage position
 
 Usage
 ^^^^^
