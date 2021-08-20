@@ -49,7 +49,7 @@ Reader options
    * - :doc:`zeiss-czi`
      - ``zeissczi.trim_dimensions``
      - false
-     - trim XY dimensions to match those in ZEN
+     - Trim XY dimensions to match those in ZEN
    * - :doc:`zeiss-czi`
      - ``zeissczi.relative_positions``
      - false
