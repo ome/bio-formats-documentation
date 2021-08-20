@@ -53,7 +53,7 @@ Reader options
    * - :doc:`zeiss-czi`
      - ``zeissczi.relative_positions``
      - false
-     - use pixel position instead of the physical stage position
+     - Use pixel position instead of the physical stage position
 
 Usage
 ^^^^^
