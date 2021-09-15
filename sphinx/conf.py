@@ -438,6 +438,9 @@ linkcheck_ignore = ['https://imspector.mpibpc.mpg.de',
     r'https://libjpeg-turbo.org',
     r'https://www.biovis.com/.*', # SSLV3_ALERT_HANDSHAKE_FAILURE
     r'https://github.com/ome/.*', # 429 too many requests for url
+    r'https://cit.nih.gov/', # Invalid SSL certificate
+    r'https://www.zeiss.com/microscopy/int/downloads/', # Invalid SSL certificate
+    r'https://portal.zeiss.com/download-center/softwares/mic/', # Invalid SSL certificate
     # Too many redirects - see https://github.com/sphinx-doc/sphinx/pull/8131
     r'https://www.cytivalifesciences.com/en/us/.*',
     r'https://spider.wadsworth.org/.*',
