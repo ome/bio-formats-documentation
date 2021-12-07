@@ -244,3 +244,12 @@ correctly. So in Windows, the above example would read::
       bfconvert -no-sas /path/to/input output.ome.tiff
 
     .. versionadded:: 6.2.0
+
+.. option:: -no-sequential
+
+    Do not assume that planes are written in sequential order::
+
+      bfconvert -no-sequential /path/to/input output.ome.tiff
+
+    .. versionadded:: 6.8.0
+
