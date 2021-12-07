@@ -34,6 +34,10 @@ Reader options
      - ``scanr.skip_missing_wells``
      - true
      - Ignore missing wells
+   * - :doc:`ome-tiff`
+     - ``ometiff.fail_on_missing_tiff``
+     - true
+     - Fail if a missing file is detected in a partial dataset
    * - :doc:`ventana-bif`
      - ``ventana.split_tiles``
      - false
