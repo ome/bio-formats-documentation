@@ -7,7 +7,7 @@ Version history
 New file formats:
 
 * DICOM
-   - added support for reading and writing DICOM whole slide images.
+   - added support for reading and writing DICOM whole slide images (DICOM WSI format).
      This functionality was implemented through collaboration with NCI Imaging Data Commons, 
      and has been funded in whole or in part with Federal funds from the National Cancer Institute,
      National Institutes of Health, under Task Order No. HHSN26110071 under Contract No. HHSN2612015000031
@@ -36,6 +36,7 @@ File format fixes and improvements:
 
 * OME-TIFF
    - fixed handling of partial datasets
+   - added a new reader option ometiff.fail_on_missing_tiff to configure behaviour of partial dataset
 
 * PerkinElmer Operetta
    - added support for Phenix v6 data
@@ -51,6 +52,7 @@ Bio-Formats improvements:
 
 * updated the ordering of reader.txt
 * `bfconvert` tool updated to use multiple of tile size granularity when writing (thanks to Jeremy Muhlich)
+* added a new no-sequential option to enable writing in non sequential order
 
 Component updates:
 
