@@ -8,7 +8,8 @@ New file formats:
 
 * DICOM
    - added support for reading and writing DICOM whole slide images (DICOM WSI format).
-     This functionality was implemented through collaboration with NCI Imaging Data Commons, 
+     This functionality was implemented through collaboration with 
+     `NCI Imaging Data Commons <https://datacommons.cancer.gov/repository/imaging-data-commons/>`_, 
      and has been funded in whole or in part with Federal funds from the National Cancer Institute,
      National Institutes of Health, under Task Order No. HHSN26110071 under Contract No. HHSN2612015000031
 
