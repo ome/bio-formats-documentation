@@ -1,6 +1,72 @@
 Version history
 ===============
 
+6.8.0 (2021 December)
+---------------------
+
+New file formats:
+
+* DICOM
+   - added support for reading and writing DICOM whole slide images (DICOM WSI format).
+     This functionality was implemented through collaboration with 
+     `NCI Imaging Data Commons <https://datacommons.cancer.gov/repository/imaging-data-commons/>`_, 
+     and has been funded in whole or in part with Federal funds from the National Cancer Institute,
+     National Institutes of Health, under Task Order No. HHSN26110071 under Contract No. HHSN2612015000031
+
+* Olympus omp2info 
+   - Added a new reader for the Olympus tile format 
+     provided through a partnership with Glencoe Software and OLYMPUS EUROPA SE & Co. KG
+
+File format fixes and improvements:
+
+* Amira Mesh
+   - added support for Amira 3.0 keys
+
+* Aperio SVS / Aperio AFI
+   - improved handling of macro and label images
+
+* AVI (Audio Video Interleave)
+   - set fps from Pixels Time Increment when writing AVI files
+
+* Nikon NIS-Elements ND2
+   - updated parsing of newer ND2 files to resolve issues with incorrect 
+     dimensions(thanks to Ilya Parmon)
+
+* Olympus OIR
+   - fixed a Null Pointer Exception for Laser Data ID
+
+* OME-TIFF
+   - fixed handling of partial datasets
+   - added a new reader option ometiff.fail_on_missing_tiff to configure behaviour of partial dataset
+
+* PerkinElmer Operetta
+   - added support for Phenix v6 data
+
+* TIFF
+   - fixed non-sequential offset correction for TIFF files between 2 and 4 GB
+
+* Zeiss CZI
+   - added support for zstd compression. This feature will require FIJI users to additionally
+     download the dependency io.airlift.aircompressor 0.18. (funded by a partnership between 
+     Glencoe Software and ZEISS)
+
+Bio-Formats improvements:
+
+* updated the ordering of reader.txt
+* `bfconvert` tool updated to use multiple of tile size granularity when writing (thanks to Jeremy Muhlich)
+* added a new no-sequential option to enable writing in non sequential order
+
+Component updates:
+
+* `jhdf5` was upgraded to 19.04.0
+* `commons-lang` 2.6 was added as a dependency
+* `aircompressor` 0.18 was added as a dependency
+
+Documentation improvements:
+
+* updated page for using Bio-Formats in Python to add links for 
+  AICSImageIO and PyImageJ (thanks to Curtis Rueden)
+
 6.7.0 (2021 August)
 -------------------
 
