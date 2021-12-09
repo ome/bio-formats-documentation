@@ -604,9 +604,11 @@ opennessRating = Very good
 presenceRating = Good
 utilityRating = Fair
 reader = DicomReader
+writer = DicomWriter
 mif = true
 notes = * DICOM stands for "Digital Imaging and Communication in Medicine". \n
 * Bio-Formats supports both compressed and uncompressed DICOM files. \n
+* Support for reading and writing DICOM whole slide images (DICOM WSI format) was implemented through collaboration with `NCI Imaging Data Commons <https://datacommons.cancer.gov/repository/imaging-data-commons/>`_  and has been funded in whole or in part with Federal funds from the National Cancer Institute, National Institutes of Health, under Task Order No. HHSN26110071 under Contract No. HHSN2612015000031. \n
 \n
 If you have a problematic DICOM file which you cannot send us for privacy \n
 reasons, please send us the exact error message and be aware that it may take \n
@@ -1834,6 +1836,20 @@ opennessRating = Fair
 presenceRating = Poor
 utilityRating = Fair
 reader = OIRReader
+notes = Support for this format was added in partnership with OLYMPUS EUROPA SE & Co. KG
+
+[Olympus OMP2INFO]
+extensions = .omp2info
+owner = `Olympus <https://www.olympus-global.com>`_
+bsd = no
+software = `Olympus Viewer Plugin for ImageJ <http://imagej.net/OlympusImageJPlugin>`_
+weHave = * several OMP2INFO datasets
+pixelsRating = Very good
+metadataRating = Good
+opennessRating = Fair
+presenceRating = Poor
+utilityRating = Fair
+reader = OlympusTileReader
 notes = Support for this format was added in partnership with OLYMPUS EUROPA SE & Co. KG
 
 [Olympus ScanR]
