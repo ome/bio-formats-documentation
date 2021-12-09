@@ -46,7 +46,8 @@ File format fixes and improvements:
 
 * Zeiss CZI
    - added support for zstd compression. This feature will require FIJI users to additionally
-     download the dependency io.airlift.aircompressor 0.18
+     download the dependency io.airlift.aircompressor 0.18. (funded by a partnership between 
+     Glencoe Software and ZEISS)
 
 Bio-Formats improvements:
 
