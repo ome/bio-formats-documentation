@@ -130,8 +130,7 @@ Usage tips
    ``NoSuchMethodException``. If you downloaded the latest version and
    whatever error message or odd behavior you are seeing has been reported as
    fixed, it is worth removing all copies of :file:`bioformats_package.jar`
-   (and :file:`loci_tools.jar` or any other Bio-Formats jars) and download a
-   fresh version.
+   (or any other Bio-Formats jars) and download a fresh version.
 
 -  The Bio-Formats Exporter plugin's file chooser will automatically add the
    first listed file extension to the file name if a specific file format is selected in the

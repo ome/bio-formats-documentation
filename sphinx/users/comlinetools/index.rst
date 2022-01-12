@@ -25,8 +25,8 @@ Download :downloads:`bftools.zip <artifacts/bftools.zip>`, unzip it into a new
 folder.
 
 .. note:: As of Bio-Formats 5.0.0, this zip now contains the bundled jar
-    and you no longer need to download :file:`loci_tools.jar` or the new
-    :file:`bioformats_package.jar` separately.
+    and you no longer need to download :file:`bioformats_package.jar`
+    separately.
 
 
 The zip file contains both Unix scripts and Windows batch files.

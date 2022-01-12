@@ -17,13 +17,12 @@ Upgrading
 ---------
 
 It should be possible to use a newer version of Bio-Formats by replacing
-the bundled **loci\_tools.jar** with a newer version.
+the bundled **bioformats_package.jar** with a newer version.
 
 -  For example, on Mac OS X, Ctrl+click the CellProfiler icon, choose
-   :guilabel:`Show Package Contents`, and replace the following files:
+   :guilabel:`Show Package Contents`, and replace the following file:
 
-   - :file:`Contents/Resources/bioformats/loci_tools.jar`
-   - :file:`Contents/Resources/lib/python2.5/bioformats/loci_tools.jar`
+   - :file:`Contents/Resources/bioformats/jars/bioformats_package.jar`
 
 .. seealso::
     `CellProfiler`_
