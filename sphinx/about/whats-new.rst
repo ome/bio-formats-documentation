@@ -19,7 +19,7 @@ Bio-Formats improvements:
 
 Security improvements:
 
-* Updated use of the git:// protocol in POM as it has now been deprecated. See the `GitHub blog post<https://github.blog/2021-09-01-improving-git-protocol-security-github/>`_ for further details
+* Updated use of the git:// protocol in POM as it has now been deprecated. See the `GitHub blog post <https://github.blog/2021-09-01-improving-git-protocol-security-github/>`_ for further details
 * Removed the loci_tools from Bio-Formats builds due to log4j vulnerability, users should instead use bioformats_package.
   See the `OME security advisory <https://www.openmicroscopy.org/security/advisories/2021-SV4/>`_ for further details
 
