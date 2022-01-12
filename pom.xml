@@ -450,7 +450,7 @@
   </ciManagement>
 
   <scm>
-    <connection>scm:git:git://github.com/ome/bio-formats-documentation</connection>
+    <connection>scm:git:https://github.com/ome/bio-formats-documentation</connection>
     <developerConnection>scm:git:git@github.com:ome/bio-formats-documentation</developerConnection>
     <tag>HEAD</tag>
     <url>http://github.com/ome/bio-formats-documentation</url>
