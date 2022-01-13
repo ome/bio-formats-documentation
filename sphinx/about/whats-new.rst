@@ -1,6 +1,31 @@
 Version history
 ===============
 
+6.8.1 (2022 January)
+--------------------
+
+File format fixes and improvements:
+
+* Aperio SVS / Aperio AFI
+   - improved handling of macro and label images when no image description is present
+
+* cellSens VSI
+   - added support for physicalSizeZ metadata
+
+* Gatan Digital Micrograph DM4
+   - fixed a FormatException when encountering null values in the metadata
+
+Bio-Formats improvements:
+
+* fixed a bug in TiffSaver which could result in an invalid TIFF when saving a file with tiling and compression (thanks to Pete Bankhead)
+* made performance improvements to TIFF reading and writing (thanks to Pete Bankhead)
+
+Security improvements:
+
+* Updated use of the git:// protocol in POM as it has now been deprecated. See the `GitHub blog post <https://github.blog/2021-09-01-improving-git-protocol-security-github/>`_ for further details
+* Removed the loci_tools from Bio-Formats builds due to log4j vulnerability, users should instead use bioformats_package.
+  See the `OME security advisory <https://www.openmicroscopy.org/security/advisories/2021-SV4/>`_ for further details
+
 6.8.0 (2021 December)
 ---------------------
 
