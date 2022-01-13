@@ -12,6 +12,9 @@ File format fixes and improvements:
 * cellSens VSI
    - added support for physicalSizeZ metadata
 
+* Gatan Digital Micrograph DM4
+   - fixed a FormatException when encountering null values in the metadata
+
 Bio-Formats improvements:
 
 * fixed a bug in TiffSaver which could result in an invalid TIFF when saving a file with tiling and compression (thanks to Pete Bankhead)
