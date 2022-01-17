@@ -1917,7 +1917,7 @@ pyramid = yes
 options = true
 notes = Bio-Formats can save image stacks as OME-TIFF. \n
 \n
-Commercial applications that support OME-TIFF are listed on our `commercial partners page <https://www.openmicroscopy.org/commercial-partners/#partnerships>`__\n
+Commercial applications that support OME-TIFF are listed on our :oo_root:`commercial partners page <commercial-partners/#partnerships>`\n
 \n
 .. seealso:: \n
   :model_doc:`OME-TIFF technical overview <ome-tiff/index.html>`

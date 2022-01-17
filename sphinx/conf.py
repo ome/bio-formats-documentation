@@ -149,6 +149,7 @@ extlinks = {
     'oo_root' : (oo_root + '/%s', ''),
     'community' : (oo_root + '/support/%s', ''),
     'omero' : (oo_root + '/omero/%s', ''),
+    'secvuln': (oo_root + '/security/advisories/%s', ''),
     # Documentation
     'model_doc' : (docs_root + '/ome-model/' + ome_model_version + '/' + '%s', ''),
     'devs_doc' : (docs_root + '/contributing/%s', ''),

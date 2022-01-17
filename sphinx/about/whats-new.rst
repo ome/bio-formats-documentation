@@ -24,7 +24,7 @@ Security improvements:
 
 * Updated use of the git:// protocol in POM as it has now been deprecated. See the `GitHub blog post <https://github.blog/2021-09-01-improving-git-protocol-security-github/>`_ for further details
 * Removed the loci_tools from Bio-Formats builds due to log4j vulnerability, users should instead use bioformats_package.
-  See the `OME security advisory <https://www.openmicroscopy.org/security/advisories/2021-SV4/>`_ for further details
+  See the :secvuln:`OME security advisory <2021-SV4/>` for further details
 
 6.8.0 (2021 December)
 ---------------------
@@ -1264,8 +1264,7 @@ Bug fixes and improvements:
 
 Documentation improvements:
 
-* added a `support <https://github.com/ome/bioformats/blob/develop/SUPPORT.md>`_ 
-  page to the Bio-Formats project
+* added a :source:`support <SUPPORT.md>` page to the Bio-Formats project
 * updated reference URLs for the Aperio ImageScope and Micro-Manager
 * documented issues with conflicts in the :ref:`JAI ImageIO component <forks-jai>`
 * clarified the default values of HCS keys for fake images in the documentation for 
