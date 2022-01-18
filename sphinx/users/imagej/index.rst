@@ -43,7 +43,7 @@ Upgrading
 ---------
 
 To upgrade, just overwrite the old **bioformats_package.jar** with the
-`latest one <https://www.openmicroscopy.org/bio-formats/downloads/>`_.
+:downloads:`latest one <>`.
 
 You can also upgrade the Bio-Formats plugin directly from ImageJ. Select
 :menuselection:`Plugins --> Bio-Formats --> Update Bio-Formats Plugins`

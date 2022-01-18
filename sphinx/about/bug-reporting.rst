@@ -10,7 +10,7 @@ problem has already been addressed. The Fiji updater will automatically do
 this for you, while in ImageJ you can select
 :menuselection:`Plugins --> Bio-Formats --> Update Bio-Formats Plugins`.
 
-You can also download the `latest version of Bio-Formats <https://www.openmicroscopy.org/bio-formats/downloads/>`_ from
+You can also download the :downloads:`latest version of Bio-Formats <>` from
 the OME website.
 
 Common issues to check
