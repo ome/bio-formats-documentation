@@ -815,7 +815,7 @@ mif = true
 extensions = .ndpi, .ndpis
 developer = `Hamamatsu <https://www.hamamatsu.com/>`_
 bsd = no
-software = `NDP.view2 <https://www.hamamatsu.com/eu/en/community/nanozoomer/product/search/U12388-01/index.html>`_ \n
+software = `NDP.view2 <https://www.hamamatsu.com/eu/en/product/life-science-and-medical-systems/digital-slide-scanner/U12388-01.html>`_ \n
 `OpenSlide <https://openslide.org>`_
 weHave = * many example datasets \n
 * `public sample images <https://downloads.openmicroscopy.org/images/Hamamatsu-NDPI/>`__
