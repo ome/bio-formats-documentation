@@ -170,6 +170,12 @@ dimensions, and other basic metadata will be printed to the console.
 
       showinf -cache-dir /tmp/cachedir /path/to/file
 
+.. option:: -swap DIMENSIONORDER
+
+    Overrides the default input dimension order::
+
+      showinf -swap XYZTC /path/to/file
+
 .. option:: -format FORMAT
 
     Specifies the reader to be used for opening the specified file. The utility
