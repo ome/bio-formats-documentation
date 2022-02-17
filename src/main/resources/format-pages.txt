@@ -2406,7 +2406,7 @@ owner = `Adobe <https://www.adobe.com>`_
 developer = Aldus and Microsoft
 bsd = yes
 samples = `Big TIFF <https://www.awaresystems.be/imaging/tiff/bigtiff.html#samples>`_
-weHave = * `TIFF specification documents from Adobe <https://www.adobe.io/open/standards/TIFF.html>`_ \n
+weHave = * `TIFF specification documents from Adobe <https://www.loc.gov/preservation/digital/formats/fdd/fdd000022.shtml>`_ \n
 * a `TIFF specification document <https://www.awaresystems.be/imaging/tiff.html>`_ \n
 * `public sample images <https://downloads.openmicroscopy.org/images/TIFF/>`__\n
 * many TIFF datasets \n
