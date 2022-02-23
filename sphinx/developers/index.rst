@@ -71,7 +71,7 @@ Contributing to Bio-Formats
     service
     useful-scripts
 
-See `open Trac tickets for Bio-Formats <https://trac.openmicroscopy.org/ome/report/44>`_ and the various
+See :report:`open Trac tickets for Bio-Formats <44>` and the various
 `Trello boards <https://trello.com/b/4EXb35xQ/getting-started>`_ for
 information on work currently planned or in progress.
 

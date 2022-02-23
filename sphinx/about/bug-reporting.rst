@@ -10,7 +10,7 @@ problem has already been addressed. The Fiji updater will automatically do
 this for you, while in ImageJ you can select
 :menuselection:`Plugins --> Bio-Formats --> Update Bio-Formats Plugins`.
 
-You can also download the `latest version of Bio-Formats <https://www.openmicroscopy.org/bio-formats/downloads/>`_ from
+You can also download the :downloads:`latest version of Bio-Formats <>` from
 the OME website.
 
 Common issues to check
@@ -64,10 +64,9 @@ Sending a bug report
 If you can still reproduce the bug after updating to the latest version
 of Bio-Formats, and your issue does not relate to anything listed above or
 noted on the relevant file format page, please send a bug report to the
-:imagesc:`forums <tag/bio-formats>`. You can upload files to our
-`QA system <http://qa.openmicroscopy.org.uk/qa/upload/>`_ or for large files
-(>2 GB), we can provide you with an FTP server address if you write to the
-mailing list.
+:imagesc:`forums <tag/bio-formats>`. You can upload sample files to
+`Zenodo <https://zenodo.org/>`_, or for files over 50 GB,
+we can provide you with an FTP server address.
 
 To ensure that any inquiries you make are resolved promptly, please include
 the following information:

@@ -77,7 +77,7 @@ may try to increase the default values of ``-XX:MaxPermSize`` and
 	`How do I increase the heap space for the Java VM in MATLAB 6.0 (R12)
 	and later versions? <https://uk.mathworks.com/matlabcentral/answers/92813-how-do-i-increase-the-heap-space-for-the-java-vm-in-matlab-6-0-r12-and-later-versions>`_
 
-	`Release of OMERO & Bio-Formats 5.1.1 <https://www.openmicroscopy.org/2015/04/28/omero-bio-formats-5-1-1.html>`_
+	:oo_root:`Release of OMERO & Bio-Formats 5.1.1 <2015/04/28/omero-bio-formats-5-1-1.html>`
 
 Opening an image file
 ---------------------

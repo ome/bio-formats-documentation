@@ -34,7 +34,7 @@ build path. You will also need :file:`ome-common.jar` for common I/O functions,
 Dependencies
 ^^^^^^^^^^^^
 
-The complete list of current dependencies is as follows:
+The complete list of third-party dependencies for `formats-gpl.jar` is as follows:
 
 .. list-table::
     :header-rows: 1
@@ -42,17 +42,26 @@ The complete list of current dependencies is as follows:
     * - Package
       - Maven name
       - License
-    * - `Logback Classic v1.1.1 <http://logback.qos.ch>`_
-      - ch.qos.logback:logback-classic:1.1.1
+    * - `Logback Classic v1.2.0 <http://logback.qos.ch>`_
+      - ch.qos.logback:logback-classic:1.2.0
       - `Eclipse Public License v1.0`_
-    * - `Logback Core v1.1.1 <http://logback.qos.ch>`_
-      - ch.qos.logback:logback-core:1.1.1
+    * - `Logback Core v1.2.0 <http://logback.qos.ch>`_
+      - ch.qos.logback:logback-core:1.2.0
       - `Eclipse Public License v1.0`_
-    * - `JHDF5 v14.12.6 <https://wiki-bsse.ethz.ch/display/JHDF5>`_
-      - cisd:jhdf5:14.12.6
+    * - `JHDF5 v19.04.0 <https://unlimited.ethz.ch/display/JHDF/>`_
+      - cisd:jhdf5:19.04.0
       - `Apache License v2.0`_
-    * - `XMP Library for Java v5.1.2 <https://www.adobe.com/devnet/xmp.html>`_
-      - com.adobe.xmp:xmpcore:5.1.2
+    * - `cisd base v18.09.0 <https://sissource.ethz.ch/sispub/base/>`_
+      - cisd:base:18.09.0
+      - `Apache License v2.0`_
+    * - `commons-io v2.7 <https://commons.apache.org/proper/commons-io/>`_
+      - commons-io:commons-io:2.7
+      - `Apache License v2.0`_
+    * - `commons-lang3 v3.10 <https://commons.apache.org/proper/commons-lang/>`_
+      - org.apache.commons:commons-lang3:3.10
+      - `Apache License v2.0`_
+    * - `XMP Library for Java v5.1.3 <https://www.adobe.com/devnet/xmp.html>`_
+      - com.adobe.xmp:xmpcore:5.1.3
       - `BSD License`_
     * - `JCommander v1.27 <http://jcommander.org/>`_
       - com.beust:jcommander:1.27
@@ -60,14 +69,23 @@ The complete list of current dependencies is as follows:
     * - `metadata-extractor v2.11.0 <https://github.com/drewnoakes/metadata-extractor>`_
       - com.drewnoakes:metadata-extractor:2.11.0
       - `Apache License v2.0`_
-    * - `Kryo v2.24.0 <https://github.com/EsotericSoftware/kryo>`_
-      - com.esotericsoftware.kryo:kryo:2.24.0
+    * - `aircompressor v0.18 <https://github.com/airlift/aircompressor>`_
+      - io.airlift:aircompressor:0.18
+      - `Apache License v2.0`_
+    * - `Kryo v4.0.2 <https://github.com/EsotericSoftware/kryo>`_
+      - com.esotericsoftware.kryo:kryo:4.0.2
       - `BSD License`_
-    * - `MinLog v1.2 <https://github.com/EsotericSoftware/minlog>`_
-      - com.esotericsoftware.minlog:minlog:1.2
+    * - `reflectasm v1.11.3 <https://github.com/EsotericSoftware/reflectasm>`_
+      - com.esotericsoftware:reflectasm:1.11.3
+      - `BSD 3-Clause`_
+    * - `asm v5.0.4 <https://asm.ow2.io>`_
+      - org.ow2.asm:asm:5.0.4
+      - `BSD 3-Clause`_
+    * - `MinLog v1.3 <https://github.com/EsotericSoftware/minlog>`_
+      - com.esotericsoftware.minlog:minlog:1.3
       - `BSD License`_
-    * - `Guava v27.1 <https://github.com/google/guava>`_
-      - com.google.guava:guava:27.1-jre
+    * - `Guava v29.0 <https://github.com/google/guava>`_
+      - com.google.guava:guava:29.0-jre
       - `Apache License v2.0`_
     * - `JGoodies Common v1.7.0 <http://www.jgoodies.com/downloads/libraries/>`_
       - com.jgoodies:jgoodies-common:1.7.0
@@ -75,17 +93,14 @@ The complete list of current dependencies is as follows:
     * - `JGoodies Forms v1.7.2 <http://www.jgoodies.com/downloads/libraries/>`_
       - com.jgoodies:jgoodies-forms:1.7.2
       - `BSD License`_
-    * - `Commons Collections v3.2.1 <http://commons.apache.org/collections/>`_
-      - commons-collections:commons-collections:3.2.1
-      - `Apache License v2.0`_
-    * - `Commons Lang v2.4 <http://commons.apache.org/lang/>`_
-      - commons-lang:commons-lang:2.4
+    * - `Commons Lang v2.6 <http://commons.apache.org/lang/>`_
+      - commons-lang:commons-lang:2.6
       - `Apache License v2.0`_
     * - `Commons Logging v1.1.1 <http://commons.apache.org/logging/>`_
       - commons-logging:commons-logging:1.1.1
       - `Apache License v2.0`_
     * - `NetCDF-Java Library v4.6.13 <https://www.unidata.ucar.edu/software/netcdf-java/v4.6/documentation.htm>`_
-      - edu.ucar:netcdf:4.6.13
+      - edu.ucar:cdm:4.6.13
       - `MIT-Style License`_
     * - `Joda time v2.2 <https://github.com/JodaOrg/joda-time>`_
       - joda-time:joda-time:2.2
@@ -93,26 +108,14 @@ The complete list of current dependencies is as follows:
     * - `JUnit v4.10 <https://junit.org/junit4/>`_
       - junit:junit:4.10
       - `Common Public License v1.0`_
-    * - `Apache Log4j v1.2.17 <http://logging.apache.org/log4j/1.2>`_
-      - log4j:log4j:1.2.17
-      - `Apache License v2.0`_
-    * - `ImageJ v1.48s <http://imagej.net/Welcome>`_
-      - net.imagej:ij:1.48s
-      - Public domain
-    * - `Assume NG v1.2.4 <https://github.com/hierynomus/assumeng>`_
-      - nl.javadude.assumeng:assumeng:1.2.4
-      - `Apache License v2.0`_
-    * - `Apache Velocity v1.6.4 <http://velocity.apache.org>`_
-      - org.apache.velocity:velocity:1.6.4
-      - `Apache License v2.0`_
     * - `BeanShell v2.0b4 <http://www.beanshell.org>`_
       - org.beanshell:bsh:2.0b4
       - `Sun Public License / LGPL`_
     * - `Hamcrest Core v1.1 <https://github.com/hamcrest/JavaHamcrest>`_
       - org.hamcrest:hamcrest-core:1.1
       - `BSD 3-Clause`_
-    * - `Objenesis v2.1 <http://objenesis.org>`_
-      - org.objenesis:objenesis:2.1
+    * - `Objenesis v2.5.1 <http://objenesis.org>`_
+      - org.objenesis:objenesis:2.5.1
       - `Apache License v2.0`_
     * - `Perf4J v0.9.16 <https://github.com/perf4j/perf4j>`_
       - org.perf4j:perf4j:0.9.16
@@ -123,17 +126,11 @@ The complete list of current dependencies is as follows:
     * - `SLF4J API v1.7.4 <http://www.slf4j.org>`_
       - org.slf4j:slf4j-api:1.7.6
       - `MIT License`_
-    * - `SLF4J LOG4J-12 Binding v1.7.6 <http://www.slf4j.org>`_
-      - org.slf4j:slf4j-log4j12:1.7.6
-      - `MIT License`_
     * - `TestNG v6.8 <https://testng.org/doc/>`_
       - org.testng:testng:6.8
       - `Apache License v2.0`_
     * - `SnakeYAML v1.6 <https://bitbucket.org/asomov/snakeyaml>`_
       - org.yaml:snakeyaml:1.6
-      - `Apache License v2.0`_
-    * - `Jakarta ORO v2.0.8 <http://jakarta.apache.org/oro>`_
-      - oro:oro:2.0.8
       - `Apache License v2.0`_
     * - `Woolz v1.4.0 <http://www.emouseatlas.org/emap/analysis_tools_resources/software/woolz.html>`_
       - woolz:JWlz:1.4.0
@@ -150,11 +147,89 @@ The complete list of current dependencies is as follows:
     * - `XML Commons External Components XML APIs v1.3.04 <http://xerces.apache.org/xml-commons/components/external/>`_
       - xml-apis:xml-apis:1.3.04
       - `Apache License v2.0`_
+    * - `minio v5.0.2 <https://min.io>`_
+      - io.minio:minio:5.0.2
+      - `AGPL v3`_
+    * - `http-client-xml v1.20.0 <http://googleapis.github.io/google-http-java-client>`_
+      - com.google.http-client:google-http-client-xml:1.20.0
+      - `Apache License v2.0`_
+    * - `http-client v1.20.0 <http://googleapis.github.io/google-http-java-client>`_
+      - com.google.http-client:google-http-client:1.20.0
+      - `Apache License v2.0`_
+    * - `xpp3 v1.1.4c <https://github.com/aslom/xpp3>`_
+      - xpp3:xpp3:1.1.4c
+      - https://github.com/aslom/xpp3/blob/master/LICENSE.txt
+    * - `okhttp3 v3.7.0 <https://square.github.io/okhttp/>`_
+      - com.squareup.okhttp3:okhttp:3.7.0
+      - `Apache License v2.0`_
+    * - `okio v1.12.0 <https://square.github.io/okio/>`_
+      - com.squareup.okio:okio:1.12.0
+      - `Apache License v2.0`_
+    * - `jaxb v2.3.0 <https://javaee.github.io/jaxb-v2/>`_
+      - javax.xml.bind:jaxb-api:2.3.0
+      -
+    * - `json v20090211 <https://github.com/stleary/json-java>`_
+      - org.json:json:20090211
+      - https://github.com/stleary/JSON-java/blob/master/LICENSE
+    * - `sqlite v3.28.0 <https://github.com/xerial/sqlite-jdbc>`_
+      - org.xerial:sqlite-jdbc:3.28.0
+      - `Apache License v2.0`_
+    * - `failureaccess v1.0.1 <https://github.com/google/guava>`_
+      - com.google.guava:failureaccess:1.0.1
+      - `Apache License v2.0`_
+    * - `listenablefuture v9999.0 <https://github.com/google/guava>`_
+      - com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava
+      - `Apache License v2.0`_
+    * - `jsr305 v3.0.2 <https://github.com/findbugsproject/findbugs>`_
+      - com.google.code.findbugs:jsr305:3.0.2
+      - `BSD 3-Clause`_
+    * - `checker-qual v2.11.1 <https://checkerframework.org/>`_
+      - org.checkerframework:checker-qual:2.11.1
+      - `GPL v2`_
+    * - `errorprone v2.3.4 <https://errorprone.info/>`_
+      - com.google.errorprone:error_prone_annotations:2.3.4
+      - `Apache License v2.0`_
+    * - `j2objc-annotations v1.3 <https://developers.google.com/j2objc/>`_
+      - com.google.j2objc:j2objc-annotations:1.3
+      - `Apache License v2.0`_
+    * - `httpservices v4.6.13 <https://www.unidata.ucar.edu/software/netcdf-java/v4.6/reference/httpservices.html>`_
+      - edu.ucar:httpservices:4.6.13
+      - `MIT-Style License`_
+    * - `httpclient v4.5.1 <https://hc.apache.org/>`_
+      - org.apache.httpcomponents:httpclient:4.5.1
+      - `Apache License v2.0`_
+    * - `commons-codec v1.9 <https://commons.apache.org/proper/commons-codec/>`_
+      - commons-codec:commons-codec:1.9
+      - `Apache License v2.0`_
+    * - `httpmime v4.5.1 <https://hc.apache.org/>`_
+      - org.apache.httpcomponents:httpmime:4.5.1
+      - `Apache License v2.0`_
+    * - `c3p0 v0.9.5.3 <https://www.mchange.com/projects/c3p0/>`_
+      - com.mchange:c3p0:0.9.5.3
+      - `Eclipse Public License v1.0`_
+    * - `mchange-commons-java v0.2.15 <https://www.mchange.com/projects/mchange-commons-java/>`_
+      - com.mchange:mchange-commons-java:0.2.15
+      -
+    * - `jackson-core v2.9.8 <https://github.com/FasterXML/jackson-core>`_
+      - com.fasterxml.jackson.core:jackson-core:2.9.8
+      - `Apache License v2.0`_
+    * - `jackson-annotations v2.9.8 <https://github.com/FasterXML/jackson-annotations>`_
+      - com.fasterxml.jackson.core:jackson-annotations:2.9.8
+      - `Apache License v2.0`_
+    * - `jackson-databind v2.9.8 <https://github.com/FasterXML/jackson-databind>`_
+      - com.fasterxml.jackson.core:jackson-databind:2.9.8
+      - `Apache License v2.0`_
+
 
 As described in :ref:`versioning-policy`, the minor version number of a
 Bio-Formats release will always be increased if the version of a
 non-OME/external dependency is bumped.
 
+Dependency lists for any component can be generated by checking out the
+code as described in :ref:`source-code` and then running::
+
+    cd components/$COMPONENT_NAME
+    mvn dependency:tree
 
 .. _Apache License v2.0: https://spdx.org/licenses/Apache-2.0.html
 .. _MIT License: https://spdx.org/licenses/MIT.html
@@ -165,6 +240,7 @@ non-OME/external dependency is bumped.
 .. _BSD License: https://spdx.org/licenses/BSD-2-Clause.html
 .. _Eclipse Public License v1.0: https://spdx.org/licenses/EPL-1.0.html
 .. _GPL v2: https://spdx.org/licenses/GPL-2.0.html
+.. _AGPL v3: https://spdx.org/licenses/AGPL-3.0-only.html
 
 
 Examples of usage

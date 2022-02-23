@@ -22,7 +22,7 @@ Installation
 ------------
 
 Download the MATLAB toolbox from the Bio-Formats
-`downloads page <https://www.openmicroscopy.org/bio-formats/downloads/>`_.
+:downloads:`downloads page <>`.
 Unzip :file:`bfmatlab.zip` and add the unzipped :file:`bfmatlab` folder to
 your MATLAB path.
 
@@ -55,7 +55,7 @@ Upgrading
 ---------
 
 To use a newer version of Bio-Formats, overwrite the content of the
-:file:`bfmatlab` folder with the `newer version <https://www.openmicroscopy.org/bio-formats/downloads/>`_ of the
+:file:`bfmatlab` folder with the :downloads:`newer version <>` of the
 toolbox and restart MATLAB.
 
 Alternative scripts

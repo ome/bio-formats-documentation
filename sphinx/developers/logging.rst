@@ -11,8 +11,8 @@ underlying logging frameworks are currently supported by Bio-Formats:
 - `logback <http://logback.qos.ch/>`_ is the recommended framework and
   natively implements the SL4J API,
 - `log4j <http://logging.apache.org/log4j>`_ is the other logging framework
-  supported by Bio-Formats and is mainly used in the
-  :doc:`MATLAB toolbox <matlab-dev>`.
+  supported by Bio-Formats and is primarily used in the
+  :doc:`MATLAB environment <matlab-dev>`.
 
 Initialization
 --------------
