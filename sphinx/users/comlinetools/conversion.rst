@@ -253,3 +253,11 @@ correctly. So in Windows, the above example would read::
 
     .. versionadded:: 6.8.0
 
+.. option:: -swap DIMENSIONORDER
+
+    Overrides the default input dimension order::
+
+      bfconvert -swap XYZTC /path/to/input output.ome.tiff
+
+    .. versionadded:: 6.9.0
+
