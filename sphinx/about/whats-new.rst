@@ -7,11 +7,11 @@ Version history
 New file formats:
 
 * Leica LOF
-   - added support for reading and writing Leica LOF files
+   - added support for reading Leica LOF files.
      This functionality was implemented with thanks to Leica Microsystems
 
 * Leica XLEF
-   - added support for reading and writing Leica XLEF files
+   - added support for reading Leica XLEF files.
      This functionality was implemented with thanks to Leica Microsystems
 
 File format fixes and improvements:
