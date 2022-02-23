@@ -31,9 +31,6 @@ File format fixes and improvements:
 * Leica LIF
    - improved parsing of channel metadata (thanks to Zach Marin)
 
-* MetaMorph Stack (STK)
-   - enable support for reading STK files from VisiView software
-
 * Nikon NIS-Elements ND2
    -improved parsing of metadata tables with invalid characters
 
@@ -41,7 +38,6 @@ File format fixes and improvements:
    - performance improvements of tile read speeds for some pyramid OME-TIFFs
 
 * PerkinElmer Operetta
-   - performance improvements for parsing large datasets (thanks to Nicolas Chiaruttini)
    - enabled support for handling sparse planes
 
 Bio-Formats improvements:
