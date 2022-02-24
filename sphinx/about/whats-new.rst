@@ -1,6 +1,55 @@
 Version history
 ===============
 
+6.9.0 (2022 February)
+---------------------
+
+New file formats:
+
+* Leica LOF
+   - added support for reading Leica LOF files.
+     This functionality was implemented and contributed by Leica Microsystems
+
+* Leica XLEF
+   - added support for reading Leica XLEF files.
+     This functionality was implemented and contributed by Leica Microsystems
+
+File format fixes and improvements:
+
+* FEI TIFF
+   - fixed parsing of physical pixel sizes for Phenom data
+
+* Imspector OBF
+   - improved handling of deflate errors when opening older OBF files (thanks to Nils Gladitz)
+
+* JPEG
+   - performance improvements to reduce memory required to read tiles from large JPEGs
+
+* Leica LIF
+   - improved parsing of channel metadata (thanks to Zach Marin)
+
+* Nikon NIS-Elements ND2
+   -improved parsing of metadata tables with invalid characters
+
+* OME-TIFF
+   - performance improvements of tile read speeds for some pyramid OME-TIFFs
+
+* PerkinElmer Operetta
+   - enabled support for handling sparse planes
+
+Bio-Formats improvements:
+
+* added new API methods to FormatTools for creating well names
+* added a swap option to bfconvert to override input dimension order (thanks to Roberto Calabrese)
+
+Documentation improvements:
+
+* new public sample files for `Leica XLEF <https://downloads.openmicroscopy.org/images/Leica-XLEF/>`_ (thanks to Leica Microsystems)
+* added documentation for using the swap option with the command line tools
+* updated the process for contributing sample files via `Zenodo <https://zenodo.org/>`_
+* updated the link to NDP.view2 software on the Hamamatsu ndpi format page
+
+
 6.8.1 (2022 January)
 --------------------
 
