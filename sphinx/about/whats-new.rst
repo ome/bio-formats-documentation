@@ -16,9 +16,6 @@ New file formats:
 
 File format fixes and improvements:
 
-* Aperio SVS TIFF
-   - fixed handling of macro and label images
-
 * FEI TIFF
    - fixed parsing of physical pixel sizes for Phenom data
 
