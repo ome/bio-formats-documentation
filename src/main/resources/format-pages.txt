@@ -1345,6 +1345,41 @@ pixels minus one.  To revert to the old method of physical pixel size \n
 calculation in 5.3.3 and later, set the ``leicalif.old_physical_size`` option \n
 to ``true`` as described in :doc:`options`.
 
+[Leica LOF]
+pagename = leica-lof
+extensions = .lof
+owner = `Leica Microsystems <https://www.leica-microsystems.com/>`_
+developer = `Leica Microsystems CMS GmbH <https://www.leica-microsystems.com/>`_
+bsd = no
+software = `Leica Application Suite X <https://www.leica-microsystems.com/products/microscope-software/p/leica-las-x-ls/>`_
+weHave = * numerous LOF datasets \n
+* `public sample images <https://downloads.openmicroscopy.org/images/Leica-XLEF/>`__
+pixelsRating = Outstanding
+metadataRating = Outstanding
+opennessRating = Very good
+presenceRating = Very good
+utilityRating = Very good
+privateSpecification = true
+reader = LOFReader
+
+[Leica XLEF]
+pagename = leica-xlef
+extensions = .xlef
+owner = `Leica Microsystems <https://www.leica-microsystems.com/>`_
+developer = `Leica Microsystems CMS GmbH <https://www.leica-microsystems.com/>`_
+bsd = no
+software = `Leica Application Suite X <https://www.leica-microsystems.com/products/microscope-software/p/leica-las-x-ls/>`_
+weHave = * numerous XLEF datasets \n
+* `public sample images <https://downloads.openmicroscopy.org/images/Leica-XLEF/>`__
+pixelsRating = Outstanding
+metadataRating = Outstanding
+opennessRating = Very good
+presenceRating = Very good
+utilityRating = Very good
+privateSpecification = true
+reader = XLEFReader
+mif = true
+
 [LaVision Imspector]
 extensions = .msr
 developer = `LaVision BioTec <http://www.lavisionbiotec.com/>`_
