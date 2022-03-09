@@ -594,10 +594,10 @@ software = `List of converters and viewers <https://www.dclunie.com/medical-imag
 `Wikipedia's list of freeware health software <https://en.wikipedia.org/wiki/List_of_freeware_health_software>`_
 samples = `David Clunie's list of DICOM image samples <https://www.dclunie.com/medical-image-faq/html/part8.html#DICOMImageSamples>`_ \n
 `Whole Slide Images from DICOM Working Group 26 <ftp://medical.nema.org/medical/dicom/DataSets/WG26/>`_ \n
-`NCI Imaging Data Commons <https://portal.imaging.datacommons.cancer.gov/>, download instructions <https://learn.canceridc.dev/data/downloading-data>`_ \n
+`NCI Imaging Data Commons <https://portal.imaging.datacommons.cancer.gov/>`_, download instructions <https://learn.canceridc.dev/data/downloading-data>`_ \n
 `Converted Whole Slide Images <https://wsi.orthanc-server.com/orthanc/app/explorer.html>`_ \n
 `Medical Image Samples from Sebastien Barre's Medical Imaging page <https://barre.dev/medical/samples>`_ \n
-`DICOM sample image sets from OsiriX web site <http://www.osirix-viewer.com/resources/dicom-image-library/>`_ \n
+`DICOM sample image sets from OsiriX web site <http://www.osirix-viewer.com/resources/dicom-image-library/>`_
 weHave = * `DICOM specification documents <https://www.dicomstandard.org/current/>`_ \n
 * numerous DICOM datasets (see above)\n
 * `public sample images <https://downloads.openmicroscopy.org/images/DICOM/>`__
