@@ -587,27 +587,31 @@ notes = - The Deltavision format is based on the Medical Research Council (MRC) 
 
 [DICOM]
 extensions = .dcm, .dicom
-developer = `National Electrical Manufacturers Association <https://www.nema.org/>`_
+developer = `DICOM Standards Committee <https://www.dicomstandard.org/dsc/>`_
 bsd = yes
-software = `OsiriX Medical Imaging Software <http://www.osirix-viewer.com/>`_ \n
-`ezDICOM <http://www.sph.sc.edu/comd/rorden/ezdicom.html>`_ \n
+software = `List of converters and viewers <https://www.dclunie.com/medical-image-faq/html/part8.html#DICOMFileConvertorsAndViewers>`_ \n
+`List of libraries/toolkits <https://www.dclunie.com/medical-image-faq/html/part8.html#DICOMToolkits>`_ \n
 `Wikipedia's list of freeware health software <https://en.wikipedia.org/wiki/List_of_freeware_health_software>`_
-samples = `MRI Chest from FreeVol-3D web site <http://members.tripod.com/%7Eclunis_immensus/free3d/hk-40.zip>`_ \n
+samples = `David Clunie's list of DICOM image samples <https://www.dclunie.com/medical-image-faq/html/part8.html#DICOMImageSamples>`_ \n
+`Whole Slide Images from DICOM Working Group 26 <ftp://medical.nema.org/medical/dicom/DataSets/WG26/>`_ \n
+`NCI Imaging Data Commons Portal <https://portal.imaging.datacommons.cancer.gov/>`_, `download instructions <https://learn.canceridc.dev/data/downloading-data>`_ \n
+`Converted Whole Slide Images <https://wsi.orthanc-server.com/orthanc/app/explorer.html>`_ \n
 `Medical Image Samples from Sebastien Barre's Medical Imaging page <https://barre.dev/medical/samples>`_ \n
 `DICOM sample image sets from OsiriX web site <http://www.osirix-viewer.com/resources/dicom-image-library/>`_
-weHave = * `DICOM specification documents <http://dicom.nema.org/dicom/2007/>`_ (PS 3 - 2007, from 2006 December 28, in DOC and PDF) \n
-* numerous DICOM datasets\n
+weHave = * `DICOM specification documents <https://www.dicomstandard.org/current/>`_ \n
+* numerous DICOM datasets (see above)\n
 * `public sample images <https://downloads.openmicroscopy.org/images/DICOM/>`__
 pixelsRating = Very good
 metadataRating = Very good
-opennessRating = Very good
-presenceRating = Good
-utilityRating = Fair
+opennessRating = Outstanding
+presenceRating = Outstanding
+utilityRating = Very good
 reader = DicomReader
 writer = DicomWriter
 mif = true
+pyramid = true
 notes = * DICOM stands for "Digital Imaging and Communication in Medicine". \n
-* Bio-Formats supports both compressed and uncompressed DICOM files. \n
+* Bio-Formats supports uncompressed, baseline JPEG, JPEG-2000 (lossy and lossless), and RLE lossless transfer syntaxes. \n
 * Support for reading and writing DICOM whole slide images (DICOM WSI format) was implemented through collaboration with `NCI Imaging Data Commons <https://datacommons.cancer.gov/repository/imaging-data-commons/>`_  and has been funded in whole or in part with Federal funds from the National Cancer Institute, National Institutes of Health, under Task Order No. HHSN26110071 under Contract No. HHSN2612015000031. \n
 \n
 If you have a problematic DICOM file which you cannot send us for privacy \n
