@@ -1,6 +1,34 @@
 Version history
 ===============
 
+6.9.1 (2022 April)
+------------------
+
+File format fixes and improvements:
+
+* DeltaVision
+   - allowed partial planes to be read from truncated files
+
+* MetaMorph
+  - fixed a NumberFormatException when parsing double values in metdata
+
+* OME-TIFF
+   - performance improvements to reduce the number of open file handles during initialization
+
+* PerkinElmer Operetta
+   - performance improvements to speed up the reading of datasets (thanks to Nicolas Chiaruttini)
+
+* Zeiss CZI
+   - switched to a white background for brightfield data to better match Zeiss Zen software
+
+* Zeiss LSM
+   - fixed a bug that resulted in an incorrect pixel type for some floating point data
+
+Bio-Formats improvements:
+
+* removed the maven deploy step from workflows in forked repositories
+* upgraded cdm dependency from 4.6.13 to cdm-core 5.3.3
+
 6.9.0 (2022 February)
 ---------------------
 
