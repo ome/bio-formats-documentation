@@ -10,7 +10,7 @@ File format fixes and improvements:
    - allowed partial planes to be read from truncated files
 
 * MetaMorph
-  - fixed a NumberFormatException when parsing double values in metdata
+   - fixed a NumberFormatException when parsing double values in metdata
 
 * OME-TIFF
    - performance improvements to reduce the number of open file handles during initialization
