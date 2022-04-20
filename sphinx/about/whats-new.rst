@@ -28,6 +28,12 @@ Bio-Formats improvements:
 
 * removed the maven deploy step from workflows in forked repositories
 * upgraded cdm dependency from 4.6.13 to cdm-core 5.3.3
+* configurable sleep time in FakeReader moved to the end of initialization
+
+Documentation improvements:
+
+* DICOM format page updated with improved links for sample datasets, software, and specification
+* updated guidelines for submitting sample datasets
 
 6.9.0 (2022 February)
 ---------------------
