@@ -45,7 +45,7 @@ The complete list of third-party dependencies for `formats-gpl.jar` is as follow
     * - `Logback Classic v1.2.9 <https://logback.qos.ch>`_
       - ch.qos.logback:logback-classic:1.2.9
       - `Eclipse Public License v1.0`_
-    * - `Logback Core v1.2.9 <http://logback.qos.ch>`_
+    * - `Logback Core v1.2.9 <https://logback.qos.ch>`_
       - ch.qos.logback:logback-core:1.2.9
       - `Eclipse Public License v1.0`_
     * - `JHDF5 v19.04.0 <https://unlimited.ethz.ch/display/JHDF/>`_
