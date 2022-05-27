@@ -30,6 +30,21 @@ http://www.openmicroscopy.org/info/slidebook for details.\n
 \n
 .. _Intelligent Imaging Innovations: http://www.intelligent-imaging.com/
 
+[3i Slidebook 7]
+extensions = .sldy
+owner = `Intelligent Imaging Innovations`_
+developer = `Intelligent Imaging Innovations`_
+bsd = yes
+software = `Slidebook <https://www.intelligent-imaging.com/slidebook/>`_
+weHave = * a small number of datasets \n
+pixelsRating = Outstanding
+metadataRating = Outstanding
+opennessRating = Very good
+presenceRating = Very good
+utilityRating = Very good
+privateSpecification = true
+reader = Slidebook7Reader
+
 [Adobe Photoshop PSD]
 pagename = photoshop-psd
 extensions = .psd
