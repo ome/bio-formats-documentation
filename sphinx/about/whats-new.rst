@@ -1,6 +1,66 @@
 Version history
 ===============
 
+6.10.0 (2022 May)
+-----------------
+
+New file formats:
+
+* Slidebook 7
+   - added support for reading SlideBook Format 7 from SlideBook 2021
+     This functionality was implemented and contributed by Intelligent Imaging Innovations
+
+File format fixes and improvements:
+
+* CellWorX / MetaXpress
+   - channel metadata will now be preserved for all channels by reading from each file
+
+* Cellomics
+   - marked the private Pattern field as transient to fix memo file generation with JDK17
+
+* DeltaVision
+   - fixed detection of incorrect XY tile counts
+
+* Hitachi S-4800
+   - enhanced format recognition and identification of datasets
+   - corrected the units for physical sizes to nanometers instead of micrometers
+
+* Nikon NIS-Elements ND2
+   - improved metadata parsing, especially for objective data, timestamps, and exposure times
+
+* PerkinElmer Operetta
+   - improved checks for invalid TIFFs and supplemental metadata files
+   - updated image names to make well names more readable
+
+* PerkinElmer Vectra QPTIFF
+   - reader has been updated to support schema version 4
+
+* TIFF (Tagged Image File Format)
+   - fixed incorrect SampleValue metadata values
+
+Bio-Formats improvements:
+
+* updated automated testing to ensure files are initialized before all tests
+
+Documentation improvements:
+
+* fixed broken link in MIPAV documentation
+* updated logbook component version in developer docs
+* updated link to View5D software
+* added a new format page for Slidebook 7
+
+Component updates:
+
+* `ome-metakit` was upgraded to 5.3.4
+* `ome-common` was upgraded to 6.0.9
+* `ome-model` was upgraded to 6.3.1
+* `ome-poi` was upgraded to 5.3.6
+* `ome-codecs` was upgraded to 0.3.2
+* `logback-core` was upgraded to 1.2.9
+* `logback-classic` was upgraded to 1.2.9
+* `xercesImpl` was upgraded to 2.12.2
+* `xml-apis` was upgraded to 1.4.01
+
 6.9.1 (2022 April)
 ------------------
 
