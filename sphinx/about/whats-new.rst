@@ -60,6 +60,7 @@ Component updates:
 * `logback-classic` was upgraded to 1.2.9
 * `xercesImpl` was upgraded to 2.12.2
 * `xml-apis` was upgraded to 1.4.01
+* `snakeyaml` 1.29 was added as a dependency
 
 6.9.1 (2022 April)
 ------------------
