@@ -127,55 +127,55 @@ imagesc_root = 'https://forum.image.sc'
 
 extlinks = {
     # image.sc
-    'imagesc' : (imagesc_root + '/%s', '#'),
+    'imagesc' : (imagesc_root + '/%s', '#%s'),
     # Trac links
-    'ticket' : (trac_root + '/ticket/%s', '#'),
-    'milestone' : (trac_root + '/milestone/%s', ''),
-    'report' : (trac_root + '/report/%s', ''),
+    'ticket' : (trac_root + '/ticket/%s', '#%s'),
+    'milestone' : (trac_root + '/milestone/%s', None),
+    'report' : (trac_root + '/report/%s', None),
     # Github links
-    'source' : (bf_github_blob + '%s', ''),
-    'sourcedir' : (bf_github_tree + '%s', ''),
-    'bfreader' : (gpl_formats + 'in/%s', ''),
-    'bsd-reader' : (bsd_formats + 'in/%s', ''),
-    'bfwriter' : (gpl_formats + 'out/' + '%s', ''),
-    'bsd-writer' : (bsd_formats + 'out/' + '%s', ''),
-    'bf-cpp-lib': (bf_cpp + 'lib/' + '%s', ''),
-    'doc_source' : ('https://github.com/ome/bio-formats-documentation/blob/master' + '/%s', ''),
+    'source' : (bf_github_blob + '%s', None),
+    'sourcedir' : (bf_github_tree + '%s', None),
+    'bfreader' : (gpl_formats + 'in/%s', None),
+    'bsd-reader' : (bsd_formats + 'in/%s', None),
+    'bfwriter' : (gpl_formats + 'out/' + '%s', None),
+    'bsd-writer' : (bsd_formats + 'out/' + '%s', None),
+    'bf-cpp-lib': (bf_cpp + 'lib/' + '%s', None),
+    'doc_source' : ('https://github.com/ome/bio-formats-documentation/blob/master' + '/%s', None),
     # Mailing list/forum links
-    'mailinglist' : (lists_root + '/mailman/listinfo/%s', ''),
-    'forum' : (oo_root + '/community/%s', ''),
+    'mailinglist' : (lists_root + '/mailman/listinfo/%s', None),
+    'forum' : (oo_root + '/community/%s', None),
     # Website links. Separating them out so that we can add prefixes and
     # suffixes during testing.
-    'oo_root' : (oo_root + '/%s', ''),
-    'community' : (oo_root + '/support/%s', ''),
-    'omero' : (oo_root + '/omero/%s', ''),
-    'secvuln': (oo_root + '/security/advisories/%s', ''),
+    'oo_root' : (oo_root + '/%s', None),
+    'community' : (oo_root + '/support/%s', None),
+    'omero' : (oo_root + '/omero/%s', None),
+    'secvuln': (oo_root + '/security/advisories/%s', None),
     # Documentation
-    'model_doc' : (docs_root + '/ome-model/' + ome_model_version + '/' + '%s', ''),
-    'devs_doc' : (docs_root + '/contributing/%s', ''),
+    'model_doc' : (docs_root + '/ome-model/' + ome_model_version + '/' + '%s', None),
+    'devs_doc' : (docs_root + '/contributing/%s', None),
 
 
     # Miscellaneous links
-    'doi' : ('http://dx.doi.org/%s', ''),
-    'schema' : (oo_root + '/Schemas/Documentation/Generated/%s', ''),
-    'examples' : (github_root + 'ome/bio-formats-examples/blob/master/%s', ''),
-    'java_examples' : (github_root + 'ome/bio-formats-examples/blob/master/src/main/java/%s', ''),
+    'doi' : ('http://dx.doi.org/%s', None),
+    'schema' : (oo_root + '/Schemas/Documentation/Generated/%s', None),
+    'examples' : (github_root + 'ome/bio-formats-examples/blob/master/%s', None),
+    'java_examples' : (github_root + 'ome/bio-formats-examples/blob/master/src/main/java/%s', None),
     }
 
 # Javadoc extlinks hosted on https://javadoc.io
 OME_COMMON_JAVADOC = 'https://javadoc.io/page/org.openmicroscopy/ome-common/'
 if ome_common_version.endswith('SNAPSHOT'):
-    extlinks['common_javadoc'] = (OME_COMMON_JAVADOC + 'latest/%s', '')
+    extlinks['common_javadoc'] = (OME_COMMON_JAVADOC + 'latest/%s', None)
 else:
     extlinks['common_javadoc'] = (
-        OME_COMMON_JAVADOC +  ome_common_version + '/%s', '')
+        OME_COMMON_JAVADOC +  ome_common_version + '/%s', None)
 
 OME_XML_JAVADOC = 'https://javadoc.io/page/org.openmicroscopy/ome-xml/'
 if ome_model_version.endswith('SNAPSHOT'):
-    extlinks['xml_javadoc'] = (OME_XML_JAVADOC + 'latest/%s', '')
+    extlinks['xml_javadoc'] = (OME_XML_JAVADOC + 'latest/%s', None)
 else:
     extlinks['xml_javadoc'] = (
-        OME_XML_JAVADOC +  ome_model_version + '/%s', '')
+        OME_XML_JAVADOC +  ome_model_version + '/%s', None)
 
 # Bio-Formats downloads
 if bf_version.endswith('SNAPSHOT'):
@@ -195,11 +195,11 @@ else:
     bf_downloads_root = downloads_root + '/bio-formats/%s/' % bf_version
 
 extlinks.update({
-    'downloads' : (bf_downloads_root + '%s', ''),
-    'javadoc' : (bf_downloads_root + 'api/%s', '')})
+    'downloads' : (bf_downloads_root + '%s', None),
+    'javadoc' : (bf_downloads_root + 'api/%s', None)})
 
 if ome_model_uri != "":
-    extlinks['model_doc'] = (ome_model_uri + '/' + '%s', '')
+    extlinks['model_doc'] = (ome_model_uri + '/' + '%s', None)
 
 rst_epilog = """
 .. _Hibernate: http://www.hibernate.org
