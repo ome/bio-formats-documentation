@@ -46,7 +46,7 @@ Bio-Formats improvements:
 Documentation improvements:
 
 * fixed broken link in MIPAV documentation
-* updated logbook component version in developer docs
+* updated logback component version in developer docs
 * updated link to View5D software
 * added a new format page for Slidebook 7
 
