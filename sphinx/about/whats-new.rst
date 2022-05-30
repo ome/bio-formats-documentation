@@ -32,11 +32,12 @@ File format fixes and improvements:
    - improved checks for invalid TIFFs and supplemental metadata files
    - updated image names to make well names more readable
 
-* PerkinElmer Vectra QPTIFF
-   - reader has been updated to support schema version 4
-
 * TIFF (Tagged Image File Format)
    - fixed incorrect SampleValue metadata values
+
+* Vectra QPTIFF
+   - reader has been updated to support schema version 4 
+     Funded by a partnership between Glencoe Software and Akoya Biosciences.
 
 Bio-Formats improvements:
 
