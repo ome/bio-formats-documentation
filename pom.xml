@@ -25,7 +25,7 @@
   <properties>
     <ome-common.version>6.0.6</ome-common.version>
     <ome-model.version>6.2.2</ome-model.version>
-    <bioformats.version>6.9.1</bioformats.version>
+    <bioformats.version>6.10.0</bioformats.version>
     <formats-gpl.version>${bioformats.version}</formats-gpl.version>
     <formats-bsd.version>${bioformats.version}</formats-bsd.version>
     <formats-api.version>${bioformats.version}</formats-api.version>
