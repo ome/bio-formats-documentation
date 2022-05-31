@@ -2566,7 +2566,8 @@ opennessRating = Outstanding
 presenceRating = Fair
 utilityRating = Fair
 reader = VectraReader
-notes = Support for this format was added in partnership with PerkinElmer
+notes = Support for this format was added in partnership with PerkinElmer and updated \n
+in partnership with `Akoya Biosciences <https://www.akoyabio.com>`_
 
 [Veeco AFM]
 extensions = .hdf
