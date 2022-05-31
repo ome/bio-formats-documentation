@@ -37,7 +37,7 @@ File format fixes and improvements:
 
 * Vectra QPTIFF
    - reader has been updated to support schema version 4 
-     Funded by a partnership between Glencoe Software and Akoya Biosciences.
+   - funded by a partnership between Glencoe Software and Akoya Biosciences.
 
 Bio-Formats improvements:
 
