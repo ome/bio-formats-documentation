@@ -32,8 +32,8 @@ http://www.openmicroscopy.org/info/slidebook for details.\n
 
 [3i Slidebook 7]
 extensions = .sldy
-owner = `Intelligent Imaging Innovations`_
-developer = `Intelligent Imaging Innovations`_
+owner = `Intelligent Imaging Innovations <http://www.intelligent-imaging.com/>`_
+developer = `Intelligent Imaging Innovations <http://www.intelligent-imaging.com/>`_
 bsd = yes
 software = `Slidebook <https://www.intelligent-imaging.com/slidebook/>`_
 weHave = * a small number of datasets
