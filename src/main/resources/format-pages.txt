@@ -2137,22 +2137,6 @@ Commercial applications that support this format include: \n
 .. seealso:: \n
   `PerkinElmer UltraVIEW system overview (pdf) <https://www.perkinelmer.com/lab-solutions/resources/PDFs/LST/Brochures/BRO_UltraVIEW-VoX-Product-Brochure.pdf>`_
 
-[PerkinElmer Vectra QPTIFF]
-extensions = .tif, .qptiff
-owner = `PerkinElmer <https://www.perkinelmer.com/>`_
-bsd = no
-pyramid = yes
-weHave = * a `specification document <https://downloads.openmicroscopy.org/images/Vectra-QPTIFF/perkinelmer/PKI_Image%20Format.docx>`__\n
-* `public sample images <https://downloads.openmicroscopy.org/images/Vectra-QPTIFF/>`__\n
-* several datasets
-pixelsRating = Very good
-metadataRating = Outstanding
-opennessRating = Outstanding
-presenceRating = Fair
-utilityRating = Fair
-reader = VectraReader
-notes = Support for this format was added in partnership with PerkinElmer
-
 [Portable Any Map]
 pagename = pgm
 extensions = .pbm, .pgm, .ppm
@@ -2582,6 +2566,23 @@ opennessRating = Fair
 presenceRating = Fair
 utilityRating = Fair
 reader = VarianFDFReader
+
+[Vectra QPTIFF]
+extensions = .tif, .qptiff
+owner = `Akoya Biosciences <https://www.akoyabio.com>`_, formerly owned by PerkinElmer
+bsd = no
+pyramid = yes
+weHave = * a `specification document <https://downloads.openmicroscopy.org/images/Vectra-QPTIFF/perkinelmer/PKI_Image%20Format.docx>`__\n
+* `public sample images <https://downloads.openmicroscopy.org/images/Vectra-QPTIFF/>`__\n
+* several datasets
+pixelsRating = Very good
+metadataRating = Outstanding
+opennessRating = Outstanding
+presenceRating = Fair
+utilityRating = Fair
+reader = VectraReader
+notes = Support for this format was added in partnership with PerkinElmer and updated \n
+in partnership with `Akoya Biosciences <https://www.akoyabio.com>`_
 
 [Veeco AFM]
 extensions = .hdf
