@@ -129,7 +129,7 @@ The complete list of third-party dependencies for `formats-gpl.jar` is as follow
     * - `TestNG v6.8 <https://testng.org/doc/>`_
       - org.testng:testng:6.8
       - `Apache License v2.0`_
-    * - `SnakeYAML v1.6 <https://bitbucket.org/asomov/snakeyaml>`_
+    * - `SnakeYAML v1.6 <https://bitbucket.org/snakeyaml/snakeyaml>`_
       - org.yaml:snakeyaml:1.6
       - `Apache License v2.0`_
     * - `Woolz v1.4.0 <http://www.emouseatlas.org/emap/analysis_tools_resources/software/woolz.html>`_
