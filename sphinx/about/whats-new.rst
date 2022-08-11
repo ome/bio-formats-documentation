@@ -1,6 +1,34 @@
 Version history
 ===============
 
+6.10.1 (2022 August)
+--------------------
+
+File format fixes and improvements:
+
+* Hamamatsu NDPI
+   - fixed handling of non number tags for files greater than 4GB in size
+
+* OME-TIFF
+   - improved performance of initializing a single file OME-TIFF datasets with a larger number of series
+
+* TIFF (Tagged Image File Format)
+   - fixed a ClassCastException when the SubfileType tag has the wrong type
+
+* Zeiss CZI
+   - scene names will now be taken into account when generating image names
+
+Documentation improvements:
+
+* fixed a number of broken links7
+
+Component updates:
+
+* `ome-common` was upgraded to 6.0.12
+* `ome-poi` was upgraded to 5.3.7
+* `slf4j` was upgraded to 1.7.30
+* `metadata-extractor` was upgraded to 2.18.0
+
 6.10.0 (2022 May)
 -----------------
 
