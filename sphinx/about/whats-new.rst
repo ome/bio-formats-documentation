@@ -20,7 +20,7 @@ File format fixes and improvements:
 
 Documentation improvements:
 
-* fixed a number of broken links7
+* fixed a number of broken links
 
 Component updates:
 
