@@ -24,7 +24,7 @@ Documentation improvements:
 
 Component updates:
 
-* `ome-common` was upgraded to 6.0.12
+* `ome-common` was upgraded to 6.0.13
 * `ome-poi` was upgraded to 5.3.7
 * `slf4j` was upgraded to 1.7.30
 * `metadata-extractor` was upgraded to 2.18.0
