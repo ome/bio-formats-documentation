@@ -2752,10 +2752,10 @@ mif = true
 pagename = zeiss-axiovision-zvi
 extensions = .zvi
 owner = `ZEISS International <https://www.zeiss.com/corporate/int/home.html>`_
-developer = `Carl Zeiss Microscopy GmbH (AxioVision) <https://www.zeiss.com/microscopy/int/products/microscope-software/axiovision.html>`_
+developer = `Carl Zeiss Microscopy GmbH <https://www.zeiss.com/microscopy>`_
 bsd = no
 versions = 1.0, 2.0
-software = `Zeiss Axiovision LE <https://www.zeiss.com/microscopy/int/products/microscope-software/axiovision.html>`_
+software = `Zeiss Zen <https://www.zeiss.com/microscopy/en/products/software/zeiss-zen.html>`_
 weHave = * a ZVI specification document (v2.0.5, from 2010 August, in PDF) \n
 * an older ZVI specification document (v2.0.2, from 2006 August 23, in PDF) \n
 * an older ZVI specification document (v2.0.1, from 2005 April 21, in PDF) \n
@@ -2776,6 +2776,8 @@ using the Bio-Formats Importer plugin, you can just remove the \n
 ZVI_Reader.class from the plugins folder. \n
 \n
 Commercial applications that support ZVI include `Bitplane Imaris <http://www.bitplane.com/>`_. \n
+\n
+As of May 2021, the proprietary ZEISS AxioVision software is classed as `End of Support <https://www.zeiss.co.uk/microscopy/local-content/2021/zeiss-axiovision-software-end-of-support.html>`_. Zeiss ZEN is the successor programme to AxioVision. \n
 
 [Zeiss CZI]
 indexExtensions = .czi
