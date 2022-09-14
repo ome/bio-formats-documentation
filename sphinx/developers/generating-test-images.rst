@@ -269,10 +269,10 @@ with their default values, is shown below.
       * the channel name for channel x
       *
     - * color
-      * the default color for all channels
+      * the default color for all channels [3]_
       * null
     - * color_x
-      * the color for channel x, overrides the default color for that channel
+      * the color for channel x, overrides the default color for that channel [3]_
       *
     - * ellipses, labels, lines, points, polygons, polylines, rectangles
       * the number of ROIs containing one shape of the given type to generate
@@ -320,6 +320,10 @@ with their default values, is shown below.
        to a value greater than zero.
 
 .. [2] Must be stored in the INI file under a ``[series_n]`` section, where ``n`` is the 0-based series index.
+
+.. [3] Colors are specified as a single packed integer representing an RGBA value.
+       This can be a decimal value (e.g. ``16711935`` for green with alpha = 255)
+       or a hexadecimal value (e.g. ``0x00FF00FF`` for green with alpha = 255).
 
 For full details of these keys, how unset and default values are handled and
 further examples see :source:`loci.formats.in.FakeReader <components/formats-bsd/src/loci/formats/in/FakeReader.java>`.
