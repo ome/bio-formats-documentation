@@ -1,6 +1,52 @@
 Version history
 ===============
 
+6.11.0 (2022 October)
+---------------------
+
+File format fixes and improvements:
+
+* Amira Mesh
+   - fixed handling of files with empty key values
+
+* InCell 1000/2000
+   - improved calculation of plane count
+
+* Nikon NIS-Elements ND2
+   - fixed handling of chunk map skipping logic
+
+* Olympus FluoView FV1000
+   - fixed an exception when parsing double values in the metadata
+
+* OME-TIFF
+   - improved initialization performance for files with a large number of planes
+   - enabled individual file reading for datasets with one file per series
+
+* SimplePCI & HCImage
+   - fixed physical size calculation to make use of magnification value
+
+* TIFF
+   - implemented Zstandard decompression for Tiff formats (thanks to Willem Pomp)
+
+Bio-Formats improvements:
+
+* updated pattern file handling to support a single file wrapped in a pattern file
+* Bio-Formats plugin now closes underlying readers after an exception
+* contrast will be retained when using VirtualImagePlus in the Bio-Formats plugin (thanks to Tomas Farago)
+* fixed overwrite checking in bfconvert tool when output path is a pattern
+
+Documentation improvements:
+
+* fixed a number of broken links
+* updated test image documentation to add note on on setting fake file channel colors
+* added new public sample files for `Olympus-FluoView <https://downloads.openmicroscopy.org/images/Olympus-FluoView/>`_
+* updated OME-TIFF sample files for `BBBC017 <https://downloads.openmicroscopy.org/images/OME-TIFF/2016-06/BBBC017/>`_
+
+Component updates:
+
+* `ome-codecs` was upgraded to 0.4.1
+* `snakeyaml` was upgraded to 1.3.1
+
 6.10.1 (2022 August)
 --------------------
 
