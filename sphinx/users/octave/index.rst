@@ -1,7 +1,7 @@
 GNU Octave
 ==========
 
-`GNU Octave <https:/octave.org>`_ is a high-level interpreted language,
+`GNU Octave <https://octave.org>`_ is a high-level interpreted language,
 primarily intended for numerical computations.
 Being an array programming language, it is naturally suited for image
 processing and handling of N dimensional datasets.
