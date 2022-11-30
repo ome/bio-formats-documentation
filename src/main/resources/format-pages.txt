@@ -1829,6 +1829,7 @@ software = `FV-Viewer from Olympus <https://www.olympus-lifescience.com/en/>`_
 weHave = * an OIF specification document (v2.0.0.0, from 2008, in PDF) \n
 * an FV1000 specification document (v1.0.0.0, from 2004 June 22, in PDF) \n
 * older FV1000 specification documents (draft, in DOC and XLS) \n
+* `public sample images <https://downloads.openmicroscopy.org/images/Olympus-FluoView/>`__\n
 * many FV1000 datasets
 weWant = * more OIB datasets (especially 2+ GB files) \n
 * more FV1000 version 2 datasets
