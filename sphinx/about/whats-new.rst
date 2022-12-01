@@ -1,6 +1,45 @@
 Version history
 ===============
 
+6.11.1 (2022 December)
+----------------------
+
+File format fixes and improvements:
+
+* 3i SlideBook 7
+   - refactored code to remove a false positive threat report in Fortinet
+
+* DICOM
+   - fixed handling of some datasets with multiple optical paths
+
+* Leica SCN
+   - fixed colour correction for datasets from SCN 400 models
+
+* Olympus cellSens VSI
+   - corrected the handling of exposure times
+
+* TIFF
+   - handle REFERENCE_BLACK_WHITE tag as an array of floats or ints
+
+* Vectra QPTIFF
+   - biomarker data in channel name will now be preserved
+
+* Zeiss CZI
+   - added support for plates with multiple fields
+
+Bio-Formats improvements:
+
+* updated the output command for GitHub actions
+
+Documentation improvements:
+
+* fixed a number of broken links
+* added a link to public sample files for `Olympus-FluoView <https://downloads.openmicroscopy.org/images/Olympus-FluoView/>`_
+
+Component updates:
+
+* `snakeyaml` was upgraded to 1.3.2
+
 6.11.0 (2022 October)
 ---------------------
 
