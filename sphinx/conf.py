@@ -450,5 +450,6 @@ linkcheck_ignore = ['https://imspector.mpibpc.mpg.de',
     r'https://www.perkinelmer.com', # 500 server error
     r'http://www.visitech.co.uk/', # Invalid SSL certificate
     r'http://www.mediacy.com/.*', # Invalid SSL certificate
+    r'https://checkerframework.org/.*', # Invalid SSL certificate
     r'https://www.pco.de/', # Invalid SSL certificate
 ]
