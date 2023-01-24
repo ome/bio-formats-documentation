@@ -270,11 +270,10 @@ html_theme_path = ['themes']
 # pixels large.
 #html_favicon = None
 
-#html_context = {
-#    'css_files': [
-#       '_static/theme_override.css',  # overrides for wide tables in RTD theme
-#        ],
-#}
+
+html_css_files = {
+    'theme_override.css',
+}
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
