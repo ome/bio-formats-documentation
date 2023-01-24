@@ -35,7 +35,7 @@ def getValue(value):
                 return values[1].strip().replace('\'', '')
 
 
-if os.environ.get('READTHEDOCS') == 'True':
+if os.environ.get('BUILD_READTHEDOCS') == 'True':
     os.system('mvn compile -f ../pom.xml')
     os.system('cp ../target/sphinx/formats/*.rst ./formats')
     os.system('cp ../target/sphinx/*.rst .')
