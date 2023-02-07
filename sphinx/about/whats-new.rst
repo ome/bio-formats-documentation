@@ -1,6 +1,60 @@
 Version history
 ===============
 
+6.12.0 (2022 February)
+----------------------
+
+File format fixes and improvements:
+
+* Lambert Instruments FLIM
+   - added support for MSB 12 to 16 bit conversion (thanks to Shaquille Louisa - Lambert Instruments)
+
+* Olympus cellSens VSI
+   - corrected tile handling to respect tile origin metadata
+   - pixel data will now only be read from ets files with the prefix frame_
+
+* Perkin Elmer Operetta/Harmony
+   - plates containing 32-bit TIFF files will now return blank planes
+
+* Zeiss CZI
+   - fixed pyramid dimension calculation
+
+Bio-Formats improvements:
+
+* implemented full Java 17 support for Bio-Formats
+* logback dependencies are now optional as per the SLF4J best practices (thanks to Curtis Rueden)
+   - downstream consumers must now declare the specific SLF4J binding they wish to use
+* CI build matrix updated to use Java versions 8, 11 and 17
+* ant tasks switched to use Maven Artifact Resolver
+* fixed a bug when decompressing using the Base64Codec
+* added a new ImageJ macro example to Bio-Formats examples
+* FakeReader now ensures correct dimension order for RGB image
+* added new unit tests for FakeReader
+* fixed min/max calculation for RGB data
+* artifacts from the GitHub Actions build are now uploaded and archived for 30 days
+* release artifacts are now generated via GitHub Actions
+* fixed a number of small issues in OME-Model (thanks to Roger Leigh)
+
+Documentation improvements:
+
+* migrated Bio-Formats documentation to Read the Docs
+* fixed and updated a number of links in documentation
+* updated OME-Model links to comply with Sphinx 5 deprecation warnings
+* updated GitHub Actions set-output to comply with deprecation warnings
+* updated OME-TIFF documentation to add links to new sample dataset 
+  `BBBC017 <https://downloads.openmicroscopy.org/images/OME-TIFF/2016-06/BBBC017/>`_
+
+Component updates:
+
+* `ome-metakit` was upgraded to 5.3.5
+* `ome-common` was upgraded to 6.0.14
+* `ome-codecs` was upgraded to 0.4.4
+* `ome-model` was upgraded to 6.3.2
+* `jackson-annotations` was upgraded to 12.14.1
+* `jackson-databind` was upgraded to 12.14.1
+* `aircompressor` was upgraded to 0.21
+
+
 6.11.1 (2022 December)
 ----------------------
 
