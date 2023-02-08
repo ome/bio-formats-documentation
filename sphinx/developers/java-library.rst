@@ -30,6 +30,8 @@ use it as a library. Just add :file:`formats-gpl.jar` to your :envvar:`CLASSPATH
 build path. You will also need :file:`ome-common.jar` for common I/O functions,
 :file:`ome-xml.jar` for metadata standardization, and
 `SLF4J <http://www.slf4j.org/>`_ for :doc:`logging`.
+Since version 6.12.0, developers will need to declare the logging library they wish to use see 
+:doc:`Logging <logging>` for the recommended frameworks.
 
 Dependencies
 ^^^^^^^^^^^^
@@ -42,12 +44,6 @@ The complete list of third-party dependencies for `formats-gpl.jar` is as follow
     * - Package
       - Maven name
       - License
-    * - `Logback Classic v1.2.9 <https://logback.qos.ch>`_
-      - ch.qos.logback:logback-classic:1.2.9
-      - `Eclipse Public License v1.0`_
-    * - `Logback Core v1.2.9 <https://logback.qos.ch>`_
-      - ch.qos.logback:logback-core:1.2.9
-      - `Eclipse Public License v1.0`_
     * - `JHDF5 v19.04.0 <https://unlimited.ethz.ch/display/JHDF/>`_
       - cisd:jhdf5:19.04.0
       - `Apache License v2.0`_
