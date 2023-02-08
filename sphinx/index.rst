@@ -29,7 +29,7 @@ projects is in the :devs_doc:`Contributing Developer Documentation <>`.
 
 
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
     :hidden:
  
     about/index

@@ -367,17 +367,14 @@
               </systemProperties>
             </configuration>
           </execution>
-          <execution>
-            <!-- Actually build the docs.
-                 Input: Combined set of the .rst files generated above
-                 and static sources copied from the sphinx directory -->
-            <id>sphinx-html</id>
-            <phase>compile</phase>
-            <goals>
-              <goal>exec</goal>
-            </goals>
-            <configuration>
-              <executable>sphinx-build</executable>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>1.6.0</version>
+        <configuration>
+          <executable>sphinx-build</executable>
               <arguments>
                 <argument>-D</argument>
                 <argument>release=${bioformats.version}</argument>
@@ -395,7 +392,14 @@
                 <argument>${sphinx_builddir}</argument>
                 <argument>${sphinx_builddir}/${sphinx.builder}</argument>
               </arguments>
-            </configuration>
+        </configuration>
+        <executions>
+          <execution>
+            <id>sphinx-html</id>
+            <phase>package</phase>
+            <goals>
+              <goal>exec</goal>
+            </goals>
           </execution>
         </executions>
       </plugin>
