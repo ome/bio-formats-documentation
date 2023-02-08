@@ -11,7 +11,8 @@ File format fixes and improvements:
 
 * Olympus cellSens VSI
    - corrected tile handling to respect tile origin metadata
-   - pixel data will now only be read from ets files with the prefix frame_
+   - pixel data will now only be read from ets files with the prefix `frame_`
+     (funded by a partnership between Glencoe Software and Evident Scientific)
 
 * Perkin Elmer Operetta/Harmony
    - plates containing 32-bit TIFF files will now return blank planes
