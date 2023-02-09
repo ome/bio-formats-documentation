@@ -10,6 +10,9 @@ the `OME Artifactory <http://artifacts.openmicroscopy.org/artifactory>`_.  The
 snippets for inclusion into your Gradle, Maven or Ivy project, which will
 enable the use of this repository.
 
+As of Bio-Formats 6.12.0 consumers will have to directly declare a dependency for 
+their chosen SLF4J logging framework. See :doc:`logging` for further details. 
+
 Examples of getting started with Bio-Formats using Maven or Gradle are given
 in the https://github.com/ome/bio-formats-examples repository.
 `OMERO <https://github.com/ome/openmicroscopy>`_ uses Ivy to manage
@@ -28,8 +31,8 @@ Alternatively Bio-Formats can be used by including its component jar files.
 You can :downloads:`download formats-gpl.jar <artifacts/formats-gpl.jar>` to
 use it as a library. Just add :file:`formats-gpl.jar` to your :envvar:`CLASSPATH` or
 build path. You will also need :file:`ome-common.jar` for common I/O functions,
-:file:`ome-xml.jar` for metadata standardization, and
-`SLF4J <http://www.slf4j.org/>`_ for :doc:`logging`.
+:file:`ome-xml.jar` for metadata standardization, and a
+`SLF4J <http://www.slf4j.org/>`_ binding for :doc:`logging`.
 
 Dependencies
 ^^^^^^^^^^^^
