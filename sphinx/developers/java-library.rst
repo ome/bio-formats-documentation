@@ -46,12 +46,6 @@ The complete list of third-party dependencies for `formats-gpl.jar` is as follow
     * - Package
       - Maven name
       - License
-    * - `Logback Classic v1.2.9 <https://logback.qos.ch>`_
-      - ch.qos.logback:logback-classic:1.2.9
-      - `Eclipse Public License v1.0`_
-    * - `Logback Core v1.2.9 <https://logback.qos.ch>`_
-      - ch.qos.logback:logback-core:1.2.9
-      - `Eclipse Public License v1.0`_
     * - `JHDF5 v19.04.0 <https://unlimited.ethz.ch/display/JHDF/>`_
       - cisd:jhdf5:19.04.0
       - `Apache License v2.0`_
@@ -224,6 +218,20 @@ The complete list of third-party dependencies for `formats-gpl.jar` is as follow
       - com.fasterxml.jackson.core:jackson-databind:12.14.1
       - `Apache License v2.0`_
 
+The below are optional dependencies :
+
+.. list-table::
+    :header-rows: 1
+
+    * - Package
+      - Maven name
+      - License
+    * - `Logback Classic v1.2.9 <https://logback.qos.ch>`_
+      - ch.qos.logback:logback-classic:1.2.9
+      - `Eclipse Public License v1.0`_
+    * - `Logback Core v1.2.9 <https://logback.qos.ch>`_
+      - ch.qos.logback:logback-core:1.2.9
+      - `Eclipse Public License v1.0`_
 
 As described in :ref:`versioning-policy`, the minor version number of a
 Bio-Formats release will always be increased if the version of a
