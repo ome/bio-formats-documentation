@@ -6,13 +6,21 @@ Logging frameworks
 
 Bio-Formats uses `SLF4J <http://www.slf4j.org>`_ as a logging API. SLF4J is a
 facade and needs to be bound to a logging framework at deployment time. Two
-underlying logging frameworks are currently supported by Bio-Formats:
+underlying logging frameworks are currently supported by Bio-Formats. Bio-Formats 
+does not impose any specific SLF4J binding on downstream consumers as per the 
+recommended `SLF4J best practices <https://www.slf4j.org/manual.html#libraries>`_.
+Some recommended bindings are as follows:
 
 - `logback <http://logback.qos.ch/>`_ is the recommended framework and
-  natively implements the SL4J API,
+  natively implements the SLF4J API. A logback version of 1.2.x is recommended as 
+  Bio-Formats has a hard dependency for sl4j-api 1.7.30. This means that logback 
+  versions 1.3.x are not yet supported in Bio-Formats as they rely on sl4j-api 2.x. 
 - `log4j <http://logging.apache.org/log4j>`_ is the other logging framework
   supported by Bio-Formats and is primarily used in the
   :doc:`MATLAB environment <matlab-dev>`.
+
+Examples of declaring these dependencies using Maven or Gradle are given in the 
+`Bio-Formats examples repository <https://github.com/ome/bio-formats-examples>`_.
 
 Initialization
 --------------
