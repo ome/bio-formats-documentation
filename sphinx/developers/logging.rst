@@ -13,8 +13,9 @@ Some recommended bindings are as follows:
 
 - `logback <http://logback.qos.ch/>`_ is the recommended framework and
   natively implements the SLF4J API. A logback version of 1.2.x is recommended as 
-  Bio-Formats has a hard dependency for sl4j-api 1.7.30. This means that logback 
-  versions 1.3.x are not yet supported in Bio-Formats as they rely on sl4j-api 2.x. 
+  Bio-Formats has a hard dependency for slf4j-api 1.7.30. This means that logback 
+  versions 1.3.x and higher are not yet supported in Bio-Formats as they rely 
+  on slf4j-api 2.x. 
 - `log4j <http://logging.apache.org/log4j>`_ is the other logging framework
   supported by Bio-Formats and is primarily used in the
   :doc:`MATLAB environment <matlab-dev>`.

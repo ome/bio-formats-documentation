@@ -10,6 +10,7 @@ the `OME Artifactory <http://artifacts.openmicroscopy.org/artifactory>`_.  The
 snippets for inclusion into your Gradle, Maven or Ivy project, which will
 enable the use of this repository.
 
+.. versionchanged:: 6.12.0
 As of Bio-Formats 6.12.0 consumers will have to directly declare a dependency for 
 their chosen SLF4J logging framework. See :doc:`logging` for further details. 
 
