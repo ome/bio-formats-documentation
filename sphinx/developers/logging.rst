@@ -20,7 +20,7 @@ Some recommended bindings are as follows:
   :doc:`MATLAB environment <matlab-dev>`.
 
 Examples of declaring these dependencies using Maven or Gradle are given in the 
-https://github.com/ome/bio-formats-examples repository.
+`Bio-Formats examples repository <https://github.com/ome/bio-formats-examples>`_.
 
 Initialization
 --------------
