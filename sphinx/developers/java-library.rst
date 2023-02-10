@@ -215,7 +215,7 @@ The complete list of third-party dependencies for `formats-gpl.jar` is as follow
       - com.fasterxml.jackson.core:jackson-annotations:12.14.1
       - `Apache License v2.0`_
     * - `jackson-databind v12.14.1 <https://github.com/FasterXML/jackson-databind>`_
-      - com.fasterxml.jackson.core:jackson-databind:12.14.1
+      - com.fasterxml.jackson.core:jackson-databind:2.14.1
       - `Apache License v2.0`_
 
 The below are optional dependencies :
