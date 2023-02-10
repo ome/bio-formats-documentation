@@ -12,7 +12,7 @@ recommended `SLF4J best practices <https://www.slf4j.org/manual.html#libraries>`
 Some recommended bindings are as follows:
 
 - `logback <http://logback.qos.ch/>`_ is the recommended framework and
-  natively implements the SL4J API. A logback version of 1.2.x is recommended as 
+  natively implements the SLF4J API. A logback version of 1.2.x is recommended as 
   Bio-Formats has a hard dependency for sl4j-api 1.7.30. This means that logback 
   versions 1.3.x are not yet supported in Bio-Formats as they rely on sl4j-api 2.x. 
 - `log4j <http://logging.apache.org/log4j>`_ is the other logging framework
