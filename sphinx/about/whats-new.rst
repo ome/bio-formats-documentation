@@ -38,7 +38,7 @@ Bio-Formats improvements:
 
 Documentation improvements:
 
-* migrated Bio-Formats documentation to Read the Docs
+* migrated Bio-Formats documentation to `Read the Docs <https://bio-formats.readthedocs.io/en/stable/>`_
 * fixed and updated a number of links in documentation
 * updated OME-Model links to comply with Sphinx 5 deprecation warnings
 * updated GitHub Actions set-output to comply with deprecation warnings
