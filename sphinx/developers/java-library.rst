@@ -10,6 +10,11 @@ the `OME Artifactory <http://artifacts.openmicroscopy.org/artifactory>`_.  The
 snippets for inclusion into your Gradle, Maven or Ivy project, which will
 enable the use of this repository.
 
+.. versionchanged:: 6.12.0
+
+As of Bio-Formats 6.12.0 consumers will have to directly declare a dependency for 
+their chosen SLF4J logging framework. See :doc:`logging` for further details. 
+
 Examples of getting started with Bio-Formats using Maven or Gradle are given
 in the https://github.com/ome/bio-formats-examples repository.
 `OMERO <https://github.com/ome/openmicroscopy>`_ uses Ivy to manage
@@ -28,8 +33,8 @@ Alternatively Bio-Formats can be used by including its component jar files.
 You can :downloads:`download formats-gpl.jar <artifacts/formats-gpl.jar>` to
 use it as a library. Just add :file:`formats-gpl.jar` to your :envvar:`CLASSPATH` or
 build path. You will also need :file:`ome-common.jar` for common I/O functions,
-:file:`ome-xml.jar` for metadata standardization, and
-`SLF4J <http://www.slf4j.org/>`_ for :doc:`logging`.
+:file:`ome-xml.jar` for metadata standardization, and a
+`SLF4J <http://www.slf4j.org/>`_ binding for :doc:`logging`.
 
 Dependencies
 ^^^^^^^^^^^^
@@ -42,12 +47,6 @@ The complete list of third-party dependencies for `formats-gpl.jar` is as follow
     * - Package
       - Maven name
       - License
-    * - `Logback Classic v1.2.9 <https://logback.qos.ch>`_
-      - ch.qos.logback:logback-classic:1.2.9
-      - `Eclipse Public License v1.0`_
-    * - `Logback Core v1.2.9 <https://logback.qos.ch>`_
-      - ch.qos.logback:logback-core:1.2.9
-      - `Eclipse Public License v1.0`_
     * - `JHDF5 v19.04.0 <https://unlimited.ethz.ch/display/JHDF/>`_
       - cisd:jhdf5:19.04.0
       - `Apache License v2.0`_
@@ -60,17 +59,17 @@ The complete list of third-party dependencies for `formats-gpl.jar` is as follow
     * - `commons-lang3 v3.10 <https://commons.apache.org/proper/commons-lang/>`_
       - org.apache.commons:commons-lang3:3.10
       - `Apache License v2.0`_
-    * - `XMP Library for Java v5.1.3 <https://www.adobe.com/devnet/xmp.html>`_
-      - com.adobe.xmp:xmpcore:5.1.3
+    * - `XMP Library for Java v6.1.11 <https://www.adobe.com/devnet/xmp.html>`_
+      - com.adobe.xmp:xmpcore:6.1.11
       - `BSD License`_
     * - `JCommander v1.27 <http://jcommander.org/>`_
       - com.beust:jcommander:1.27
       - `Apache License v2.0`_
-    * - `metadata-extractor v2.11.0 <https://github.com/drewnoakes/metadata-extractor>`_
-      - com.drewnoakes:metadata-extractor:2.11.0
+    * - `metadata-extractor v2.18.0 <https://github.com/drewnoakes/metadata-extractor>`_
+      - com.drewnoakes:metadata-extractor:2.18.0
       - `Apache License v2.0`_
-    * - `aircompressor v0.18 <https://github.com/airlift/aircompressor>`_
-      - io.airlift:aircompressor:0.18
+    * - `aircompressor v0.21 <https://github.com/airlift/aircompressor>`_
+      - io.airlift:aircompressor:0.21
       - `Apache License v2.0`_
     * - `Kryo v4.0.2 <https://github.com/EsotericSoftware/kryo>`_
       - com.esotericsoftware.kryo:kryo:4.0.2
@@ -96,11 +95,11 @@ The complete list of third-party dependencies for `formats-gpl.jar` is as follow
     * - `Commons Lang v2.6 <http://commons.apache.org/lang/>`_
       - commons-lang:commons-lang:2.6
       - `Apache License v2.0`_
-    * - `Commons Logging v1.1.1 <http://commons.apache.org/logging/>`_
-      - commons-logging:commons-logging:1.1.1
+    * - `Commons Logging v1.2 <http://commons.apache.org/logging/>`_
+      - commons-logging:commons-logging:1.2
       - `Apache License v2.0`_
-    * - `NetCDF-Java Library v4.6.13 <https://www.unidata.ucar.edu/software/netcdf-java/v4.6/documentation.htm>`_
-      - edu.ucar:cdm:4.6.13
+    * - `NetCDF-Java Library v5.3.3 <https://docs.unidata.ucar.edu/netcdf-java/5.3/userguide/index.html>`_
+      - edu.ucar:cdm:5.3.3
       - `MIT-Style License`_
     * - `Joda time v2.2 <https://github.com/JodaOrg/joda-time>`_
       - joda-time:joda-time:2.2
@@ -111,8 +110,8 @@ The complete list of third-party dependencies for `formats-gpl.jar` is as follow
     * - `BeanShell v2.0b4 <http://www.beanshell.org>`_
       - org.beanshell:bsh:2.0b4
       - `Sun Public License / LGPL`_
-    * - `Hamcrest Core v1.1 <https://github.com/hamcrest/JavaHamcrest>`_
-      - org.hamcrest:hamcrest-core:1.1
+    * - `Hamcrest Core v1.2.1 <https://github.com/hamcrest/JavaHamcrest>`_
+      - org.hamcrest:hamcrest-core:1.2.1
       - `BSD 3-Clause`_
     * - `Objenesis v2.5.1 <http://objenesis.org>`_
       - org.objenesis:objenesis:2.5.1
@@ -123,14 +122,14 @@ The complete list of third-party dependencies for `formats-gpl.jar` is as follow
     * - `Native Library Loader v2.1.4 <https://github.com/scijava/native-lib-loader>`_
       - org.scijava:native-lib-loader:2.1.4
       - `BSD License`_
-    * - `SLF4J API v1.7.4 <http://www.slf4j.org>`_
-      - org.slf4j:slf4j-api:1.7.6
+    * - `SLF4J API v1.7.30 <http://www.slf4j.org>`_
+      - org.slf4j:slf4j-api:1.7.30
       - `MIT License`_
     * - `TestNG v6.8 <https://testng.org/doc/>`_
       - org.testng:testng:6.8
       - `Apache License v2.0`_
-    * - `SnakeYAML v1.6 <https://bitbucket.org/snakeyaml/snakeyaml>`_
-      - org.yaml:snakeyaml:1.6
+    * - `SnakeYAML v1.32 <https://bitbucket.org/snakeyaml/snakeyaml>`_
+      - org.yaml:snakeyaml:1.32
       - `Apache License v2.0`_
     * - `Woolz v1.4.0 <http://www.emouseatlas.org/emap/analysis_tools_resources/software/woolz.html>`_
       - woolz:JWlz:1.4.0
@@ -141,11 +140,11 @@ The complete list of third-party dependencies for `formats-gpl.jar` is as follow
     * - `Xalan Java v2.7.2 <http://xml.apache.org/xalan-j>`_
       - xalan:xalan:2.7.2
       - `Apache License v2.0`_
-    * - `Xerces2 Java Parser v2.8.1 <http://xerces.apache.org/xerces2-j>`_
-      - xerces:xercesImpl:2.8.1
+    * - `Xerces2 Java Parser v2.12.2 <http://xerces.apache.org/xerces2-j>`_
+      - xerces:xercesImpl:2.12.2
       - `Apache License v2.0`_
-    * - `XML Commons External Components XML APIs v1.3.04 <http://xerces.apache.org/xml-commons/components/external/>`_
-      - xml-apis:xml-apis:1.3.04
+    * - `XML Commons External Components XML APIs v1.4.01 <http://xerces.apache.org/xml-commons/components/external/>`_
+      - xml-apis:xml-apis:1.4.01
       - `Apache License v2.0`_
     * - `minio v5.0.2 <https://min.io>`_
       - io.minio:minio:5.0.2
@@ -192,17 +191,17 @@ The complete list of third-party dependencies for `formats-gpl.jar` is as follow
     * - `j2objc-annotations v1.3 <https://developers.google.com/j2objc/>`_
       - com.google.j2objc:j2objc-annotations:1.3
       - `Apache License v2.0`_
-    * - `httpservices v4.6.13 <https://www.unidata.ucar.edu/software/netcdf-java/v4.6/reference/httpservices.html>`_
-      - edu.ucar:httpservices:4.6.13
+    * - `httpservices v5.3.3 <https://www.unidata.ucar.edu/software/netcdf-java/v4.6/reference/httpservices.html>`_
+      - edu.ucar:httpservices:5.3.3
       - `MIT-Style License`_
-    * - `httpclient v4.5.1 <https://hc.apache.org/>`_
-      - org.apache.httpcomponents:httpclient:4.5.1
+    * - `httpclient v4.5.9 <https://hc.apache.org/>`_
+      - org.apache.httpcomponents:httpclient:4.5.9
       - `Apache License v2.0`_
-    * - `commons-codec v1.9 <https://commons.apache.org/proper/commons-codec/>`_
-      - commons-codec:commons-codec:1.9
+    * - `commons-codec v1.11 <https://commons.apache.org/proper/commons-codec/>`_
+      - commons-codec:commons-codec:1.11
       - `Apache License v2.0`_
-    * - `httpmime v4.5.1 <https://hc.apache.org/>`_
-      - org.apache.httpcomponents:httpmime:4.5.1
+    * - `httpmime v4.5.9 <https://hc.apache.org/>`_
+      - org.apache.httpcomponents:httpmime:4.5.9
       - `Apache License v2.0`_
     * - `c3p0 v0.9.5.3 <https://www.mchange.com/projects/c3p0/>`_
       - com.mchange:c3p0:0.9.5.3
@@ -210,16 +209,30 @@ The complete list of third-party dependencies for `formats-gpl.jar` is as follow
     * - `mchange-commons-java v0.2.15 <https://www.mchange.com/projects/mchange-commons-java/>`_
       - com.mchange:mchange-commons-java:0.2.15
       -
-    * - `jackson-core v2.9.8 <https://github.com/FasterXML/jackson-core>`_
-      - com.fasterxml.jackson.core:jackson-core:2.9.8
+    * - `jackson-core v2.14.1 <https://github.com/FasterXML/jackson-core>`_
+      - com.fasterxml.jackson.core:jackson-core:2.14.1
       - `Apache License v2.0`_
-    * - `jackson-annotations v2.9.8 <https://github.com/FasterXML/jackson-annotations>`_
-      - com.fasterxml.jackson.core:jackson-annotations:2.9.8
+    * - `jackson-annotations v2.14.1 <https://github.com/FasterXML/jackson-annotations>`_
+      - com.fasterxml.jackson.core:jackson-annotations:2.14.1
       - `Apache License v2.0`_
-    * - `jackson-databind v2.9.8 <https://github.com/FasterXML/jackson-databind>`_
-      - com.fasterxml.jackson.core:jackson-databind:2.9.8
+    * - `jackson-databind v2.14.1 <https://github.com/FasterXML/jackson-databind>`_
+      - com.fasterxml.jackson.core:jackson-databind:2.14.1
       - `Apache License v2.0`_
 
+The below are optional dependencies :
+
+.. list-table::
+    :header-rows: 1
+
+    * - Package
+      - Maven name
+      - License
+    * - `Logback Classic v1.2.9 <https://logback.qos.ch>`_
+      - ch.qos.logback:logback-classic:1.2.9
+      - `Eclipse Public License v1.0`_
+    * - `Logback Core v1.2.9 <https://logback.qos.ch>`_
+      - ch.qos.logback:logback-core:1.2.9
+      - `Eclipse Public License v1.0`_
 
 As described in :ref:`versioning-policy`, the minor version number of a
 Bio-Formats release will always be increased if the version of a
