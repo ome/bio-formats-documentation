@@ -402,5 +402,8 @@ linkcheck_ignore = ['https://imspector.mpibpc.mpg.de',
     r'http://www.visitech.co.uk/', # Invalid SSL certificate
     r'http://www.mediacy.com/.*', # Invalid SSL certificate
     r'https://checkerframework.org/.*', # Invalid SSL certificate
+    r'http://www.bitplane.com/.*', # Invalid SSL certificate
+    r'https://andor.oxinst.com/.*', # Invalid SSL certificate
+    r'https://imaris.oxinst.com/.*', # Invalid SSL certificate
     r'https://www.pco.de/', # Invalid SSL certificate
 ]
