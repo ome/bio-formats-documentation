@@ -1313,6 +1313,7 @@ reader = KodakReader
 extensions = .fli
 developer = `Lambert Instruments <https://www.lambertinstruments.com>`_
 bsd = no
+versions = 1.0, 2.0
 weHave = * an LI-FLIM specification document \n
 * several example LI-FLIM datasets
 pixelsRating = Very good
