@@ -867,7 +867,7 @@ mif = true
 
 [Hitachi S-4800]
 extensions = .txt, .tif, .bmp, .jpg
-developer = `Hitachi <https://www.hitachi-hta.com/sites/default/files/technotes/Hitachi_4800_STEM.pdf>`_
+developer = `Hitachi <https://www.hitachi-hightech.com/file/us/pdf/library/technical/Hitachi_4800_STEM.pdf>`_
 bsd = no
 weHave = * several Hitachi S-4800 datasets
 pixelsRating = Very good
