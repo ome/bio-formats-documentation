@@ -18,6 +18,7 @@ supported by Bio-Formats.
 - :doc:`developers/index`
 - :doc:`formats/index`
 - :doc:`about/whats-new`
+- :doc:`about/bug-reporting`
 
 Bio-Formats |release| requires Java 8 or above and uses the *June 2016*
 release of the :model_doc:`OME Model <>`.
@@ -38,5 +39,5 @@ projects is in the :devs_doc:`Contributing Developer Documentation <>`.
     developers/index
     formats/index
     about/whats-new
-
+    about/bug-reporting
 
