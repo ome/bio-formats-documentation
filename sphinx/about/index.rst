@@ -194,10 +194,3 @@ metadata, original metadata, and OME metadata.
    bug free, but we are constantly working to improve it. We would
    greatly appreciate any and all input from users concerning missing or
    improperly converted metadata fields.
-
-.. toctree::
-    :maxdepth: 1
-    :hidden:
-
-    bug-reporting
-    whats-new

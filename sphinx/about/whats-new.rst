@@ -1,7 +1,7 @@
 Version history
 ===============
 
-6.12.0 (2022 February)
+6.12.0 (2023 February)
 ----------------------
 
 File format fixes and improvements:
