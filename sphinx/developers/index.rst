@@ -46,6 +46,7 @@ Using Bio-Formats as a Java library
     conversion
     matlab-dev
     python-dev
+    r-dev
     non-java-code
 
 .. seealso::
