@@ -1678,10 +1678,12 @@ reader = MolecularImagingReader
 [MRC (Medical Research Council)]
 pagename = mrc
 extensions = .mrc, .st, .ali, .map, .rec, .mrcs
-developer = `MRC Laboratory of Molecular Biology <https://www2.mrc-lmb.cam.ac.uk/>`_
+developer = * `MRC Laboratory of Molecular Biology <https://www2.mrc-lmb.cam.ac.uk/>`_ \n
+* `CCP-EM <https://www.ccpem.ac.uk/mrc_format/mrc_format.php>`_
 bsd = no
 samples = `golgi.mrc <http://bio3d.colorado.edu/imod/files/imod_data.tar.gz>`_
-weHave = * an `MRC specification document <http://bio3d.colorado.edu/imod/doc/mrc_format.txt>`_ (in TXT) \n
+weHave = * `specification documents for MRC2000 and MRC2014 <https://www.ccpem.ac.uk/mrc_format/mrc_format.php>`_ \n
+* an `IMOD-specific MRC specification document <http://bio3d.colorado.edu/imod/doc/mrc_format.txt>`_ (in TXT) \n
 * `public sample images <https://downloads.openmicroscopy.org/images/MRC/>`__\n
 * a few MRC datasets
 pixelsRating = Outstanding
@@ -1693,6 +1695,10 @@ reader = MRCReader
 notes = Commercial applications that support MRC include: \n
 \n
 * `Bitplane Imaris <http://www.bitplane.com/>`_ \n
+\n
+Bio-Formats provides support for the base MRC2000/MRC2014 specifications. Limited support is provided for vendor-specific \n
+extended headers, as described in the `MRC2014 specification <https://www.ccpem.ac.uk/mrc_format/mrc2014.php#note8>`_. \n
+`IMOD <https://bio3d.colorado.edu/imod/doc/mrc_format.txt>`_ extended metadata is perhaps the best-supported variant. \n
 \n
 .. seealso:: \n
   `MRC on Wikipedia <https://en.wikipedia.org/wiki/MRC_%28file_format%29>`_
