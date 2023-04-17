@@ -135,6 +135,11 @@ public class FormatPageAutogen {
       context.put("writerextlink",
         table.get("bsd").equals("no") ? "bfwriter" : "bsd-writer");
 
+      if (table.containsKey("developer")) {
+        String[] developer = table.get("developer").split("\n");
+        context.put("developer", developer);
+      }
+
       if (table.containsKey("software")) {
         String[] software = table.get("software").split("\n");
         context.put("software", software);
