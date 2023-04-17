@@ -11,7 +11,15 @@ Extensions: $extensions
 #end
 
 #if ($developer)
-Developer: $developer
+#if ($developer.size() > 1)
+Developers:
+
+#foreach ($item in $developer)
+${item}
+#end
+#else
+Developer: $developer.get(0)
+#end
 #end
 
 #if ($owner)
