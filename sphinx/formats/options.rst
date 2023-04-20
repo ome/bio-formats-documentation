@@ -82,6 +82,13 @@ Writer options
      - None
      - If set, OME-XML will be written to a companion file with a name
        determined by the option value
+   * - :doc:`ome-tiff`
+     - ``ometiff.preserve_creator``
+     - false
+     - If set to false, the OME-XML Creator attribute will be updated to include the current Bio-Formats version.
+       This will overwrite any existing Creator in the input metadata.
+       If set to true, the Creator attribute will only be updated if it wasn't previously set;
+       any existing value will be preserved.
 
 Usage
 ^^^^^
