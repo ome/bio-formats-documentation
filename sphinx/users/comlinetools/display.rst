@@ -184,3 +184,13 @@ dimensions, and other basic metadata will be printed to the console.
     will be opened with ``loci.formats.in.ImageReader``::
 
       showinf -format APNG test.png
+
+.. option:: -fill UNSIGNED_BYTE
+
+    Sets the fill value to use for undefined pixels.
+    Valid values are 0-255, with 0 representing a black pixel and 255 representing a white pixel.
+    The value set here will be applied to all bytes in an undefined pixel, e.g. setting to 128 (0x80)
+    on a uint16 image will result in a pixel value of 32896 (0x8080).
+    The default fill value is typically 0, but some readers may have different defaults.
+
+    .. versionadded:: 6.13.0
