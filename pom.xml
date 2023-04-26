@@ -23,8 +23,8 @@
   </licenses>
 
   <properties>
-    <ome-common.version>6.0.14</ome-common.version>
-    <ome-model.version>6.3.2</ome-model.version>
+    <ome-common.version>6.0.16</ome-common.version>
+    <ome-model.version>6.3.3</ome-model.version>
     <bioformats.version>6.12.0</bioformats.version>
     <formats-gpl.version>${bioformats.version}</formats-gpl.version>
     <formats-bsd.version>${bioformats.version}</formats-bsd.version>
