@@ -86,6 +86,7 @@ Numerical data processing applications
     knime/index
     matlab/index
     visad/index
+    r/index
 
 
 Visualization and analysis applications
