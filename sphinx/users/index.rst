@@ -72,7 +72,6 @@ Libraries and scripting applications
     imglib/index
     itk/index
     qu-matlab/index
-    bioconductor/index
 
 
 Numerical data processing applications
@@ -87,6 +86,7 @@ Numerical data processing applications
     knime/index
     matlab/index
     visad/index
+    r/index
 
 
 Visualization and analysis applications

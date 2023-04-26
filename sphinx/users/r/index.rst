@@ -1,5 +1,11 @@
-Bioconductor
-============
+R
+=
+
+OME does not currently provide an R implementation for Bio-Formats.
+However, there are options provided by the community:
+
+Bioconductor RBioFormats
+-------------------------
 
 `Bioconductor`_ is a project to develop, support, and disseminate free open 
 source software that facilitates rigorous and reproducible analysis of data 
