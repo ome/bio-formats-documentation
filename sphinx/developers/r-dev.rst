@@ -24,3 +24,5 @@ to allow reading of proprietary microscopy image data and metadata.:
 
     # To view documentation for the version of this package installed in your system
     browseVignettes("RBioFormats")
+
+For further details and examples of how to use the package, please see the `API documentation<https://bioconductor.org/packages/devel/bioc/vignettes/RBioFormats/inst/doc/RBioFormats.html>`_ 
