@@ -1,6 +1,103 @@
 Version history
 ===============
 
+6.13.0 (2023 April)
+-------------------
+File format fixes and improvements:
+
+* Aperio SVS
+   - removed broken special case path when there is only one (pyramidal) image 
+     (thanks to Alexandr Virodov)
+
+* Bio-Rad Gel
+   - fixed pixel data offsets for cropped images
+
+* cellSens VSI
+   - improved tile decoding to fail faster on invalid tiles
+
+* CellWorX/MetaXpress
+   - fixed a bug when retrieving channel metadata when the files for the entire first 
+     field are missing
+
+* CV7000
+   - extra folders mixed in with the plate data will now be ignored
+   - corrected channel indexing if a subset of channels was acquired
+
+* Lambert Instruments FLIM
+   - added support for Fli 2.0 (thanks to Shaquille Louisa - Lambert Instruments)
+
+* MetaMorph
+   - prevented an exception when attempting to read metadata keys that don't exist
+
+* MetaMorph TIFF
+   - fixed a NullPointerException when there are missing stage positions
+
+* MRC
+   - the IMOD flag is now used to determine int8 or uint8 pixel type
+
+* NIFTI
+   - improved the performance for gzip-compressed files by reducing the number 
+     of backwards seeks
+
+* Nikon ND2
+   - fixed an exception when reading blocks greater than 2GB
+
+* OME-TIFF
+   - file paths are now normalized rather than resolving symlinks
+
+* Perkin Elmer Operetta
+   - fixed series validation for single plane images (thanks to Alex Herbert)
+
+* Zeiss CZI
+   - improved the tile stitching when a pyramid does not exist
+
+Bio-Formats improvements:
+
+* added a new writer option `preserve_creator` for OME-TIFF and OME-XML writers. 
+  When set to true the original OME/Creator attribute will be preserved by the writer. 
+  If set to false, the OME Creator attribute will be updated to include the current 
+  Bio-Formats version. Attribute is set to false by default.
+* enabled the configuration of the fill value for undefined pixel values through new 
+  API additions to IFormatReader. Two new methods (along with default implementations) 
+  have been added for `setFillColor(Byte color)` and `Byte getFillColor()`, the default 
+  value if undefined is 0.
+* added a new `-fill` option to the command line tools, allowing a byte value to be 
+  configured for use with undefined pixels (0-255)
+* enabled the configuration of JPEG quality in the JPEGCodec using the existing quality 
+  setting on `CodecOptions` (thanks to Peter Haub)
+* improved JPEG performance by using in-memory cache in JPEGCodec (thanks to Pete Bankhead)
+* made minor API updates to `Memoizer` to allow a null reader to be specified in the 
+  constructors, in which case a new `ImageReader` will be wrapped
+* prevented file leaks in FileStitcher by closing readers when setting the class list
+* fixed exceptions in FileStitcher when a no-op file pattern is encountered
+* updated GitHub Actions release process
+
+
+Documentation improvements:
+
+* updated the format page for MRC to clarify list of developers and add links to latest specifications
+* added new developer documentation pages for Bioconductor RBioFormats 
+* corrected one of the examples in the OME-TIFF specification page (thanks to Tom Boissonnet)
+* updated the list of writer options to add documentation for new `preserve_creator` options
+* updated the list of command line tools options to add documentation for new `fill` option
+* version history and bug reporting are now linked from the main documentation page
+* fixed a number of broken links
+* updated the Li-Flim format page to add supported versions
+
+Component updates:
+
+* `ome-common` was upgraded to 6.0.16
+* `ome-model` was upgraded to 6.3.3
+* `ome-codecs` was upgraded to 0.4.5
+* `imagej1` was upgraded to 1.54c
+* `json` was upgraded to 20230227
+* `kryo` was upgraded to 5.4.0
+* `snakeyaml` was upgraded to 2.0
+* `joda-time` was upgraded to 2.12.2
+* `guava` was upgraded to 31.1-jre
+* `jackson-annotations` was upgraded to 12.14.2
+* `jackson-databind` was upgraded to 12.14.2
+
 6.12.0 (2023 February)
 ----------------------
 
