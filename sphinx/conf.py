@@ -368,43 +368,18 @@ linkcheck_retries = int(os.environ.get("SPHINX_LINKCHECK_RETRIES", 5))
 
 # Regular expressions that match URIs that should not be checked when doing a linkcheck build
 linkcheck_ignore = ['https://imspector.mpibpc.mpg.de',
-    'https://www.olympus-global.com',
-    'https://www.olympus-lifescience.com/en/',
-    'http://www.lavisionbiotec.com/',
-    r'.*[.]sourceforge.net',
-    r'http://www.libpng.org/.*',
-    'https://nifti.nimh.nih.gov/nifti-1/',
-    r'https://cbia.fi.muni.cz.*',
     r'https://www.fei.com/.*',
-    r'https?://www.ionpath.com/.*',
-    r'http://www.scanco.ch/',
     'http://cellularimaging.perkinelmer.com/downloads/',
     'https://animatedpngs.com/', # SSL certificate error
-    'https://www.merckmillipore.com', # Read timeout
     r'https://www.nis-elements.com/.*', # Invalid SSL certificate
-    r'https://www.nikoninstruments.com/.*', # Invalid SSL certificate
-    r'http://farsight-toolkit.ee.uh.edu/.*',
-    r'https://testng.org/*', # Invalid SSL certificate
-    r'http://www.bio-rad.com/*', # 503 Server Error with Sphinx v1.8.5  
-    r'https://www.mayo.edu/.*',
-    r'https://libjpeg-turbo.org',
-    r'https://www.biovis.com/.*', # SSLV3_ALERT_HANDSHAKE_FAILURE
     r'https://github.com/ome/.*', # 429 too many requests for url
-    r'https://cit.nih.gov/', # Invalid SSL certificate
-    r'https://www.zeiss.com/microscopy/int/downloads/', # Invalid SSL certificate
-    r'https://portal.zeiss.com/download-center/softwares/mic/', # Invalid SSL certificate
     # Too many redirects - see https://github.com/sphinx-doc/sphinx/pull/8131
     r'https://www.cytivalifesciences.com/en/us/.*',
     r'https://spider.wadsworth.org/.*',
-    r'https://wiki-bsse.ethz.ch/display.*',
-    r'https://valelab4.ucsf.edu/.*', # Invalid SSL certificate
     r'https://www.perkinelmer.com', # 500 server error
-    r'http://www.visitech.co.uk/', # Invalid SSL certificate
-    r'http://www.mediacy.com/.*', # Invalid SSL certificate
-    r'https://checkerframework.org/.*', # Invalid SSL certificate
     r'http://www.bitplane.com/.*', # Invalid SSL certificate
     r'https://andor.oxinst.com/.*', # Invalid SSL certificate
     r'https://imaris.oxinst.com/.*', # Invalid SSL certificate
     r'https://www.oxinst.com/.*', # Invalid SSL certificate
-    r'https://www.pco.de/', # Invalid SSL certificate
+    r'http://www.veeco.com', # Invalid SSL certificate
 ]

@@ -2785,7 +2785,7 @@ ZVI_Reader.class from the plugins folder. \n
 \n
 Commercial applications that support ZVI include `Bitplane Imaris <http://www.bitplane.com/>`_. \n
 \n
-As of May 2021, the proprietary ZEISS AxioVision software is classed as `End of Support <https://www.zeiss.com/microscopy/en/service-support/discontinued-products.html>`_. Zeiss ZEN is the successor programme to AxioVision. \n
+As of May 2021, the proprietary ZEISS AxioVision software is classed as `End of Support <https://www.zeiss.com/microscopy/en/service-support/support/discontinued-products.html>`_. Zeiss ZEN is the successor programme to AxioVision. \n
 
 [Zeiss CZI]
 indexExtensions = .czi
