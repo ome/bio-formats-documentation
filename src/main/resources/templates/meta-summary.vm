@@ -4,8 +4,6 @@ Summary of supported metadata fields
 Format readers
 --------------
 
-You can sort this table by clicking on any of the headings.
-
 .. list-table::
    :class: sortable
    :header-rows: 1
@@ -37,8 +35,6 @@ You can sort this table by clicking on any of the headings.
 
 Metadata fields
 ---------------
-
-You can sort this table by clicking on any of the headings.
 
 .. list-table::
    :class: sortable
