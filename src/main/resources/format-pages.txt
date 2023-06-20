@@ -879,7 +879,7 @@ reader = HitachiReader
 
 [I2I]
 extensions = .i2i
-developer = `Biomedical Imaging Group, UMass Medical School <http://big.umassmed.edu/>`_
+developer = `Biomedical Imaging Group, UMass Medical School <https://www.umassmed.edu/>`_
 bsd = no
 weHave = * several example datasets \n
 * a specification document \n
