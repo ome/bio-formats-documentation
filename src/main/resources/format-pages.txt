@@ -2723,7 +2723,10 @@ presenceRating = Poor
 utilityRating = Fair
 reader = WlzReader
 writer = WlzWriter
-notes = Support for the Woolz format will be removed from Bio-Formats 7.0.0 onwards. \n
+notes = Both the reader and the writer requires the Woolz image processing library to be installed \n 
+- see https://www.emouseatlas.org/emap/analysis_tools_resources/software/woolz.html for more details \n
+\n
+Support for the Woolz format will be removed from Bio-Formats 7.0.0 onwards. \n
 For users who wish to retain support for existing Woolz files, we recommend converting \n
 these file-sets to an actively maintained open format such as OME-TIFF. This can be \n
 achieved using the Bio-Formats :command:`bfconvert` command line tool as outlined in \n
