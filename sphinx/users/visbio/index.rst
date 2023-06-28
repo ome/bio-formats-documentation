@@ -1,7 +1,7 @@
 VisBio
 ======
 
-`VisBio <https://eliceirilab.org/visbio/>`_ is a biological
+`VisBio <https://loci.wisc.edu/visbio/>`_ is a biological
 visualization tool designed for easy visualization and analysis of
 multidimensional image data. VisBio uses Bio-Formats to import
 files as the Bio-Formats library originally grew out of our

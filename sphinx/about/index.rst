@@ -143,7 +143,7 @@ There are also historical reasons associated with the fact that the project
 grew out of work on the
 `VisAD Java component library <http://visad.ssec.wisc.edu>`_. You can read
 more about the origins of Bio-Formats on the
-`LOCI Bio-Formats homepage <https://eliceirilab.org/software/bio-formats/>`_.
+`LOCI Bio-Formats homepage <https://loci.wisc.edu/bio-formats/>`_.
 
 Bio-Formats metadata processing
 -------------------------------
