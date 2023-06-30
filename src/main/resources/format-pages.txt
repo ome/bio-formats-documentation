@@ -686,6 +686,9 @@ mif = true
 notes = The LuraWave LWF decoder library (i.e. lwf\_jsdk2.6.jar) with \n
 license code is required to decode wavelet-compressed Flex files. \n
 \n
+Note that support for the LuraWave code is **deprecated** and will be removed \n
+in Bio-Formats 7.0.0. \n
+\n
 .. seealso::\n
   `LuraTech (developers of the proprietary LuraWave LWF compression used for Flex image planes) <https://www.luratech.com/>`_
 
@@ -1792,8 +1795,8 @@ To use it, you must be using Windows 32-bit and have `Nikon's ND2 reader plugin 
 Additionally, you will need to download :source:`LegacyND2Reader.dll \n
 <lib/LegacyND2Reader.dll?raw=true>` \n
 and place it in your ImageJ plugin folder. \n
-Note that this reader is **unmaintained** and no additional support effort \n
-will be made. \n
+\n
+Note that the legacy ND2 reader is **deprecated** and will be removed in Bio-Formats 7.0.0. \n
 
 [NRRD (Nearly Raw Raster Data)]
 pagename = nrrd
@@ -2304,6 +2307,8 @@ mp4v   MPEG-4                              -                  read & write \n
 h263   H.263                               -                  read & write \n
 ====== ================================== =================== ============ \n
 \n
+Note that the legacy QT reader/writer are **deprecated** and will be removed \n
+in Bio-Formats 7.0.0. \n
 .. seealso:: \n
     `QuickTime software overview <https://support.apple.com/quicktime>`_
 
