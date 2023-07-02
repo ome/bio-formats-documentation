@@ -2309,6 +2309,7 @@ h263   H.263                               -                  read & write \n
 \n
 Note that the legacy QT reader/writer are **deprecated** and will be removed \n
 in Bio-Formats 7.0.0. \n
+\n
 .. seealso:: \n
     `QuickTime software overview <https://support.apple.com/quicktime>`_
 
