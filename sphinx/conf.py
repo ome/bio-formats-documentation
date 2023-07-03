@@ -382,4 +382,7 @@ linkcheck_ignore = ['https://imspector.mpibpc.mpg.de',
     r'https://imaris.oxinst.com/.*', # Invalid SSL certificate
     r'https://www.oxinst.com/.*', # Invalid SSL certificate
     r'http://www.veeco.com', # Invalid SSL certificate
+    r'http://logback.qos.ch/.*',
+    r'http://www.slf4j.org/.*',
+    r'https://valelab.ucsf.edu/.*',
 ]
