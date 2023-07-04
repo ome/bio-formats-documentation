@@ -7,29 +7,29 @@ Deprecation warnings:
 
 * Legacy ND2 Reader
    - The LegacyND2Reader and underlying components have been marked as deprecated in preparation 
-for removal in the upcoming 7.0.0 major release of Bio-Formats. This reader depends on an outdated 
-DLL which has not been built in years, is untested and fully superseded by the new NativeND2Reader. 
-From Bio-Formats 7.0.0 onwards the existing NativeND2Reader will be renamed as ND2Reader and act as 
-the sole reader for the format. Support for the ND2 format will be unaffected and continue via this 
-newly renamed reader.
+     for removal in the upcoming 7.0.0 major release of Bio-Formats. This reader depends on an outdated 
+     DLL which has not been built in years, is untested and fully superseded by the new NativeND2Reader. 
+     From Bio-Formats 7.0.0 onwards the existing NativeND2Reader will be renamed as ND2Reader and act as 
+     the sole reader for the format. Support for the ND2 format will be unaffected and continue via this 
+     newly renamed reader
 
 * Legacy QuickTime
    - The LegacyQT Reader, Writer and Tools have been marked as deprecated in preparation for removal 
-in the upcoming 7.0.0 major release of Bio-Formats. These classes depended on the external QuickTime 
-for Java library which is long obsolete. From Bio-Formats 7.0.0 onwards the existing NativeQTReader 
-will be renamed as QTReader and support for QuickTime will limited to non legacy readers and writers.
+     in the upcoming 7.0.0 major release of Bio-Formats. These classes depended on the external QuickTime 
+     for Java library which is long obsolete. From Bio-Formats 7.0.0 onwards the existing NativeQTReader 
+     will be renamed as QTReader and support for QuickTime will limited to non legacy readers and writers.
 
 * LuraWave Codec
    - The LuraWave Codec along with the LuraWaveService and associated components have been marked as 
-deprecated in preparation for removal in the upcoming 7.0.0 major release of Bio-Formats. This codec 
-depends on a third-party proprietary library with a license code. Opera Flex is the format that is 
-most likely to be impacted by this change.
+     deprecated in preparation for removal in the upcoming 7.0.0 major release of Bio-Formats. This codec 
+     depends on a third-party proprietary library with a license code. Opera Flex is the format that is 
+     most likely to be impacted by this change.
 
 * Woolz
    - The Woolz Reader, Writer and Service have been marked as deprecated in preparation for removal 
-in the upcoming 7.0.0 major release of Bio-Formats. These classes rely on an underlying library and 
-we have limited ability to test or otherwise maintain it, and the maintenance status of the underlying 
-library is unclear.
+     in the upcoming 7.0.0 major release of Bio-Formats. These classes rely on an underlying library and 
+     we have limited ability to test or otherwise maintain it, and the maintenance status of the underlying 
+     library is unclear.
 
 File format fixes and improvements:
 
@@ -37,10 +37,6 @@ File format fixes and improvements:
    - updated CV7000 isThisType test to improve performance by skipping extended type checking
    - reader now handles the use case where wells are recorded, but all files were removed
    - fixed channel indexing in scenarios where more channels are defined than acquired
-
-* DICOM
-   - added initial support for reading and writing of dual personality DICOM-TIFF files
-   - fixed raw RGB tile reading
 
 * ICS (Image Cytometry Standard)
    - fixed an Illegal group reference exception when constructing slice label 
