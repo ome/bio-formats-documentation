@@ -27,9 +27,8 @@ Deprecation warnings:
 
 * Woolz
    - The Woolz Reader, Writer and Service have been marked as deprecated in preparation for removal 
-     in the upcoming 7.0.0 major release of Bio-Formats. These classes rely on an underlying library and 
-     we have limited ability to test or otherwise maintain it, and the maintenance status of the underlying 
-     library is unclear.
+     in the upcoming 7.0.0 major release of Bio-Formats. The reader and writer are untested and rely on 
+     an underlying library which maintenance status is unclear
 
 File format fixes and improvements:
 
