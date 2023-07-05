@@ -1,6 +1,71 @@
 Version history
 ===============
 
+6.14.0 (2023 July)
+------------------
+Deprecation warnings:
+
+* Legacy ND2 Reader
+   - The LegacyND2Reader and underlying components have been marked as deprecated in preparation 
+     for removal in the upcoming 7.0.0 major release of Bio-Formats. This reader depends on an outdated 
+     DLL which has not been built in years, is untested and fully superseded by the new NativeND2Reader. 
+     From Bio-Formats 7.0.0 onwards the existing NativeND2Reader will be renamed as ND2Reader and act as 
+     the sole reader for the format. Support for the ND2 format will be unaffected and continue via this 
+     newly renamed reader
+
+* Legacy QuickTime
+   - The LegacyQT Reader, Writer and Tools have been marked as deprecated in preparation for removal 
+     in the upcoming 7.0.0 major release of Bio-Formats. These classes depended on the external QuickTime 
+     for Java library which is long obsolete. From Bio-Formats 7.0.0 onwards the existing NativeQTReader 
+     will be renamed as QTReader and support for QuickTime will be limited to non legacy readers and writers.
+
+* LuraWave Codec
+   - The LuraWave Codec along with the LuraWaveService and associated components have been marked as 
+     deprecated in preparation for removal in the upcoming 7.0.0 major release of Bio-Formats. This codec 
+     depends on a third-party proprietary library with a license code. Opera Flex is the format that is 
+     most likely to be impacted by this change.
+
+* Woolz
+   - The Woolz Reader, Writer and Service have been marked as deprecated in preparation for removal 
+     in the upcoming 7.0.0 major release of Bio-Formats. The reader and writer are untested and rely on 
+     an underlying library which maintenance status is unclear
+
+File format fixes and improvements:
+
+* CV7000/CV8000
+   - updated CV7000 isThisType test to improve performance by skipping extended type checking
+   - reader now handles the use case where wells are recorded, but all files were removed
+   - fixed channel indexing in scenarios where more channels are defined than acquired
+
+* ICS (Image Cytometry Standard)
+   - fixed an Illegal group reference exception when constructing slice label 
+
+* KLB (Keller Lab Block)
+   - fixed a bug with the reading of image planes in Z stacks
+
+* MicroManager
+   - updated handling of truncated files to prevent possible infinite loop and throw an exception
+
+Bio-Formats improvements:
+
+* updated handling of exceptions in Bio-Formats plugins to ensure readers are closed
+* updated list of external readers to include new external 
+  `ZeissQuickStartCZIReader <https://github.com/BIOP/quick-start-czi-reader>`_ (thanks to Nicolas Chiaruttini)
+* updated top-level Git mailmap to normalize commit author variants
+* added a new bf-unconfigured tool to the Bio-Formats toolbox. The new tool lists classes which 
+  are not configured for testing as part of format reader tests
+* replaced use tt tag in java docs with code tag
+
+Documentation improvements:
+
+* fixed a number of broken links
+* migrated OME-Model documentation to Read the Docs
+* added deprecation warnings to format pages of the affected components
+
+Component updates:
+
+* `ome-common` was upgraded to 6.0.17
+
 6.13.0 (2023 April)
 -------------------
 File format fixes and improvements:
