@@ -17,7 +17,7 @@ Deprecation warnings:
    - The LegacyQT Reader, Writer and Tools have been marked as deprecated in preparation for removal 
      in the upcoming 7.0.0 major release of Bio-Formats. These classes depended on the external QuickTime 
      for Java library which is long obsolete. From Bio-Formats 7.0.0 onwards the existing NativeQTReader 
-     will be renamed as QTReader and support for QuickTime will limited to non legacy readers and writers.
+     will be renamed as QTReader and support for QuickTime will be limited to non legacy readers and writers.
 
 * LuraWave Codec
    - The LuraWave Codec along with the LuraWaveService and associated components have been marked as 
