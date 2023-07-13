@@ -131,9 +131,6 @@ The complete list of third-party dependencies for `formats-gpl.jar` is as follow
     * - `SnakeYAML v1.32 <https://bitbucket.org/snakeyaml/snakeyaml>`_
       - org.yaml:snakeyaml:1.32
       - `Apache License v2.0`_
-    * - `Woolz v1.4.0 <http://www.emouseatlas.org/emap/analysis_tools_resources/software/woolz.html>`_
-      - woolz:JWlz:1.4.0
-      - `GPL v2`_
     * - `Xalan Java Serializer v2.7.2 <http://xml.apache.org/xalan-j>`_
       - xalan:serializer:2.7.2
       - `Apache License v2.0`_
