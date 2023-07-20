@@ -27,7 +27,7 @@ Reader options
      - false
      - Ensure physical pixel sizes are compatible with versions <= 5.3.2
    * - :doc:`nikon-nis-elements-nd2`
-     - ``nativend2.chunkmap``
+     - ``nd2.chunkmap``
      - true
      - Use chunkmap table to read image offsets
    * - :doc:`olympus-scanr`
