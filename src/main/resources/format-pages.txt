@@ -2716,28 +2716,6 @@ notes = Compressed BMP files are currently not supported. \n
 .. seealso:: \n
   `Technical Overview <http://www.faqs.org/faqs/graphics/fileformats-faq/part3/section-18.html>`_ \n
 
-[Woolz]
-extensions = .wlz
-developer = `MRC Human Genetics Unit <http://www.emouseatlas.org/emap/analysis_tools_resources/software/woolz.html>`_
-bsd = no
-software = `Woolz <http://www.emouseatlas.org/emap/analysis_tools_resources/software/woolz.html>`_
-weHave = * a few Woolz datasets
-pixelsRating = Very good
-metadataRating = Very good
-opennessRating = Very good
-presenceRating = Poor
-utilityRating = Fair
-reader = WlzReader
-writer = WlzWriter
-notes = Both the reader and the writer requires the Woolz image processing library to be installed \n 
-- see https://www.emouseatlas.org/emap/analysis_tools_resources/software/woolz.html for more details \n
-\n
-Support for the Woolz format will be removed from Bio-Formats 7.0.0 onwards. \n
-For users who wish to retain support for existing Woolz files, we recommend converting \n
-these file-sets to an actively maintained open format such as OME-TIFF. This can be \n
-achieved using the Bio-Formats :command:`bfconvert` command line tool as outlined in \n
-:doc:`command line tools </users/comlinetools/conversion>` \n
-
 [Zeiss Axio CSM]
 extensions = .lms
 owner = `ZEISS International <https://www.zeiss.com/corporate/int/home.html>`_

@@ -3110,7 +3110,7 @@ Java bug fixes:
      Jean-Yves Tinevez)
    - :doc:`LaVision Imspector </formats/lavision-imspector>`
    - :doc:`PCORAW </formats/pcoraw>`
-   - :doc:`Woolz </formats/woolz>` (thanks to Bill Hill)
+   - Woolz (thanks to Bill Hill)
 * Added support for populating and parsing ModuloAlong{Z, C, T} annotations
   for FLIM/SPIM data
 * Updated netCDF and slf4j version requirements - netCDF 4.3.19 and
