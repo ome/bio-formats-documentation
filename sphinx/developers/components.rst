@@ -258,7 +258,7 @@ OME-XML files in each of the released schema versions.
 
 `Stubs <https://github.com/ome/ome-stubs/tree/master>`__:
 
-Luratech LuraWave stubs and MIPAV stubs.
+MIPAV stubs.
 
 This component provides empty classes that mirror third-party dependencies
 which are required at compile time but cannot be included in the build system

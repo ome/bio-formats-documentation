@@ -675,7 +675,6 @@ developer = Evotec Technologies, now `PerkinElmer <https://www.perkinelmer.com/>
 bsd = no
 weHave = * many Flex datasets\n
 * `public sample images <https://downloads.openmicroscopy.org/images/Flex/>`__
-weWant = * a freely redistributable LuraWave LWF decoder
 pixelsRating = Outstanding
 metadataRating = Outstanding
 opennessRating = Poor
@@ -683,14 +682,6 @@ presenceRating = Poor
 utilityRating = Poor
 reader = FlexReader
 mif = true
-notes = The LuraWave LWF decoder library (i.e. lwf\_jsdk2.6.jar) with \n
-license code is required to decode wavelet-compressed Flex files. \n
-\n
-Note that support for the LuraWave code is **deprecated** and will be removed \n
-in Bio-Formats 7.0.0. \n
-\n
-.. seealso::\n
-  `LuraTech (developers of the proprietary LuraWave LWF compression used for Flex image planes) <https://www.luratech.com/>`_
 
 [FEI TIFF]
 extensions = .tiff
