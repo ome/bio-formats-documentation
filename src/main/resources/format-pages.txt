@@ -2170,8 +2170,6 @@ opennessRating = Fair
 presenceRating = Very good
 utilityRating = Poor
 reader = PictReader
-notes = QuickTime for Java is required for reading vector files and some \n
-compressed files but note that this is no longer available from Apple. \n
 \n
 .. seealso:: \n
   `PICT technical overview <http://www.faqs.org/faqs/graphics/fileformats-faq/part3/section-107.html>`_ \n
@@ -2262,35 +2260,21 @@ metadataRating = Fair
 opennessRating = Fair
 presenceRating = Outstanding
 utilityRating = Poor
-reader = NativeQTReader, LegacyQTReader
+reader = QTReader
 writer = QTWriter
-notes = Bio-Formats has two modes of operation for QuickTime: \n
-\n
-* The legacy QTJava mode requires QuickTime for Java which will only run \n
-  with a 32-bit JVM and is no longer available from Apple. \n
-* Native mode works on systems with no QuickTime (e.g. Linux). \n
-\n
-Bio-Formats can save image stacks as QuickTime movies. \n
+notes = Bio-Formats can save image stacks as QuickTime movies. \n
 The following table shows supported codecs: \n
 \n
-====== ================================== =================== ============ \n
-Codec  Description                        Native              LegacyQTJava \n
-====== ================================== =================== ============ \n
-raw    Full Frames (Uncompressed)         read & write        read & write \n
-iraw   Intel YUV Uncompressed             read only           read & write \n
-rle    Animation (run length encoded RGB) read only           read & write \n
-jpeg   Still Image JPEG DIB               read only           read only \n
-rpza   Apple Video 16 bit "road pizza"    read only (partial) read only \n
-mjpb   Motion JPEG codec                  read only           read only \n
-cvid   Cinepak                             -                  read & write \n
-svq1   Sorenson Video                      -                  read & write \n
-svq3   Sorenson Video 3                    -                  read & write \n
-mp4v   MPEG-4                              -                  read & write \n
-h263   H.263                               -                  read & write \n
-====== ================================== =================== ============ \n
-\n
-Note that the legacy QT reader/writer are **deprecated** and will be removed \n
-in Bio-Formats 7.0.0. \n
+====== ================================== =================== \n
+Codec  Description                        Native              \n
+====== ================================== =================== \n
+raw    Full Frames (Uncompressed)         read & write        \n
+iraw   Intel YUV Uncompressed             read only           \n
+rle    Animation (run length encoded RGB) read only           \n
+jpeg   Still Image JPEG DIB               read only           \n
+rpza   Apple Video 16 bit "road pizza"    read only (partial) \n
+mjpb   Motion JPEG codec                  read only           \n
+====== ================================== =================== \n
 \n
 .. seealso:: \n
     `QuickTime software overview <https://support.apple.com/quicktime>`_

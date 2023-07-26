@@ -16,7 +16,7 @@ The file formats which can be written using Bio-Formats are marked in the
 - JPEG
 - PNG
 - AVI (uncompressed)
-- QuickTime (uncompressed is supported natively; additional codecs use QTJava)
+- QuickTime (uncompressed)
 - Encapsulated PostScript (EPS)
 - OME-XML (not recommended)
 
