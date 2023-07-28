@@ -96,6 +96,14 @@ Writer options
        This will overwrite any existing Creator in the input metadata.
        If set to true, the Creator attribute will only be updated if it wasn't previously set;
        any existing value will be preserved.
+   * - :doc:`dicom`
+     - ``dicom.dual_personality``
+     - true
+     - If set to true, DICOM files will be written as dual-personality DICOM/TIFF files which include TIFF metadata 
+       as described in `Clunie DA. Dual-Personality DICOM-TIFF for Whole Slide Images: A Migration Technique for Legacy Software. 
+       J Pathol Inform. 2019 Apr 3;10:12. doi: 10.4103/jpi.jpi_93_18. PMID: 31057981; PMCID: PMC6489422. 
+       <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6489422/>`_.
+       If set to false, the writing of DICOM files will revert back to the original plain DICOM files
 
 Usage
 ^^^^^
