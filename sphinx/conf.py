@@ -385,4 +385,5 @@ linkcheck_ignore = ['https://imspector.mpibpc.mpg.de',
     r'http://logback.qos.ch/.*',
     r'http://www.slf4j.org/.*',
     r'https://valelab.ucsf.edu/.*',
+    r'https://www.adobe.com/.*',
 ]
