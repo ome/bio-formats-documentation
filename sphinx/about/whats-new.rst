@@ -1,6 +1,62 @@
 Version history
 ===============
 
+7.0.0 (2023 August)
+-------------------
+
+Removal of deprecated components:
+
+* Legacy ND2 Reader
+   - The LegacyND2Reader and underlying components have been removed. This reader depended on an 
+     outdated DLL which had not been built in years, was untested and fully superseded by the new
+     NativeND2Reader. The existing NativeND2Reader has been renamed as ND2Reader and now acts as the 
+     sole reader for the format. Support for the ND2 format will be unaffected and continue via this 
+     newly renamed reader.
+
+* Legacy QuickTime
+   - The LegacyQT Reader, Writer and Tools have been removed. These classes depended on the external 
+     QuickTime for Java library which is long obsolete. The existing NativeQTReader has been renamed 
+     as QTReader and support for QuickTime is now limited to non legacy readers and writers.
+
+* LuraWave Codec
+   - The LuraWave Codec along with the LuraWaveService and associated components have been removed and 
+     are no longer supported. This codec was dependent on a third-party proprietary library with a 
+     license code. This may impact LuraWave compressed files for the Opera Flex format.
+
+* Woolz
+   - The Woolz Reader, Writer and Service have been removed and are no longer supported. The reader 
+     and writer are untested and rely on an underlying library which has an unclear maintenance status.
+
+File format fixes and improvements:
+
+* DICOM
+   - support has been added for the writing dual-personality of DICOM/TIFF. The DICOM 
+     writer will now, by default, include TIFF metadata as described in 
+     https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6489422/. These new dual-personality files can 
+     be read either by the DICOM reader or can also be recognised as TIFF. A new option named
+     `dicom.dual_personality` has been added to the DicomWriter. Setting this new option to false will 
+     revert writing of DICOM files back to the original plain DICOM files. This functionality was 
+     implemented through collaboration with `NCI Imaging Data Commons <https://datacommons.cancer.gov/repository/imaging-data-commons/>`_, and has been funded in whole or 
+     in part with Federal funds from the National Cancer Institute, National Institutes of Health, 
+     under Task Order No. HHSN26110071 under Contract No. HHSN2612015000031.
+
+* PerkinElmer Opera Flex
+   - reader will now ignore files in which the compression cannot be identified
+
+* PerkinElmer Operetta
+   - fixed an exception when reading null planes (thanks to Nicolas Chiaruttini)
+
+Component updates:
+
+* `ome-common` was upgraded to 6.0.19
+* `ome-stubs` was upgraded to 6.0.1
+* `ome-codecs` was upgraded to 1.0.0
+* `native-lib-loader` was upgraded to 2.4.0 (thanks to Can Gokhan Dogan)
+
+Documentation improvements:
+
+* fixed a number of broken links
+
 6.14.0 (2023 July)
 ------------------
 Deprecation warnings:
