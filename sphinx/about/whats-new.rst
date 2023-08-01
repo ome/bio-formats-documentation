@@ -36,7 +36,7 @@ File format fixes and improvements:
      be read either by the DICOM reader or can also be recognised as TIFF. A new option named
      `dicom.dual_personality` has been added to the DicomWriter. Setting this new option to false will 
      revert writing of DICOM files back to the original plain DICOM files. This functionality was 
-     implemented through collaboration with NCI Imaging Data Commons, and has been funded in whole or 
+     implemented through collaboration with `NCI Imaging Data Commons <https://datacommons.cancer.gov/repository/imaging-data-commons/>`_, and has been funded in whole or 
      in part with Federal funds from the National Cancer Institute, National Institutes of Health, 
      under Task Order No. HHSN26110071 under Contract No. HHSN2612015000031.
 
