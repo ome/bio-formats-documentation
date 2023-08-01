@@ -44,7 +44,7 @@ File format fixes and improvements:
    - reader will now ignore files in which the compression cannot be identified
 
 * PerkinElmer Operetta
-   - fixed an exception when reading null planes (Nicolas Chiaruttini)
+   - fixed an exception when reading null planes (thanks to Nicolas Chiaruttini)
 
 Component updates:
 
