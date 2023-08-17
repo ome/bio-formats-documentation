@@ -386,5 +386,6 @@ linkcheck_ignore = ['https://imspector.mpibpc.mpg.de',
     r'http://www.slf4j.org/.*',
     r'https://valelab.ucsf.edu/.*',
     r'https://www.adobe.com*',
+    r'https://www.knime.com/community/image-processing', # https://www.knime.com/ is OK
 
 ]
