@@ -36,7 +36,7 @@
     <sphinx.ome_source.user>ome</sphinx.ome_source.user>
     <sphinx.openmicroscopy_source.user>openmicroscopy</sphinx.openmicroscopy_source.user>
 
-    <ome-model.uri>https://docs.openmicroscopy.org/ome-model/${ome-model.version}</ome-model.uri>
+    <ome-model.uri>https://ome-model.readthedocs.io/en/stable/</ome-model.uri>
 
     <!-- Sphinx variable filtering -->
     <ome_common_version>${ome-common.version}</ome_common_version>
