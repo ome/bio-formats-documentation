@@ -2,8 +2,3 @@ channels:
   - conda-forge
 dependencies:
   - maven
-  - pip
-  - pip:
-    - Sphinx
-    - sphinx-rtd-theme
-

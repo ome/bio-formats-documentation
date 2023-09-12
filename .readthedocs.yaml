@@ -23,9 +23,9 @@ build:
     python: "mambaforge-22.9"
 
 # Optionally set the version of Python and requirements required to build your docs
-#python:
-#  install:
-#    - requirements: requirements.txt
+python:
+  install:
+    - requirements: requirements.txt
 
 conda:
   environment: environment.yml
