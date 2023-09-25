@@ -387,6 +387,6 @@ linkcheck_ignore = ['https://imspector.mpibpc.mpg.de',
     r'https://valelab.ucsf.edu/.*',
     r'https://www.adobe.com*',
     r'https://www.knime.com/community/image-processing', # https://www.knime.com/ is OK
+    r'https://valelab4.ucsf.edu/.*', # Invalid SSL certificate
     r'http://www.xuvtools.org*', # Invalid SSL certificate
-
 ]
