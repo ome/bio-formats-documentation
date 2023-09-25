@@ -17,7 +17,6 @@ openmicroscopy_source_user = '@openmicroscopy_source_user@'
 ome_source_user = '@ome_source_user@'
 ome_common_version = '@ome_common_version@'
 ome_model_version = '@ome_model_version@'
-ome_model_uri = '@ome_model_uri@'
 bf_version = '@bioformats.version@'
 
 import sys, os
@@ -47,7 +46,6 @@ if os.environ.get('BUILD_READTHEDOCS') == 'True':
     ome_source_user = getValue("ome_source_user")
     ome_common_version = getValue("ome_common_version")
     ome_model_version = getValue("ome_model_version")
-    ome_model_uri = getValue("ome_model_uri")
     bf_version = getValue("bf_version")
 
 # If extensions (or modules to document with autodoc) are in another directory,
@@ -167,7 +165,7 @@ extlinks = {
     'omero' : (oo_root + '/omero/%s', None),
     'secvuln': (oo_root + '/security/advisories/%s', None),
     # Documentation
-    'model_doc' : (docs_root + '/ome-model/' + ome_model_version + '/' + '%s', None),
+    'model_doc' : ('https://ome-model.readthedocs.io/en/stable/' + '%s', None),
     'devs_doc' : (docs_root + '/contributing/%s', None),
 
 
@@ -213,9 +211,6 @@ else:
 extlinks.update({
     'downloads' : (bf_downloads_root + '%s', None),
     'javadoc' : (bf_downloads_root + 'api/%s', None)})
-
-if ome_model_uri != "":
-    extlinks['model_doc'] = (ome_model_uri + '/' + '%s', None)
 
 rst_epilog = """
 .. _Hibernate: http://www.hibernate.org
