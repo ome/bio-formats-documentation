@@ -1,6 +1,72 @@
 Version history
 ===============
 
+7.0.1 (2023 October)
+--------------------
+
+File format fixes and improvements:
+
+* Amersham Biosciences Gel
+   - improved format detection
+
+* Aperio SVS
+   - fixed a NullPointerException when attempting to read the magnification metadata
+   - physical sizes and positions are now calculated for full resolution label and macro images
+   - fixed a regression from Bio-Formats 6.8.0 which saw label and macro images incorrectly indexed
+
+* DICOM
+   - the DICOM writer will now throw an exception if the provided tiles don't match the 
+     expected tile size
+
+* Gatan DM3
+   - fixed a StringIndexOutOfBoundsException when parsing acquisition mode
+
+* Hamamatsu NDPI
+   - corrected for potential integer overflow in stored restart marker tag
+
+* IVision
+   - improved the version and data type checks in isThisType
+
+* Leica LIF
+   - improved the exception handling if no images are found
+
+* Olympus OIR
+   - fixed issue with XML block reading that resulted in missing pixel blocks
+
+* OME-TIFF
+   - reader will now fail fast and throw a FormatException if an invalid file is found
+
+* TIFF
+   - a FormatException is now thrown for unsupported 64-bit int data
+   - for all TIFF based formats the IFD entry offset is now checked before seeking
+
+* TillVision
+   - improved metadata parsing and detection of .pst files
+
+* Ventana
+   - fixed tile arithmetic for smallest resolutions
+
+* Zeiss CZI
+   - unified channel color parsing so that retrieving lookup tables now allows RGB and ARGB colors
+
+Bio-Formats improvements:
+
+* URLHandle will fall back to resetting stream if resetting to a mark fails
+* an exception will now be thrown if the TurboJPEG library fails to load (thanks to Can Gokhan Dogan)
+* fixed a Bio-Formats plugin bug when attempting to export a file after reducing the range of channels
+* reviewed and updated a number of file headers
+* updated GitHub Actions from checkout v2 to v3
+
+Component updates:
+
+* `ome-common` was upgraded to 6.0.20
+
+Documentation improvements:
+
+* fixed a number of broken external links
+* updated the link to OME Model documentation
+* migrated readthedocs configuration to version 2
+
 7.0.0 (2023 August)
 -------------------
 
