@@ -2702,7 +2702,7 @@ extensions = .xml, .tif
 owner = `ZEISS International <https://www.zeiss.com>`_
 developer = `ZEISS International <https://www.zeiss.com>`_
 bsd = no
-software = `Zeiss ZEN Lite <https://www.zeiss.com/microscopy/int/products/microscope-software/zen-lite.html>`_
+software = `Zeiss ZEN Lite <https://www.zeiss.com/microscopy/en/products/software/zeiss-zen-lite.html>`_
 weHave = * many example datasets
 weWant = * an official specification document
 pixelsRating = Very good
@@ -2746,10 +2746,10 @@ As of May 2021, the proprietary ZEISS AxioVision software is classed as `End of 
 
 [Zeiss CZI]
 indexExtensions = .czi
-extensions = `.czi <https://www.zeiss.com/microscopy/int/products/microscope-software/zen/czi.html>`_
+extensions = `.czi <https://www.zeiss.com/microscopy/en/products/software/zeiss-zen/czi-image-file-format.html>`_
 developer = `ZEISS International <https://www.zeiss.com>`_
 bsd = no
-software = `Zeiss ZEN <https://www.zeiss.com/microscopy/int/products/microscope-software/zen.html>`_ \n
+software = `Zeiss ZEN <https://www.zeiss.com/microscopy/en/products/software/zeiss-zen.html>`_ \n
 `libCZI <https://github.com/zeiss-microscopy/libCZI>`_
 weHave = * many example datasets \n
 * `public sample images <https://downloads.openmicroscopy.org/images/Zeiss-CZI/>`__
