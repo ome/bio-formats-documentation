@@ -47,6 +47,7 @@ Using Bio-Formats as a Java library
     matlab-dev
     python-dev
     r-dev
+    dotnet-dev
     non-java-code
 
 .. seealso::
