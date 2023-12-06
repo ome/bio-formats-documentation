@@ -83,8 +83,8 @@ The complete list of third-party dependencies for `formats-gpl.jar` is as follow
     * - `MinLog v1.3 <https://github.com/EsotericSoftware/minlog>`_
       - com.esotericsoftware.minlog:minlog:1.3
       - `BSD License`_
-    * - `Guava v29.0 <https://github.com/google/guava>`_
-      - com.google.guava:guava:29.0-jre
+    * - `Guava v32.0.0 <https://github.com/google/guava>`_
+      - com.google.guava:guava:32.0.0-jre
       - `Apache License v2.0`_
     * - `JGoodies Common v1.7.0 <http://www.jgoodies.com/downloads/libraries/>`_
       - com.jgoodies:jgoodies-common:1.7.0
@@ -122,8 +122,8 @@ The complete list of third-party dependencies for `formats-gpl.jar` is as follow
     * - `Native Library Loader v2.1.4 <https://github.com/scijava/native-lib-loader>`_
       - org.scijava:native-lib-loader:2.1.4
       - `BSD License`_
-    * - `SLF4J API v1.7.30 <http://www.slf4j.org>`_
-      - org.slf4j:slf4j-api:1.7.30
+    * - `SLF4J API v2.0.9 <http://www.slf4j.org>`_
+      - org.slf4j:slf4j-api:2.0.9
       - `MIT License`_
     * - `TestNG v6.8 <https://testng.org/doc/>`_
       - org.testng:testng:6.8
@@ -131,11 +131,11 @@ The complete list of third-party dependencies for `formats-gpl.jar` is as follow
     * - `SnakeYAML v1.32 <https://bitbucket.org/snakeyaml/snakeyaml>`_
       - org.yaml:snakeyaml:1.32
       - `Apache License v2.0`_
-    * - `Xalan Java Serializer v2.7.2 <http://xml.apache.org/xalan-j>`_
-      - xalan:serializer:2.7.2
+    * - `Xalan Java Serializer v2.7.3 <http://xml.apache.org/xalan-j>`_
+      - xalan:serializer:2.7.3
       - `Apache License v2.0`_
-    * - `Xalan Java v2.7.2 <http://xml.apache.org/xalan-j>`_
-      - xalan:xalan:2.7.2
+    * - `Xalan Java v2.7.3 <http://xml.apache.org/xalan-j>`_
+      - xalan:xalan:2.7.3
       - `Apache License v2.0`_
     * - `Xerces2 Java Parser v2.12.2 <http://xerces.apache.org/xerces2-j>`_
       - xerces:xercesImpl:2.12.2
@@ -164,8 +164,8 @@ The complete list of third-party dependencies for `formats-gpl.jar` is as follow
     * - `jaxb v2.3.0 <https://javaee.github.io/jaxb-v2/>`_
       - javax.xml.bind:jaxb-api:2.3.0
       -
-    * - `json v20090211 <https://github.com/stleary/json-java>`_
-      - org.json:json:20090211
+    * - `json v20230227 <https://github.com/stleary/json-java>`_
+      - org.json:json:20230227
       - https://github.com/stleary/JSON-java/blob/master/LICENSE
     * - `sqlite v3.28.0 <https://github.com/xerial/sqlite-jdbc>`_
       - org.xerial:sqlite-jdbc:3.28.0
@@ -224,11 +224,11 @@ The below are optional dependencies :
     * - Package
       - Maven name
       - License
-    * - `Logback Classic v1.2.9 <https://logback.qos.ch>`_
-      - ch.qos.logback:logback-classic:1.2.9
+    * - `Logback Classic v1.3.14 <https://logback.qos.ch>`_
+      - ch.qos.logback:logback-classic:1.3.14
       - `Eclipse Public License v1.0`_
-    * - `Logback Core v1.2.9 <https://logback.qos.ch>`_
-      - ch.qos.logback:logback-core:1.2.9
+    * - `Logback Core v1.3.14 <https://logback.qos.ch>`_
+      - ch.qos.logback:logback-core:1.3.14
       - `Eclipse Public License v1.0`_
 
 As described in :ref:`versioning-policy`, the minor version number of a
