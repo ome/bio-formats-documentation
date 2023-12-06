@@ -58,6 +58,11 @@ Reader options
      - ``zeissczi.relative_positions``
      - false
      - Use pixel position instead of the physical stage position
+   * - :doc:`cv7000`
+     - ``cv7000.duplicate_missing_planes``
+     - true
+     - If set any missing planes will be replaced by the first plane in the channel. 
+       When set to false a blank plane will be returned.
 
 Usage
 ^^^^^
