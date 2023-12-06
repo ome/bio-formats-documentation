@@ -270,3 +270,23 @@ correctly. So in Windows, the above example would read::
     The default fill value is typically 0, but some readers may have different defaults.
 
     .. versionadded:: 6.13.0
+
+.. option:: -precompressed
+
+    Enables transfer of compressed bytes from input dataset directly to output without decompression.  
+    Most input and output formats do not support this option, currently this is implemented in the 
+    Aperio SVS input and DICOM output. Do not use -crop, -fill, or -autoscale, or pyramid generation options::
+
+      bfconvert -precompressed /path/to/input /path/to/output
+
+    .. versionadded:: 7.1.0
+
+.. option:: -extra-metadata METADATA FILE
+
+    Enables the writing of additional supplemental metadata from an external file during the conversion process .
+    Most output formats do not support this option, currently this is implemented for outputting the DICOM format. 
+    For DICOM the additional metadata file can be in the format of a .dcdump or .json file ::
+
+      bfconvert -extra-metadata /path/to/extra-metadata /path/to/input /path/to/output
+
+    .. versionadded:: 7.1.0
