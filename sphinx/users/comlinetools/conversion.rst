@@ -285,8 +285,40 @@ correctly. So in Windows, the above example would read::
 
     Enables the writing of additional supplemental metadata from an external file during the conversion process .
     Most output formats do not support this option, currently this is implemented for outputting the DICOM format. 
-    For DICOM the additional metadata file can be in the format of a .dcdump or .json file ::
+    For DICOM the additional metadata file can be in the format of a .json file ::
 
       bfconvert -extra-metadata /path/to/extra-metadata /path/to/input /path/to/output
+
+    For an example of this option being used see below:
+
+    .. code-block::
+
+        $ cat hierarchy-test.json 
+        {
+           "BodyPartExamined": {
+             "Value": "BRAIN",
+             "VR": "CS",
+             "Tag": "(0018,0015)"
+             "ResolutionStrategy": "IGNORE"
+           },
+           "ContributingEquipmentSequence": {
+             "VR": "SQ",
+             "Tag": "(0018,a001)",
+             "Sequence": {
+               "Manufacturer": {
+                 "Value": "PixelMed",
+                 "VR": "LO",
+                 "Tag": "(0008,0070)"
+               },
+               "ContributionDateTime": {
+                 "Value": "20210710234601.105+0000",
+                 "VR": "DT",
+                 "Tag": "(0018,a002)"
+               }
+             }
+              "ResolutionStrategy": "REPLACE"
+           }
+        }
+        $ bfconvert -extra-metadata hierarchy-test.json test.fake hierarchy-test-json.dcm
 
     .. versionadded:: 7.1.0
