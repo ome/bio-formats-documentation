@@ -1,6 +1,85 @@
 Version history
 ===============
 
+7.1.0 (2023 December)
+---------------------
+
+API Additions
+
+* ICompressedTileReader 
+   - a new interface allowing for the reading of compressed bytes without decompression. Currently only 
+     implemented by the SVSReader
+
+* ICompressedTileWriter
+   - a new interface allowing for the writing of precompressed bytes. Currently only implemented by the DICOM Writer
+
+* IExtraMetadataWriter
+   - a new interface enabling extra supplemental metadata to be set for inclusion in a writer. Currently only 
+     implemented by the DICOM Writer
+
+File format fixes and improvements:
+
+* Aperio SVS
+   - added implementation for the reading of compressed data without decompression using the new 
+     ICompressedTileReader interface
+
+* cellSens VSI
+   - fixed handling of uncompressed BGR data
+
+* CV7000
+   - action index is now included in the channel name
+   - Fluor will now be set on Channel when possible
+   - for missing planes the default behavior has switched from returning a blank plane to returning the 
+     first plane in the channel 
+   - added a new reader option `cv7000.duplicate_missing_planes` to control the behavior for missing planes 
+
+* DICOM
+   - added implementation for the writing of precompressed data using the new ICompressedTileWriter interface
+   - added implementation for the writing of extra supplemental metadata data using the new IExtraMetadataWriter 
+     interface. Extra metadata can be provided in the form of a .json file 
+   - This functionality was implemented through collaboration between Glencoe Software and NCI Imaging Data Commons, 
+     and has been funded in whole or in part with Federal funds from the National Cancer Institute, National Institutes 
+     of Health, under Task Order No. HHSN26110071 under Contract No. HHSN2612015000031.
+
+* Photoshop TIFF
+   - fixed plane reading with memoization
+
+Bio-Formats improvements:
+
+* fixed handling of JPEG Turbo service when the native library cannot be loaded, most notably for Apple Silicon 
+  instances. An IOException will now be thrown by readers that require the library but the RunTimeException 
+  introduced in 7.0.1 will no longer be thrown when the library is not required
+* prevented unnecessary Lurawave debug error being printed (thanks to Can Gokhan Dogan)
+* updated license headers for all Java sources of the OME-XML library
+* added a new codec option `disableChromaSubsampling` along with implementation for the JPEG Codec (thanks to Peter Haub)
+* updated github actions checkout version to v4 and build release on ubuntu 22.04
+* json dependency moved from formats-gpl to formats-bsd
+* TiffSaver now generates valid 4-channel RGBA images (thanks to Can Gokhan Dogan)
+* added a new ` precompressed`  option to the bfconvert tool, enabling the conversion of precompressed tiles. 
+  Currently only supported for converting from SVS to DICOM.
+* added a new ` extra-metadata`  option to the bfconvert tool for providing supplemental metadata during conversion. 
+  Currently only supported for writing to DICOM
+
+Component updates:
+
+* `slf4j-api` was upgraded to 2.0.9
+* `logback-classic` was upgraded to 1.3.14
+* `logback-core` was upgraded to 1.3.14
+* `xalan` was upgraded to 2.7.3
+* `com.google.guava` was upgraded to 32.0.0-jre
+* `json` was upgraded to 20230227
+* `ome-common` was upgraded to 6.0.21
+* `ome-model` was upgraded to 6.3.4
+* `ome-codecs` was upgraded to 1.1.0
+* `ome-poi` was upgraded to 5.3.8
+* `ome-metakit` was upgraded to 5.3.6
+
+Documentation improvements:
+
+* fixed a number of broken external links
+* updated the bfconvert instructions to document new options
+* added a new link for the external Bioformats.NET project
+
 7.0.1 (2023 October)
 --------------------
 
