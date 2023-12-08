@@ -279,6 +279,13 @@ correctly. So in Windows, the above example would read::
 
       bfconvert -precompressed /path/to/input /path/to/output
 
+    For an example of this option being used see below using the CMU-1.svs file from 
+    `OpenSlide <https://openslide.cs.cmu.edu/download/openslide-testdata/Aperio/>`_:
+
+    .. code-block::
+        
+        bfconvert -noflat -precompressed -compression JPEG CMU-1.svs CMU-1.dcm
+
     .. versionadded:: 7.1.0
 
 .. option:: -extra-metadata METADATA FILE
