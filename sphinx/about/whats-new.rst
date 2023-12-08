@@ -37,7 +37,7 @@ File format fixes and improvements:
    - added implementation for the writing of precompressed data using the new ICompressedTileWriter interface
    - added implementation for the writing of extra supplemental metadata data using the new IExtraMetadataWriter 
      interface. Extra metadata can be provided in the form of a .json file 
-   - This functionality was implemented through collaboration between Glencoe Software and NCI Imaging Data Commons, 
+   - This functionality was implemented through collaboration between Glencoe Software and `NCI Imaging Data Commons <https://datacommons.cancer.gov/repository/imaging-data-commons/>`_,
      and has been funded in whole or in part with Federal funds from the National Cancer Institute, National Institutes 
      of Health, under Task Order No. HHSN26110071 under Contract No. HHSN2612015000031.
 
