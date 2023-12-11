@@ -7,7 +7,7 @@ However, there are options you can use to read images from .NET via Bio-Formats:
 Bioformats.NET6
 ---------------
 
-The `Bioformats.NET6 <https://github.com/BiologyTools/BioFormatsNET6>`_ project provides Bio-Formats libraries converted to DLL, built with IKVM 8.7.1 Maven SDK for .NET6. To install add the below to your project file.:
+The `Bioformats.NET6 <https://github.com/BiologyTools/BioFormatsNET6>`_ project provides Bio-Formats libraries converted to DLL, built with IKVM 8.7.1 Maven SDK for .NET6. To install add the below to your project file. Note that due to formatting the release version has extra whitespace surrounding it that can be removed :
 
 .. parsed-literal::
 
