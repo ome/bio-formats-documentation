@@ -575,6 +575,7 @@ presenceRating = Fair
 utilityRating = Fair
 reader = CV7000Reader
 mif = true
+options = true
 
 [DeltaVision]
 extensions = .dv, .r3d, .rcpnl
