@@ -70,7 +70,7 @@ Component updates:
 * `json` was upgraded to 20230227
 * `ome-common` was upgraded to 6.0.21
 * `ome-model` was upgraded to 6.3.4
-* `ome-codecs` was upgraded to 1.1.0
+* `ome-codecs` was upgraded to 1.0.1
 * `ome-poi` was upgraded to 5.3.8
 * `ome-metakit` was upgraded to 5.3.6
 
