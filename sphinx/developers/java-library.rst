@@ -125,7 +125,7 @@ The complete list of third-party dependencies for `formats-gpl.jar` is as follow
     * - `SLF4J API v2.0.9 <http://www.slf4j.org>`_
       - org.slf4j:slf4j-api:2.0.9
       - `MIT License`_
-    * - `TestNG v6.8 <https://testng.org/doc/>`_
+    * - `TestNG v6.8 <https://testng.org/>`_
       - org.testng:testng:6.8
       - `Apache License v2.0`_
     * - `SnakeYAML v1.32 <https://bitbucket.org/snakeyaml/snakeyaml>`_
