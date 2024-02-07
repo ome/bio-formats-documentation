@@ -1,6 +1,44 @@
 Version history
 ===============
 
+7.2.0 (2024 February)
+---------------------
+
+File format fixes and improvements:
+
+* Aperio SVS
+   - improved detection of label and macro images
+   - thumbnails are now removed by default
+   - added a new reader option `svs.remove_thumbnail` to control the thumbnail behaviour. By default 
+     the option is true and thumbnails are removed. Setting the option to false will restore the previous 
+     behavior and include thumbnails
+
+* Imaris HDF
+   - channel names are now correctly populated
+
+* Olympus OIR
+   - fixed an issue with channel ordering
+   - prevent certain pixel blocks from being incorrectly skipped
+
+* TIFF
+   - dimension order is now marked as certain if metadata is read from ImageJ tag
+
+* Zeiss CZI
+   - improved well column indexing by using alternate sources for well identifiers when available
+   - improved image naming, particularly for attachments
+   - fixed a bug so that opening CZI compressed with ZSTD now allows access to pyramid levels (thanks to Stephan Wagner-Conrad)
+   - fixed an integer arithmetic problem when calculating pyramid scales (thanks to Stephan Wagner-Conrad)
+
+Bio-Formats improvements:
+
+* JPEG handling no longer fails for non 4:4:4 JPEG (thanks to Can Gokhan Dogan)
+* fixed a bug in the Bio-Formats Plugins configuration window when toggling the Nikon ND2 chunkmap option
+* updated testing to add an additional check for image names when resolutions are not flattened
+
+Documentation improvements:
+
+* fixed a number of broken external links
+
 7.1.0 (2023 December)
 ---------------------
 
