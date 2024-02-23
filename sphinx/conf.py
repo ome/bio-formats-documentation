@@ -385,4 +385,5 @@ linkcheck_ignore = ['https://imspector.mpibpc.mpg.de',
     r'https://valelab4.ucsf.edu/.*', # Invalid SSL certificate
     r'http://www.xuvtools.org*', # Invalid SSL certificate
     r'https://bio3d.colorado.edu*', # Invalid SSL certificate
+    r'https://www.mayo.edu/research/core-resources/biomedical-imaging-resource-core/overview' # 403 Client Error: Forbidden
 ]
