@@ -259,7 +259,7 @@ mif = true
 [AVI (Audio Video Interleave)]
 pagename = avi
 extensions = .avi
-developer = `Microsoft <http://www.microsoft.com/>`_
+developer = `Microsoft <https://www.microsoft.com/>`_
 bsd = yes
 software = `AVI Reader plugin for ImageJ <https://imagej.nih.gov/ij/plugins/avi-reader.html>`_ \n
 `AVI Writer plugin for ImageJ <https://imagej.nih.gov/ij/plugins/avi.html>`_
