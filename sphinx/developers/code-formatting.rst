@@ -20,7 +20,7 @@ All Java code is formatted with:
 
 - an indentation size of two spaces
 - braces use the `Java variant of K&R style
-  <https://en.wikipedia.org/wiki/Indent_style#Variant:_Java>`__
+  <https://en.wikipedia.org/wiki/Indentation_style#Java>`__
 
 XML
 ---
