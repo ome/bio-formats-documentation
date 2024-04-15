@@ -141,6 +141,23 @@ correctly. So in Windows, the above example would read::
 
       bfconvert -compression LZW /path/to/input output-lzw.tiff
 
+.. option:: -quality QUALITY
+
+    Specify the compression quality to be used. The interpretation of this value
+    depends upon the :option:`-compression` option used.
+
+    For uncompressed output, :option:`-quality` has no effect.
+
+    When used with :option:`-compression JPEG`, :option:`-quality` must take
+    a value between ``0.25`` (25%, extremely lossy) and ``1.0`` (100%, nearly lossless).
+    The default is ``0.75``.
+
+    When used with :option:`-compression JPEG-2000`, :option:`-quality` must take
+    a positive integer value. This is interpreted as an encoding rate in bits per pixel,
+    with higher values representing less lossy compression. The default is ``10``.
+
+    .. versionadded:: 7.3.0
+
 .. option:: -overwrite
 
     If the specified output file already exists, :program:`bfconvert` will
