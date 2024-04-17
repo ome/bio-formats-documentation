@@ -1,6 +1,55 @@
 Version history
 ===============
 
+7.3.0 (2024 April)
+------------------
+
+File format fixes and improvements:
+
+* CellSens VSI
+   - fixed and exception in CellSens 4.1 data by updating the handling of orphaned ets files (thanks to Edward Scanlon)
+
+* DICOM
+   - updated handling of nested sequences that include pixel data
+   - removed a duplicate enum check in the DICOM writer
+
+* OME-XML
+   - reading an OME-XML file now populates the original metadata table
+
+* PerkinElmer Columbus
+   - added support for reading data with Z stacks (thanks to Tim Blackmore)
+
+* Prairie Technologies TIFF
+   - improved type checking for Prairie files
+
+* SimplePCI
+   - fixed handling of Z position metadata
+
+Bio-Formats improvements:
+
+* Bio-Formats is now compatible with Java 21 builds
+* added a new `quality` option to `bfconvert` which enables the setting of the compression quality to be used. 
+* when using the `channel` option in `bfconvert`, the unselected channels are now correctly removed from the OME-XML metadata
+* added coverage of Apple M1 as part of the CI process
+* added coverage of Java 21 builds as part of the CI process
+
+Component updates:
+
+* `ome-jai` was upgraded to 0.1.4
+* `ome-stubs` was upgraded to 6.0.2
+* `ome-mdbtools` was upgraded to 5.3.3
+* `ome-common` was upgraded to 6.0.22
+* `ome-poi` was upgraded to 5.3.9
+* `ome-metakit` was upgraded to 5.3.7
+* `ome-codecs` was upgraded to 1.0.3
+* `ome-xml` was upgraded to 6.3.6
+* `specification` was upgraded to 6.3.6
+
+Documentation improvements:
+
+* fixed a number of broken external links
+* documented the new `quality` option in `bfconvert`
+
 7.2.0 (2024 February)
 ---------------------
 
