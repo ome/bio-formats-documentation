@@ -7,7 +7,7 @@ Version history
 File format fixes and improvements:
 
 * CellSens VSI
-   - fixed and exception in CellSens 4.1 data by updating the handling of orphaned ets files (thanks to Edward Scanlon)
+   - fixed an exception in CellSens 4.1 data by updating the handling of orphaned ets files (thanks to Edward Scanlon)
 
 * DICOM
    - updated handling of nested sequences that include pixel data
