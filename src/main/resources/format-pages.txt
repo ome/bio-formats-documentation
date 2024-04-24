@@ -2792,7 +2792,7 @@ utilityRating = Good
 privateSpecification = true
 reader = ZeissLSMReader
 mif = true
-notes = Bio-Formats uses the `MDB Tools Java port <http://mdbtools.sourceforge.net/>`_ \n
+notes = Bio-Formats uses the `MDB Tools Java port <https://github.com/mdbtools/mdbtools>`_ \n
 \n
 Commercial applications that support this format include: \n
 \n
