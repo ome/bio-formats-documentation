@@ -210,7 +210,7 @@ required dependency for I/O and service loading.
 `OME MDB Tools (Java port) <https://github.com/ome/ome-mdbtools>`_:
 
 This is a fork of the `mdbtools-java
-<http://mdbtools.cvs.sourceforge.net/viewvc/mdbtools/mdbtools-java>`_ project.
+<https://github.com/mdbtools/mdbtools>`_ project.
 There are numerous bug fixes, as well as changes to reduce the memory required
 for large files.  There are no dependencies on other components.
 
