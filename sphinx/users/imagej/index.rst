@@ -1,7 +1,7 @@
 ImageJ overview
 ===============
 
-`ImageJ <https://imagej.nih.gov/ij/index.html>`_ is an image processing and
+`ImageJ <https://imagej.net/>`_ is an image processing and
 analysis application written in Java, widely used in the life sciences
 fields, with an extensible plugin infrastructure. You can use
 Bio-Formats as a plugin for ImageJ to read and write images in the
