@@ -386,6 +386,7 @@ linkcheck_ignore = ['https://imspector.mpibpc.mpg.de',
     r'http://www.xuvtools.org*', # Invalid SSL certificate
     r'https://bio3d.colorado.edu*', # Invalid SSL certificate
     r'https://www.mayo.edu/research/core-resources/biomedical-imaging-resource-core/overview', # 403 Client Error: Forbidden
+    r'https://trac.openmicroscopy.org*',
     r'http://openslide.cs.cmu.edu*', # NameResolutionError
     r'https://openslide.cs.cmu.edu*', # NameResolutionError
     r'https://tronche.com/computer-graphics/*' # NameResolutionError
