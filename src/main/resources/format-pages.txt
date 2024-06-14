@@ -261,8 +261,8 @@ pagename = avi
 extensions = .avi
 developer = `Microsoft <https://www.microsoft.com/>`_
 bsd = yes
-software = `AVI Reader plugin for ImageJ <https://imagej.nih.gov/ij/plugins/avi-reader.html>`_ \n
-`AVI Writer plugin for ImageJ <https://imagej.nih.gov/ij/plugins/avi.html>`_
+software = `AVI Reader plugin for ImageJ <https://imagej.net/ij/plugins/avi-reader.html>`_ \n
+`AVI Writer plugin for ImageJ <https://imagej.net/ij/plugins/avi.html>`_
 weHave = * several AVI datasets
 weWant = * more AVI datasets, including: \n
 \n
@@ -401,7 +401,7 @@ extensions = .pic, .raw, .xml
 owner = `ZEISS International <https://www.zeiss.com>`_
 developer = Bio-Rad
 bsd = no
-software = `Bio-Rad PIC reader plugin for ImageJ <https://imagej.nih.gov/ij/plugins/biorad.html>`_
+software = `Bio-Rad PIC reader plugin for ImageJ <https://imagej.net/ij/plugins/biorad.html>`_
 weHave = * a PIC specification document (v4.5, in PDF) \n
 * an older PIC specification document (v4.2, from 1996 December 16, in DOC) \n
 * a large number of PIC datasets \n
@@ -462,7 +462,7 @@ notes = - There are three distinct Imaris formats: \n
 [Bruker MRI]
 developer = `Bruker <https://www.bruker.com/>`_
 bsd = no
-software = `Bruker plugin for ImageJ <https://imagej.nih.gov/ij/plugins/bruker.html>`_
+software = `Bruker plugin for ImageJ <https://imagej.net/ij/plugins/bruker.html>`_
 weHave = * a few Bruker MRI datasets
 weWant = * an official specification document
 pixelsRating = Good
@@ -581,7 +581,7 @@ options = true
 extensions = .dv, .r3d, .rcpnl
 owner = `Cytiva <https://www.cytivalifesciences.com/en/us/solutions/cellular-analysis/products-and-technology/microscopy>`_ (formerly GE Healthcare, Applied Precision)
 bsd = no
-software = `DeltaVision Opener plugin for ImageJ <https://imagej.nih.gov/ij/plugins/track/delta.html>`_
+software = `DeltaVision Opener plugin for ImageJ <https://imagej.net/ij/plugins/track/delta.html>`_
 weHave = * a DV specification document (v2.10 or newer, in HTML) \n
 * numerous DV datasets\n
 * `public sample images <https://downloads.openmicroscopy.org/images/DV/>`__
@@ -656,7 +656,7 @@ pagename = eps
 extensions = .eps, .epsi, .ps
 developer = `Adobe <https://www.adobe.com/>`_
 bsd = yes
-software = `EPS Writer plugin for ImageJ <https://imagej.nih.gov/ij/plugins/eps-writer.html>`_
+software = `EPS Writer plugin for ImageJ <https://imagej.net/ij/plugins/eps-writer.html>`_
 weHave = * a few EPS datasets \n
 * the ability to produce new datasets
 pixelsRating = Good
@@ -747,7 +747,7 @@ extensions = .dm3, .dm4
 owner = `Gatan <http://www.gatan.com/>`_
 bsd = no
 versions = 3, 4
-software = `DM3 Reader plugin for ImageJ <https://imagej.nih.gov/ij/plugins/DM3_Reader.html>`_ \n
+software = `DM3 Reader plugin for ImageJ <https://imagej.net/ij/plugins/DM3_Reader.html>`_ \n
 `EMAN <http://blake.bcm.edu/emanwiki/EMAN2>`_
 weHave = * Gatan's ImageReader2003 code (from 2003, in C++) \n
 * numerous DM3 datasets\n
@@ -781,8 +781,8 @@ extensions = .gif
 owner = `Unisys <https://www.unisys.com/>`_
 developer = `CompuServe <http://www.compuserve.com/>`_
 bsd = yes
-software = `Animated GIF Reader plugin for ImageJ <https://imagej.nih.gov/ij/plugins/agr.html>`_ \n
-`GIF Stack Writer plugin for ImageJ <https://imagej.nih.gov/ij/plugins/gif-stack-writer.html>`_
+software = `Animated GIF Reader plugin for ImageJ <https://imagej.net/ij/plugins/agr.html>`_ \n
+`GIF Stack Writer plugin for ImageJ <https://imagej.net/ij/plugins/gif-stack-writer.html>`_
 weHave = * a `GIF specification document <https://tronche.com/computer-graphics/gif/>`_ (Version 89a, from 1990, in HTML) \n
 * numerous GIF datasets \n
 * the ability to produce new datasets
@@ -1155,7 +1155,7 @@ extensions = .ipl
 owner = was `BD Biosystems <http://www.bdbiosciences.com/>`_, now `BioVision Technologies <https://www.biovis.com/iplab.htm>`_
 developer = Scanalytics
 bsd = no
-software = `IPLab Reader plugin for ImageJ <https://imagej.nih.gov/ij/plugins/iplab-reader.html>`_
+software = `IPLab Reader plugin for ImageJ <https://imagej.net/ij/plugins/iplab-reader.html>`_
 weHave = * an IPLab specification document (v3.6.5, from 2004 December 1, in PDF) \n
 * several IPLab datasets
 weWant = * more IPLab datasets (preferably with 32-bit integer or floating point data)
@@ -2179,7 +2179,7 @@ pagename = png
 extensions = .png
 developer = `PNG Development Group <http://www.libpng.org/pub/png/pngnews.html>`_
 bsd = yes
-software = `PNG Writer plugin for ImageJ <https://imagej.nih.gov/ij/plugins/png-writer.html>`_
+software = `PNG Writer plugin for ImageJ <https://imagej.net/ij/plugins/png-writer.html>`_
 weHave = * a `PNG specification document <http://www.libpng.org/pub/png/spec/iso/>`_ (W3C/ISO/IEC version, from 2003 November 10, in HTML) \n
 * several PNG datasets\n
 * `public sample images <https://downloads.openmicroscopy.org/images/PNG/>`__
@@ -2455,7 +2455,7 @@ read. \n
   `TIFF technical overview <https://www.awaresystems.be/imaging/tiff/faq.html#q3>`_ \n
   `BigTIFF technical overview <https://www.awaresystems.be/imaging/tiff/bigtiff.html>`_ \n
   `ImageJ TIFF overview <https://imagej.net/TIFF>`_ \n
-  `Source code for ImageJ's native TIFF reader <https://imagej.nih.gov/ij/developer/source/ij/io/TiffDecoder.java.html>`_
+  `Source code for ImageJ's native TIFF reader <https://imagej.net/ij/developer/source/ij/io/TiffDecoder.java.html>`_
 
 [TillPhotonics TillVision]
 extensions = .vws
@@ -2668,7 +2668,7 @@ reader = WATOPReader
 extensions = .bmp
 developer = Microsoft and IBM
 bsd = yes
-software = `BMP Writer plugin for ImageJ <https://imagej.nih.gov/ij/plugins/bmp-writer.html>`_
+software = `BMP Writer plugin for ImageJ <https://imagej.net/ij/plugins/bmp-writer.html>`_
 weHave = * many BMP datasets
 pixelsRating = Very good
 metadataRating = Fair
@@ -2777,7 +2777,7 @@ owner = `ZEISS International <https://www.zeiss.com>`_
 bsd = no
 software = `Zeiss LSM Image Browser <https://www.zeiss.com/microscopy/en/service-support/downloads.html>`_ \n
 `LSM Toolbox plugin for ImageJ <https://imagej.net/LSM_Toolbox>`_ \n
-`LSM Reader plugin for ImageJ <https://imagej.nih.gov/ij/plugins/lsm-reader.html>`_ \n
+`LSM Reader plugin for ImageJ <https://imagej.net/ij/plugins/lsm-reader.html>`_ \n
 `DIMIN <http://www.dimin.net/>`_
 weHave = * LSM specification v3.2, from 2003 March 12, in PDF \n
 * LSM specification v5.5, from 2009 November 23, in PDF \n

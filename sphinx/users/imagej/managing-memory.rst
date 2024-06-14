@@ -65,4 +65,4 @@ cause ImageJ/Fiji to become slow and unstable.
 **Please note** that, unlike the other two features, ImageJ/Fiji itself
 provides this feature and not Bio-Formats. You can find out more about
 this feature by looking at ImageJ’s
-`documentation <https://imagej.nih.gov/ij/docs/menus/edit.html#options>`_.
+`documentation <https://imagej.net/ij/docs/menus/edit.html#options>`_.
