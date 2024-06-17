@@ -3,6 +3,8 @@
 
 Some formats allow reading and/or writing "precompressed" tiles.
 This feature is primarily intended for whole slide images, each of which may have thousands of tiles.
+Data representing these tiles may be compressed, either lossily or losslessly, depending on the
+file format, imaging modality, or acquisition configuration.
 
 When reading, this allows for retrieving compressed bytes that are as close as possible
 to what is actually stored in the file. Decompression (if necessary) is the responsibility
