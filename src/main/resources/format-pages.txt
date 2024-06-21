@@ -1559,7 +1559,7 @@ mif = true
 
 [MIAS (Maia Scientific)]
 extensions = .tif
-developer = `Maia Scientific <https://www.selectscience.net/supplier/maia-scientific/?compID=6088>`_
+developer = `Maia Scientific <https://www.selectscience.net/company/maia-scientific>`_
 bsd = no
 weHave = * several MIAS datasets
 pixelsRating = Very good
