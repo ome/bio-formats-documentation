@@ -64,9 +64,9 @@ Sending a bug report
 If you can still reproduce the bug after updating to the latest version
 of Bio-Formats, and your issue does not relate to anything listed above or
 noted on the relevant file format page, please send a bug report to the
-:imagesc:`forums <tag/bio-formats>`. You can upload sample files to
-`Zenodo <https://zenodo.org/>`_, or for files over 50 GB,
-we can provide you with an FTP server address.
+:imagesc:`forums <tag/bio-formats>`. You can upload sample files to the
+`Bio-Formats Zenodo community <https://zenodo.org/communities/bio-formats>`_,
+or for files over 50 GB, we can provide you with an FTP server address.
 
 To ensure that any inquiries you make are resolved promptly, please include
 the following information:
