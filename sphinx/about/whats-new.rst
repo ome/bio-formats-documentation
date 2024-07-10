@@ -3391,7 +3391,7 @@ Java bug fixes:
 -----------------------
 
 * Updated Maven build system and launched new Artifactory repository
-  (http://artifacts.openmicroscopy.org)
+  (https://artifacts.openmicroscopy.org)
 * Added support for:
    - :doc:`Bio-Rad SCN </formats/bio-rad-scn>`
    - :doc:`Yokogawa CellVoyager </formats/cellvoyager>` (thanks to

@@ -5,7 +5,7 @@ Bio-Formats as a Maven, Gradle or Ivy dependency
 ------------------------------------------------
 
 All released :file:`.jar` artifacts are published to and can be obtained from
-the `OME Artifactory <http://artifacts.openmicroscopy.org/artifactory>`_.  The
+the `OME Artifactory <https://artifacts.openmicroscopy.org/artifactory>`_.  The
 "Client Settings" section of the Artifactory main page provides example code
 snippets for inclusion into your Gradle, Maven or Ivy project, which will
 enable the use of this repository.
