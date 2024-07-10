@@ -12,6 +12,9 @@ File format fixes and improvements:
 * ICS (Image Cytometry Standard)
    - fixed a Null Pointer Exception when the image name is not set
 
+* Imaris HDF
+   - fixed handling of channels with an empty color attribute 
+
 * PerkinElmer Columbus
    - updated to use micrometers instead of reference frame for positions
 
