@@ -1,6 +1,32 @@
 Version history
 ===============
 
+7.3.1 (2024 July)
+-----------------
+
+File format fixes and improvements:
+
+* Aperio SVS
+   - updated isThisType to reject files with a single IFD
+
+* ICS (Image Cytometry Standard)
+   - fixed a Null Pointer Exception when the image name is not set
+
+* Imaris HDF
+   - fixed handling of channels with an empty color attribute 
+
+* PerkinElmer Columbus
+   - updated to use micrometers instead of reference frame for positions
+
+Bio-Formats improvements:
+
+* fixed warnings across all components for Java 9+ 
+* fixed a number of String comparisons
+
+Documentation improvements:
+
+* fixed a number of broken external links
+
 7.3.0 (2024 April)
 ------------------
 
