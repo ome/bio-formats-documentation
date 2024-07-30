@@ -122,7 +122,7 @@ utilityRating = Fair
 reader = GelReader
 privateSpecification = true
 notes = .. seealso:: \n
-  `GEL Technical Overview <https://www.awaresystems.be/imaging/tiff/tifftags/docs/gel.html>`_
+  `GEL Technical Overview <https://web.archive.org/web/20231204123656/https://www.awaresystems.be/imaging/tiff/tifftags/docs/gel.html>`_
 
 [Amira Mesh]
 extensions = .am, .amiramesh, .grey, .hx, .labels
@@ -2422,9 +2422,9 @@ extensions = .tiff, .tif, .tf2, .tf8, .btf
 owner = `Adobe <https://www.adobe.com>`_
 developer = Aldus and Microsoft
 bsd = yes
-samples = `Big TIFF <https://www.awaresystems.be/imaging/tiff/bigtiff.html#samples>`_
+samples = `Big TIFF <https://web.archive.org/web/20240706160214/https://www.awaresystems.be/imaging/tiff/bigtiff.html#samples>`_
 weHave = * `TIFF specification documents from Adobe <https://www.loc.gov/preservation/digital/formats/fdd/fdd000022.shtml>`_ \n
-* a `TIFF specification document <https://www.awaresystems.be/imaging/tiff.html>`_ \n
+* a `TIFF specification document <https://web.archive.org/web/20240329145220/https://www.awaresystems.be/imaging/tiff.html>`_ \n
 * `public sample images <https://downloads.openmicroscopy.org/images/TIFF/>`__\n
 * many TIFF datasets \n
 * a few BigTIFF datasets
@@ -2452,8 +2452,8 @@ the sole IFD.  This differs from standard TIFF and BigTIFF; if the \n
 read. \n
 \n
 .. seealso:: \n
-  `TIFF technical overview <https://www.awaresystems.be/imaging/tiff/faq.html#q3>`_ \n
-  `BigTIFF technical overview <https://www.awaresystems.be/imaging/tiff/bigtiff.html>`_ \n
+  `TIFF technical overview <https://web.archive.org/web/20240702055230/https://www.awaresystems.be/imaging/tiff/faq.html#q3>`_ \n
+  `BigTIFF technical overview <https://web.archive.org/web/20240706160214/https://www.awaresystems.be/imaging/tiff/bigtiff.html>`_ \n
   `ImageJ TIFF overview <https://imagej.net/TIFF>`_ \n
   `Source code for ImageJ's native TIFF reader <https://imagej.net/ij/developer/source/ij/io/TiffDecoder.java.html>`_
 
