@@ -26,8 +26,8 @@ Bio-Formats improvements:
       values (e.g. objective magnifications, detector voltages) to be read without throwing an exception. This means
       that some datasets which failed to read in 7.3.0 may now suddenly work (or fail at a later point) with 7.3.1,
       without an intentional targetted fix for that format. For specific changes to format readers, please see:
-          * https://github.com/ome/bioformats/pull/4182
-          * https://github.com/ome/bioformats/pull/4177
+        - https://github.com/ome/bioformats/pull/4182
+        - https://github.com/ome/bioformats/pull/4177
 * fixed a number of String comparisons
 
 Documentation improvements:
