@@ -1,6 +1,38 @@
 Version history
 ===============
 
+7.3.1 (2024 July)
+-----------------
+
+File format fixes and improvements:
+
+* Aperio SVS
+   - updated isThisType to reject files with a single IFD
+
+* ICS (Image Cytometry Standard)
+   - fixed a Null Pointer Exception when the image name is not set
+
+* Imaris HDF
+   - fixed handling of channels with an empty color attribute 
+
+* PerkinElmer Columbus
+   - updated to use micrometers instead of reference frame for positions
+
+Bio-Formats improvements:
+
+* fixed warnings across all components for Java 9+ 
+    - Among other things, this includes changes to how double values are parsed from strings in many format readers.
+      These changes are expected to be more lenient in allowing datasets with certain missing or invalid metadata
+      values (e.g. objective magnifications, detector voltages) to be read without throwing an exception. This means
+      that some datasets which failed to read in 7.3.0 may now suddenly work (or fail at a later point) with 7.3.1,
+      without an intentional targetted fix for that format. For specific changes to format readers, please see
+      https://github.com/ome/bioformats/pull/4182 and https://github.com/ome/bioformats/pull/4177.
+* fixed a number of String comparisons
+
+Documentation improvements:
+
+* fixed a number of broken external links
+
 7.3.0 (2024 April)
 ------------------
 
@@ -3391,7 +3423,7 @@ Java bug fixes:
 -----------------------
 
 * Updated Maven build system and launched new Artifactory repository
-  (http://artifacts.openmicroscopy.org)
+  (https://artifacts.openmicroscopy.org)
 * Added support for:
    - :doc:`Bio-Rad SCN </formats/bio-rad-scn>`
    - :doc:`Yokogawa CellVoyager </formats/cellvoyager>` (thanks to

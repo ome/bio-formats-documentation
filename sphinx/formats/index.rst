@@ -14,8 +14,9 @@ the entries in the supported formats table).
 
 **We are always looking for examples of files to help us provide better
 support for different formats.** If you would like to help, you can upload
-files to `Zenodo <http://zenodo.org>`_ and let us know.
-If you have any questions, or would prefer not to use Zenodo, please contact us via the :imagesc:`Image.sc forum <tag/bio-formats>`.
+files to the `Bio-Formats Zenodo community <https://zenodo.org/communities/bio-formats>`_ and
+let us know. If you have any questions, or would prefer not to use Zenodo, please contact us
+via the :imagesc:`Image.sc forum <tag/bio-formats>`.
 If your format is already supported, please refer to the 'we would like to
 have' section on the individual page for that format, to see if your dataset
 would be useful to us.
