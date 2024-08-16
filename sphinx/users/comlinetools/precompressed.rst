@@ -13,12 +13,12 @@ of the consumer.
 When writing, compressed bytes instead of raw bytes can be provided to the writer,
 such that the writer will just save the provided compressed bytes instead of recompressing.
 
-This feature is primarily exposed in the :program:`bfconvert` command, using the :option:`-precompressed` option.
-When the :option:`-precompressed` option is used, best results are obtained by:
+This feature is primarily exposed in the :program:`bfconvert` command, using the `-precompressed` option.
+When the `-precompressed` option is used, best results are obtained by:
 
-* using the :option:`-noflat` option
-* _not_ using the :option:`-compression` option (this can work, but may force tile recompression)
-* _not_ using the :option:`-tilex` or :option:`-tiley` options (this can work, but may force tile recompression)
+* using the `-noflat` option
+* _not_ using the `-compression` option (this can work, but may force tile recompression)
+* _not_ using the `-tilex` or `-tiley` options (this can work, but may force tile recompression)
 
 There are several advantages to using the "precompressed" feature for formats that support it:
 
