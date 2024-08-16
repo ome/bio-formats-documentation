@@ -35,6 +35,7 @@ for carrying out a variety of tasks:
     :includehidden:
 
     comlinetools/index
+    comlinetools/precompressed
 
 .. seealso::
    :doc:`/formats/options`
