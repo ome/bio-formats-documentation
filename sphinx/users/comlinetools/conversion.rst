@@ -301,9 +301,11 @@ correctly. So in Windows, the above example would read::
 
     .. code-block::
         
-        bfconvert -noflat -precompressed -compression JPEG CMU-1.svs CMU-1.dcm
+        bfconvert -noflat -precompressed CMU-1.svs CMU-1.dcm
 
     .. versionadded:: 7.1.0
+
+    .. seealso:: :doc:`Summary of the precompressed tiles feature <precompressed>`
 
 .. option:: -extra-metadata METADATA FILE
 
