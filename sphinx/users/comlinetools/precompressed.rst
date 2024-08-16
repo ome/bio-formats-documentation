@@ -12,6 +12,11 @@ When writing, compressed bytes instead of raw bytes can be provided to the write
 such that the writer will just save the provided compressed bytes instead of recompressing.
 
 This feature is primarily exposed in the :program:`bfconvert` command, using the :option:`-precompressed` option.
+When the :option:`-precompressed` option is used, best results are obtained by:
+
+* using the :option:`-noflat` option
+* _not_ using the :option:`-compression` option (this can work, but may force tile recompression)
+* _not_ using the :option:`-tilex` or :option:`-tiley` options (this can work, but may force tile recompression)
 
 There are several advantages to using the "precompressed" feature for formats that support it:
 
@@ -38,3 +43,8 @@ Formats that support precompressed tile writing:
 * DICOM (since 7.1.0)
 * TIFF (forthcoming: https://github.com/ome/bioformats/pull/4190)
 * OME-TIFF (forthcoming: https://github.com/ome/bioformats/pull/4190)
+
+For additional discussion of the "precompressed" tiles feature, see:
+
+* https://forum.image.sc/t/vsi-to-dcm-file-conversion/98249/5
+* https://forum.image.sc/t/exporting-a-dicom-stack/99400
