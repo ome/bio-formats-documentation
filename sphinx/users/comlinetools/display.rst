@@ -194,3 +194,16 @@ dimensions, and other basic metadata will be printed to the console.
     The default fill value is typically 0, but some readers may have different defaults.
 
     .. versionadded:: 6.13.0
+
+.. option:: -
+
+    Batch process multiple files reading file names and any additional options
+    line by line from stdin. For every line from stdin ``showinf`` is invoked
+    as called from the command prompt, but substituting ``-`` with the stdin
+    line.
+
+    ::
+
+      ls *.tiff | showinf -
+
+    .. versionadded:: 8.0.0
