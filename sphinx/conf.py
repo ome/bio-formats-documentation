@@ -389,5 +389,6 @@ linkcheck_ignore = ['https://imspector.mpibpc.mpg.de',
     r'https://trac.openmicroscopy.org*',
     r'http://openslide.cs.cmu.edu*', # NameResolutionError
     r'https://openslide.cs.cmu.edu*', # NameResolutionError
-    r'https://tronche.com/computer-graphics/*' # NameResolutionError
+    r'https://tronche.com/computer-graphics/*', # NameResolutionError
+    r'https://www.sas.upenn.edu/*'  # Invalid SSL certificate
 ]
