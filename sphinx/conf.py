@@ -390,5 +390,6 @@ linkcheck_ignore = ['https://imspector.mpibpc.mpg.de',
     r'http://openslide.cs.cmu.edu*', # NameResolutionError
     r'https://openslide.cs.cmu.edu*', # NameResolutionError
     r'https://tronche.com/computer-graphics/*', # NameResolutionError
-    r'https://www.sas.upenn.edu/*'  # Invalid SSL certificate
+    r'https://www.sas.upenn.edu/*',  # Invalid SSL certificate
+    r'http://www.bio-rad.com/*' # 403 Client Error: Forbidden for url
 ]
