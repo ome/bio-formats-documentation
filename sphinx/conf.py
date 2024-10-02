@@ -388,7 +388,5 @@ linkcheck_ignore = ['https://imspector.mpibpc.mpg.de',
     r'https://www.mayo.edu/research/core-resources/biomedical-imaging-resource-core/overview', # 403 Client Error: Forbidden
     r'https://trac.openmicroscopy.org*',
     r'http://openslide.cs.cmu.edu*', # NameResolutionError
-    r'https://openslide.cs.cmu.edu*', # NameResolutionError
-    r'https://tronche.com/computer-graphics/*', # NameResolutionError
-    r'http://www.bio-rad.com/*' # 403 Client Error: Forbidden for url
+    r'https://openslide.cs.cmu.edu*' # NameResolutionError
 ]
