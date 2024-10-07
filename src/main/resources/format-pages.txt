@@ -1640,8 +1640,8 @@ extensions = .mng
 developer = `MNG Development Group <http://www.libpng.org/pub/mng/mngnews.html>`_
 bsd = yes
 software = `libmng (MNG reference library) <https://sourceforge.net/projects/libmng/>`_
-samples = `MNG sample files <https://sourceforge.net/projects/libmng/files/libmng-testsuites/MNGsuite-1.0/MNGsuite.zip/download>`_
-weHave = * the `libmng-testsuites <https://sourceforge.net/projects/libmng/files/libmng-testsuites/Release-20030305/MNGsuite-20030305.zip/download>`_ package (from 2003 March 05, in C) \n
+samples = `MNG sample files <https://sourceforge.net/projects/libmng/files/libmng-testsuites/MNGsuite-1.0/MNGsuite.zip/>`_
+weHave = * the `libmng-testsuites <https://sourceforge.net/projects/libmng/files/libmng-testsuites/Release-20030305/MNGsuite-20030305.zip/>`_ package (from 2003 March 05, in C) \n
 * a large number of MNG datasets
 pixelsRating = Good
 metadataRating = Good
