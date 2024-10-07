@@ -2025,7 +2025,7 @@ notes = Commercial applications that support PCX include `Zeiss LSM Image Browse
 
 [PCORAW]
 extensions = .pcoraw, .rec
-developer = `PCO <https://www.pco.de/>`_
+developer = `PCO <https://www.excelitas.com/product-category/pco>`_
 bsd = no
 weHave = * a few example datasets
 pixelsRating = Very good
