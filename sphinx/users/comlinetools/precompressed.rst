@@ -1,7 +1,7 @@
 "Precompressed" tiles
 =====================
 
-See first :doc:`a summary of the precompressed tiles feature </formats/precompressed>`.
+See first :doc:`an overview of what precompressed tiles are and which formats support them </formats/precompressed>`.
 
 This feature is primarily exposed in the :program:`bfconvert` command, using the `-precompressed` option.
 When the `-precompressed` option is used, best results are obtained by:
