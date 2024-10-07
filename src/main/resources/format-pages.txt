@@ -382,11 +382,11 @@ opennessRating = Fair
 presenceRating = Poor
 utilityRating = Fair
 reader = BioRadGelReader
-notes = * `Bio-Rad Gel Format (1sc) specification <http://biorad1sc-doc.readthedocs.io/>`_ \n
+notes = * `Bio-Rad Gel Format (1sc) specification <https://biorad1sc-doc.readthedocs.io/>`_ \n
 * Python3 package of a Bio-Rad Gel Format (1sc) reader \n
 \n
   * ``pip3 install biorad1sc_reader`` \n
-  * `biorad1sc_reader documentation <http://biorad1sc-reader.readthedocs.io/>`_ \n
+  * `biorad1sc_reader documentation <https://biorad1sc-reader.readthedocs.io/>`_ \n
   * Includes command-line utilities \n
 \n
     * bio1sc2tiff - convert 1sc file image to tiff \n
