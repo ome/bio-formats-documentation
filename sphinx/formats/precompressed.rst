@@ -21,8 +21,8 @@ Formats that support precompressed tile reading
 -----------------------------------------------
 
 * SVS (since 7.1.0)
-* NDPI (forthcoming: https://github.com/ome/bioformats/pull/4181)
-* DICOM (forthcoming: https://github.com/ome/bioformats/pull/4190)
+* NDPI (since 8.0.0)
+* DICOM (since 8.0.0)
 
 .. _precompressed#writers:
 
@@ -30,5 +30,5 @@ Formats that support precompressed tile writing
 -----------------------------------------------
 
 * DICOM (since 7.1.0)
-* TIFF (forthcoming: https://github.com/ome/bioformats/pull/4190)
-* OME-TIFF (forthcoming: https://github.com/ome/bioformats/pull/4190)
+* TIFF (since 8.0.0)
+* OME-TIFF (since 8.0.0)
