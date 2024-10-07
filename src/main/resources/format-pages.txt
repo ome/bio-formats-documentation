@@ -783,7 +783,7 @@ developer = `CompuServe <http://www.compuserve.com/>`_
 bsd = yes
 software = `Animated GIF Reader plugin for ImageJ <https://imagej.net/ij/plugins/agr.html>`_ \n
 `GIF Stack Writer plugin for ImageJ <https://imagej.net/ij/plugins/gif-stack-writer.html>`_
-weHave = * a `GIF specification document <https://tronche.com/computer-graphics/gif/>`_ (Version 89a, from 1990, in HTML) \n
+weHave = * a `GIF specification document <https://www.w3.org/Graphics/GIF/spec-gif89a.txt>`_ (Version 89a, from 1990, in HTML) \n
 * numerous GIF datasets \n
 * the ability to produce new datasets
 pixelsRating = Very good
