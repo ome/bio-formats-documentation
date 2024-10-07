@@ -369,12 +369,12 @@ mif = true
 
 [Bio-Rad Gel]
 extensions = .1sc
-owner = `Bio-Rad <https://www.bio-rad.com>`_
+owner = `Bio-Rad <https://bio-rad.com>`_
 bsd = no
 weHave = * software that can read Bio-Rad Gel files \n
 * several Bio-Rad Gel files \n
 * reverse-engineered Bio-Rad Gel (1sc) file format specification \n
-* Bio-Rad's `Image Lab 5.2.1 <https://www.bio-rad.com/en-ch/product/image-lab-software>`_ software
+* Bio-Rad's `Image Lab 5.2.1 <https://bio-rad.com/en-ch/product/image-lab-software>`_ software
 weWant = * more Bio-Rad Gel files
 pixelsRating = Good
 metadataRating = Fair
