@@ -44,6 +44,7 @@ for carrying out a variety of tasks:
     comlinetools/ijview
     comlinetools/xmlindent
     comlinetools/mkfake
+    comlinetools/precompressed
 
 .. seealso::
    :doc:`/formats/options`
