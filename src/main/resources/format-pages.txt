@@ -369,12 +369,12 @@ mif = true
 
 [Bio-Rad Gel]
 extensions = .1sc
-owner = `Bio-Rad <http://www.bio-rad.com>`_
+owner = `Bio-Rad <https://www.bio-rad.com>`_
 bsd = no
 weHave = * software that can read Bio-Rad Gel files \n
 * several Bio-Rad Gel files \n
 * reverse-engineered Bio-Rad Gel (1sc) file format specification \n
-* Bio-Rad's `Image Lab 5.2.1 <http://www.bio-rad.com/en-ch/product/image-lab-software>`_ software
+* Bio-Rad's `Image Lab 5.2.1 <https://www.bio-rad.com/en-ch/product/image-lab-software>`_ software
 weWant = * more Bio-Rad Gel files
 pixelsRating = Good
 metadataRating = Fair
@@ -382,11 +382,11 @@ opennessRating = Fair
 presenceRating = Poor
 utilityRating = Fair
 reader = BioRadGelReader
-notes = * `Bio-Rad Gel Format (1sc) specification <http://biorad1sc-doc.readthedocs.io/>`_ \n
+notes = * `Bio-Rad Gel Format (1sc) specification <https://biorad1sc-doc.readthedocs.io/>`_ \n
 * Python3 package of a Bio-Rad Gel Format (1sc) reader \n
 \n
   * ``pip3 install biorad1sc_reader`` \n
-  * `biorad1sc_reader documentation <http://biorad1sc-reader.readthedocs.io/>`_ \n
+  * `biorad1sc_reader documentation <https://biorad1sc-reader.readthedocs.io/>`_ \n
   * Includes command-line utilities \n
 \n
     * bio1sc2tiff - convert 1sc file image to tiff \n
@@ -420,7 +420,7 @@ notes = * Commercial applications that support this format include: \n
 
 [Bio-Rad SCN]
 extensions = .scn
-owner = `Bio-Rad <http://www.bio-rad.com>`_
+owner = `Bio-Rad <https://www.bio-rad.com>`_
 developer = Bio-Rad
 bsd = no
 weHave = * a few Bio-Rad .scn files
@@ -783,7 +783,7 @@ developer = `CompuServe <http://www.compuserve.com/>`_
 bsd = yes
 software = `Animated GIF Reader plugin for ImageJ <https://imagej.net/ij/plugins/agr.html>`_ \n
 `GIF Stack Writer plugin for ImageJ <https://imagej.net/ij/plugins/gif-stack-writer.html>`_
-weHave = * a `GIF specification document <https://tronche.com/computer-graphics/gif/>`_ (Version 89a, from 1990, in HTML) \n
+weHave = * a `GIF specification document <https://www.w3.org/Graphics/GIF/spec-gif89a.txt>`_ (Version 89a, from 1990, in HTML) \n
 * numerous GIF datasets \n
 * the ability to produce new datasets
 pixelsRating = Very good
@@ -1640,8 +1640,8 @@ extensions = .mng
 developer = `MNG Development Group <http://www.libpng.org/pub/mng/mngnews.html>`_
 bsd = yes
 software = `libmng (MNG reference library) <https://sourceforge.net/projects/libmng/>`_
-samples = `MNG sample files <https://sourceforge.net/projects/libmng/files/libmng-testsuites/MNGsuite-1.0/MNGsuite.zip/download>`_
-weHave = * the `libmng-testsuites <http://downloads.sourceforge.net/libmng/MNGsuite-20030305.zip>`_ package (from 2003 March 05, in C) \n
+samples = `MNG sample files <https://sourceforge.net/projects/libmng/files/libmng-testsuites/MNGsuite-1.0/MNGsuite.zip/>`_
+weHave = * the `libmng-testsuites <https://sourceforge.net/projects/libmng/files/libmng-testsuites/Release-20030305/MNGsuite-20030305.zip/>`_ package (from 2003 March 05, in C) \n
 * a large number of MNG datasets
 pixelsRating = Good
 metadataRating = Good
@@ -2025,7 +2025,7 @@ notes = Commercial applications that support PCX include `Zeiss LSM Image Browse
 
 [PCORAW]
 extensions = .pcoraw, .rec
-developer = `PCO <https://www.pco.de/>`_
+developer = `PCO <https://www.excelitas.com/product-category/pco-camera-software>`_
 bsd = no
 weHave = * a few example datasets
 pixelsRating = Very good
