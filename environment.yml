@@ -1,5 +1,6 @@
 channels:
   - conda-forge
 dependencies:
+  - python<3.13
   - maven
   - sphinx-rtd-theme
