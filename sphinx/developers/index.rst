@@ -56,7 +56,7 @@ Using Bio-Formats as a Java library
 Using Bio-Formats as a native C++ library
 =========================================
 
-.. note:: See the `OME-Files C++ downloads page <http://downloads.openmicroscopy.org/latest/ome-files-cpp/>`_
+.. note:: See the `OME-Files C++ downloads page <https://downloads.openmicroscopy.org/latest/ome-files-cpp/>`_
     for more information.
 
 Contributing to Bio-Formats

@@ -22,7 +22,7 @@ have' section on the individual page for that format, to see if your dataset
 would be useful to us.
 
 All the example files we have permission to share publicly are freely
-available from our `sample image downloads site <http://downloads.openmicroscopy.org/images/>`_.
+available from our `sample image downloads site <https://downloads.openmicroscopy.org/images/>`_.
 
 .. toctree::
     :maxdepth: 1
