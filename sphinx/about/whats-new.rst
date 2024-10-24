@@ -53,7 +53,7 @@ Documentation updates:
 
 * update all links to AwareSystems TIFF documentation to last version from Internet Archive
     - see `libtiff mailing list discussion <https://www.mail-archive.com/tiff@lists.osgeo.org/msg00421.html>`_ for context
-* fix index of comannd-line tools
+* fix index of command-line tools
 * add documentation for new batch processing feature in `showinf` (thanks to Torsten Stöter)
 * add documentation for precompressed tiles feature [1]_
 * several other fixes for broken links
