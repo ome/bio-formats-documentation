@@ -14,7 +14,7 @@ following instructions can still be used with the 4.4.x versions.
 Installation
 ------------
 
-For `OME Perl v2.6.1 <http://downloads.openmicroscopy.org/ome/2.6.1/>`_ and
+For `OME Perl v2.6.1 <https://downloads.openmicroscopy.org/ome/2.6.1/>`_ and
 later, the command line installer automatically downloads the latest
 **loci\_tools.jar** and places it in the proper location. This location
 is configurable, but is **/OME/java/loci\_tools.jar** by default.
@@ -114,8 +114,8 @@ relevant source files are:
 
 -  `OmeisImporter.java <https://github.com/ome/bioformats/tree/v4.4.10/components/scifio/src/loci/formats/ome/OmeisImporter.java>`_
    – omebf Java command line tool
--  `BioFormats.pm <http://downloads.openmicroscopy.org/ome/code/BioFormats.pm>`_
+-  `BioFormats.pm <https://downloads.openmicroscopy.org/ome/code/BioFormats.pm>`_
    – Perl module for OME Bio-Formats importer
--  `omeis.c <http://downloads.openmicroscopy.org/ome/code/omeis.c>`_
+-  `omeis.c <https://downloads.openmicroscopy.org/ome/code/omeis.c>`_
    – OMEIS C functions for Bio-Formats (search for "bioformats" case
    insensitively to find relevant sections)

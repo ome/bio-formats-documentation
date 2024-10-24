@@ -29,7 +29,7 @@ Manually updating your Fiji installation should not be necessary but if you
 need to do so, the steps are detailed below. Note that although we assume you
 will be upgrading to the latest release version, all previous versions of
 Bio-Formats are available from
-http://downloads.openmicroscopy.org/bio-formats/ so you can revert to
+https://downloads.openmicroscopy.org/bio-formats/ so you can revert to
 an earlier version using this guide if you need to.
 
 1) Fiji must first be fully updated
@@ -51,10 +51,10 @@ an earlier version using this guide if you need to.
    - formats-api.jar
    
 6) Download bio-formats_plugins.jar (from the latest release
-   http://downloads.openmicroscopy.org/bio-formats/) and place it in the
+   https://downloads.openmicroscopy.org/bio-formats/) and place it in the
    'plugins' sub-folder
 7) Download each of the following (from the latest release
-   http://downloads.openmicroscopy.org/bio-formats/) and place them in the
+   https://downloads.openmicroscopy.org/bio-formats/) and place them in the
    'jars/bio-formats' sub-folder:
 
    - ome-jai.jar

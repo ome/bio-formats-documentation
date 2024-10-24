@@ -2910,7 +2910,7 @@ OME-XML changes include:
 
 The Bio-Formats C++ native implementation has been decoupled from
 the Java codebase and will be released as
-`OME-Files C++ <http://downloads.openmicroscopy.org/ome-files-cpp/>`_ from now
+`OME-Files C++ <https://downloads.openmicroscopy.org/ome-files-cpp/>`_ from now
 on, with the exception of OME-XML which is still within Bio-Formats at present
 (there is a plan to decouple both the Java and the C++ versions of OME-XML in
 future).
