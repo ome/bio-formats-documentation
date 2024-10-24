@@ -1,6 +1,72 @@
 Version history
 ===============
 
+8.0.0 (2024 October)
+--------------------
+
+File format fixes and improvements:
+
+* CV7000
+   - allow TIFF files to be in a subdirectory
+
+* DICOM
+   - add support for reading precompressed tiles [1]_
+   - improve image write performance [1]_
+   - fix writing to DICOM when physical size units are missing from input data
+
+* Evident/Olympus OIR
+   - improve image read performance (thanks to Nicolas Chiaruttini)
+
+* Hamamatsu NDPI
+   - add support for reading precompressed tiles [1]_
+
+* Leica LIF
+   - fix file offset calculations for datasets with unstitched tiles
+
+* OME-TIFF
+   - improve image write performance
+   - add support for writing precompressed tiles [1]_
+
+* OME-XML
+   - fix incorrect logical operators when checking image dimensions
+
+* RCPNL
+   - define objective metadata for lens ID 18112
+
+* SDT
+   - fix reading of files acquired with SPCM 9.90 (thanks to Chen Qian)
+
+* Zeiss LSM
+   - fix incorrect logical operators when setting channel colors
+
+Bio-Formats improvements:
+
+* Add a batch processing feature to `showinf` (thanks to Torsten Stöter)
+* Update `bfconvert` to automatically detect the compression type when using `-precompressed` [1]_
+* Fix autoscaling of `float` values in `AWTImageTools`
+* ImageJ export plugin: fix handling of multi-channel datasets
+* `JPEGTurboService` [1]_
+   - add several new methods for retrieving tiles from a single JPEG stream
+   - expand Javadocs for existing methods
+
+Documentation updates:
+
+* update all links to AwareSystems TIFF documentation to last version from Internet Archive
+    - see `libtiff mailing list discussion <https://www.mail-archive.com/tiff@lists.osgeo.org/msg00421.html>`_ for context
+* fix index of command-line tools
+* add documentation for new batch processing feature in `showinf` (thanks to Torsten Stöter)
+* add documentation for precompressed tiles feature [1]_
+* several other fixes for broken links
+
+Component updates:
+
+* `ome-common` was upgraded to 6.0.24
+* `cdm-core` was upgraded to 5.6.0
+
+.. [1] This functionality was implemented through collaboration between Glencoe Software and `NCI Imaging Data Commons <https://datacommons.cancer.gov/repository/imaging-data-commons/>`_,
+       and has been funded in whole or in part with Federal funds from the National Cancer Institute, National Institutes
+       of Health, under Task Order No. HHSN26110071 under Contract No. HHSN2612015000031.
+
 7.3.1 (2024 July)
 -----------------
 
