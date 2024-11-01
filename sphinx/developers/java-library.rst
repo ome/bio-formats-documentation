@@ -47,8 +47,8 @@ The complete list of third-party dependencies for `formats-gpl.jar` is as follow
     * - Package
       - Maven name
       - License
-    * - `JHDF5 v19.04.0 <https://unlimited.ethz.ch/display/JHDF/>`_
-      - cisd:jhdf5:19.04.0
+    * - `JHDF5 v19.04.1 <https://unlimited.ethz.ch/display/JHDF/>`_
+      - cisd:jhdf5:19.04.1
       - `Apache License v2.0`_
     * - `cisd base v18.09.0 <https://sissource.ethz.ch/sispub/base/>`_
       - cisd:base:18.09.0
@@ -61,7 +61,7 @@ The complete list of third-party dependencies for `formats-gpl.jar` is as follow
       - `Apache License v2.0`_
     * - `XMP Library for Java v6.1.11 <https://www.adobe.com/devnet/xmp.html>`_
       - com.adobe.xmp:xmpcore:6.1.11
-      - `BSD License`_
+      - `BSD 3-Clause`_
     * - `JCommander v1.27 <http://jcommander.org/>`_
       - com.beust:jcommander:1.27
       - `Apache License v2.0`_
@@ -71,20 +71,20 @@ The complete list of third-party dependencies for `formats-gpl.jar` is as follow
     * - `aircompressor v0.21 <https://github.com/airlift/aircompressor>`_
       - io.airlift:aircompressor:0.21
       - `Apache License v2.0`_
-    * - `Kryo v4.0.2 <https://github.com/EsotericSoftware/kryo>`_
-      - com.esotericsoftware.kryo:kryo:4.0.2
-      - `BSD License`_
-    * - `reflectasm v1.11.3 <https://github.com/EsotericSoftware/reflectasm>`_
-      - com.esotericsoftware:reflectasm:1.11.3
+    * - `Kryo v5.4.0 <https://github.com/EsotericSoftware/kryo>`_
+      - com.esotericsoftware.kryo:kryo:5.4.0
+      - `BSD 3-Clause`_
+    * - `reflectasm v1.11.9 <https://github.com/EsotericSoftware/reflectasm>`_
+      - com.esotericsoftware:reflectasm:1.11.9
       - `BSD 3-Clause`_
     * - `asm v5.0.4 <https://asm.ow2.io>`_
       - org.ow2.asm:asm:5.0.4
       - `BSD 3-Clause`_
-    * - `MinLog v1.3 <https://github.com/EsotericSoftware/minlog>`_
-      - com.esotericsoftware.minlog:minlog:1.3
-      - `BSD License`_
-    * - `Guava v32.0.0 <https://github.com/google/guava>`_
-      - com.google.guava:guava:32.0.0-jre
+    * - `MinLog v1.3.1 <https://github.com/EsotericSoftware/minlog>`_
+      - com.esotericsoftware.minlog:minlog:1.3.1
+      - `BSD 3-Clause`_
+    * - `Guava v32.0.1 <https://github.com/google/guava>`_
+      - com.google.guava:guava:32.0.1-jre
       - `Apache License v2.0`_
     * - `JGoodies Common v1.7.0 <http://www.jgoodies.com/downloads/libraries/>`_
       - com.jgoodies:jgoodies-common:1.7.0
@@ -98,11 +98,11 @@ The complete list of third-party dependencies for `formats-gpl.jar` is as follow
     * - `Commons Logging v1.2 <http://commons.apache.org/logging/>`_
       - commons-logging:commons-logging:1.2
       - `Apache License v2.0`_
-    * - `NetCDF-Java Library v5.3.3 <https://docs.unidata.ucar.edu/netcdf-java/5.3/userguide/index.html>`_
-      - edu.ucar:cdm:5.3.3
-      - `MIT-Style License`_
-    * - `Joda time v2.2 <https://github.com/JodaOrg/joda-time>`_
-      - joda-time:joda-time:2.2
+    * - `NetCDF-Java Library v5.6.0 <https://docs.unidata.ucar.edu/netcdf-java/5.3/userguide/index.html>`_
+      - edu.ucar:cdm-core:5.6.0
+      - `BSD 3-Clause`_
+    * - `Joda time v2.12.7 <https://github.com/JodaOrg/joda-time>`_
+      - joda-time:joda-time:2.12.7
       - `Apache License v2.0`_
     * - `JUnit v4.10 <https://junit.org/junit4/>`_
       - junit:junit:4.10
@@ -113,14 +113,14 @@ The complete list of third-party dependencies for `formats-gpl.jar` is as follow
     * - `Hamcrest Core v1.2.1 <https://github.com/hamcrest/JavaHamcrest>`_
       - org.hamcrest:hamcrest-core:1.2.1
       - `BSD 3-Clause`_
-    * - `Objenesis v2.5.1 <http://objenesis.org>`_
-      - org.objenesis:objenesis:2.5.1
+    * - `Objenesis v3.3 <http://objenesis.org>`_
+      - org.objenesis:objenesis:3.3
       - `Apache License v2.0`_
     * - `Perf4J v0.9.16 <https://github.com/perf4j/perf4j>`_
       - org.perf4j:perf4j:0.9.16
       - `Apache License v2.0`_
-    * - `Native Library Loader v2.1.4 <https://github.com/scijava/native-lib-loader>`_
-      - org.scijava:native-lib-loader:2.1.4
+    * - `Native Library Loader v2.4.0 <https://github.com/scijava/native-lib-loader>`_
+      - org.scijava:native-lib-loader:2.4.0
       - `BSD License`_
     * - `SLF4J API v2.0.9 <http://www.slf4j.org>`_
       - org.slf4j:slf4j-api:2.0.9
@@ -128,8 +128,8 @@ The complete list of third-party dependencies for `formats-gpl.jar` is as follow
     * - `TestNG v6.8 <https://testng.org/>`_
       - org.testng:testng:6.8
       - `Apache License v2.0`_
-    * - `SnakeYAML v1.32 <https://bitbucket.org/snakeyaml/snakeyaml>`_
-      - org.yaml:snakeyaml:1.32
+    * - `SnakeYAML v2.0 <https://bitbucket.org/snakeyaml/snakeyaml>`_
+      - org.yaml:snakeyaml:2.0
       - `Apache License v2.0`_
     * - `Xalan Java Serializer v2.7.3 <http://xml.apache.org/xalan-j>`_
       - xalan:serializer:2.7.3
@@ -145,7 +145,7 @@ The complete list of third-party dependencies for `formats-gpl.jar` is as follow
       - `Apache License v2.0`_
     * - `minio v5.0.2 <https://min.io>`_
       - io.minio:minio:5.0.2
-      - `AGPL v3`_
+      - `Apache License v2.0`_
     * - `http-client-xml v1.20.0 <http://googleapis.github.io/google-http-java-client>`_
       - com.google.http-client:google-http-client-xml:1.20.0
       - `Apache License v2.0`_
@@ -164,9 +164,9 @@ The complete list of third-party dependencies for `formats-gpl.jar` is as follow
     * - `jaxb v2.3.0 <https://javaee.github.io/jaxb-v2/>`_
       - javax.xml.bind:jaxb-api:2.3.0
       -
-    * - `json v20230227 <https://github.com/stleary/json-java>`_
-      - org.json:json:20230227
-      - https://github.com/stleary/JSON-java/blob/master/LICENSE
+    * - `json v20231013 <https://github.com/stleary/json-java>`_
+      - org.json:json:20231013
+      - `Public Domain <https://github.com/stleary/JSON-java/blob/master/LICENSE>`__
     * - `sqlite v3.28.0 <https://github.com/xerial/sqlite-jdbc>`_
       - org.xerial:sqlite-jdbc:3.28.0
       - `Apache License v2.0`_
@@ -188,17 +188,17 @@ The complete list of third-party dependencies for `formats-gpl.jar` is as follow
     * - `j2objc-annotations v1.3 <https://developers.google.com/j2objc/>`_
       - com.google.j2objc:j2objc-annotations:1.3
       - `Apache License v2.0`_
-    * - `httpservices v5.3.3 <https://www.unidata.ucar.edu/software/netcdf-java/v4.6/reference/httpservices.html>`_
-      - edu.ucar:httpservices:5.3.3
-      - `MIT-Style License`_
-    * - `httpclient v4.5.9 <https://hc.apache.org/>`_
-      - org.apache.httpcomponents:httpclient:4.5.9
+    * - `httpservices v5.6.0 <https://www.unidata.ucar.edu/software/netcdf-java/v4.6/reference/httpservices.html>`_
+      - edu.ucar:httpservices:5.6.0
+      - `BSD 3-Clause`_
+    * - `httpclient v4.5.13 <https://hc.apache.org/>`_
+      - org.apache.httpcomponents:httpclient:4.5.13
       - `Apache License v2.0`_
     * - `commons-codec v1.11 <https://commons.apache.org/proper/commons-codec/>`_
       - commons-codec:commons-codec:1.11
       - `Apache License v2.0`_
-    * - `httpmime v4.5.9 <https://hc.apache.org/>`_
-      - org.apache.httpcomponents:httpmime:4.5.9
+    * - `httpmime v4.5.13 <https://hc.apache.org/>`_
+      - org.apache.httpcomponents:httpmime:4.5.13
       - `Apache License v2.0`_
     * - `c3p0 v0.9.5.3 <https://www.mchange.com/projects/c3p0/>`_
       - com.mchange:c3p0:0.9.5.3
@@ -206,14 +206,14 @@ The complete list of third-party dependencies for `formats-gpl.jar` is as follow
     * - `mchange-commons-java v0.2.15 <https://www.mchange.com/projects/mchange-commons-java/>`_
       - com.mchange:mchange-commons-java:0.2.15
       -
-    * - `jackson-core v2.14.1 <https://github.com/FasterXML/jackson-core>`_
-      - com.fasterxml.jackson.core:jackson-core:2.14.1
+    * - `jackson-core v2.14.2 <https://github.com/FasterXML/jackson-core>`_
+      - com.fasterxml.jackson.core:jackson-core:2.14.2
       - `Apache License v2.0`_
-    * - `jackson-annotations v2.14.1 <https://github.com/FasterXML/jackson-annotations>`_
-      - com.fasterxml.jackson.core:jackson-annotations:2.14.1
+    * - `jackson-annotations v2.14.2 <https://github.com/FasterXML/jackson-annotations>`_
+      - com.fasterxml.jackson.core:jackson-annotations:2.14.2
       - `Apache License v2.0`_
-    * - `jackson-databind v2.14.1 <https://github.com/FasterXML/jackson-databind>`_
-      - com.fasterxml.jackson.core:jackson-databind:2.14.1
+    * - `jackson-databind v2.14.2 <https://github.com/FasterXML/jackson-databind>`_
+      - com.fasterxml.jackson.core:jackson-databind:2.14.2
       - `Apache License v2.0`_
 
 The below are optional dependencies :
