@@ -98,7 +98,7 @@ The complete list of third-party dependencies for `formats-gpl.jar` is as follow
     * - `Commons Logging v1.2 <http://commons.apache.org/logging/>`_
       - commons-logging:commons-logging:1.2
       - `Apache License v2.0`_
-    * - `NetCDF-Java Library v5.6.0 <https://docs.unidata.ucar.edu/netcdf-java/5.3/userguide/index.html>`_
+    * - `NetCDF-Java Library v5.6.0 <https://www.unidata.ucar.edu/software/netcdf-java/>`_
       - edu.ucar:cdm-core:5.6.0
       - `BSD 3-Clause`_
     * - `Joda time v2.12.7 <https://github.com/JodaOrg/joda-time>`_
@@ -188,7 +188,7 @@ The complete list of third-party dependencies for `formats-gpl.jar` is as follow
     * - `j2objc-annotations v1.3 <https://developers.google.com/j2objc/>`_
       - com.google.j2objc:j2objc-annotations:1.3
       - `Apache License v2.0`_
-    * - `httpservices v5.6.0 <https://www.unidata.ucar.edu/software/netcdf-java/v4.6/reference/httpservices.html>`_
+    * - `httpservices v5.6.0 <https://www.unidata.ucar.edu/software/netcdf-java/>`_
       - edu.ucar:httpservices:5.6.0
       - `BSD 3-Clause`_
     * - `httpclient v4.5.13 <https://hc.apache.org/>`_
