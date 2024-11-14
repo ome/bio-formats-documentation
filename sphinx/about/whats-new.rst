@@ -1,6 +1,21 @@
 Version history
 ===============
 
+8.0.1 (2024 November)
+---------------------
+
+File format fixes:
+
+* PerkinElmer Operetta
+   - prevent directories from being included in the used files list
+   - calculate physical Z size in micrometers, for improved readability
+
+Bio-Formats improvements:
+
+* Fix regression in `showinf` that prevented images from being displayed
+* Add test to ensure that the initialized file is placed first on the used files list
+* Include original metadata when exporting OME-TIFF via the Bio-Formats Exporter plugin for ImageJ
+
 8.0.0 (2024 October)
 --------------------
 
