@@ -1,7 +1,7 @@
 ImgLib
 ======
 
-`ImgLib2 <http://imglib2.net/>`_ is a multidimensional image processing
+`ImgLib2 <https://imglib2.net/>`_ is a multidimensional image processing
 library. It provides a general mechanism for writing image analysis
 algorithms, without writing case logic for `bit depth
 <https://en.wikipedia.org/wiki/Color_depth>`_, or worrying about the
