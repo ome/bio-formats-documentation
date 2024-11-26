@@ -416,7 +416,7 @@ reader = BioRadReader
 notes = * Commercial applications that support this format include: \n
 \n
   * `Bitplane Imaris <http://www.bitplane.com/>`_ \n
-  * `SVI Huygens <http://svi.nl/>`_
+  * `SVI Huygens <https://svi.nl/>`_
 
 [Bio-Rad SCN]
 extensions = .scn
@@ -597,7 +597,7 @@ notes = - The Deltavision format is based on the Medical Research Council (MRC) 
 - Commercial applications that support DeltaVision include: \n
 \n
   * `Bitplane Imaris <http://www.bitplane.com/>`_ \n
-  * `SVI Huygens <http://svi.nl/>`_ \n
+  * `SVI Huygens <https://svi.nl/>`_ \n
   * `Image-Pro Plus <http://www.mediacy.com/>`_ \n
 - RCPNL is a variant of the DeltaVision format and requires a separate reader. \n
 
@@ -912,7 +912,7 @@ notes = * ICS version 1.0 datasets have two files - an .ics file that contains \
 Commercial applications that can support ICS include: \n
 \n
 * `Bitplane Imaris <http://www.bitplane.com/>`_ \n
-* `SVI Huygens <http://svi.nl/>`_
+* `SVI Huygens <https://svi.nl/>`_
 
 [Imacon]
 extensions = .fff
@@ -1169,7 +1169,7 @@ reader = IPLabReader
 notes = Commercial applications that support IPLab include: \n
 \n
 * `Bitplane Imaris <http://www.bitplane.com/>`_ \n
-* `SVI Huygens <http://svi.nl/>`_ \n
+* `SVI Huygens <https://svi.nl/>`_ \n
 \n
 .. seealso:: \n
   `IPLab software review <https://www.biovis.com/iplab.htm>`_
@@ -1347,7 +1347,7 @@ AF stands for "Advanced Fluorescence". \n
 Commercial applications that support LIF include: \n
 \n
 * `Bitplane Imaris <http://www.bitplane.com/>`_ \n
-* `SVI Huygens <http://svi.nl/>`_ \n
+* `SVI Huygens <https://svi.nl/>`_ \n
 * `Amira <https://www.fei.com/software/amira-avizo/>`_ \n
 \n
 Versions of Bio-Formats prior to 5.3.3 incorrectly calculated the physical \n
@@ -1430,7 +1430,7 @@ LEI presumably stands for "Leica Experimental Information". \n
 Commercial applications that support LEI include: \n
 \n
 * `Bitplane Imaris <http://www.bitplane.com/>`_ \n
-* `SVI Huygens <http://svi.nl/>`_ \n
+* `SVI Huygens <https://svi.nl/>`_ \n
 * `Image-Pro Plus <http://www.mediacy.com/>`_
 
 [Leica SCN]
@@ -1536,7 +1536,7 @@ reader = MetamorphReader
 notes = Commercial applications that support STK include: \n
 \n
 * `Bitplane Imaris <http://www.bitplane.com/>`_ \n
-* `SVI Huygens <http://svi.nl/>`_ \n
+* `SVI Huygens <https://svi.nl/>`_ \n
 * `DIMIN <http://dimin.net/>`_ \n
 \n
 .. seealso:: \n
@@ -1843,7 +1843,7 @@ OIB is a single file format. \n
 Commercial applications that support this format include: \n
 \n
 * `Bitplane Imaris <http://www.bitplane.com/>`_ \n
-* `SVI Huygens <http://svi.nl/>`_ \n
+* `SVI Huygens <https://svi.nl/>`_ \n
 \n
 .. seealso:: \n
   `Olympus FluoView Resource Center <https://www.olympus-lifescience.com/en/>`_
@@ -1867,7 +1867,7 @@ mif = true
 notes = Commercial applications that support this format include: \n
 \n
 * `Bitplane Imaris <http://www.bitplane.com/>`_ \n
-* `SVI Huygens <http://svi.nl/>`_
+* `SVI Huygens <https://svi.nl/>`_
 
 [Olympus OIR]
 extensions = .oir
@@ -1992,7 +1992,7 @@ to read OME-XML files. \n
 Commercial applications that support OME-XML include: \n
 \n
 * `Bitplane Imaris <http://www.bitplane.com/>`_ \n
-* `SVI Huygens <http://svi.nl/>`_
+* `SVI Huygens <https://svi.nl/>`_
 
 [Oxford Instruments]
 extensions = .top
