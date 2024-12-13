@@ -65,4 +65,4 @@ Several other groups have developed their own MATLAB scripts that use
 Bio-Formats, including the following:
 
 - `<https://github.com/pramukta/bf-tools>`_
-- `imread for multiple life science image file formats <http://www.mathworks.com/matlabcentral/fileexchange/32920-imread-for-multiple-life-science-image-file-formats>`_
+- `imread for multiple life science image file formats <https://www.mathworks.com/matlabcentral/fileexchange/32920-imread-for-multiple-life-science-image-file-formats>`_
