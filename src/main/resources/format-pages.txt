@@ -2323,7 +2323,7 @@ reader = SeikoReader
 
 [SimplePCI & HCImage TIFF]
 extensions = .tiff
-developer = `Hamamatsu <http://hcimage.com/simple-pci-legacy/>`_
+developer = `Hamamatsu <https://hcimage.com/simple-pci-legacy/>`_
 bsd = no
 weHave = * a few SimplePCI TIFF datasets
 weWant = * more SimplePCI TIFF datasets
@@ -2349,7 +2349,7 @@ notes = Bio-Formats uses a modified version of the `Apache \n
 POI library <http://poi.apache.org/>`_ to read CXD files. \n
 \n
 .. seealso:: \n
-  `SimplePCI software overview <http://hcimage.com/simple-pci-legacy/>`_
+  `SimplePCI software overview <https://hcimage.com/simple-pci-legacy/>`_
 
 [SM Camera]
 bsd = no
