@@ -397,5 +397,5 @@ linkcheck_ignore = ['https://imspector.mpibpc.mpg.de',
     r'https://www.agilent.com/home', # 403 Client Error: Forbidden
     r'https://mathworks.com/.*', # 403 Client Error: Forbidden
     r'https://uk.mathworks.com/.*', # 403 Client Error: Forbidden
-    r'http://hcimage.com/.*' # Certificat expired
+    r'https://hcimage.com/.*' # Certificat expired
 ]
