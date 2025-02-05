@@ -1,6 +1,41 @@
 Version history
 ===============
 
+8.1.0 (2025 February)
+---------------------
+
+New file formats:
+
+* Hamamatsu DCIMG
+    - add a new reader for Hamamatsu .dcimg files (thanks to Zach Marin)
+
+File format fixes:
+
+* Evident/Olympus OIR
+    - fix an issue with reading timestamp metadata
+* Evident/Olympus VSI
+    - fix ordering of used files list
+* Fuji
+    - fix ordering of used files list
+* Imaris HDF
+    - add caching and support for LZ4 compression (thanks to Marco Stucchi)
+* Leica TCS
+    - ensure all relevant files are included in used files list
+
+Bio-Formats improvements:
+
+* Remove `LOCI` entry from ImageJ plugins menu (thanks to Tiago Ferreira)
+* Fix array endianness in `bfsave` MATLAB function
+* Fix `-version`, `-debug`, `-trace`, and `-no-upgrade` options in `tiffcomment` command line tool
+
+Component updates:
+
+* `logback` was upgraded to 1.3.15
+* `ome-codecs` was upgraded to 1.1.0
+* `ome-common` was upgraded to 6.0.25
+* `ome-metakit` was upgraded to 5.3.8
+* `ome-model` was upgraded to 6.4.0
+
 8.0.1 (2024 November)
 ---------------------
 
