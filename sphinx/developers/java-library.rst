@@ -225,10 +225,10 @@ The below are optional dependencies :
       - Maven name
       - License
     * - `Logback Classic v1.3.14 <https://logback.qos.ch>`_
-      - ch.qos.logback:logback-classic:1.3.14
+      - ch.qos.logback:logback-classic:1.3.15
       - `Eclipse Public License v1.0`_
     * - `Logback Core v1.3.14 <https://logback.qos.ch>`_
-      - ch.qos.logback:logback-core:1.3.14
+      - ch.qos.logback:logback-core:1.3.15
       - `Eclipse Public License v1.0`_
 
 As described in :ref:`versioning-policy`, the minor version number of a
