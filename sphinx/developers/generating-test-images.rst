@@ -281,10 +281,10 @@ with their default values, is shown below.
       * the number of ROIs containing one shape of the given type to generate
       *
     - * emission_x
-      * the emission wavelength for channel ``x``, supports units defaulting to nanometers [2]_
+      * the emission wavelength for channel ``x``, supports units defaulting to nanometers
       *
     - * excitation_x
-      * the excitation wavelength for channel ``x``, supports units defaulting to nanometers [2]_
+      * the excitation wavelength for channel ``x``, supports units defaulting to nanometers
       *
     - * ChannelEmissionWavelength_x
       * the emission wavelength for channel ``x``, supports units defaulting to nanometers [2]_
@@ -300,7 +300,7 @@ with their default values, is shown below.
       *
     - * DeltaTUnit_x
       * string defining the units for the corresponding ``DeltaT_x`` [2]_
-      *
+      * seconds
     - * ExposureTime_x
       * floating point exposure time for plane ``x`` [2]_
       *
