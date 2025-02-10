@@ -253,6 +253,9 @@ with their default values, is shown below.
     - * fields
       * number of fields per well
       * 0 [1]_
+    - * withInstrument
+      * whether or not a populated instrument should be added to the metadata
+      * false
     - * withMicrobeam
       * whether or not a microbeam should be added to the experiment (HCS only)
       * false
