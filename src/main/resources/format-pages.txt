@@ -237,6 +237,7 @@ privateSpecification = true
 pyramid = yes
 reader = SVSReader
 mif = true
+options = true
 notes = .. seealso:: \n
   `Aperio ImageScope <https://www.leicabiosystems.com/digital-pathology/manage/aperio-imagescope/>`_
 
