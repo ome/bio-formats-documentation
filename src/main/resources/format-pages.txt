@@ -809,6 +809,19 @@ utilityRating = Fair
 reader = NAFReader
 mif = true
 
+[Hamamatsu DCIMG]
+extensions = .dcimg
+owner = `Hamamatsu <https://www.hamamatsu.com/>`_
+bsd = no
+weHave = * a few public .dcimg files: https://zenodo.org/records/14281237, https://zenodo.org/records/14268554, https://zenodo.org/records/14287640
+pixelsRating = Good
+metadataRating = Good
+opennessRating = Poor
+presenceRating = Fair
+utilityRating = Fair
+reader = DCIMGReader
+mif = false
+
 [Hamamatsu HIS]
 extensions = .his
 owner = `Hamamatsu <https://www.hamamatsu.com/>`_
