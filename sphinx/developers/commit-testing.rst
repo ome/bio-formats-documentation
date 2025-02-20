@@ -5,17 +5,34 @@ Automated tests
 ---------------
 
 The :source:`Bio-Formats testing framework <components/test-suite>` component
-contains most of the infrastructure to run automated tests against the data
-repository.
+contains the infrastructure to run automated tests against reference data.
+These tests check the metadata and binary data of every dataset using
+INI-based configuration files as the source of truth.
 
-After checking out source code and building all the JAR files (see
-:doc:`building-bioformats`), switch to the :file:`test-suite` component and run the tests using the :program:`ant` ``test-automated`` target::
+All representative files submitted as part of the `bug report <bug-reporting>`_
+or development projects and used as supporting data for new Bio-Formats releases
+are stored in a curated QA repository, also known as the full data repository,
+managed by the Bio-Formats maintainers alongside the associated configuration
+files. As part of the review process, every change against Bio-Formats is
+tested nightly against the entire data repository and all tests must be
+passing in order for a contribution to get integrated.
+
+It is also possible for contributors to generate their configuration files and
+run the automated tests against their own data. Assuming the data is stored
+under :file:`/path/to/data`, after checking out source code and building all
+the JAR files (see :doc:`building-bioformats`), switch to the :file:`test-suite`
+component and run the :program:`ant` ``gen-config`` target to generate the
+configuration files under :file:`/path/to/config`::
 
   $ cd components/test-suite
-  $ ant -Dtestng.directory=$DATA/metamorph -Dtestng.configDirectory=$CONFIG/metamorph test-automated
+  $ ant -Dtestng.directory=/data -Dtestng.configDirectory=/config gen-config
 
-where ``$DATA`` is the path to the full data repository and ``$CONFIG`` is the path to the configuration repository.
 
+To run the automated tests using existing configuration files, use the
+:program:`ant` ``test-automated`` target::
+
+  $ cd components/test-suite
+  $ ant -Dtestng.directory=/data -Dtestng.configDirectory=/path/to/config test-automated
 
 Multiple options can be passed to the :program:`ant` ``test-automated`` target 
 by setting the ``testng.${option}`` option via the command line. Useful options
@@ -24,11 +41,11 @@ are described below.
 testng.directory
   Mandatory option. Specifies the root of the data directory to be tested::
 
-    $ ant -Dtestng.directory=$DATA/metamorph -Dtestng.configDirectory=$CONFIG/metamorph test-automated
+    $ ant -Dtestng.directory=/path/to/data/dataset1 -Dtestng.configDirectory=/path/to/config/dataset1 test-automated
 
   On Windows, the arguments to the test command must be quoted::
 
-    > ant "-Dtestng.directory=$DATA\metamorph" "-Dtestng.configDirectory=$CONFIG\metamorph" test-automated
+    > ant "-Dtestng.directory=C:\\path\to\data\dataset1" "-Dtestng.configDirectory=C:\\path\to\config\dataset1" test-automated
 
 testng.configDirectory
   Mandatory option. Specifies the root of the directory containing the configuration files.
@@ -41,19 +58,19 @@ testng.configDirectory
 testng.configSuffix
   Specifies an optional suffix for the configuration files::
 
-    $ ant -Dtestng.directory=/path/to/data -Dtestng.configSuffix=win test-automated
+    $ ant -Dtestng.directory=/path/to/data -Dtestng.configDirectory=/path/to/config -Dtestng.configSuffix=win test-automated
 
 testng.memory
   Specifies the amount of memory to be allocated to the |JVM|::
 
-    $ ant -Dtestng.directory=$DATA -Dtestng.memory=4g test-automated
+    $ ant -Dtestng.directory=/path/to/data -Dtestng.configDirectory=/path/to/config -Dtestng.memory=4g test-automated
 
   Default: 512m.
 
 testng.threadCount
   Specifies the number of threads to use for testing::
 
-    $ ant -Dtestng.directory=$DATA -Dtestng.threadCount=4 test-automated
+    $ ant -Dtestng.directory=/path/to/data -Dtestng.configDirectory=/path/to/config -Dtestng.threadCount=4 test-automated
 
   Default: 1.
 
@@ -121,10 +138,6 @@ on which the tests started in "yyyy-MM-dd_hh-mm-ss" format. The detailed report
 of each thread is recorded under
 :file:`bio-formats-software-pool-$POOL-thread-$THREAD-main-$DATE.log`
 
-Configuration files can be generated for files or directories using the 
-:program:`ant` ``gen-config`` target. This generation target supports the same options as :program:`ant` ``test-automated``::
-
-  $ ant -Dtestng.directory=/path/to/data -Dtestng.configDirectory=/path/to/config -Dtestng.memory=4g -Dtestng.threadCount=6 gen-config
 
 MATLAB tests
 ------------
