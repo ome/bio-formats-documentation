@@ -25,14 +25,14 @@ component and run the :program:`ant` ``gen-config`` target to generate the
 configuration files under :file:`/path/to/config`::
 
   $ cd components/test-suite
-  $ ant -Dtestng.directory=/data -Dtestng.configDirectory=/config gen-config
+  $ ant -Dtestng.directory=/path/to/data -Dtestng.configDirectory=/path/to/config gen-config
 
 
 To run the automated tests using existing configuration files, use the
 :program:`ant` ``test-automated`` target::
 
   $ cd components/test-suite
-  $ ant -Dtestng.directory=/data -Dtestng.configDirectory=/path/to/config test-automated
+  $ ant -Dtestng.directory=/path/to/data -Dtestng.configDirectory=/path/to/config test-automated
 
 Multiple options can be passed to the :program:`ant` ``test-automated`` target 
 by setting the ``testng.${option}`` option via the command line. Useful options
