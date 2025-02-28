@@ -69,6 +69,11 @@ Reader options
      - If set the thumbnail image (if present) will not be available, and in particular
        will not be included in the pyramid. When set to false, the thumbnail image will
        be available for compatibility with versions <= 7.1.0.
+   * - :doc:`incell-1000`
+     - ``incell.duplicate_missing_planes``
+     - true
+     - If set any missing planes will be replaced by the first plane in the channel. 
+       When set to false a blank plane will be returned.
 
 Usage
 ^^^^^

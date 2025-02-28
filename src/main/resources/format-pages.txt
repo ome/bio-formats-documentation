@@ -1091,6 +1091,7 @@ presenceRating = Fair
 utilityRating = Good
 reader = InCellReader
 mif = true
+options = true
 
 [InCell 3000]
 extensions = .frm
