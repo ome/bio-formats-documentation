@@ -343,6 +343,7 @@ weHave = * an SDT specification document (from 2008 April, in PDF) \n
 * an SDT specification document (from 2006 June, in PDF) \n
 * Becker & Hickl's `SPCImage <https://www.becker-hickl.com/products/spcimage/>`_ software \n
 * a large number of SDT datasets \n
+* `public sample images <https://downloads.openmicroscopy.org/images/SDT/>`__ \n
 * the ability to produce new datasets
 pixelsRating = Very good
 metadataRating = Good
@@ -538,7 +539,8 @@ mif = true
 extensions = .vsi
 developer = `Olympus <https://www.olympus-global.com>`_
 bsd = no
-weHave = * a few example datasets \n
+weHave = * many example datasets \n
+* `public sample images <https://downloads.openmicroscopy.org/images/CellSens/>`__ \n
 * a VSI specification document (v1.6, 2012 November 27, in PDF) \n
 * a VSI specification document (v1.3, 2010 February 5, in PDF)
 pixelsRating = Fair
@@ -568,7 +570,8 @@ mif = true
 extensions = .wpi, .tif
 owner = `Yokogawa <http://www.yokogawa.com/>`_
 bsd = no
-weHave = * many example datasets
+weHave = * many example datasets \n
+* `public sample images <https://downloads.openmicroscopy.org/images/CV7000/>`__
 pixelsRating = Very good
 metadataRating = Very good
 opennessRating = Good
@@ -813,7 +816,7 @@ mif = true
 extensions = .dcimg
 owner = `Hamamatsu <https://www.hamamatsu.com/>`_
 bsd = no
-weHave = * a few public .dcimg files: https://zenodo.org/records/14281237, https://zenodo.org/records/14268554, https://zenodo.org/records/14287640
+weHave = * `public sample images <https://downloads.openmicroscopy.org/images/DCIMG/>`__
 pixelsRating = Good
 metadataRating = Good
 opennessRating = Poor
@@ -1414,7 +1417,8 @@ extensions = .msr
 developer = `LaVision BioTec <http://www.lavisionbiotec.com/>`_
 versions = 4.0, 4.1
 bsd = no
-weHave = * a few .msr files
+weHave = * a few .msr files \n
+* `public sample images <https://downloads.openmicroscopy.org/images/Imspector/>`__
 pixelsRating = Fair
 metadataRating = Poor
 opennessRating = Poor
@@ -1540,7 +1544,8 @@ bsd = no
 weHave = * an STK specification document (from 2006 November 21, in DOC) \n
 * an older STK specification document (from 2005 March 25, in DOC) \n
 * an ND specification document (from 2002 January 24, in PDF) \n
-* a large number of datasets
+* a large number of datasets \n
+* `public sample images <https://downloads.openmicroscopy.org/images/Metamorph/>`__
 pixelsRating = Very good
 metadataRating = Very good
 opennessRating = Very good
@@ -1562,14 +1567,14 @@ extensions = .htd, .tif, .tiff
 owner = `Molecular Devices <https://www.moleculardevices.com/>`_
 bsd = no
 weHave = * several MetaXpress datasets\n
-* `public sample datasets <https://downloads.openmicroscopy.org/images/CellWorX/>`__
+* `public sample datasets <https://downloads.openmicroscopy.org/images/MetaXpress/>`__
 weWant = * a MetaXpress specification document
 pixelsRating = Very good
 metadataRating = Very good
 opennessRating = Good
 presenceRating = Fair
 utilityRating = Fair
-reader = CellWorxReader
+reader = MetaxpressTiffReader
 mif = true
 
 [MIAS (Maia Scientific)]
@@ -1919,7 +1924,8 @@ owner = `Olympus <https://www.olympus-global.com>`_
 developer = `Olympus <https://www.olympus-global.com>`_
 bsd = no
 versions = Up to 2.5.1
-weHave = * several ScanR datasets
+weHave = * several ScanR datasets \n
+* `public sample images <https://downloads.openmicroscopy.org/images/ScanR/>`__
 pixelsRating = Very good
 metadataRating = Very good
 opennessRating = Good
