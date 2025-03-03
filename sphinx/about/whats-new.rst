@@ -1,6 +1,33 @@
 Version history
 ===============
 
+8.1.1 (2025 March)
+------------------
+
+File format fixes:
+
+* Imspector
+    - fix `NumberFormatException` when reading timepoint count
+* InCell
+    - ignore timepoint configurations if a timelapse was not acquired
+    - fix handling of channels with different Z sizes
+    - add `incell.duplicate_missing_planes` option
+* Metamorh
+    - allow files to initialize when channel wavelengths are invalid
+* Nikon ND2
+    - fix pixel type detection for floating point multiposition data
+* ScanR
+    - fix exposure time reporting when field positions are missing
+* Spider
+    - fix type cast warning in image count calculation raised by CodeQL
+
+Bio-Formats improvements:
+
+* Remove unused and obsolete C++ and Javascript files
+* Update GitHub Actions configuration to include CodeQL workflows
+* Add options to `FakeReader` to create test data with instrument and channel wavelength metadata
+* Ensure `getAvailableOptions()` in `IFormatReader` API returns the correct reader options
+
 8.1.0 (2025 February)
 ---------------------
 
