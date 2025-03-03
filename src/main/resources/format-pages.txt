@@ -1706,7 +1706,7 @@ notes = Commercial applications that support MRC include: \n
 * `Bitplane Imaris <http://www.bitplane.com/>`_ \n
 \n
 Bio-Formats provides support for the base MRC2000/MRC2014 specifications. Limited support is provided for vendor-specific \n
-extended headers, as described in the `MRC2014 specification <https://www.ccpem.ac.uk/mrc_format/mrc2014.php#note8>`_. \n
+extended headers, as described in the `MRC2014 specification <https://www.ccpem.ac.uk/mrc_format/mrc2014.php#8>`_. \n
 `IMOD <https://bio3d.colorado.edu/imod/doc/mrc_format.txt>`_ extended metadata is perhaps the best-supported variant. \n
 \n
 .. seealso:: \n
