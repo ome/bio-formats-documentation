@@ -1133,8 +1133,8 @@ mif = true
 
 [Ionpath MIBI]
 extensions = .tif, .tiff
-owner = `IonPath <https://www.ionpath.com/>`_
-developer = `IonPath <https://www.ionpath.com/>`_
+owner = `IonPath`
+developer = `IonPath`
 versions = 0.1
 bsd = no
 weHave = * a few sample datasets\n
