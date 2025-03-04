@@ -12,7 +12,7 @@ File format fixes:
     - ignore timepoint configurations if a timelapse was not acquired
     - fix handling of channels with different Z sizes
     - add `incell.duplicate_missing_planes` option
-* Metamorh
+* Metamorph
     - allow files to initialize when channel wavelengths are invalid
 * Nikon ND2
     - fix pixel type detection for floating point multiposition data
