@@ -59,6 +59,9 @@ exposure times and positions to be set for each plane:
 ::
 
     echo "[series_0]" >> my-special-test-file.fake.ini
+    echo "ChannelEmissionWavelength_0=461nm" >> my-special-test-file.fake.ini
+    echo "ChannelExcitationWavelength_0=358nm" >> my-special-test-file.fake.ini
+    echo "ExposureTimeUnit_0=ms" >> my-special-test-file.fake.ini
     echo "ExposureTime_0=10" >> my-special-test-file.fake.ini
     echo "ExposureTimeUnit_0=ms" >> my-special-test-file.fake.ini
     echo "PositionX_0=5" >> my-special-test-file.fake.ini
@@ -250,6 +253,9 @@ with their default values, is shown below.
     - * fields
       * number of fields per well
       * 0 [1]_
+    - * withInstrument
+      * whether or not a populated instrument should be added to the metadata
+      * false
     - * withMicrobeam
       * whether or not a microbeam should be added to the experiment (HCS only)
       * false
@@ -265,9 +271,6 @@ with their default values, is shown below.
     - * physicalSizeZ
       * real depth of the pixels, supports units defaulting to microns
       *
-    - * ChannelName_x
-      * the channel name for channel x
-      *
     - * color
       * the default color for all channels [3]_
       * null
@@ -277,6 +280,27 @@ with their default values, is shown below.
     - * ellipses, labels, lines, points, polygons, polylines, rectangles
       * the number of ROIs containing one shape of the given type to generate
       *
+    - * emission_x
+      * the emission wavelength for channel ``x``, supports units defaulting to nanometers
+      *
+    - * excitation_x
+      * the excitation wavelength for channel ``x``, supports units defaulting to nanometers
+      *
+    - * ChannelEmissionWavelength_x
+      * the emission wavelength for channel ``x``, supports units defaulting to nanometers [2]_
+      *
+    - * ChannelExcitationWavelength_x
+      * the excitation wavelength for channel ``x``, supports units defaulting to nanometers [2]_
+      *
+    - * ChannelName_x
+      * the channel name for channel ``x`` [2]_
+      *
+    - * DeltaT_x
+      * time since the beginning of the acquisition for plane ``x`` [2]_
+      *
+    - * DeltaTUnit_x
+      * string defining the units for the corresponding ``DeltaT_x`` [2]_
+      * seconds
     - * ExposureTime_x
       * floating point exposure time for plane ``x`` [2]_
       *
