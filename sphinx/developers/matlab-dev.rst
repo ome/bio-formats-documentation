@@ -105,7 +105,7 @@ series in the dataset. If ``s`` is the series index between 1 and ``n``:
 -  The ``data{s, 2}`` element contains original metadata key/value pairs that
    apply to the ``s``-th series.
 
--  The ``data{s, 3}`` element is an ``m``-by-1 cell array, , where ``m`` is the
+-  The ``data{s, 3}`` element is an ``m``-by-1 cell array, where ``m`` is the
    number of planes in the ``s``-th series, which contains color lookup tables
    for each plane.
 
