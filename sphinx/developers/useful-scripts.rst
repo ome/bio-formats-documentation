@@ -4,19 +4,6 @@ Scripts for performing development tasks
 The :file:`tools` directory contains several scripts which are useful
 for building and performing routine updates to the code base.
 
-bump_maven_version.py
----------------------
-
-This updates the Maven POM version numbers for all pom.xml files that
-set `groupId` to `ome`.  The script takes a single argument, which is the new
-version.  For example, to update the POM versions prior to release::
-
-  ./tools/bump_maven_version.py 5.1.0
-
-and to switch back to snapshot versions immediately after release::
-
-  ./tools/bump_maven_version.py 5.1.1-SNAPSHOT
-
 test-build
 ----------
 
