@@ -9,7 +9,7 @@ contains the infrastructure to run automated tests against reference data.
 These tests check the metadata and binary data of every dataset using
 INI-based configuration files as the source of truth.
 
-All representative files submitted as part of the `bug report <bug-reporting>`_
+All representative files submitted as part of the :doc:`bug report </about/bug-reporting>`
 or development projects and used as supporting data for new Bio-Formats releases
 are stored in a curated QA repository, also known as the full data repository,
 managed by the Bio-Formats maintainers alongside the associated configuration
