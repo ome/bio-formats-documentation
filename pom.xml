@@ -466,9 +466,8 @@
     </repository>
     <repository>
       <id>unidata.releases</id>
-      <url>https://artifacts.unidata.ucar.edu/repository/unidata-releases</url>
-      <snapshots><enabled>false</enabled></snapshots>
-      </repository>
+      <url>https://artifacts.unidata.ucar.edu/repository/unidata-releases/</url>
+    </repository>
     <repository>
       <id>ome</id>
       <name>OME Artifactory</name>
