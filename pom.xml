@@ -466,7 +466,7 @@
     </repository>
     <repository>
       <id>unidata.releases</id>
-      <url>https://artifacts.unidata.ucar.edu/content/repositories/unidata-releases</url>
+      <url>https://artifacts.unidata.ucar.edu/repository/unidata-releases</url>
       <snapshots><enabled>false</enabled></snapshots>
       </repository>
     <repository>
