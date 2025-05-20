@@ -465,10 +465,10 @@
       <url>https://repo.maven.apache.org/maven2</url>
     </repository>
     <repository>
-      <id>unidata.releases</id>
-      <url>https://artifacts.unidata.ucar.edu/content/repositories/unidata-releases</url>
-      <snapshots><enabled>false</enabled></snapshots>
-      </repository>
+      <id>unidata-all</id>
+      <name>Unidata releases</name>
+      <url>https://artifacts.glencoesoftware.com/artifactory/unidata-releases</url>
+    </repository>
     <repository>
       <id>ome</id>
       <name>OME Artifactory</name>
