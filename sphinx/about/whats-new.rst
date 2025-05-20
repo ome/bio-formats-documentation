@@ -1,6 +1,47 @@
 Version history
 ===============
 
+8.2.0 (2025 May)
+----------------
+
+New file formats:
+
+* Molecular Devices JDCE
+    - Added support for datasets acquired on ImageXpress HCS.ai High-Content Screening System
+    - Added support for datasets acquired on IN Cell Analyzer 2XXX/6XXXX series and converted into JDCE format by IN Carta® Image Analysis Software
+
+File format fixes:
+
+* ARF
+    - improve type checking to prevent false positives
+* Hamamatsu DCIMG
+    - fix image stride in DCIMG version 1 and later (thanks to Zach Marin)
+* Leica LIF
+    - fix mapping of images to memory blocks containing pixel data
+* Metamorph
+    - warn if timestamp values are invalid or cannot be parsed
+* MIAS
+    - fix sorting of directory listings
+* Prairie Technologies TIFF
+    - add support for multi-page TIFFs (thanks to Michael Fox)
+* ScanR
+    - make sure the initialized file is placed first on the used file list
+* Zeiss CZI
+    - fix sub-block sizes in pyramid sub-resolutions (thanks to Jürgen Bohl)
+
+
+Bio-Formats improvements:
+
+* Fix Maven repository URLs to prevent build instability
+* Prevent file appending when exporting via ImageJ plugin
+* Fix color map array allocation in `bfopen` function in MATLAB toolbox
+* Remove obsolete Python script for updating version metadata
+* Fix several type conversion warnings raised by CodeQL, to prevent integer overflows
+
+Component updates:
+
+* `sqlite-jdbc` was upgraded to 3.49.1.0 to fix CVE-2023-32697 (thanks to Curtis Rueden)
+
 8.1.1 (2025 March)
 ------------------
 
