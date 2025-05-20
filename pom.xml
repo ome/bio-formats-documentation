@@ -466,8 +466,8 @@
     </repository>
     <repository>
       <id>unidata-all</id>
-      <name>Unidata All</name>
-      <url>https://artifacts.unidata.ucar.edu/repository/unidata-all/</url>
+      <name>Unidata releases</name>
+      <url>https://artifacts.glencoesoftware.com/artifactory/unidata-releases</url>
     </repository>
     <repository>
       <id>ome</id>
