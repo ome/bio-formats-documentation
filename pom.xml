@@ -465,8 +465,9 @@
       <url>https://repo.maven.apache.org/maven2</url>
     </repository>
     <repository>
-      <id>unidata.releases</id>
-      <url>https://artifacts.unidata.ucar.edu/repository/unidata-releases/</url>
+      <id>unidata-all</id>
+      <name>Unidata All</name>
+      <url>https://artifacts.unidata.ucar.edu/repository/unidata-all/</url>
     </repository>
     <repository>
       <id>ome</id>
