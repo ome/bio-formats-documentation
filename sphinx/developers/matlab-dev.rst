@@ -105,13 +105,19 @@ series in the dataset. If ``s`` is the series index between 1 and ``n``:
 -  The ``data{s, 2}`` element contains original metadata key/value pairs that
    apply to the ``s``-th series.
 
--  The ``data{s, 3}`` element contains color lookup tables for each plane in
-   the ``s``-th series.
+-  The ``data{s, 3}`` element is an ``m``-by-1 cell array, where ``m`` is the
+   number of planes in the ``s``-th series, which contains color lookup tables
+   for each plane.
 
 -  The ``data{s, 4}`` element contains a standardized OME metadata structure,
    which is the same regardless of the input file format, and contains common
    metadata values such as physical pixel sizes - see
    :ref:`ome-metadata` below for examples.
+
+.. versionchanged:: 8.2.0
+
+Prior to Bio-Formats 8.2.0, the colormaps were returned as a ``m``-by-``m`` cell
+array for each series.
 
 Accessing planes
 ^^^^^^^^^^^^^^^^
@@ -141,8 +147,7 @@ If you have the image processing toolbox, you could instead use:
 
 ::
 
-      imshow(series1_plane1, []);
-
+      imshow(series1_plane1, series1_colorMap1);
 
 You can also create an animated movie (assumes 8-bit unsigned data):
 
