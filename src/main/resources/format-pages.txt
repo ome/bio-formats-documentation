@@ -752,7 +752,7 @@ owner = `Gatan <http://www.gatan.com/>`_
 bsd = no
 versions = 3, 4
 software = `DM3 Reader plugin for ImageJ <https://imagej.net/ij/plugins/DM3_Reader.html>`_ \n
-`EMAN <http://blake.bcm.edu/emanwiki/EMAN2>`_
+`EMAN <https://github.com/cryoem/eman2>`_
 weHave = * Gatan's ImageReader2003 code (from 2003, in C++) \n
 * numerous DM3 datasets\n
 * `public sample images <https://downloads.openmicroscopy.org/images/Gatan/>`__
