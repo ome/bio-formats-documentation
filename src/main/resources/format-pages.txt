@@ -190,7 +190,7 @@ developer = `The Animated PNG Project <https://animatedpngs.com/>`_
 bsd = yes
 software = `Firefox 3+ <https://www.mozilla.org/en-US/firefox>`_ \n
 `Opera 9.5+ <http://www.opera.com>`_ \n
-`KSquirrel <http://ksquirrel.sourceforge.net/download.php>`_
+`KSquirrel <https://ksquirrel.sourceforge.net/download.php>`_
 weHave = * `a specification document <http://wiki.mozilla.org/APNG_Specification>`_ \n
 * several APNG files
 pixelsRating = Very good
@@ -908,7 +908,7 @@ extensions = .ics, .ids
 developer = P. Dean et al.
 bsd = yes
 versions = 1.0, 2.0
-software = `Libics (ICS reference library) <http://libics.sourceforge.net/>`_ \n
+software = `Libics (ICS reference library) <https://libics.sourceforge.net/>`_ \n
 `ICS Opener plugin for ImageJ <https://valelab4.ucsf.edu/~nstuurman/IJplugins/Ics_Opener.html>`_ \n
 `IrfanView <https://www.irfanview.com/>`_
 weHave = * numerous ICS datasets\n
@@ -1815,11 +1815,11 @@ library to read ND2 files compressed with JPEG-2000. \n
 [NRRD (Nearly Raw Raster Data)]
 pagename = nrrd
 extensions = .nrrd, .nhdr, .raw, .txt
-developer = `Teem developers <http://teem.sourceforge.net/>`_
+developer = `Teem developers <https://teem.sourceforge.net/>`_
 bsd = yes
-software = `nrrd (NRRD reference library) <http://teem.sourceforge.net/nrrd/>`_
+software = `nrrd (NRRD reference library) <https://teem.sourceforge.net/nrrd/>`_
 samples = `Diffusion tensor MRI datasets <http://www.sci.utah.edu/%7Egk/DTI-data/>`_
-weHave = * an `nrrd specification document <http://teem.sourceforge.net/nrrd/format.html>`_ (v1.9, from 2005 December 24, in HTML) \n
+weHave = * an `nrrd specification document <https://teem.sourceforge.net/nrrd/format.html>`_ (v1.9, from 2005 December 24, in HTML) \n
 * a few nrrd datasets \n
 * `public sample images <https://downloads.openmicroscopy.org/images/NRRD/>`__
 pixelsRating = Very good
@@ -2168,8 +2168,8 @@ pagename = pgm
 extensions = .pbm, .pgm, .ppm
 developer = Netpbm developers
 bsd = yes
-software = `Netpbm graphics filter <http://netpbm.sourceforge.net/>`_
-weHave = * a `PGM specification document <http://netpbm.sourceforge.net/doc/pgm.html>`_ (from 2003 October 3, in HTML) \n
+software = `Netpbm graphics filter <https://netpbm.sourceforge.net/>`_
+weHave = * a `PGM specification document <https://netpbm.sourceforge.net/doc/pgm.html>`_ (from 2003 October 3, in HTML) \n
 * a few PBM, PPM and PGM files
 pixelsRating = Very good
 metadataRating = Very good
