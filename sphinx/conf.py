@@ -355,11 +355,8 @@ texinfo_documents = [
 linkcheck_timeout = int(os.environ.get("SPHINX_LINKCHECK_TIMEOUT", 30))
 linkcheck_workers = int(os.environ.get("SPHINX_LINKCHECK_WORKERS", 5))
 linkcheck_retries = int(os.environ.get("SPHINX_LINKCHECK_RETRIES", 5))
+linkcheck_report_timeouts_as_broken = False
 
-# Timeout value, in seconds, for the linkcheck builder
-linkcheck_timeout = int(os.environ.get("SPHINX_LINKCHECK_TIMEOUT", 30))
-linkcheck_workers = int(os.environ.get("SPHINX_LINKCHECK_WORKERS", 5))
-linkcheck_retries = int(os.environ.get("SPHINX_LINKCHECK_RETRIES", 5))
 
 # Regular expressions that match URIs that should not be checked when doing a linkcheck build
 linkcheck_ignore = ['https://imspector.mpibpc.mpg.de',
