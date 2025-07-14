@@ -13,21 +13,21 @@ with vendor-specific extensions for metadata or tile storage.  Notable exception
 
 The original full resolution image and its resolutions are collectively referred to as an `image pyramid <https://en.wikipedia.org/wiki/Pyramid_(image_processing)>`_.  File formats which support image pyramids are noted by the ``Pyramid`` column in :doc:`the supported formats table</supported-formats>`.
 
-By default, :javadoc:`openBytes <loci/formats/IFormatReader.html#openBytes-int-byte:A-int-int-int-int->`
+By default, :javadoc:`openBytes <loci/formats/IFormatReader.html#openBytes(int,byte:A,int,int,int,int)>`
 will load from the full resolution image in the first pyramid stored in the file.  Each resolution of
 each pyramid is stored as a separate series, and can be accessed by calling
-:javadoc:`setSeries <loci/formats/IFormatReader.html#setSeries-int->` prior to retrieving pixel data.
+:javadoc:`setSeries <loci/formats/IFormatReader.html#setSeries(int)>` prior to retrieving pixel data.
 
 There are additional API methods that can be used to make pyramids easier to work with.  These can be enabled by calling
-:javadoc:`setFlattenedResolutions(false) <loci/formats/IFormatReader.html#setFlattenedResolutions-boolean->`
-prior to :javadoc:`setId <loci/formats/IFormatHandler.html#setId-java.lang.String->`.
+:javadoc:`setFlattenedResolutions(false) <loci/formats/IFormatReader.html#setFlattenedResolutions(boolean)>`
+prior to :javadoc:`setId <loci/formats/IFormatHandler.html#setId(java.lang.String)>`.
 
 After ``setFlattenedResolutions(false)``, each series represents an entire image pyramid and not
 just a single resolution.  Calling ``setSeries(...)`` then skips over
 all other resolutions in the same pyramid, to either the next pyramid (if
 multiple pyramids are stored), or the thumbnail or barcode image (if present).
-To access the smaller resolutions in the pyramid, use the :javadoc:`getResolutionCount() <loci/formats/IPyramidHandler.html#getResolutionCount-->`
-and :javadoc:`setResolution(int) <loci/formats/IPyramidHandler.html#setResolution-int->` methods.
+To access the smaller resolutions in the pyramid, use the :javadoc:`getResolutionCount() <loci/formats/IPyramidHandler.html#getResolutionCount()>`
+and :javadoc:`setResolution(int) <loci/formats/IPyramidHandler.html#setResolution(int)>` methods.
 
 Most formats only store one pyramid per fileset, but some (e.g. :doc:`/formats/cellsens-vsi`)
 allow multiple pyramids.  Almost all formats allow a thumbnail, slide
@@ -39,10 +39,10 @@ from that of the pyramid(s).
 For an example of how to use the pyramid resolution API, see :java_examples:`SubResolutionExample.java`.
 
 Bio-Formats also provides some visibility into how the tiles are stored via the
-:javadoc:`getOptimalTileWidth() <loci/formats/IFormatReader.html#getOptimalTileWidth-->` and
-:javadoc:`getOptimalTileHeight() <loci/formats/IFormatReader.html#getOptimalTileHeight-->` methods.
+:javadoc:`getOptimalTileWidth() <loci/formats/IFormatReader.html#getOptimalTileWidth()>` and
+:javadoc:`getOptimalTileHeight() <loci/formats/IFormatReader.html#getOptimalTileHeight()>` methods.
 This is a suggestion of the size of tiles to be passed to
-:javadoc:`openBytes(int, byte[], int, int, int, int) <loci/formats/IFormatReader.html#openBytes-int-byte:A-int-int-int-int->`,
+:javadoc:`openBytes(int, byte[], int, int, int, int) <loci/formats/IFormatReader.html#openBytes(int,byte:A,int,int,int,int)>`,
 in order to minimize the number of tile decompressions.  In most cases, and especially for
 the largest resolution, the whole image can't be loaded at once.  The amount
 of memory allocated is not a factor in being able to load the whole image, as
