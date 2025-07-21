@@ -190,7 +190,7 @@ developer = `The Animated PNG Project <https://animatedpngs.com/>`_
 bsd = yes
 software = `Firefox 3+ <https://www.mozilla.org/en-US/firefox>`_ \n
 `Opera 9.5+ <http://www.opera.com>`_ \n
-`KSquirrel <https://ksquirrel.sourceforge.net/download.php>`_
+`KSquirrel <https://github.com/HappySeaFox/ksquirrel>`_
 weHave = * `a specification document <http://wiki.mozilla.org/APNG_Specification>`_ \n
 * several APNG files
 pixelsRating = Very good
