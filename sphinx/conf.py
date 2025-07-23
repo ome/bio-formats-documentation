@@ -387,6 +387,8 @@ linkcheck_ignore = ['https://imspector.mpibpc.mpg.de',
     r'http://openslide.cs.cmu.edu*', # NameResolutionError
     r'https://openslide.cs.cmu.edu*', # NameResolutionError
     r'https://sourceforge.net/projects/libmng*', # 403 Client Error: Forbidden
+    r'https://netpbm.sourceforge.net/*', # 403 Client Error: Forbidden
+    r'https://teem.sourceforge.net/*', # 403 Client Error: Forbidden
     r'https://www.bio-rad.com*', # 403 Client Error: Forbidden
     r'https://www.excelitas.com/*', # 403 Client Error: Forbidden
     r'https://www.sas.upenn.edu/*', # certificate issuer cannot be verified
