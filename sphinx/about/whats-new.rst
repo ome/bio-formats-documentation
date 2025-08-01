@@ -20,8 +20,7 @@ File format fixes:
    - threw more explicit exceptions if parsing invalid TIFF
 * Nikon ND2
    - added TextInfoItems to original metadata before parsing
-   - changed the padding for a specific condition to pad to 4 byte boundaries.
-include (thanks to Matthew Smith)
+   - changed the padding for a specific condition to pad to 4 byte boundaries (thanks to Matthew Smith)
    - removed the usage of position metadata when distinguishing between T and series
 * OME-TIFF
    - fixed optimal tile size if an IFD is not linked to an Image
