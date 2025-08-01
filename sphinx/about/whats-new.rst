@@ -57,7 +57,6 @@ Component updates:
 * `ome-model` was upgraded to 6.5.0
 * `ome-poi` was upgraded to 5.3.10
 * `ome-stubs` was upgraded to 6.0.3
-* `snakeyaml` was removed as a core Bio-Formats dependency
 
 8.2.0 (2025 May)
 ----------------
