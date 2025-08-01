@@ -34,13 +34,13 @@ include (thanks to Matthew Smith)
 * Ventana BIF
    - fixed LEFT overlap and added Z stack support
 * Zeiss CZI
-   - fixed LighSource population to include IDs and link LightSources to Channels
+   - fixed LightSource population to include IDs, link LightSources to Channels, and set Attenuation
    - fixed IDs and reference issues for Dichroic and Detector objects
    - used millisecond units for exposure times attached to channels
 
 Bio-Formats improvements:
 
-* showinf: configure logging for -omexml-only after all arguments parsed
+* showinf: configure logging for `-omexml-only` after all arguments parsed
 * xmlvalid: used cached XSD schemas for offline validation
 * ChannelMerger: correct number of Channels in MetadataStore
 * Check modulo values in repository tests
