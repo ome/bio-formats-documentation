@@ -53,11 +53,11 @@ The complete list of third-party dependencies for `formats-gpl.jar` is as follow
     * - `cisd base v18.09.0 <https://sissource.ethz.ch/sispub/base/>`_
       - cisd:base:18.09.0
       - `Apache License v2.0`_
-    * - `commons-io v2.7 <https://commons.apache.org/proper/commons-io/>`_
-      - commons-io:commons-io:2.7
+    * - `commons-io v2.6 <https://commons.apache.org/proper/commons-io/>`_
+      - commons-io:commons-io:2.6
       - `Apache License v2.0`_
-    * - `commons-lang3 v3.10 <https://commons.apache.org/proper/commons-lang/>`_
-      - org.apache.commons:commons-lang3:3.10
+    * - `commons-lang3 v3.18.10 <https://commons.apache.org/proper/commons-lang/>`_
+      - org.apache.commons:commons-lang3:3.18.10
       - `Apache License v2.0`_
     * - `XMP Library for Java v6.1.11 <https://www.adobe.com/devnet/xmp.html>`_
       - com.adobe.xmp:xmpcore:6.1.11
@@ -68,17 +68,14 @@ The complete list of third-party dependencies for `formats-gpl.jar` is as follow
     * - `metadata-extractor v2.18.0 <https://github.com/drewnoakes/metadata-extractor>`_
       - com.drewnoakes:metadata-extractor:2.18.0
       - `Apache License v2.0`_
-    * - `aircompressor v0.21 <https://github.com/airlift/aircompressor>`_
-      - io.airlift:aircompressor:0.21
+    * - `aircompressor v0.27 <https://github.com/airlift/aircompressor>`_
+      - io.airlift:aircompressor:0.27
       - `Apache License v2.0`_
     * - `Kryo v5.4.0 <https://github.com/EsotericSoftware/kryo>`_
       - com.esotericsoftware.kryo:kryo:5.4.0
       - `BSD 3-Clause`_
     * - `reflectasm v1.11.9 <https://github.com/EsotericSoftware/reflectasm>`_
       - com.esotericsoftware:reflectasm:1.11.9
-      - `BSD 3-Clause`_
-    * - `asm v5.0.4 <https://asm.ow2.io>`_
-      - org.ow2.asm:asm:5.0.4
       - `BSD 3-Clause`_
     * - `MinLog v1.3.1 <https://github.com/EsotericSoftware/minlog>`_
       - com.esotericsoftware.minlog:minlog:1.3.1
@@ -161,14 +158,11 @@ The complete list of third-party dependencies for `formats-gpl.jar` is as follow
     * - `okio v1.12.0 <https://square.github.io/okio/>`_
       - com.squareup.okio:okio:1.12.0
       - `Apache License v2.0`_
-    * - `jaxb v2.3.0 <https://javaee.github.io/jaxb-v2/>`_
-      - javax.xml.bind:jaxb-api:2.3.0
-      -
     * - `json v20231013 <https://github.com/stleary/json-java>`_
       - org.json:json:20231013
       - `Public Domain <https://github.com/stleary/JSON-java/blob/master/LICENSE>`__
-    * - `sqlite v3.28.0 <https://github.com/xerial/sqlite-jdbc>`_
-      - org.xerial:sqlite-jdbc:3.28.0
+    * - `sqlite v3.49.1.0 <https://github.com/xerial/sqlite-jdbc>`_
+      - org.xerial:sqlite-jdbc:3.49.1.0
       - `Apache License v2.0`_
     * - `failureaccess v1.0.1 <https://github.com/google/guava>`_
       - com.google.guava:failureaccess:1.0.1
@@ -179,14 +173,14 @@ The complete list of third-party dependencies for `formats-gpl.jar` is as follow
     * - `jsr305 v3.0.2 <https://github.com/findbugsproject/findbugs>`_
       - com.google.code.findbugs:jsr305:3.0.2
       - `BSD 3-Clause`_
-    * - `checker-qual v2.11.1 <https://checkerframework.org/>`_
-      - org.checkerframework:checker-qual:2.11.1
+    * - `checker-qual v3.33.0 <https://checkerframework.org/>`_
+      - org.checkerframework:checker-qual:3.33.0
       - `GPL v2`_
-    * - `errorprone v2.3.4 <https://errorprone.info/>`_
-      - com.google.errorprone:error_prone_annotations:2.3.4
+    * - `errorprone v2.18.0 <https://errorprone.info/>`_
+      - com.google.errorprone:error_prone_annotations:2.18.0
       - `Apache License v2.0`_
-    * - `j2objc-annotations v1.3 <https://developers.google.com/j2objc/>`_
-      - com.google.j2objc:j2objc-annotations:1.3
+    * - `j2objc-annotations v2.8 <https://developers.google.com/j2objc/>`_
+      - com.google.j2objc:j2objc-annotations:2.8
       - `Apache License v2.0`_
     * - `httpservices v5.6.0 <https://www.unidata.ucar.edu/software/netcdf-java/>`_
       - edu.ucar:httpservices:5.6.0
@@ -197,15 +191,12 @@ The complete list of third-party dependencies for `formats-gpl.jar` is as follow
     * - `commons-codec v1.11 <https://commons.apache.org/proper/commons-codec/>`_
       - commons-codec:commons-codec:1.11
       - `Apache License v2.0`_
+    * - `commons-math v1.2 <https://commons.apache.org/proper/commons-math/>`_
+      - commons-math:commons-math:1.2
+      - `Apache License v2.0`_
     * - `httpmime v4.5.13 <https://hc.apache.org/>`_
       - org.apache.httpcomponents:httpmime:4.5.13
       - `Apache License v2.0`_
-    * - `c3p0 v0.9.5.3 <https://www.mchange.com/projects/c3p0/>`_
-      - com.mchange:c3p0:0.9.5.3
-      - `Eclipse Public License v1.0`_
-    * - `mchange-commons-java v0.2.15 <https://www.mchange.com/projects/mchange-commons-java/>`_
-      - com.mchange:mchange-commons-java:0.2.15
-      -
     * - `jackson-core v2.14.2 <https://github.com/FasterXML/jackson-core>`_
       - com.fasterxml.jackson.core:jackson-core:2.14.2
       - `Apache License v2.0`_
@@ -215,6 +206,9 @@ The complete list of third-party dependencies for `formats-gpl.jar` is as follow
     * - `jackson-databind v2.14.2 <https://github.com/FasterXML/jackson-databind>`_
       - com.fasterxml.jackson.core:jackson-databind:2.14.2
       - `Apache License v2.0`_
+    * - `re2j v1.3 <https://github.com/google/re2j>`_
+      - com.google.re2j:re2j:1.3
+      - `Go License`_
 
 The below are optional dependencies :
 
@@ -224,10 +218,10 @@ The below are optional dependencies :
     * - Package
       - Maven name
       - License
-    * - `Logback Classic v1.3.14 <https://logback.qos.ch>`_
+    * - `Logback Classic v1.3.15 <https://logback.qos.ch>`_
       - ch.qos.logback:logback-classic:1.3.15
       - `Eclipse Public License v1.0`_
-    * - `Logback Core v1.3.14 <https://logback.qos.ch>`_
+    * - `Logback Core v1.3.15 <https://logback.qos.ch>`_
       - ch.qos.logback:logback-core:1.3.15
       - `Eclipse Public License v1.0`_
 
@@ -251,6 +245,7 @@ code as described in :ref:`source-code` and then running::
 .. _Eclipse Public License v1.0: https://spdx.org/licenses/EPL-1.0.html
 .. _GPL v2: https://spdx.org/licenses/GPL-2.0.html
 .. _AGPL v3: https://spdx.org/licenses/AGPL-3.0-only.html
+.. _Go License: https://go.dev/LICENSE
 
 
 Examples of usage
