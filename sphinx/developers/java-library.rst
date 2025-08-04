@@ -89,9 +89,6 @@ The complete list of third-party dependencies for `formats-gpl.jar` is as follow
     * - `JGoodies Forms v1.7.2 <http://www.jgoodies.com/downloads/libraries/>`_
       - com.jgoodies:jgoodies-forms:1.7.2
       - `BSD License`_
-    * - `Commons Lang v2.6 <http://commons.apache.org/lang/>`_
-      - commons-lang:commons-lang:2.6
-      - `Apache License v2.0`_
     * - `Commons Logging v1.2 <http://commons.apache.org/logging/>`_
       - commons-logging:commons-logging:1.2
       - `Apache License v2.0`_
