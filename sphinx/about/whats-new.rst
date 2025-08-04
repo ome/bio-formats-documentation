@@ -1,6 +1,63 @@
 Version history
 ===============
 
+8.3.0 (2025 August)
+-------------------
+
+New file formats:
+
+* Zeiss XRM:
+   - added support for .txm and .txrm files
+	 
+File format fixes:
+
+* LiFlim
+   - cast integers to double for division accuracy
+* Metamorph
+   - don't reset dimensions if the well count and series count match
+   - fixed the encoding used for reading the .nd file
+* Metamorph TIFF
+   - threw more explicit exceptions if parsing invalid TIFF
+* Nikon ND2
+   - added TextInfoItems to original metadata before parsing
+   - changed the padding for a specific condition to pad to 4 byte boundaries (thanks to Matthew Smith)
+   - removed the usage of position metadata when distinguishing between T and series
+* OME-TIFF
+   - fixed optimal tile size if an IFD is not linked to an Image
+* Operetta/Harmony
+   - fixed case where index XML is in the parent of the image directory
+* SlideBook 7
+   - fixed miscellaneous errors (thanks to Nicola Papp)
+* Tecan Spark Cyto Workspace
+   - used try-with-resources when opening SQL connection
+* Ventana BIF
+   - fixed LEFT overlap and added Z stack support
+* Zeiss CZI
+   - fixed LightSource population to include IDs, link LightSources to Channels, and set Attenuation
+   - fixed IDs and reference issues for Dichroic and Detector objects
+   - used millisecond units for exposure times attached to channels
+
+Bio-Formats improvements:
+
+* showinf: configure logging for `-omexml-only` after all arguments parsed
+* xmlvalid: used cached XSD schemas for offline validation
+* ChannelMerger: correct number of Channels in MetadataStore
+* Check modulo values in repository tests
+* Added workflow to report the status of the automated repository builds
+
+Component updates:
+
+* `commons-lang` was migrated to `commons-lang3` and upgraded to 3.18.0
+* `metakit` was upgraded to 5.3.9
+* `ome-common` was upgraded to 6.1.0
+* `ome-codecs` was upgraded to 1.1.1
+* `ome-jai` was upgraded to 0.1.5
+* `ome-mdbtools` was upgraded to 5.3.4
+* `ome-metakit` was upgraded to 5.3.9
+* `ome-model` was upgraded to 6.5.0
+* `ome-poi` was upgraded to 5.3.10
+* `ome-stubs` was upgraded to 6.0.3
+
 8.2.0 (2025 May)
 ----------------
 
