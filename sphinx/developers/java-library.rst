@@ -56,8 +56,8 @@ The complete list of third-party dependencies for `formats-gpl.jar` is as follow
     * - `commons-io v2.6 <https://commons.apache.org/proper/commons-io/>`_
       - commons-io:commons-io:2.6
       - `Apache License v2.0`_
-    * - `commons-lang3 v3.18.10 <https://commons.apache.org/proper/commons-lang/>`_
-      - org.apache.commons:commons-lang3:3.18.10
+    * - `commons-lang3 v3.18.0 <https://commons.apache.org/proper/commons-lang/>`_
+      - org.apache.commons:commons-lang3:3.18.0
       - `Apache License v2.0`_
     * - `XMP Library for Java v6.1.11 <https://www.adobe.com/devnet/xmp.html>`_
       - com.adobe.xmp:xmpcore:6.1.11
