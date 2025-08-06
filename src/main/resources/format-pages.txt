@@ -2839,8 +2839,9 @@ Commercial applications that support this format include: \n
 pagename = zeiss-xrm
 extensions = .txm, .txrm
 owner = `ZEISS International <https://www.zeiss.com>`_
+developer = ZEISS X-Ray Microscopy division
 bsd = no
-software = ZEN Data Explorer
+software = XRM Data Explorer
 weHave = * a few sample datasets
 pixelsRating = Outstanding
 metadataRating = Very good
