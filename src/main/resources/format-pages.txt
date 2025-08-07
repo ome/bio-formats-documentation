@@ -2834,3 +2834,19 @@ Commercial applications that support this format include: \n
 * `Bitplane Imaris <http://www.bitplane.com/>`_ \n
 * `Amira <https://www.fei.com/software/amira-avizo/>`_ \n
 * `Image-Pro Plus <http://www.mediacy.com/>`_
+
+[Zeiss XRM]
+pagename = zeiss-xrm
+extensions = .txm, .txrm
+owner = `ZEISS International <https://www.zeiss.com>`_
+developer = ZEISS X-Ray Microscopy division
+bsd = no
+software = XRM Data Explorer
+weHave = * a few sample datasets
+pixelsRating = Outstanding
+metadataRating = Very good
+opennessRating = Good
+presenceRating = Good
+utilityRating = Good
+reader = ZeissXRMReader
+mif = false
