@@ -1792,7 +1792,7 @@ reader = NikonTiffReader
 extensions = .nd2
 developer = `Nikon USA <https://www.nikonusa.com/en/index.page>`_
 bsd = no
-software = `NIS-Elements Viewer from Nikon <https://www.microscope.healthcare.nikon.com/en_EU/products/software/nis-elements>`_
+software = `NIS-Elements Viewer from Nikon <https://www.microscope.healthcare.nikon.com/products/software/nis-elements>`_
 weHave = * many ND2 datasets\n
 * `public sample images <https://downloads.openmicroscopy.org/images/ND2/>`__
 weWant = * an official specification document
