@@ -222,6 +222,9 @@ Other useful things
   according to the order given in :source:`readers.txt <components/formats-api/src/loci/formats/readers.txt>`, so be sure to place your
   reader in an appropriate position within the list.
 
+.. seealso::
+  :doc:`external-readers`
+
 - The easiest way to test your new reader is by calling "java
   loci.formats.tools.ImageInfo <file name>".  If all goes well, you should see
   all of the metadata and dimension information, along with a window showing
