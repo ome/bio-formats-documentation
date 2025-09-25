@@ -1,6 +1,11 @@
 External file format readers
 ============================
 
+File format readers recognized by Bio-Formats can be defined as either "core" or "external".
+A core reader is maintained by the OME team, and included in either the `formats-bsd` or `formats-gpl`
+component in the `ome/bioformats` repository on GitHub. An external reader is not included in the
+`ome/bioformats` repository, and in most cases is not maintained by the OME team.
+
 Bio-Formats contains a file named :source:`readers.txt <components/formats-api/src/loci/formats/readers.txt>`
 which records every recognized reader class name. This file is used by the main reader class
 (:javadoc:`loci.formats.ImageReader <loci/formats/ImageReader.html>`) to associate a format reader
@@ -35,6 +40,7 @@ The OME team often encourages new readers to be proposed as "external" under any
 - the reader covers an imaging domain which is unfamiliar to the OME team
 - test data cannot be provided to the OME team
 - the reader needs to be updated outside of the normal Bio-Formats release process
+- the reader code does not comply with `OME code contribution policies <https://ome-contributing.readthedocs.io/en/latest/code-contributions.html>`_
 
 When considering a new reader, we suggest discussing with the OME team first before making substantial changes.
 
@@ -43,7 +49,7 @@ How to propose an external reader
 
 As indicated above, we suggest discussing with the OME team before investing significant time in a new reader.
 
-At minimum, open a new pull request on `ome/bioformats` that updates `readers.txt` as indicated above,
+At minimum, open a new pull request or issue on `ome/bioformats` that proposes to update `readers.txt` as indicated above,
 including the following information:
 
 - where to find the reader source code
@@ -63,8 +69,8 @@ What external reader ownership involves
 ---------------------------------------
 
 Developing an external reader means taking complete ownership and responsibility for
-the development, maintenance, testing, and distribution of the reader. The OME team
-will not review code, fix issues, or otherwise participate in the development or
+the development, maintenance, testing, and distribution of the reader and its dependencies.
+The OME team will not review code, fix issues, or otherwise participate in the development or
 release process. As a result, it is very important to have a maintenance and testing
 plan that includes:
 
