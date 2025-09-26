@@ -27,7 +27,7 @@ defined as "external" readers, e.g.:
 
   loci.formats.in.ZarrReader[type=external]         # .zarr
 
-This allows Bio-Formats to recognize a reader if it was installed separately,
+This allows Bio-Formats to attempt to load a reader that was installed separately,
 but quietly ignore if it is not found.
 
 When to use an external reader
@@ -44,7 +44,7 @@ The OME team often encourages new readers to be proposed as "external" under any
 - the reader code does not comply with `OME code contribution policies <https://ome-contributing.readthedocs.io/en/latest/code-contributions.html>`_
 - developers/maintainers of the reader are not able to address feedback provided by the OME team during `code review and testing <https://ome-contributing.readthedocs.io/en/latest/code-contributions.html#procedure-for-accepting-code-contributions>`_
 
-When considering a new reader, we suggest discussing with the OME team first before making substantial changes.
+When considering a new reader, we suggest discussing with the OME team first before making substantial development.
 The OME team is responsible for making the final determination of whether a new reader should be defined as external.
 
 How to propose an external reader
