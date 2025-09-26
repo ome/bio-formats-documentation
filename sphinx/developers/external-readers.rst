@@ -37,12 +37,15 @@ The OME team often encourages new readers to be proposed as "external" under any
 
 - the newly introduced reader code is very large and/or complex
 - native libraries or closed-source dependencies are required
+- a public format specification document or reference implementation is not available
 - the reader covers an imaging domain which is unfamiliar to the OME team
 - test data cannot be provided to the OME team
 - the reader needs to be updated outside of the normal Bio-Formats release process
 - the reader code does not comply with `OME code contribution policies <https://ome-contributing.readthedocs.io/en/latest/code-contributions.html>`_
+- developers/maintainers of the reader are not able to address feedback provided by the OME team during `code review and testing <https://ome-contributing.readthedocs.io/en/latest/code-contributions.html#procedure-for-accepting-code-contributions>`_
 
 When considering a new reader, we suggest discussing with the OME team first before making substantial changes.
+The OME team is responsible for making the final determination of whether a new reader should be defined as external.
 
 How to propose an external reader
 ---------------------------------
