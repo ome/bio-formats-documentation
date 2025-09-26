@@ -8,8 +8,7 @@ component in the `ome/bioformats` repository on GitHub. An external reader is no
 
 Bio-Formats contains a file named :source:`readers.txt <components/formats-api/src/loci/formats/readers.txt>`
 which records every recognized reader class name. This file is used by the main reader class
-(:javadoc:`loci.formats.ImageReader <loci/formats/ImageReader.html>`) to associate a format reader
-with a particular file.
+(:javadoc:`loci.formats.ImageReader <loci/formats/ImageReader.html>`) to find installed readers.
 
 For readers that are included in core Bio-Formats (i.e. the `ome/bioformats` repository on GitHub),
 a line containing just the fully qualified class name is added, e.g.:
@@ -61,8 +60,8 @@ including the following information:
 - test data, if possible
 - supporting documentation (issues, forum threads, etc.) indicating why this reader is necessary
 
-If we are not able to test the proposed external reader due to missing test data or dependencies,
-then we are unlikely to approve it.
+We strongly prefer to be able to test a proposed external reader before approving it, but recognize this may
+not always be possible. In these cases, we may ask for additional information in place of our own testing.
 
 .. seealso::
 
