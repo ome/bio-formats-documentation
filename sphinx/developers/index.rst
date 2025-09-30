@@ -69,6 +69,7 @@ Contributing to Bio-Formats
     commit-testing
     generating-test-images
     reader-guide
+    external-readers
     format-documentation
     service
     useful-scripts
