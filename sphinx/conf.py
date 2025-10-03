@@ -398,5 +398,5 @@ linkcheck_ignore = ['https://imspector.mpibpc.mpg.de',
     r'https://uk.mathworks.com/.*', # 403 Client Error: Forbidden
     r'https://www.princetoninstruments.com/.*', # 403 Client Error: Forbidden
     r'https://www.merckmillipore.com*', # 403 Client Error: Forbidden
-    r'https://www.mail-archive.com/.*' # Connection to www.mail-archive.com often times out
+    r'https://www.mail-archive.com*' # Connection to www.mail-archive.com often times out
 ]
