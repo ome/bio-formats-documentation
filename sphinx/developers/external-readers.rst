@@ -95,8 +95,7 @@ Recategorizing an existing reader
 If the OME team determines that an existing core reader meets the external reader
 criteria in :ref:`external-reader-criteria`, and a suitable maintainer can be identified,
 then we may propose to recategorize the reader as external. This is our preferred alternative
-to rejecting all future changes to the reader or fully removing it from both core Bio-Formats and
-:source:`readers.txt <components/formats-api/src/loci/formats/readers.txt>`.
+to removing it from both core Bio-Formats and :source:`readers.txt <components/formats-api/src/loci/formats/readers.txt>`.
 
 In the event that recategorizing is necessary, we will make contact with the proposed
 maintainer to discuss next steps.
