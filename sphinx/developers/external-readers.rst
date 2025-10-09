@@ -4,7 +4,7 @@ External file format readers
 File format readers recognized by Bio-Formats can be defined as either "core" or "external".
 A core reader is maintained by the OME team, and included in either the `formats-bsd` or `formats-gpl`
 component in the `ome/bioformats` repository on GitHub. An external reader is not included in the
-`ome/bioformats` repository, and in most cases is not maintained by the OME team.
+`ome/bioformats` repository, and in most cases is not maintained by the OME team. [1]_
 
 Bio-Formats contains a file named :source:`readers.txt <components/formats-api/src/loci/formats/readers.txt>`
 which records every recognized reader class name. This file is used by the main reader class
@@ -28,6 +28,8 @@ defined as "external" readers, e.g.:
 
 This allows Bio-Formats to attempt to load a reader that was installed separately,
 but quietly ignore if it is not found.
+
+.. _external-reader-criteria:
 
 When to use an external reader
 ------------------------------
@@ -79,3 +81,26 @@ plan that includes:
 - where issues should be reported
 - who is responsible for fixing issues and releasing new versions
 - where/how to find new versions of the reader, e.g. a Fiji update site
+
+We strongly encourage reader maintainers to follow a support pattern similar to that used for
+core Bio-Formats, which includes:
+
+- publicly accessible issue tracking
+- participation in discussions on `forum.image.sc <https://forum.image.sc/>`_
+- public roadmaps and release announcements
+
+Recategorizing an existing reader
+---------------------------------
+
+If the OME team determines that an existing core reader meets the external reader
+criteria in :ref:`external-reader-criteria`, and a suitable maintainer can be identified,
+then we may propose to recategorize the reader as external. This is our preferred alternative
+to removing it from both core Bio-Formats and :source:`readers.txt <components/formats-api/src/loci/formats/readers.txt>`.
+
+In the event that recategorizing is necessary, we will make contact with the proposed
+maintainer to discuss next steps.
+
+.. [1] A notable exception is `ZarrReader <https://github.com/ome/ZarrReader>`_, which is an external
+       reader maintained by the OME team. This reader is externalized primarily to allow for updates
+       outside of the normal Bio-Formats release process. See further discussion in
+       `this issue <https://github.com/ome/ZarrReader/issues/32>`_.
