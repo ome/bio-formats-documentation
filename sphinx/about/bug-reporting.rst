@@ -78,9 +78,9 @@ the following information:
    operating system, and which version of Java you are using.
 -  **Non-working data**. If possible, please send a non-working file.
    This helps us ensure that the problem is fixed for next release and
-   will not reappear in later releases. Note that any data
-   provided is used for internal testing only; we do not make images
-   publicly available unless given explicit permission to do so.
+   will not reappear in later releases. Providing data that cannot be
+   made public is strongly discouraged. See `Receipt of Sample Data
+   <https://ome-contributing.readthedocs.io/en/latest/third-party-policy.html#receipt-of-sample-data>`_.
 -  **Metadata and screenshots**. If possible, include any additional
    information about your data. We are especially interested in the
    expected dimensions (width, height, number of channels, Z slices, and
