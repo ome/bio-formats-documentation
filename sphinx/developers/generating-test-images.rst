@@ -338,6 +338,9 @@ with their default values, is shown below.
     - * sleepInitFile
       * number of milliseconds to sleep for when initFile is called 
       * 0
+    - * labelPlanes
+      * add human-readable labels to the individual planes
+      * false
 
 .. [1] Default value set to 1 if any of the ``screens``, ``plates``,
        ``plateAcqs``, ``plateRows``, ``plateCols`` or ``fields`` values is set
