@@ -24,7 +24,7 @@ License, copyright, and citation
 Licensing information for Bio-Formats is described on :oo_root:`the OME licensing page <licensing>`.
 Unless otherwise noted, the current copyright statement is:
 
-Copyright (C) 2005 - 2018 Open Microscopy Environment:
+Copyright (C) 2005 - 2026 Open Microscopy Environment:
       - Board of Regents of the University of Wisconsin-Madison
       - Glencoe Software, Inc.
       - University of Dundee
@@ -50,8 +50,8 @@ pages linked from the :doc:`supported formats table </supported-formats>`.
 Please :imagesc:`contact us <tag/bio-formats>` if you have any questions or problems with
 Bio-Formats not addressed by referring to the documentation.
 
-Other places where questions are commonly asked and/or bugs are reported
-include:
+We no longer recommend reporting Bio-Formats issues in these places, but the archives of
+the following may be useful as a reference:
 
 -  :community:`OME Forums <>`
 -  `OME Trac <https://trac.openmicroscopy.org/ome>`_
