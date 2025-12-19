@@ -2,6 +2,8 @@
 User Information
 ****************
 
+Every release of Bio-Formats includes a plugin for ImageJ/Fiji, a set of
+command line utilities and a MATLAB toolbox.
 
 Using Bio-Formats with ImageJ and Fiji
 ======================================
@@ -27,7 +29,7 @@ it within ImageJ and Fiji:
 Command line tools
 ==================
 
-The Bio-Formats Command line tools (bftools.zip) provide a complete package
+The Bio-Formats command line tools provide a complete package
 for carrying out a variety of tasks:
 
 .. toctree::
@@ -49,18 +51,37 @@ for carrying out a variety of tasks:
 .. seealso::
    :doc:`/formats/options`
 
+Using Bio-Formats in MATLAB/Octave
+==================================
+
+The following pages explain how to install and use Bio-Formats in MATLAB or
+Octave:
+
+.. toctree::
+    :titlesonly:
+    :includehidden:
+
+    matlab/index
+    octave/index
+
+Third-party applications
+========================
+
+Several third-party libraries and applications use Bio-Formats to read and write
+imaging formats. All the examples below are maintained outside the Bio-Formats
+development release cycle. Any usage question should be raised with their
+respective development team.
+
 OMERO
-=====
+-----
 
 OMERO 5 uses Bio-Formats to read original files from over 140 file formats.
 Please refer to the :omero:`OMERO <>` documentation for further
 information.
 
-Many other software packages can use Bio-Formats to read and write
-microscopy formats (click on the package for further details):
 
 Image server applications
-=========================
+-------------------------
 
 .. toctree::
     :maxdepth: 1
@@ -71,7 +92,7 @@ Image server applications
 
 
 Libraries and scripting applications
-====================================
+------------------------------------
 
 .. toctree::
     :maxdepth: 1
@@ -85,7 +106,7 @@ Libraries and scripting applications
 
 
 Numerical data processing applications
-======================================
+--------------------------------------
 
 .. toctree::
     :maxdepth: 1
@@ -100,7 +121,7 @@ Numerical data processing applications
 
 
 Visualization and analysis applications
-=======================================
+---------------------------------------
 
 .. toctree::
     :maxdepth: 1
