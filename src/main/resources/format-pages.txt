@@ -1736,7 +1736,6 @@ extensions = .nef, .tif
 developer = `Nikon <http://www.nikon.com/>`_
 bsd = no
 samples = `neffile1.zip <https://www.outbackphoto.com/workshop/NEF_conversion/neffile1.zip>`_ \n
-`Sample NEF images <http://www.nikondigital.org/articles/library/nikon_d2x_first_impressions.htm>`_
 weHave = * a NEF specification document (v0.1, from 2003, in PDF) \n
 * several NEF datasets
 pixelsRating = Very good
