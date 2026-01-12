@@ -2504,6 +2504,21 @@ utilityRating = Fair
 reader = TillVisionReader
 mif = true
 
+[TissueGnostics TFCYTO]
+extensions = .tfcyto, .aqproj
+owner = `TissueGnostics <https://www.tissuegnostics.com/>`_
+bsd = no
+weHave = * a specification document\n
+* several TFCYTO datasets
+pixelsRating = Very Good
+metadataRating = Very Good
+opennessRating = Fair
+presenceRating = Poor
+utilityRating = Fair
+reader = TissueFAXSReader
+mif = true
+pyramid = yes
+
 [Topometrix]
 extensions = .tfr, .ffr, .zfr, .zfp, .2fl
 owner = `TopoMetrix (now Veeco) <http://www.veeco.com/>`_
