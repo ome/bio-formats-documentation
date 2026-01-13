@@ -6,7 +6,7 @@ Version history
 
 New file formats:
 
-* Added support for TissueGnostics TFCYTO file format
+* Added support for TissueGnostics TFCYTO file format, sponsored by TissueGnostics GmbH
 
 File format fixes:
 
