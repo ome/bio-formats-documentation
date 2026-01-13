@@ -20,6 +20,8 @@ File format fixes:
    - parse timestamps for each plane if available
 * FV1000
    - fix precision of ROI coordinate calculation
+* Hamamatsu NDPI
+    - read emission wavelength from single NDPI files
 * Leica TCS
    - remove unused detector parsing logic
 * LEO
@@ -56,7 +58,7 @@ Bio-Formats improvements:
 Component updates:
 
 * `logback` was upgraded to 1.3.16
-* `ome-common` was upgraded to 6.1.1
+* `ome-common` was upgraded to 6.1.2
 * `ome-codecs` was upgraded to 1.1.2
 * `ome-metakit` was upgraded to 5.3.10
 * `ome-model` was upgraded to 6.5.1
