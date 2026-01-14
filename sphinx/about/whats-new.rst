@@ -1,6 +1,70 @@
 Version history
 ===============
 
+8.4.0 (2026 January)
+--------------------
+
+New file formats:
+
+* Added support for TissueGnostics TFCYTO file format, sponsored by TissueGnostics GmbH
+
+File format fixes:
+
+* CellH5
+   - reduce memory usage
+* DCIMG
+   - fix indexing over multiple files (thanks to Zach Marin)
+* Evident/Olympus OIR
+   - fix several issues that prevented pixel blocks from being found
+* Evident/Olympus VSI
+   - parse timestamps for each plane if available
+* FV1000
+   - fix precision of ROI coordinate calculation
+* Hamamatsu NDPI
+    - read emission wavelength from single NDPI files
+* Leica TCS
+   - remove unused detector parsing logic
+* LEO
+    - fix tag parsing to use `iso-8859-1` encoding instead of `UTF-8`
+* Metamorph
+   - fix plane position parsing for multi-series data
+* Nikon ND2
+   - fix dimensions and timestamp assignment for certain multi-channel datasets
+   - ignore invalid bits per pixel values when determining pixel type
+   - prevent pixel types other than `uint8` from being set incorrectly
+   - changed the plane padding for another condition to pad to 4 byte boundaries (thanks to Matthew Smith)
+* OME-XML
+   - fix `OriginalMetadataAnnotation` parsing to allow escaped characters
+* RCPNL
+   - define objective metadata for lens IDs 18113 and 18114
+
+Bio-Formats improvements:
+
+* bfconvert
+   - automatically calculate a pyramid resolution count if `-pyramid-scale` is used without `-pyramid-resolutions`
+   - prevent large values of `-pyramid-resolutions` from producing resolutions with invalid dimensions
+   - fix pyramid generation when writing a subset of planes (with `-channel`, `-z`, and/or `-t`)
+* ImageJ plugin
+   - fix modulo C (e.g. lifetime) scrollbars
+* MATLAB/Octave toolbox
+   - fix array sizes in `bfGetPlane` when using Octave
+* `FakeReader`
+   - add `labelPlanes` attribute to include human-readable plane indexes in each image
+   - link `Instrument` to every `Image`
+* Add unit tests for `ChannelMerger` and `ChannelSeparator`
+* Several updates to automated repository tests to eliminate invalid test failures
+* Automatically generate release notes when creating a GitHub release
+
+Component updates:
+
+* `logback` was upgraded to 1.3.16
+* `ome-common` was upgraded to 6.1.2
+* `ome-codecs` was upgraded to 1.1.2
+* `ome-metakit` was upgraded to 5.3.10
+* `ome-model` was upgraded to 6.5.1
+* `ome-poi` was upgraded to 5.3.11
+* CodeQL updated to v4
+
 8.3.0 (2025 August)
 -------------------
 

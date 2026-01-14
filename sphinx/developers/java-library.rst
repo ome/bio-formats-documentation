@@ -104,8 +104,8 @@ The complete list of third-party dependencies for `formats-gpl.jar` is as follow
     * - `BeanShell v2.0b4 <http://www.beanshell.org>`_
       - org.beanshell:bsh:2.0b4
       - `Sun Public License / LGPL`_
-    * - `Hamcrest Core v1.2.1 <https://github.com/hamcrest/JavaHamcrest>`_
-      - org.hamcrest:hamcrest-core:1.2.1
+    * - `Hamcrest Core v1.1 <https://github.com/hamcrest/JavaHamcrest>`_
+      - org.hamcrest:hamcrest-core:1.1
       - `BSD 3-Clause`_
     * - `Objenesis v3.3 <http://objenesis.org>`_
       - org.objenesis:objenesis:3.3
@@ -125,8 +125,8 @@ The complete list of third-party dependencies for `formats-gpl.jar` is as follow
     * - `SnakeYAML v2.0 <https://bitbucket.org/snakeyaml/snakeyaml>`_
       - org.yaml:snakeyaml:2.0
       - `Apache License v2.0`_
-    * - `Xalan Java Serializer v2.7.3 <http://xml.apache.org/xalan-j>`_
-      - xalan:serializer:2.7.3
+    * - `Xalan Java Serializer v2.7.2 <http://xml.apache.org/xalan-j>`_
+      - xalan:serializer:2.7.2
       - `Apache License v2.0`_
     * - `Xalan Java v2.7.3 <http://xml.apache.org/xalan-j>`_
       - xalan:xalan:2.7.3
@@ -215,11 +215,11 @@ The below are optional dependencies :
     * - Package
       - Maven name
       - License
-    * - `Logback Classic v1.3.15 <https://logback.qos.ch>`_
-      - ch.qos.logback:logback-classic:1.3.15
+    * - `Logback Classic v1.3.16 <https://logback.qos.ch>`_
+      - ch.qos.logback:logback-classic:1.3.16
       - `Eclipse Public License v1.0`_
     * - `Logback Core v1.3.15 <https://logback.qos.ch>`_
-      - ch.qos.logback:logback-core:1.3.15
+      - ch.qos.logback:logback-core:1.3.16
       - `Eclipse Public License v1.0`_
 
 As described in :ref:`versioning-policy`, the minor version number of a
