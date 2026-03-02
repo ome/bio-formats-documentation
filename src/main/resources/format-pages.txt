@@ -1878,7 +1878,7 @@ Commercial applications that support this format include: \n
 * `SVI Huygens <https://svi.nl/>`_ \n
 \n
 .. seealso:: \n
-  `Olympus FluoView Resource Center <https://https://www.olympus-global.com/news/2021/contents/nr02220/nr02220_00000.pdf>`_
+  `Olympus FluoView Resource Center <https://evidentscientific.com/en/products/confocal/fv4000>`_
 
 [Olympus FluoView TIFF]
 extensions = .tif
