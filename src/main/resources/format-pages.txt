@@ -1848,7 +1848,7 @@ extensions = .oib, .oif
 owner = `Olympus <https://www.olympus-global.com>`_
 bsd = no
 versions = 1.0, 2.0
-software = `FV-Viewer from Olympus <https://www.olympus-lifescience.com/en/>`_
+software = `FV-Viewer from Olympus <https://evidentscientific.com/en/products/confocal/fv4000>`_
 weHave = * an OIF specification document (v2.0.0.0, from 2008, in PDF) \n
 * an FV1000 specification document (v1.0.0.0, from 2004 June 22, in PDF) \n
 * older FV1000 specification documents (draft, in DOC and XLS) \n
@@ -1878,7 +1878,7 @@ Commercial applications that support this format include: \n
 * `SVI Huygens <https://svi.nl/>`_ \n
 \n
 .. seealso:: \n
-  `Olympus FluoView Resource Center <https://www.olympus-lifescience.com/en/>`_
+  `Olympus FluoView Resource Center <https://https://www.olympus-global.com/news/2021/contents/nr02220/nr02220_00000.pdf>`_
 
 [Olympus FluoView TIFF]
 extensions = .tif
