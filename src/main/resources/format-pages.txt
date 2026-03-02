@@ -1656,7 +1656,7 @@ reader = MINCReader
 
 [Minolta MRW]
 extensions = .mrw
-developer = `Minolta <https://www.konicaminolta.com/uk-en/index.html>`_
+developer = `Minolta <https://www.konicaminolta.com/selector/index.html>`_
 bsd = no
 software = `dcraw <https://en.wikipedia.org/wiki/Dcraw>`_
 weHave = * several .mrw files
