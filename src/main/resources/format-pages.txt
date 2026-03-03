@@ -1656,7 +1656,7 @@ reader = MINCReader
 
 [Minolta MRW]
 extensions = .mrw
-developer = `Minolta <https://www.konicaminolta.com/uk-en/index.html>`_
+developer = `Minolta <https://www.konicaminolta.com/>`_
 bsd = no
 software = `dcraw <https://en.wikipedia.org/wiki/Dcraw>`_
 weHave = * several .mrw files
@@ -1848,7 +1848,7 @@ extensions = .oib, .oif
 owner = `Olympus <https://www.olympus-global.com>`_
 bsd = no
 versions = 1.0, 2.0
-software = `FV-Viewer from Olympus <https://www.olympus-lifescience.com/en/>`_
+software = `cellSens from Evident <https://evidentscientific.com/en/products/software/cellsens>`_
 weHave = * an OIF specification document (v2.0.0.0, from 2008, in PDF) \n
 * an FV1000 specification document (v1.0.0.0, from 2004 June 22, in PDF) \n
 * older FV1000 specification documents (draft, in DOC and XLS) \n
@@ -1878,7 +1878,7 @@ Commercial applications that support this format include: \n
 * `SVI Huygens <https://svi.nl/>`_ \n
 \n
 .. seealso:: \n
-  `Olympus FluoView Resource Center <https://www.olympus-lifescience.com/en/>`_
+  `Olympus FluoView Resource Center <https://evidentscientific.com/en/products/confocal/fv4000>`_
 
 [Olympus FluoView TIFF]
 extensions = .tif
