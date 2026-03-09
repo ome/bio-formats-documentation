@@ -1625,7 +1625,7 @@ notes = - Bio-Formats will recognize a :file:`*metadata.txt` file as part of a\n
   an OME-TIFF format instead. This means it may load the fileset if there are\n
   multiple .ome.tif but it will not include :file:`*metadata.txt` in this\n
   fileset and therefore the extended Micro-Manager metadata will be skipped.\n
-- See :doc:`/users/micromanager/index` for more information.
+- See `Micro-Manager File Formats <https://micro-manager.org/Micro-Manager_File_Formats>`__ for more information.
 
 [Mikroscan TIFF]
 extensions = .tif, .tiff

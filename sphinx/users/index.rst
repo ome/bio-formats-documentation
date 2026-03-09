@@ -68,77 +68,20 @@ Third-party applications
 ========================
 
 Several third-party libraries and applications use Bio-Formats to read and write
-imaging formats. All the examples below are maintained outside the Bio-Formats
-development release cycle. Any usage question should be raised with their
-respective development team.
+imaging formats. The list below includes the projects registered
+as :imagesc:`Community partners <about-the-community-partners-category/33685>`
+on the image.sc forum and use Bio-Formats for reading imaging file formats. The
+forum is the primary discussion channel for these software projects and should be
+used for any questions regarding installation, development or usage:
 
-OMERO
------
+- :imagesc:`BiofilmQ <tag/biofilmq/1389>`
+- :imagesc:`BioFormats.NET <tag/biology-tools/2947>`
+- :imagesc:`Icy <tag/icy/73>`
+- :imagesc:`MIB <tag/mib/1155>`
+- :imagesc:`μManager <tag/micro-manager/252>`
+- :imagesc:`Orbit <tag/orbit/1071>`
+- :imagesc:`OMERO <tag/omero/72>`
+- :imagesc:`PolusAI <tag/polusai/2552>`
+- :imagesc:`QuPath <tag/qupath/1025>`
 
-OMERO 5 uses Bio-Formats to read original files from over 140 file formats.
-Please refer to the :omero:`OMERO <>` documentation for further
-information.
-
-
-Image server applications
--------------------------
-
-.. toctree::
-    :maxdepth: 1
-    :titlesonly:
-
-    bisque/index
-    ome-server/index
-
-
-Libraries and scripting applications
-------------------------------------
-
-.. toctree::
-    :maxdepth: 1
-    :titlesonly:
-
-    farsight/index
-    i3dcore/index
-    imglib/index
-    itk/index
-    qu-matlab/index
-
-
-Numerical data processing applications
---------------------------------------
-
-.. toctree::
-    :maxdepth: 1
-    :titlesonly:
-
-    octave/index
-    idl/index
-    knime/index
-    matlab/index
-    visad/index
-    r/index
-
-
-Visualization and analysis applications
----------------------------------------
-
-.. toctree::
-    :maxdepth: 1
-    :titlesonly:
-
-    imaris/index
-    cellprofiler/index
-    comstat2/index
-    endrov/index
-    focalpoint/index
-    graphic-con/index
-    icy/index
-    iqm/index
-    micromanager/index
-    mipav/index
-    qupath/index
-    vaa3d/index
-    visbio/index
-    xuvtools/index
 
