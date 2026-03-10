@@ -68,14 +68,15 @@ Third-party applications
 ========================
 
 Several third-party libraries and applications use Bio-Formats to read and write
-imaging formats. The list below includes the projects registered
-as :imagesc:`Community partners <about-the-community-partners-category/33685>`
-on the image.sc forum and use Bio-Formats for reading imaging file formats. The
-forum is the primary discussion channel for these software projects and should be
-used for any questions regarding installation, development or usage:
+imaging formats. The list below includes the projects registered as
+:imagesc:`Community partners <about-the-community-partners-category/33685>` on
+the image.sc forum which are known to use Bio-Formats for reading imaging file
+formats. The forum is the primary discussion channel for these software projects
+and should be used for any questions regarding installation, development or usage:
 
 - :imagesc:`BiofilmQ <tag/biofilmq/1389>`
 - :imagesc:`BioFormats.NET <tag/biology-tools/2947>`
+- :imagesc:`CellProfiler <tag/cellprofiler/61>`
 - :imagesc:`Icy <tag/icy/73>`
 - :imagesc:`MIB <tag/mib/1155>`
 - :imagesc:`μManager <tag/micro-manager/252>`
