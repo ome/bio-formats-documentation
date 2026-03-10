@@ -69,7 +69,7 @@ Third-party applications
 
 Several third-party libraries and applications use Bio-Formats to read and write
 imaging formats. The list below includes the projects registered as
-:imagesc:`Community partners <about-the-community-partners-category/33685>` on
+:imagesc:`Community partners <t/about-the-community-partners-category/33685>` on
 the image.sc forum which are known to use Bio-Formats for reading imaging file
 formats. The forum is the primary discussion channel for these software projects
 and should be used for any questions regarding installation, development or usage:
