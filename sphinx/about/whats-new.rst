@@ -1,6 +1,41 @@
 Version history
 ===============
 
+8.5.0 (2026 March)
+------------------
+
+File format fixes:
+
+* Amira
+    - improve physical size unit detection
+* DICOM
+    - check `Study Time` tag when determining which files belong in the same dataset
+    - enforce correct value size when writing `DS` VR
+* Evident/Olympus VSI
+    - recognize calibration function tag and store as `Calibration Function Value` in original metadata
+* Hamamatsu NDPIS
+    - preserve macro/mask image names, consistent with underlying NDPI data
+* Imaris HDF
+    - work around issue in netcdf-java which prevented files with `#` in path from being opened
+* TIFF
+    - improve file size estimate when determining whether to write BigTIFF
+* Zeiss CZI
+    - ignore plate metadata if a plate configuration is present but not activated
+    - fix calculation of phase, illumination, and rotation counts
+
+Bio-Formats improvements:
+
+* Fix many Javadoc warnings
+* Unify XML parsing to use changes in `ome-common` 6.2.1
+
+Component updates:
+
+* `ome-codecs` was upgraded to 1.1.3
+* `ome-common` was upgraded to 6.2.1
+* `ome-model` was upgraded to 6.5.3
+* `formats-gpl` now inherits `aircompressor` dependency from `ome-codecs`
+* Remove outdated dependency exclusions from `formats-gpl`
+
 8.4.0 (2026 January)
 --------------------
 
