@@ -68,8 +68,8 @@ The complete list of third-party dependencies for `formats-gpl.jar` is as follow
     * - `metadata-extractor v2.18.0 <https://github.com/drewnoakes/metadata-extractor>`_
       - com.drewnoakes:metadata-extractor:2.18.0
       - `Apache License v2.0`_
-    * - `aircompressor v0.27 <https://github.com/airlift/aircompressor>`_
-      - io.airlift:aircompressor:0.27
+    * - `aircompressor v2.0.3 <https://github.com/airlift/aircompressor>`_
+      - io.airlift:aircompressor:2.0.3
       - `Apache License v2.0`_
     * - `Kryo v5.4.0 <https://github.com/EsotericSoftware/kryo>`_
       - com.esotericsoftware.kryo:kryo:5.4.0
@@ -218,7 +218,7 @@ The below are optional dependencies :
     * - `Logback Classic v1.3.16 <https://logback.qos.ch>`_
       - ch.qos.logback:logback-classic:1.3.16
       - `Eclipse Public License v1.0`_
-    * - `Logback Core v1.3.15 <https://logback.qos.ch>`_
+    * - `Logback Core v1.3.16 <https://logback.qos.ch>`_
       - ch.qos.logback:logback-core:1.3.16
       - `Eclipse Public License v1.0`_
 
