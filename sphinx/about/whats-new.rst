@@ -27,6 +27,7 @@ Bio-Formats improvements:
 
 * Fix many Javadoc warnings
 * Unify XML parsing to use changes in `ome-common` 6.2.1
+    - fix CVE-2026-22186, see `corresponding security advisory <https://github.com/ome/bioformats/security/advisories/GHSA-x9vc-qh97-8gjp>`_
 
 Component updates:
 
