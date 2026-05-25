@@ -2204,7 +2204,7 @@ utilityRating = Poor
 reader = PictReader
 \n
 .. seealso:: \n
-  `PICT technical overview <http://www.faqs.org/faqs/graphics/fileformats-faq/part3/section-107.html>`_ \n
+  `PICT technical overview <https://en.wikipedia.org/wiki/PICT>`_ \n
   `Another PICT technical overview <http://www.fileformat.info/format/macpict/egff.htm>`_
 
 [PNG (Portable Network Graphics)]
@@ -2727,7 +2727,7 @@ reader = BMPReader
 notes = Compressed BMP files are currently not supported. \n
 \n
 .. seealso:: \n
-  `Technical Overview <http://www.faqs.org/faqs/graphics/fileformats-faq/part3/section-18.html>`_ \n
+  `Technical Overview <https://en.wikipedia.org/wiki/BMP_file_format>`_ \n
 
 [Zeiss Axio CSM]
 extensions = .lms
