@@ -91,6 +91,11 @@ The output file format is determined by the extension of the output file, e.g.
     single tile with a few different tile sizes using the :option:`-crop`
     option. This gives an idea of what the most performant size will be.
 
+    The selected compression type can also impact how different tile sizes perform.
+    For example, using :option:`-compression JPEG` with TIFF or OME-TIFF output may
+    result in a relatively large file with default tile sizes, but a smaller file
+    when a smaller tile size is used.
+
 .. option:: -crop X,Y,WIDTH,HEIGHT
 
     For very large images, it may also be useful to convert a small tile from
