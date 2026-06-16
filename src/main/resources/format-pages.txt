@@ -2727,7 +2727,7 @@ reader = BMPReader
 notes = Compressed BMP files are currently not supported. \n
 \n
 .. seealso:: \n
-  `Technical Overview <https://en.wikipedia.org/wiki/BMP_file_format>`_ \n
+  `Technical Overview <https://www.loc.gov/preservation/digital/formats/fdd/fdd000189.shtml>`_ \n
 
 [Zeiss Axio CSM]
 extensions = .lms
