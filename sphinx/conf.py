@@ -402,5 +402,6 @@ linkcheck_ignore = ['https://imspector.mpibpc.mpg.de',
     r'https://www.hitachi-hightech.com/file/us/pdf/library/technical/Hitachi_4800_STEM.pdf', # 403 Client Error: Forbidden
     r'https://zenodo.org*', # 403 Client Error: Forbidden
     r'https://www.umassmed.edu*', # 403 Client Error: Forbidden
-    r'https://www.nih.gov*' # 403 Client Error: Forbidden
+    r'https://www.nih.gov*', # 403 Client Error: Forbidden
+    r'https://docs.unidata.ucar.edu*', # 403 Client Error: Forbidden
 ]
