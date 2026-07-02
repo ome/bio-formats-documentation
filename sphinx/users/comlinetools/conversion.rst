@@ -91,6 +91,19 @@ The output file format is determined by the extension of the output file, e.g.
     single tile with a few different tile sizes using the :option:`-crop`
     option. This gives an idea of what the most performant size will be.
 
+    The selected compression type can also impact how different tile sizes perform.
+    For example, using :option:`-compression JPEG` with TIFF or OME-TIFF output may
+    result in a relatively large file with default tile sizes, but a smaller file
+    when a smaller tile size is used.
+
+    Default tile sizes depend upon a few factors:
+
+      - If the input image contains fewer than 4096x4096 pixels, the tile size is the full image size.
+      - If the input image contains more than 4096x4096 pixels, the tile size is "optimal" tile size of the input image.
+        This size will vary depending upon the input file format and the specific dataset, and may be as large as the entire image.
+        The "optimal" tile size typically reflects either a single compressed tile, or 1MB of uncompressed image data.
+      - If :option:`-precompressed` is specified, then the tile size is always the optimal tile size of the input image.
+
 .. option:: -crop X,Y,WIDTH,HEIGHT
 
     For very large images, it may also be useful to convert a small tile from
