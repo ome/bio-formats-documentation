@@ -1948,7 +1948,7 @@ mif = true
 
 [Olympus SIS TIFF]
 extensions = .tiff
-developer = `Olympus <https://www.olympus-sis.com/>`_
+developer = `Evident Scientific (formerly Olympus) <https://evidentscientific.com/>`_
 bsd = no
 weHave = * a few example SIS TIFF files
 pixelsRating = Good
