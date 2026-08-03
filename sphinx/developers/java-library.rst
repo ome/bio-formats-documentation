@@ -137,24 +137,6 @@ The complete list of third-party dependencies for `formats-gpl.jar` is as follow
     * - `XML Commons External Components XML APIs v1.4.01 <http://xerces.apache.org/xml-commons/components/external/>`_
       - xml-apis:xml-apis:1.4.01
       - `Apache License v2.0`_
-    * - `minio v5.0.2 <https://min.io>`_
-      - io.minio:minio:5.0.2
-      - `Apache License v2.0`_
-    * - `http-client-xml v1.20.0 <http://googleapis.github.io/google-http-java-client>`_
-      - com.google.http-client:google-http-client-xml:1.20.0
-      - `Apache License v2.0`_
-    * - `http-client v1.20.0 <http://googleapis.github.io/google-http-java-client>`_
-      - com.google.http-client:google-http-client:1.20.0
-      - `Apache License v2.0`_
-    * - `xpp3 v1.1.4c <https://github.com/aslom/xpp3>`_
-      - xpp3:xpp3:1.1.4c
-      - https://github.com/aslom/xpp3/blob/master/LICENSE.txt
-    * - `okhttp3 v3.7.0 <https://square.github.io/okhttp/>`_
-      - com.squareup.okhttp3:okhttp:3.7.0
-      - `Apache License v2.0`_
-    * - `okio v1.12.0 <https://square.github.io/okio/>`_
-      - com.squareup.okio:okio:1.12.0
-      - `Apache License v2.0`_
     * - `json v20231013 <https://github.com/stleary/json-java>`_
       - org.json:json:20231013
       - `Public Domain <https://github.com/stleary/JSON-java/blob/master/LICENSE>`__
@@ -193,15 +175,6 @@ The complete list of third-party dependencies for `formats-gpl.jar` is as follow
       - `Apache License v2.0`_
     * - `httpmime v4.5.13 <https://hc.apache.org/>`_
       - org.apache.httpcomponents:httpmime:4.5.13
-      - `Apache License v2.0`_
-    * - `jackson-core v2.14.2 <https://github.com/FasterXML/jackson-core>`_
-      - com.fasterxml.jackson.core:jackson-core:2.14.2
-      - `Apache License v2.0`_
-    * - `jackson-annotations v2.14.2 <https://github.com/FasterXML/jackson-annotations>`_
-      - com.fasterxml.jackson.core:jackson-annotations:2.14.2
-      - `Apache License v2.0`_
-    * - `jackson-databind v2.14.2 <https://github.com/FasterXML/jackson-databind>`_
-      - com.fasterxml.jackson.core:jackson-databind:2.14.2
       - `Apache License v2.0`_
     * - `re2j v1.3 <https://github.com/google/re2j>`_
       - com.google.re2j:re2j:1.3
