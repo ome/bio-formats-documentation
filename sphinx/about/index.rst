@@ -4,7 +4,7 @@ About Bio-Formats
 Bio-Formats is a standalone Java library for reading and writing life
 sciences image file formats. It is capable of parsing both pixels and
 metadata for a large number of formats, as well as writing to several
-formats.
+open file formats.
 
 The primary goal of Bio-Formats is to facilitate the exchange of
 microscopy data between different software packages and
