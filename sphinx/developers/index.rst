@@ -74,9 +74,23 @@ Contributing to Bio-Formats
     service
     useful-scripts
 
+Deprecated API
+==============
+
+Some classes and API methods are marked as deprecated, using the `@Deprecated` annotation.
+These classes and/or methods may be removed in a future release, and so their use should be
+avoided where possible. If not possible, please report an issue outlining the need to keep
+a class or method marked as deprecated.
+
+Issue tracking
+==============
+
 See :report:`open Trac tickets for Bio-Formats <44>` and the various
 `Trello boards <https://trello.com/b/4EXb35xQ/getting-started>`_ for
 information on work currently planned or in progress.
+
+Contributing
+============
 
 For more general guidance about how to contribute to OME projects, see the 
 :devs_doc:`Contributing developers documentation <index.html>`.
