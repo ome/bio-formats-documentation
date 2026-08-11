@@ -85,8 +85,7 @@ a class or method marked as deprecated.
 Issue tracking
 ==============
 
-See :report:`open Trac tickets for Bio-Formats <44>` and the various
-`Trello boards <https://trello.com/b/4EXb35xQ/getting-started>`_ for
+See `the Bio-Formats repository on GitHub <https://github.com/ome/bioformats>`_ for
 information on work currently planned or in progress.
 
 Contributing

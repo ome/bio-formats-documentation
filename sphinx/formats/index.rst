@@ -1,8 +1,8 @@
 Formats
 =======
 
-Bio-Formats supports over 140 different file formats. The :doc:`dataset-table`
-explains the file extension you should choose to open/import a dataset in any
+Bio-Formats supports reading over 140 different file formats, and writing several common open formats.
+The :doc:`dataset-table` explains the file extension you should choose to open/import a dataset in any
 of these formats, while the :doc:`/supported-formats` table lists all of the
 formats and gives an indication of how well they are supported and whether
 Bio-Formats can write, as well as read, each format.  The
