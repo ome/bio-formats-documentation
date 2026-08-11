@@ -128,8 +128,3 @@ IFormatWriter for each file, like this:
         writer.close();
       }
 
-Known issues
-------------
-
-`List of Trac tickets
-<https://trac.openmicroscopy.org/ome/query?status=accepted&status=new&status=reopened&keywords=~export&component=Bio-Formats&col=id&col=summary&col=status&col=type&col=priority&col=milestone&col=component&order=priority>`_
