@@ -77,14 +77,6 @@ Contributing to Bio-Formats
 For more general guidance about how to contribute to OME projects, see the
 :devs_doc:`Contributing developers documentation <index.html>`.
 
-Deprecated API
-==============
-
-Some classes and API methods are marked as deprecated, using the `@Deprecated` annotation.
-These classes and/or methods may be removed in a future release, and so their use should be
-avoided where possible. If not possible, please report an issue outlining the need to keep
-a class or method marked as deprecated.
-
 Issue tracking
 ==============
 
