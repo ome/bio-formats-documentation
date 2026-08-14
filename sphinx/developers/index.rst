@@ -74,8 +74,11 @@ Contributing to Bio-Formats
     service
     useful-scripts
 
+For more general guidance about how to contribute to OME projects, see the
+:devs_doc:`Contributing developers documentation <index.html>`.
+
+Issue tracking
+==============
+
 See `the Bio-Formats repository on GitHub <https://github.com/ome/bioformats>`_ for
 information on work currently planned or in progress.
-
-For more general guidance about how to contribute to OME projects, see the 
-:devs_doc:`Contributing developers documentation <index.html>`.
