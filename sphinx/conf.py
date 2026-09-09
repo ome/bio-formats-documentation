@@ -405,4 +405,5 @@ linkcheck_ignore = ['https://imspector.mpibpc.mpg.de',
     r'https://www.nih.gov*', # 403 Client Error: Forbidden
     r'https://docs.unidata.ucar.edu*', # 403 Client Error: Forbidden
     r'http://www.bdbiosciences.com*', # 403 Client Error: Forbidden
+    r'https://www.loc.gov/.*', # captcha with human interaction
 ]
