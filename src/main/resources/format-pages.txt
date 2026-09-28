@@ -733,7 +733,7 @@ notes = .. seealso:: \n
 
 [Gatan Digital Micrograph 2]
 extensions = .dm2
-developer = `Gatan <http://www.gatan.com>`_
+developer = `Gatan <https://www.gatan.com>`_
 bsd = no
 versions = 2
 weHave = * Pascal code that can read DM2 files (from ImageSXM) \n
@@ -749,7 +749,7 @@ reader = GatanDM2Reader
 
 [Gatan Digital Micrograph]
 extensions = .dm3, .dm4
-owner = `Gatan <http://www.gatan.com/>`_
+owner = `Gatan <https://www.gatan.com/>`_
 bsd = no
 versions = 3, 4
 software = `DM3 Reader plugin for ImageJ <https://imagej.net/ij/plugins/DM3_Reader.html>`_ \n
