@@ -749,7 +749,7 @@ reader = GatanDM2Reader
 
 [Gatan Digital Micrograph]
 extensions = .dm3, .dm4
-owner = `Gatan <https://www.gatan.com/>`_
+owner = `Gatan <https://www.gatan.com>`_
 bsd = no
 versions = 3, 4
 software = `DM3 Reader plugin for ImageJ <https://imagej.net/ij/plugins/DM3_Reader.html>`_ \n
