@@ -23,7 +23,10 @@ build:
     python: "mambaforge-22.9"
   jobs:
     pre_build:
-      - java -version
+      - which java
+      - readlink -f "$(which java)"
+      - java -version 2>&1
+      - which mvn
       - mvn -version
 
 # Optionally set the version of Python and requirements required to build your docs
