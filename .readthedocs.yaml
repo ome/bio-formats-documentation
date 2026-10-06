@@ -23,6 +23,7 @@ build:
     python: "mambaforge-22.9"
   jobs:
     pre_build:
+      - curl -Iv https://repo.maven.apache.org/maven2/ 2>&1 || true
       - which java
       - readlink -f "$(which java)"
       - java -version 2>&1
