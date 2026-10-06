@@ -21,6 +21,10 @@ build:
   os: ubuntu-24.04
   tools:
     python: "mambaforge-22.9"
+  jobs:
+    pre_build:
+      - java -version
+      - mvn -version
 
 # Optionally set the version of Python and requirements required to build your docs
 python:
