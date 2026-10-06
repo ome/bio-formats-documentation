@@ -407,4 +407,5 @@ linkcheck_ignore = ['https://imspector.mpibpc.mpg.de',
     r'http://www.bdbiosciences.com*', # 403 Client Error: Forbidden
     r'https://www.loc.gov/.*', # captcha with human interaction
     r'https://www.gatan.com*', # 429 too many requests for url
+    r'https://web.archive.org/.*', # 429 too many requests for url
 ]
