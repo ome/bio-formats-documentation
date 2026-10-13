@@ -35,8 +35,6 @@ def getValue(value):
 
 
 if os.environ.get('BUILD_READTHEDOCS') == 'True':
-    os.system('java -version')
-    os.system('mvn -X -U clean compile -f ../pom.xml')
     os.system('cp ../target/sphinx/formats/*.rst ./formats')
     os.system('cp ../target/sphinx/*.rst .')
     os.system('cp -R ../target/sphinx/metadata .')

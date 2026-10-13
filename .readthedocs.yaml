@@ -23,6 +23,10 @@ build:
     python: "mambaforge-22.9"
   apt_packages:
     - openjdk-21-jdk
+  jobs:
+    pre_build:
+      - java -version
+      - mvn -X clean compile -f pom.xml
 
 # Optionally set the version of Python and requirements required to build your docs
 python:
