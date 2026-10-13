@@ -23,6 +23,7 @@ build:
     python: "mambaforge-22.9"
   apt_packages:
     - openjdk-21-jdk
+    - maven
   jobs:
     pre_build:
       - java -version
