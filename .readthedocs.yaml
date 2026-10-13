@@ -19,8 +19,6 @@ formats: all
 
 build:
   os: ubuntu-24.04
-  tools:
-    python: "mambaforge-22.9"
   apt_packages:
     - openjdk-21-jdk
     - maven
@@ -39,6 +37,3 @@ build:
 python:
   install:
     - requirements: requirements.txt
-
-conda:
-  environment: environment.yml
