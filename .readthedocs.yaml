@@ -26,6 +26,7 @@ build:
   jobs:
     pre_build:
       - java -version
+      - mvn -version
       - mvn -X clean compile -f pom.xml
 
 # Optionally set the version of Python and requirements required to build your docs
