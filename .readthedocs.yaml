@@ -21,6 +21,8 @@ build:
   os: ubuntu-24.04
   tools:
     python: "mambaforge-22.9"
+  apt_packages:
+    - openjdk-21-jdk
 
 # Optionally set the version of Python and requirements required to build your docs
 python:
