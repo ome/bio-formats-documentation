@@ -35,12 +35,6 @@ def getValue(value):
 
 
 if os.environ.get('BUILD_READTHEDOCS') == 'True':
-    os.system('mvn compile -f ../pom.xml')
-    os.system('cp ../target/sphinx/formats/*.rst ./formats')
-    os.system('cp ../target/sphinx/*.rst .')
-    os.system('cp -R ../target/sphinx/metadata .')
-    os.system('rm -rf ../target/sphinx/developers/examples/META-INF')
-    os.system('cp -R ../target/sphinx/developers/examples ./developers')
     bioformats_source_branch = getValue("bioformats_source_branch")
     openmicroscopy_source_user = getValue("openmicroscopy_source_user")
     ome_source_user = getValue("ome_source_user")
