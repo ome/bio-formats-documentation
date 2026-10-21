@@ -1428,7 +1428,7 @@ mif = true
 
 [LaVision Imspector]
 extensions = .msr
-developer = `LaVision BioTec <http://www.lavisionbiotec.com/>`_
+developer = `LaVision BioTec <https://www.miltenyibiotec.com/GB-en/about-us/miltenyi-biotec-companies/lavision-biotec-gmbh.html>`_
 versions = 4.0, 4.1
 bsd = no
 weHave = * a few .msr files \n
