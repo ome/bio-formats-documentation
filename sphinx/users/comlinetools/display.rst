@@ -35,6 +35,18 @@ dimensions, and other basic metadata will be printed to the console.
 
     Note that series numbers begin with 0.
 
+.. option:: -resolution
+
+    Displays a different resolution of the specified series.
+    Only used with :option:`-noflat`.
+
+    ::
+
+      showinf -series 1 -resolution 1 /path/to/file
+
+    Note that as with :option:`-series`, the resolution index
+    starts with 0.
+
 .. option:: -omexml
 
     Displays the OME-XML metadata for a file on the console:
@@ -109,6 +121,12 @@ dimensions, and other basic metadata will be printed to the console.
 
       showinf -novalid /path/to/file
 
+.. option:: -validate
+
+    Enforce OME-XML validation (opposite of :option:`-novalid`)::
+
+      showinf -validate /path/to/file
+
 .. option:: -nocore
 
     Most output can be suppressed:
@@ -116,6 +134,121 @@ dimensions, and other basic metadata will be printed to the console.
     ::
 
       showinf -nocore /path/to/file
+
+.. option:: -xmlversion OME_XML_VERSION
+
+    Use the specified OME-XML schema version instead of the latest::
+
+      showinf -xmlversion 2015-01 /path/to/input
+
+.. option:: -xmlspaces INTEGER
+
+    Use the specified number of spaces when indenting OME-XML for display.
+    Defaults to 3.
+
+    ::
+
+      showinf -xmlspaces 4 -omexml /path/to/input
+
+.. option:: -nousedfiles
+
+    Do not print the list of files in the dataset.
+    This can be helpful when working with large plates that store
+    one plane per file.
+
+
+    ::
+
+      showinf -nousedfiles /path/to/input
+
+.. option:: -nometa
+
+    Do not read or print more than the minimum necessary metadata to read images::
+
+      showinf -nometa /path/to/file
+
+.. option:: -nofilter
+
+    Do not replace unprintable or XML-invalid characters when converting metadata
+    to OME-XML. This is rarely recommended.
+
+    ::
+
+      showinf -nofilter /path/to/file
+
+.. option:: -thumbs
+
+    Display thumbnail images instead of original image data::
+
+      showinf -thumbs /path/to/file
+
+.. option:: -minmax
+
+    Calculate and report the minimum and maximum pixel values for each channel.
+    This can cause significantly slower image read times.
+
+    ::
+
+      showinf -minmax /path/to/file
+
+.. option:: -stitch
+
+    Automatically try to group together input files with similar names::
+
+      showinf -stitch /path/to/input
+
+    If the list of input files to be grouped is already know, then using
+    a :doc:`/formats/pattern-file` instead is recommended.
+
+.. option:: -nogroup
+
+    Do not look for additional input files to be grouped into the same dataset.
+    If the specified input file cannot be read independently (i.e. the format
+    strictly requires multiple files), then this option will do nothing::
+
+      showinf -nogroup /path/to/input
+
+.. option:: -separate
+
+    Split RGB input images into separate channels::
+
+      showinf -separate /path/to/input
+
+.. option:: -expand
+
+    If colormaps (lookup tables) are present for the input data,
+    permanently apply them, creating RGB images::
+
+      showinf -expand /path/to/input
+
+.. option:: -merge
+
+    Merge separate input channels into RGB images when possible::
+
+      showinf -merge /path/to/input
+
+.. option:: -no-sas
+
+    Do not preserve the OME-XML StructuredAnnotation elements when displaying OME-XML::
+
+      showinf -no-sas -omexml /path/to/input
+
+.. option:: -normalize
+
+    Similar to :option:`-autoscale`, adjusts pixel values to fit into the range [0-1].
+    This is primarily needed to display float/double data without error.
+
+    ::
+
+      showinf -normalize /path/to/input
+
+.. option:: -map
+
+    Path to a file, which should be referred to by the name of the
+    input file path. This is rarely used in practice, but can be helpful
+    for certain tests::
+
+      showinf -map /path/to/actual/input input-reference-name
 
 .. option:: -omexml-only
 
@@ -135,6 +268,14 @@ dimensions, and other basic metadata will be printed to the console.
     ::
 
       showinf -debug /path/to/file
+
+.. option:: -trace
+
+    Enables `TRACE`-level debugging output if more information than `-debug` is needed:
+
+    ::
+
+      showinf -trace /path/to/file
 
 .. option:: -fast
 
@@ -172,9 +313,19 @@ dimensions, and other basic metadata will be printed to the console.
 
 .. option:: -swap DIMENSIONORDER
 
-    Overrides the default input dimension order::
+    Overrides the default input dimension order.
+    This is used when dimension sizes are mixed up and/or planes appear
+    out of order with default options::
 
       showinf -swap XYZTC /path/to/file
+
+.. option:: -shuffle DIMENSIONORDER
+
+    Overrides the default output dimension order.
+    This is used when the dimension sizes are correct and planes are correctly ordered,
+    but a different dimension order is needed::
+
+      showinf -shuffle XYZTC /path/to/file
 
 .. option:: -format FORMAT
 

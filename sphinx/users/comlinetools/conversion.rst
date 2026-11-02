@@ -17,6 +17,87 @@ To convert a file to single output file (e.g. TIFF):
 The output file format is determined by the extension of the output file, e.g.
 .tiff for TIFF files, .ome.tiff for OME-TIFF, .png for PNG.
 
+.. option:: -debug
+
+    Enables debugging output if more information is needed:
+
+    ::
+
+      bfconvert -debug /path/to/input /path/to/output
+
+
+.. option:: -stitch
+
+    Automatically try to group together input files with similar names::
+
+      bfconvert -stitch /path/to/input /path/to/output
+
+    If the list of input files to be grouped is already know, then using
+    a :doc:`/formats/pattern-file` instead is recommended.
+
+.. option:: -separate
+
+    Split RGB input images into separate channels.
+    This is best used with TIFF/OME-TIFF output only::
+
+      bfconvert -separate /path/to/input /path/to/output
+
+.. option:: -merge
+
+    Merge separate input channels into RGB images when possible::
+
+      bfconvert -merge /path/to/input /path/to/output
+
+.. option:: -expand
+
+    If colormaps (lookup tables) are present for the input data,
+    permanently apply them, creating RGB images::
+
+      bfconvert -expand /path/to/input /path/to/output
+
+.. option:: -map PATH
+
+    Path to a file, which should be referred to by the name of the
+    input file path. This is rarely used in practice, but can be helpful
+    for certain tests::
+
+      bfconvert -map /path/to/actual/input input-reference-name /path/to/output
+
+.. option:: -nogroup
+
+    Do not look for additional input files to be grouped into the same dataset.
+    If the specified input file cannot be read independently (i.e. the format
+    strictly requires multiple files), then this option will do nothing::
+
+      bfconvert -nogroup /path/to/input /path/to/output
+
+.. option:: -autoscale
+
+    Automatically adjust the pixel values so that the minimum original pixel
+    value becomes the smallest possible value for the data type (usually 0),
+    and the maximum original pixel values becomes the largest possible value
+    for the data type (e.g. 255 for uint8 data). Use caution; output data is
+    only suitable for display since pixel values have been changed::
+
+      bfconvert -autoscale /path/to/input /path/to/output
+
+.. option:: -novalid
+
+    Do not perform schema/conformance validation of the output data.
+    This currently only affects whether OME-XML written to OME-TIFF is
+    validated prior to writing::
+
+      bfconvert -novalid /path/to/input /path/to/output
+
+.. option:: -validate
+
+    Enforce schema/conformance validation of the output data.
+    This currently only affects whether OME-XML written to OME-TIFF is
+    validated prior to writing::
+
+      bfconvert -validate /path/to/input /path/to/output
+
+
 .. option:: -option KEY VALUE
 
     Passes options expressed as key/value pairs::
