@@ -42,7 +42,7 @@ dimensions, and other basic metadata will be printed to the console.
 
     ::
 
-      showinf -series 1 -resolution 1 /path/to/file
+      showinf -noflat -series 1 -resolution 1 /path/to/file
 
     Note that as with :option:`-series`, the resolution index
     starts with 0.
@@ -271,7 +271,7 @@ dimensions, and other basic metadata will be printed to the console.
 
 .. option:: -trace
 
-    Enables `TRACE`-level debugging output if more information than `-debug` is needed:
+    Enables `TRACE`-level debugging output if more information than :option:`-debug` is needed:
 
     ::
 
