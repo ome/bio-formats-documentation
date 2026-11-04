@@ -71,13 +71,15 @@ exposure times and positions to be set for each plane:
     echo "PositionYUnit_0=mm" >> my-special-test-file.fake.ini
     echo "PositionZUnit_0=mm" >> my-special-test-file.fake.ini
 
-
 Several keys have support for units and can be expressed as ``KEY=VALUE UNIT`` where ``UNIT`` is the symbol of the desired unit::
 
     touch "physicalSizesUnits&physicalSizeX=1nm&physicalSizeY=1nm&physicalSizeZ=1.5km.fake"
     echo "physicalSizeX=1 nm" >> physicalSizes.fake.ini
     echo "physicalSizeY=10 pm" >> physicalSizes.fake.ini
     echo "physicalSizeZ=.002 mm" >> physicalSizes.fake.ini
+
+Axis orientation metadata can also be specified using the `AxisOrientationType_<axis index>`
+and `AxisOrientationTerm_<axis index>` keys. The type is expected to be `ANATOMICAL`.
 
 High-content screening
 ----------------------
