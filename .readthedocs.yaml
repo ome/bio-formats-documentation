@@ -20,12 +20,22 @@ formats: all
 build:
   os: ubuntu-24.04
   tools:
-    python: "mambaforge-22.9"
+    python: "3.12"
+  apt_packages:
+    - openjdk-21-jdk
+    - maven
+  jobs:
+    pre_build:
+      - java -version
+      - mvn -version
+      - mvn -X clean compile -f pom.xml
+      - cp ./target/sphinx/formats/*.rst ./sphinx/formats
+      - cp ./target/sphinx/*.rst ./sphinx/
+      - cp -R ./target/sphinx/metadata ./sphinx/
+      - rm -rf ./target/sphinx/developers/examples/META-INF
+      - cp -R ./target/sphinx/developers/examples ./sphinx/developers
 
 # Optionally set the version of Python and requirements required to build your docs
 python:
   install:
     - requirements: requirements.txt
-
-conda:
-  environment: environment.yml

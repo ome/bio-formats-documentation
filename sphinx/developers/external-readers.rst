@@ -4,7 +4,7 @@ External file format readers
 File format readers recognized by Bio-Formats can be defined as either "core" or "external".
 A core reader is maintained by the OME team, and included in either the `formats-bsd` or `formats-gpl`
 component in the `ome/bioformats` repository on GitHub. An external reader is not included in the
-`ome/bioformats` repository, and in most cases is not maintained by the OME team. [1]_
+`ome/bioformats` repository, and in most cases is not maintained by the OME team.
 
 Bio-Formats contains a file named :source:`readers.txt <components/formats-api/src/loci/formats/readers.txt>`
 which records every recognized reader class name. This file is used by the main reader class
@@ -24,7 +24,7 @@ defined as "external" readers, e.g.:
 
 .. code-block::
 
-  loci.formats.in.ZarrReader[type=external]         # .zarr
+  loci.formats.in.ScreenReader[type=external]         # .screen
 
 This allows Bio-Formats to attempt to load a reader that was installed separately,
 but quietly ignore if it is not found.
@@ -99,8 +99,3 @@ to removing it from both core Bio-Formats and :source:`readers.txt <components/f
 
 In the event that recategorizing is necessary, we will make contact with the proposed
 maintainer to discuss next steps.
-
-.. [1] A notable exception is `ZarrReader <https://github.com/ome/ZarrReader>`_, which is an external
-       reader maintained by the OME team. This reader is externalized primarily to allow for updates
-       outside of the normal Bio-Formats release process. See further discussion in
-       `this issue <https://github.com/ome/ZarrReader/issues/32>`_.

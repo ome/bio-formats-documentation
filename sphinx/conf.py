@@ -35,12 +35,6 @@ def getValue(value):
 
 
 if os.environ.get('BUILD_READTHEDOCS') == 'True':
-    os.system('mvn compile -f ../pom.xml')
-    os.system('cp ../target/sphinx/formats/*.rst ./formats')
-    os.system('cp ../target/sphinx/*.rst .')
-    os.system('cp -R ../target/sphinx/metadata .')
-    os.system('rm -rf ../target/sphinx/developers/examples/META-INF')
-    os.system('cp -R ../target/sphinx/developers/examples ./developers')
     bioformats_source_branch = getValue("bioformats_source_branch")
     openmicroscopy_source_user = getValue("openmicroscopy_source_user")
     ome_source_user = getValue("ome_source_user")
@@ -404,4 +398,8 @@ linkcheck_ignore = ['https://imspector.mpibpc.mpg.de',
     r'https://www.umassmed.edu*', # 403 Client Error: Forbidden
     r'https://www.nih.gov*', # 403 Client Error: Forbidden
     r'https://docs.unidata.ucar.edu*', # 403 Client Error: Forbidden
+    r'http://www.bdbiosciences.com*', # 403 Client Error: Forbidden
+    r'https://www.loc.gov/.*', # captcha with human interaction
+    r'https://www.gatan.com*', # 429 too many requests for url
+    r'https://web.archive.org/.*', # 429 too many requests for url
 ]

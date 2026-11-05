@@ -142,7 +142,7 @@ reader = AmiraReader
 extensions = .img, .hdr
 developer = `Mayo Foundation Biomedical Imaging Resource <https://www.mayo.edu/research/core-resources/biomedical-imaging-resource-core/overview>`_
 bsd = no
-weHave = * `an Analyze 7.5 specification document <http://web.archive.org/web/20070927191351/http://www.mayo.edu/bir/PDF/ANALYZE75.pdf>`_ \n
+weHave = * `an Analyze 7.5 specification document <https://web.archive.org/web/20070927191351/http://www.mayo.edu/bir/PDF/ANALYZE75.pdf>`_ \n
 * several Analyze 7.5 datasets
 pixelsRating = Very good
 metadataRating = Very good
@@ -539,6 +539,7 @@ mif = true
 extensions = .vsi
 developer = `Olympus <https://www.olympus-global.com>`_
 bsd = no
+software = `Evident OlyVIA <https://evidentscientific.com/en/downloads>`__
 weHave = * many example datasets \n
 * `public sample images <https://downloads.openmicroscopy.org/images/CellSens/>`__ \n
 * a VSI specification document (v1.6, 2012 November 27, in PDF) \n
@@ -732,7 +733,7 @@ notes = .. seealso:: \n
 
 [Gatan Digital Micrograph 2]
 extensions = .dm2
-developer = `Gatan <http://www.gatan.com>`_
+developer = `Gatan <https://www.gatan.com>`_
 bsd = no
 versions = 2
 weHave = * Pascal code that can read DM2 files (from ImageSXM) \n
@@ -748,7 +749,7 @@ reader = GatanDM2Reader
 
 [Gatan Digital Micrograph]
 extensions = .dm3, .dm4
-owner = `Gatan <http://www.gatan.com/>`_
+owner = `Gatan <https://www.gatan.com>`_
 bsd = no
 versions = 3, 4
 software = `DM3 Reader plugin for ImageJ <https://imagej.net/ij/plugins/DM3_Reader.html>`_ \n
@@ -1427,7 +1428,7 @@ mif = true
 
 [LaVision Imspector]
 extensions = .msr
-developer = `LaVision BioTec <http://www.lavisionbiotec.com/>`_
+developer = `LaVision BioTec <https://www.miltenyibiotec.com/GB-en/about-us/miltenyi-biotec-companies/lavision-biotec-gmbh.html>`_
 versions = 4.0, 4.1
 bsd = no
 weHave = * a few .msr files \n

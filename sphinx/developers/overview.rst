@@ -64,3 +64,11 @@ The set of readers is easily modified. The :source:`readers.txt
 readers to try in determining an image file's format, and there are many
 useful classes and methods among the Bio-Formats Java code to assist in
 writing new readers and writers.
+
+Deprecated API
+--------------
+
+Some classes and API methods are marked as deprecated, using the `@Deprecated` annotation.
+These classes and/or methods may be removed in a future release, and so their use should be
+avoided where possible. If not possible, please report an issue outlining the need to keep
+a class or method marked as deprecated.
