@@ -41,6 +41,7 @@ Using Bio-Formats as a Java library
     export2
     tiling
     wsi
+    axis-orientation
     in-memory
     logging
     conversion
