@@ -80,8 +80,8 @@ The complete list of third-party dependencies for `formats-gpl.jar` is as follow
     * - `MinLog v1.3.1 <https://github.com/EsotericSoftware/minlog>`_
       - com.esotericsoftware.minlog:minlog:1.3.1
       - `BSD 3-Clause`_
-    * - `Guava v32.0.1 <https://github.com/google/guava>`_
-      - com.google.guava:guava:32.0.1-jre
+    * - `Guava v33.6.0-jre <https://github.com/google/guava>`_
+      - com.google.guava:guava:33.6.0-jre
       - `Apache License v2.0`_
     * - `JGoodies Common v1.7.0 <http://www.jgoodies.com/downloads/libraries/>`_
       - com.jgoodies:jgoodies-common:1.7.0
