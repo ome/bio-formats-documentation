@@ -404,4 +404,5 @@ linkcheck_ignore = ['https://imspector.mpibpc.mpg.de',
     r'https://web.archive.org/.*', # 429 too many requests for url
     r'https://en.wikipedia.org/wiki/.*' # 403 Client Error: Too many requests. Please respect our robot policy
     r'https://pubmed.ncbi.nlm.nih.gov/.*' # 403 Forbidden for url
+    r'https://www.mpinat.mpg.de/.*' # 406 Client Error: Not Acceptable for url
 ]
