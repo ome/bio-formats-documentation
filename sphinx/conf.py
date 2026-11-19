@@ -402,4 +402,5 @@ linkcheck_ignore = ['https://imspector.mpibpc.mpg.de',
     r'https://www.loc.gov/.*', # captcha with human interaction
     r'https://www.gatan.com*', # 429 too many requests for url
     r'https://web.archive.org/.*', # 429 too many requests for url
+    r'https://en.wikipedia.org/wiki/.*' # 403 Client Error: Too many requests. Please respect our robot policy
 ]
