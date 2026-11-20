@@ -149,10 +149,10 @@ The complete list of third-party dependencies for `formats-gpl.jar` is as follow
     * - `xpp3 v1.1.4c <https://github.com/aslom/xpp3>`_
       - xpp3:xpp3:1.1.4c
       - https://github.com/aslom/xpp3/blob/master/LICENSE.txt
-    * - `okhttp3 v3.7.0 <https://github.com/lysine-dev/okhttp/>`_
+    * - `okhttp3 v3.7.0 <https://square.github.io/okhttp/>`_
       - com.squareup.okhttp3:okhttp:3.7.0
       - `Apache License v2.0`_
-    * - `okio v1.12.0 <https://github.com/lysine-dev/okio/>`_
+    * - `okio v1.12.0 <https://square.github.io/okio/>`_
       - com.squareup.okio:okio:1.12.0
       - `Apache License v2.0`_
     * - `json v20231013 <https://github.com/stleary/json-java>`_
