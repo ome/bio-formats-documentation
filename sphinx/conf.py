@@ -353,8 +353,7 @@ linkcheck_report_timeouts_as_broken = False
 
 
 # Regular expressions that match URIs that should not be checked when doing a linkcheck build
-linkcheck_ignore = ['https://imspector.mpibpc.mpg.de',
-    r'https://www.fei.com/.*',
+linkcheck_ignore = [r'https://www.fei.com/.*',
     'http://cellularimaging.perkinelmer.com/downloads/',
     'https://animatedpngs.com/', # SSL certificate error
     r'https://www.nis-elements.com/.*', # Invalid SSL certificate
@@ -402,4 +401,6 @@ linkcheck_ignore = ['https://imspector.mpibpc.mpg.de',
     r'https://www.loc.gov/.*', # captcha with human interaction
     r'https://www.gatan.com*', # 429 too many requests for url
     r'https://web.archive.org/.*', # 429 too many requests for url
+    r'https://en.wikipedia.org/wiki/.*', # 403 Client Error: Too many requests. Please respect our robot policy
+    r'https://pubmed.ncbi.nlm.nih.gov/.*' # 403 Forbidden for url
 ]
