@@ -1065,7 +1065,7 @@ reader = ImprovisionTiffReader
 [Imspector OBF]
 extensions = .obf, .msr
 owner = `Abberior Instruments <https://abberior.rocks/superresolution-confocal-systems/imspector>`_
-developer = `Department of NanoBiophotonics, MPI-BPC <https://abberior.rocks/superresolution-confocal-systems/imspector>`_
+developer = `Abberior Instruments/Department of NanoBiophotonics, MPI-BPC <https://abberior.rocks/superresolution-confocal-systems/imspector>`_
 bsd = yes
 weHave = * a few OBF datasets \n
 * `public OBF sample images <https://downloads.openmicroscopy.org/images/OBF/>`_ \n
