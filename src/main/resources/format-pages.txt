@@ -1064,7 +1064,7 @@ reader = ImprovisionTiffReader
 
 [Imspector OBF]
 extensions = .obf, .msr
-owner = `MPI-BPC <https://abberior.rocks/superresolution-confocal-systems/imspector>`_
+owner = `Abberior Instruments <https://abberior.rocks/superresolution-confocal-systems/imspector>`_
 developer = `Department of NanoBiophotonics, MPI-BPC <https://abberior.rocks/superresolution-confocal-systems/imspector>`_
 bsd = yes
 weHave = * a few OBF datasets \n
